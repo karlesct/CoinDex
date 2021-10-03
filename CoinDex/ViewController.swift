@@ -15,5 +15,12 @@ class ViewController: UIViewController {
     }
 
 
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        let config = ConfigLoader.parseFile()
+        print(config.API)
+    }
+
 }
 

@@ -15,6 +15,8 @@
 		2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */ = {isa = PBXBuildFile; fileRef = 2758FC6B2709B469009BCB5A /* LaunchScreen.storyboard */; };
 		2758FC782709B46A009BCB5A /* CoinDexTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC772709B46A009BCB5A /* CoinDexTests.swift */; };
 		2758FC832709B46A009BCB5A /* CoinDexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC822709B46A009BCB5A /* CoinDexUITests.swift */; };
+		2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FCD82709C463009BCB5A /* ConfigLoader.swift */; };
+		2758FCF92709D615009BCB5A /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2758FCF82709D615009BCB5A /* Config.plist */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -49,6 +51,10 @@
 		2758FC7E2709B46A009BCB5A /* CoinDexUITests.xctest */ = {isa = PBXFileReference; explicitFileType = wrapper.cfbundle; includeInIndex = 0; path = CoinDexUITests.xctest; sourceTree = BUILT_PRODUCTS_DIR; };
 		2758FC822709B46A009BCB5A /* CoinDexUITests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinDexUITests.swift; sourceTree = "<group>"; };
 		2758FC842709B46A009BCB5A /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Info.plist; sourceTree = "<group>"; };
+		2758FCD82709C463009BCB5A /* ConfigLoader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ConfigLoader.swift; sourceTree = "<group>"; };
+		2758FCEA2709CF52009BCB5A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
+		2758FCF82709D615009BCB5A /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		2758FCFD2709D69A009BCB5A /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -155,6 +161,7 @@
 		2758FC962709B4E9009BCB5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2758FCE02709C467009BCB5A /* Config */,
 			);
 			path = Utils;
 			sourceTree = "<group>";
@@ -162,6 +169,7 @@
 		2758FC972709B4FB009BCB5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2758FCF62709D56C009BCB5A /* Generated */,
 				2758FC9B2709B58D009BCB5A /* Environments */,
 				2758FC692709B469009BCB5A /* Assets.xcassets */,
 			);
@@ -189,6 +197,8 @@
 			isa = PBXGroup;
 			children = (
 				2758FC6E2709B469009BCB5A /* Info.plist */,
+				2758FCEA2709CF52009BCB5A /* Release.xcconfig */,
+				2758FCFD2709D69A009BCB5A /* Config.plist */,
 			);
 			path = Release;
 			sourceTree = "<group>";
@@ -200,6 +210,30 @@
 			path = Staging;
 			sourceTree = "<group>";
 		};
+		2758FCE02709C467009BCB5A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2758FCD82709C463009BCB5A /* ConfigLoader.swift */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
+		2758FCF62709D56C009BCB5A /* Generated */ = {
+			isa = PBXGroup;
+			children = (
+				2758FCF72709D574009BCB5A /* Config */,
+			);
+			path = Generated;
+			sourceTree = "<group>";
+		};
+		2758FCF72709D574009BCB5A /* Config */ = {
+			isa = PBXGroup;
+			children = (
+				2758FCF82709D615009BCB5A /* Config.plist */,
+			);
+			path = Config;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -207,6 +241,7 @@
 			isa = PBXNativeTarget;
 			buildConfigurationList = 2758FC872709B46A009BCB5A /* Build configuration list for PBXNativeTarget "CoinDexRelease" */;
 			buildPhases = (
+				2758FCF52709D53D009BCB5A /* Copy Config */,
 				2758FC592709B45E009BCB5A /* Sources */,
 				2758FC5A2709B45E009BCB5A /* Frameworks */,
 				2758FC5B2709B45E009BCB5A /* Resources */,
@@ -304,6 +339,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 				2758FC682709B45E009BCB5A /* Main.storyboard in Resources */,
@@ -326,12 +362,35 @@
 		};
 /* End PBXResourcesBuildPhase section */
 
+/* Begin PBXShellScriptBuildPhase section */
+		2758FCF52709D53D009BCB5A /* Copy Config */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+			);
+			name = "Copy Config";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"${SRCROOT}/CoinDex/Resources/Generated/Config/Config.plist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "# Type a script or drag a script file from your workspace to insert its path.\ncp -fp \"${SRCROOT}/CoinDex/Resources/Environments/${XCC_CONFIG_PATH}\" \"${SRCROOT}/CoinDex/Resources/Generated/Config/Config.plist\"\n";
+		};
+/* End PBXShellScriptBuildPhase section */
+
 /* Begin PBXSourcesBuildPhase section */
 		2758FC592709B45E009BCB5A /* Sources */ = {
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
 				2758FC652709B45E009BCB5A /* ViewController.swift in Sources */,
+				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
 				2758FC632709B45E009BCB5A /* SceneDelegate.swift in Sources */,
 			);
@@ -390,6 +449,7 @@
 /* Begin XCBuildConfiguration section */
 		2758FC852709B46A009BCB5A /* Debug */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2758FCEA2709CF52009BCB5A /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -451,6 +511,7 @@
 		};
 		2758FC862709B46A009BCB5A /* Release */ = {
 			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2758FCEA2709CF52009BCB5A /* Release.xcconfig */;
 			buildSettings = {
 				ALWAYS_SEARCH_USER_PATHS = NO;
 				CLANG_ANALYZER_NONNULL = YES;
@@ -510,6 +571,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				ENVIRONMENT = Debug;
 				INFOPLIST_FILE = CoinDex/Resources/Environments/Release/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -528,6 +590,7 @@
 				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
 				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
 				CODE_SIGN_STYLE = Automatic;
+				ENVIRONMENT = Release;
 				INFOPLIST_FILE = CoinDex/Resources/Environments/Release/Info.plist;
 				LD_RUNPATH_SEARCH_PATHS = (
 					"$(inherited)",
@@ -620,6 +683,122 @@
 			};
 			name = Release;
 		};
+		2758FCD42709C36C009BCB5A /* Staging */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 2758FCEA2709CF52009BCB5A /* Release.xcconfig */;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++14";
+				CLANG_CXX_LIBRARY = "libc++";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				GCC_C_LANGUAGE_STANDARD = gnu11;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = STAGING;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				SWIFT_OPTIMIZATION_LEVEL = "-O";
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Staging;
+		};
+		2758FCD52709C36C009BCB5A /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_STYLE = Automatic;
+				ENVIRONMENT = Staging;
+				INFOPLIST_FILE = CoinDex/Resources/Environments/Release/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coin.dex;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Staging;
+		};
+		2758FCD62709C36C009BCB5A /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				BUNDLE_LOADER = "$(TEST_HOST)";
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinDexTests/Info.plist;
+				IPHONEOS_DEPLOYMENT_TARGET = 14.4;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coin.dex.CoinDexTests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinDex.app/CoinDex";
+			};
+			name = Staging;
+		};
+		2758FCD72709C36C009BCB5A /* Staging */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_EMBED_SWIFT_STANDARD_LIBRARIES = YES;
+				CODE_SIGN_STYLE = Automatic;
+				INFOPLIST_FILE = CoinDexUITests/Info.plist;
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+					"@loader_path/Frameworks",
+				);
+				PRODUCT_BUNDLE_IDENTIFIER = com.test.coin.dex.CoinDexUITests;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+				TEST_TARGET_NAME = CoinDex;
+			};
+			name = Staging;
+		};
 /* End XCBuildConfiguration section */
 
 /* Begin XCConfigurationList section */
@@ -628,6 +807,7 @@
 			buildConfigurations = (
 				2758FC852709B46A009BCB5A /* Debug */,
 				2758FC862709B46A009BCB5A /* Release */,
+				2758FCD42709C36C009BCB5A /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -637,6 +817,7 @@
 			buildConfigurations = (
 				2758FC882709B46A009BCB5A /* Debug */,
 				2758FC892709B46A009BCB5A /* Release */,
+				2758FCD52709C36C009BCB5A /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -646,6 +827,7 @@
 			buildConfigurations = (
 				2758FC8B2709B46A009BCB5A /* Debug */,
 				2758FC8C2709B46A009BCB5A /* Release */,
+				2758FCD62709C36C009BCB5A /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
@@ -655,6 +837,7 @@
 			buildConfigurations = (
 				2758FC8E2709B46A009BCB5A /* Debug */,
 				2758FC8F2709B46A009BCB5A /* Release */,
+				2758FCD72709C36C009BCB5A /* Staging */,
 			);
 			defaultConfigurationIsVisible = 0;
 			defaultConfigurationName = Release;
