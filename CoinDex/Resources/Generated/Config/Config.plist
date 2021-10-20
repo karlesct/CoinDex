@@ -11,7 +11,7 @@
 		<key>Port</key>
 		<string>0</string>
 		<key>Path</key>
-		<string>/test</string>
+		<string></string>
 	</dict>
 </dict>
 </plist>

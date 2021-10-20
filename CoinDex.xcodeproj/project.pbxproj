@@ -7,6 +7,11 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		271EEA302720785700BA30FD /* CDRemoteService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA2F2720785700BA30FD /* CDRemoteService.swift */; };
+		271EEA3427207BE900BA30FD /* HttpMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA3327207BE900BA30FD /* HttpMethods.swift */; };
+		271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA3727207DAB00BA30FD /* UIAlertController+Builder.swift */; };
+		271EEA3B27207E3D00BA30FD /* UIWindow+VisibleViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA3A27207E3D00BA30FD /* UIWindow+VisibleViewController.swift */; };
+		271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA3D27207E7A00BA30FD /* UIViewController+GetTopViewController.swift */; };
 		2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC602709B45E009BCB5A /* AppDelegate.swift */; };
 		2758FC632709B45E009BCB5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC622709B45E009BCB5A /* SceneDelegate.swift */; };
 		2758FC652709B45E009BCB5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC642709B45E009BCB5A /* ViewController.swift */; };
@@ -37,6 +42,11 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		271EEA2F2720785700BA30FD /* CDRemoteService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CDRemoteService.swift; sourceTree = "<group>"; };
+		271EEA3327207BE900BA30FD /* HttpMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HttpMethods.swift; sourceTree = "<group>"; };
+		271EEA3727207DAB00BA30FD /* UIAlertController+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Builder.swift"; sourceTree = "<group>"; };
+		271EEA3A27207E3D00BA30FD /* UIWindow+VisibleViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+VisibleViewController.swift"; sourceTree = "<group>"; };
+		271EEA3D27207E7A00BA30FD /* UIViewController+GetTopViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+GetTopViewController.swift"; sourceTree = "<group>"; };
 		2758FC5D2709B45E009BCB5A /* CoinDexRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinDexRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2758FC602709B45E009BCB5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2758FC622709B45E009BCB5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -82,6 +92,191 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		271EEA1D272075C700BA30FD /* Remote */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA2E2720783300BA30FD /* Service */,
+				271EEA2D272077F300BA30FD /* API */,
+			);
+			path = Remote;
+			sourceTree = "<group>";
+		};
+		271EEA1E272075D100BA30FD /* Simple */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Simple;
+			sourceTree = "<group>";
+		};
+		271EEA1F272075DA00BA30FD /* Coins */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Coins;
+			sourceTree = "<group>";
+		};
+		271EEA20272075E700BA30FD /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		271EEA21272075F900BA30FD /* AssetPlatforms */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = AssetPlatforms;
+			sourceTree = "<group>";
+		};
+		271EEA222720760600BA30FD /* Ping */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Ping;
+			sourceTree = "<group>";
+		};
+		271EEA232720761400BA30FD /* Categrories */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Categrories;
+			sourceTree = "<group>";
+		};
+		271EEA242720761F00BA30FD /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		271EEA252720763100BA30FD /* Finance */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Finance;
+			sourceTree = "<group>";
+		};
+		271EEA262720763E00BA30FD /* Indexes */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Indexes;
+			sourceTree = "<group>";
+		};
+		271EEA272720764C00BA30FD /* Derivates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Derivates;
+			sourceTree = "<group>";
+		};
+		271EEA282720765800BA30FD /* StatusUpdates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = StatusUpdates;
+			sourceTree = "<group>";
+		};
+		271EEA292720766500BA30FD /* Events */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		271EEA2A2720767100BA30FD /* ExchangeRates */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = ExchangeRates;
+			sourceTree = "<group>";
+		};
+		271EEA2B2720767E00BA30FD /* Trending */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Trending;
+			sourceTree = "<group>";
+		};
+		271EEA2C2720768B00BA30FD /* Global */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Global;
+			sourceTree = "<group>";
+		};
+		271EEA2D272077F300BA30FD /* API */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA3127207BCA00BA30FD /* HTTP */,
+				271EEA222720760600BA30FD /* Ping */,
+				271EEA1E272075D100BA30FD /* Simple */,
+				271EEA1F272075DA00BA30FD /* Coins */,
+				271EEA20272075E700BA30FD /* Contract */,
+				271EEA21272075F900BA30FD /* AssetPlatforms */,
+				271EEA232720761400BA30FD /* Categrories */,
+				271EEA242720761F00BA30FD /* Exchanges */,
+				271EEA252720763100BA30FD /* Finance */,
+				271EEA262720763E00BA30FD /* Indexes */,
+				271EEA272720764C00BA30FD /* Derivates */,
+				271EEA282720765800BA30FD /* StatusUpdates */,
+				271EEA292720766500BA30FD /* Events */,
+				271EEA2A2720767100BA30FD /* ExchangeRates */,
+				271EEA2B2720767E00BA30FD /* Trending */,
+				271EEA2C2720768B00BA30FD /* Global */,
+			);
+			path = API;
+			sourceTree = "<group>";
+		};
+		271EEA2E2720783300BA30FD /* Service */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA2F2720785700BA30FD /* CDRemoteService.swift */,
+			);
+			path = Service;
+			sourceTree = "<group>";
+		};
+		271EEA3127207BCA00BA30FD /* HTTP */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA3227207BD400BA30FD /* Methods */,
+			);
+			path = HTTP;
+			sourceTree = "<group>";
+		};
+		271EEA3227207BD400BA30FD /* Methods */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA3327207BE900BA30FD /* HttpMethods.swift */,
+			);
+			path = Methods;
+			sourceTree = "<group>";
+		};
+		271EEA3527207D8F00BA30FD /* Alert */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA3727207DAB00BA30FD /* UIAlertController+Builder.swift */,
+			);
+			path = Alert;
+			sourceTree = "<group>";
+		};
+		271EEA3927207E2000BA30FD /* Window */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA3A27207E3D00BA30FD /* UIWindow+VisibleViewController.swift */,
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		271EEA3C27207E5B00BA30FD /* ViewController */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA3D27207E7A00BA30FD /* UIViewController+GetTopViewController.swift */,
+			);
+			path = ViewController;
+			sourceTree = "<group>";
+		};
 		2758FC542709B45E009BCB5A = {
 			isa = PBXGroup;
 			children = (
@@ -110,6 +305,7 @@
 				2758FC942709B4D1009BCB5A /* Features */,
 				2758FC952709B4DD009BCB5A /* Services */,
 				2758FC962709B4E9009BCB5A /* Utils */,
+				271EEA1D272075C700BA30FD /* Remote */,
 				2758FC602709B45E009BCB5A /* AppDelegate.swift */,
 				2758FC622709B45E009BCB5A /* SceneDelegate.swift */,
 				2758FC642709B45E009BCB5A /* ViewController.swift */,
@@ -140,6 +336,9 @@
 		2758FC932709B4C9009BCB5A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				271EEA3527207D8F00BA30FD /* Alert */,
+				271EEA3C27207E5B00BA30FD /* ViewController */,
+				271EEA3927207E2000BA30FD /* Window */,
 			);
 			path = Extensions;
 			sourceTree = "<group>";
@@ -390,9 +589,14 @@
 			buildActionMask = 2147483647;
 			files = (
 				2758FC652709B45E009BCB5A /* ViewController.swift in Sources */,
+				271EEA302720785700BA30FD /* CDRemoteService.swift in Sources */,
+				271EEA3427207BE900BA30FD /* HttpMethods.swift in Sources */,
+				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
+				271EEA3B27207E3D00BA30FD /* UIWindow+VisibleViewController.swift in Sources */,
 				2758FC632709B45E009BCB5A /* SceneDelegate.swift in Sources */,
+				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
