@@ -23,6 +23,8 @@
 		2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757108E272594DB00348F93 /* DataRequest+Default.swift */; };
 		275710912725954600348F93 /* PingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710902725954600348F93 /* PingRequest.swift */; };
 		27571097272595D100348F93 /* PingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27571096272595D100348F93 /* PingResponse.swift */; };
+		2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757109E2725B20B00348F93 /* CoinsListRequest.swift */; };
+		275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710A02725B21800348F93 /* CoinsListResponse.swift */; };
 		2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC602709B45E009BCB5A /* AppDelegate.swift */; };
 		2758FC632709B45E009BCB5A /* SceneDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC622709B45E009BCB5A /* SceneDelegate.swift */; };
 		2758FC652709B45E009BCB5A /* ViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC642709B45E009BCB5A /* ViewController.swift */; };
@@ -69,6 +71,8 @@
 		2757108E272594DB00348F93 /* DataRequest+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Default.swift"; sourceTree = "<group>"; };
 		275710902725954600348F93 /* PingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingRequest.swift; sourceTree = "<group>"; };
 		27571096272595D100348F93 /* PingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingResponse.swift; sourceTree = "<group>"; };
+		2757109E2725B20B00348F93 /* CoinsListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListRequest.swift; sourceTree = "<group>"; };
+		275710A02725B21800348F93 /* CoinsListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsListResponse.swift; sourceTree = "<group>"; };
 		2758FC5D2709B45E009BCB5A /* CoinDexRelease.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = CoinDexRelease.app; sourceTree = BUILT_PRODUCTS_DIR; };
 		2758FC602709B45E009BCB5A /* AppDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegate.swift; sourceTree = "<group>"; };
 		2758FC622709B45E009BCB5A /* SceneDelegate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SceneDelegate.swift; sourceTree = "<group>"; };
@@ -126,6 +130,7 @@
 		271EEA1E272075D100BA30FD /* Simple */ = {
 			isa = PBXGroup;
 			children = (
+				275710982725B13100348F93 /* Price */,
 			);
 			path = Simple;
 			sourceTree = "<group>";
@@ -133,6 +138,7 @@
 		271EEA1F272075DA00BA30FD /* Coins */ = {
 			isa = PBXGroup;
 			children = (
+				2757109D2725B1F800348F93 /* List */,
 			);
 			path = Coins;
 			sourceTree = "<group>";
@@ -154,8 +160,8 @@
 		271EEA222720760600BA30FD /* Ping */ = {
 			isa = PBXGroup;
 			children = (
-				27571092272595A000348F93 /* Request */,
-				27571094272595B700348F93 /* Response */,
+				275710902725954600348F93 /* PingRequest.swift */,
+				27571096272595D100348F93 /* PingResponse.swift */,
 			);
 			path = Ping;
 			sourceTree = "<group>";
@@ -348,20 +354,20 @@
 			path = DataRequest;
 			sourceTree = "<group>";
 		};
-		27571092272595A000348F93 /* Request */ = {
+		275710982725B13100348F93 /* Price */ = {
 			isa = PBXGroup;
 			children = (
-				275710902725954600348F93 /* PingRequest.swift */,
 			);
-			path = Request;
+			path = Price;
 			sourceTree = "<group>";
 		};
-		27571094272595B700348F93 /* Response */ = {
+		2757109D2725B1F800348F93 /* List */ = {
 			isa = PBXGroup;
 			children = (
-				27571096272595D100348F93 /* PingResponse.swift */,
+				2757109E2725B20B00348F93 /* CoinsListRequest.swift */,
+				275710A02725B21800348F93 /* CoinsListResponse.swift */,
 			);
-			path = Response;
+			path = List;
 			sourceTree = "<group>";
 		};
 		2758FC542709B45E009BCB5A = {
@@ -678,6 +684,8 @@
 			buildActionMask = 2147483647;
 			files = (
 				2758FC652709B45E009BCB5A /* ViewController.swift in Sources */,
+				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
+				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,

@@ -9,14 +9,14 @@ struct PingRequest: DataRequest {
 
     var url: String {
         let baseURL: String = "https://api.coingecko.com/api/v3"
-        return baseURL
+        return baseURL + path
     }
 
     var path: String {
         return "/ping"
     }
 
-    var queryItems: [HTTPHeaderKey: HTTPHeaderValue] {
+    var headers: [HTTPHeaderKey: HTTPHeaderValue] {
         [
             .accept: .applicationJson
         ]
@@ -28,7 +28,7 @@ struct PingRequest: DataRequest {
 
     func decode(_ data: Data) throws -> PingResponse {
         let decoder = JSONDecoder()
-
+        decoder.keyDecodingStrategy = .convertFromSnakeCase
         let response = try decoder.decode(PingResponse.self, from: data)
         return response
     }

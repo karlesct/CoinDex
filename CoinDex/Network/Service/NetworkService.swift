@@ -14,17 +14,41 @@ final class DefaultNetworkService: NetworkService {
 
     func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void) {
 
-        guard let url = URL(string: request.url) else {
+        guard var urlComponent = URLComponents(string: request.url) else {
             let error = NSError(
                 domain: "HTTPStatusCode.notFound",
                 code: 404,
                 userInfo: nil
             )
-            completion(.failure(error))
-            return
+
+            return completion(.failure(error))
         }
 
-        let urlRequest = request.getURLRequest(url)
+        var queryItems: [URLQueryItem] = []
+
+        request.queryItems?.forEach {
+            let urlQueryItem = URLQueryItem(name: $0.key, value: $0.value)
+            urlComponent.queryItems?.append(urlQueryItem)
+            queryItems.append(urlQueryItem)
+        }
+
+        urlComponent.queryItems = queryItems
+
+        guard let url = urlComponent.url else {
+            let error = NSError(
+                domain: "HTTPStatusCode.notFound",
+                code: 404,
+                userInfo: nil
+            )
+
+            return completion(.failure(error))
+        }
+
+        // 6
+        var urlRequest = URLRequest(url: url)
+        urlRequest.httpMethod = request.method.rawValue
+        request.headers?.forEach { urlRequest.addValue($1.rawValue,
+                                                       forHTTPHeaderField: $0.rawValue)}
 
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             if let error = error {
