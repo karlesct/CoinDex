@@ -20,7 +20,23 @@ class ViewController: UIViewController {
 
         let config = ConfigLoader.parseFile()
         print(config.API)
+        let test = test()
+        test.fetchPing()
     }
 
 }
 
+class test {
+
+    func fetchPing() {
+            let request = PingRequest()
+            DefaultNetworkService().request(request) { [weak self] result in
+                switch result {
+                case .success(let model):
+                    NSLog("login url: \(model)")
+                case .failure(let error):
+                    NSLog("login url: \(error)")
+                }
+            }
+        }
+}

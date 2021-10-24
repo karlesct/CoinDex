@@ -25,52 +25,42 @@ extension UIAlertController {
 
         // MARK: - Methods
 
-        func withPreferredStyle(_ preferredStyle: UIAlertController.Style) -> Builder {
+        func preferredStyle(_ preferredStyle: UIAlertController.Style) -> Builder {
 
             self.preferredStyle = preferredStyle
             return self
         }
 
-        func withTitle(_ title: String?) -> Builder {
+        func title(_ title: String?) -> Builder {
 
             self.title = title
             return self
         }
 
-        func withMessage(_ message: String?) -> Builder {
+        func message(_ message: String?) -> Builder {
 
             self.message = message
             return self
         }
 
-        func withAlertActions(_ alertActions: [UIAlertAction]) -> Builder {
+        func alertActions(_ alertActions: [UIAlertAction]) -> Builder {
 
             self.alertActions = alertActions
             return self
         }
 
-        func withSourceView(_ sourceView: UIView?) -> Builder {
+        func sourceView(_ sourceView: UIView?) -> Builder {
 
             self.sourceView = sourceView
             return self
         }
 
-        func withSourceRect(_ sourceRect: CGRect?) -> Builder {
+        func sourceRect(_ sourceRect: CGRect?) -> Builder {
 
             self.sourceRect = sourceRect
             return self
         }
 
-        func addActionWithTitle(_ title: String,
-                                alertActionStyle: UIAlertAction.Style = .default,
-                                handler: ((UIAlertAction) -> Void)? = nil) -> Builder {
-
-            let action = UIAlertAction(title: title,
-                                       style: alertActionStyle,
-                                       handler: handler)
-            self.alertActions.append(action)
-            return self
-        }
 
         func showIn(_ viewController: UIViewController,
                     animater: Bool = true,
@@ -79,15 +69,6 @@ extension UIAlertController {
             viewController.present(build(),
                                    animated: animater,
                                    completion: completion)
-        }
-
-        func show(animater: Bool = true, completion: (() -> Void)? = nil) {
-            DispatchQueue.main.async {
-                guard let viewController = UIViewController().getTopViewController else { return }
-                viewController.present(self.build(),
-                                       animated: true,
-                                       completion: nil)
-            }
         }
 
         func build() -> UIAlertController {
