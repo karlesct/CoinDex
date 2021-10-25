@@ -7,8 +7,13 @@ import Foundation
 
 struct CoinsListRequest: DataRequest {
 
+    let baseURL: String
+
+    init(baseURL: String) {
+        self.baseURL = baseURL
+    }
+
     var url: String {
-        let baseURL: String = "https://api.coingecko.com/api/v3"
         return baseURL + path
     }
 

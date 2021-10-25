@@ -8,6 +8,7 @@ import Foundation
 protocol DataRequest {
     associatedtype Response
 
+    var baseURL: String { get }
     var url: String { get }
     var path: String { get }
     var method: HTTPMethod { get }

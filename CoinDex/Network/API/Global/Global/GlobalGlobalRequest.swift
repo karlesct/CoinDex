@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct PingRequest: DataRequest {
+struct GlobalGlobalRequest: DataRequest {
 
     let baseURL: String
 
@@ -18,7 +18,7 @@ struct PingRequest: DataRequest {
     }
 
     var path: String {
-        return "/ping"
+        return "/global"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -31,10 +31,11 @@ struct PingRequest: DataRequest {
         .get
     }
 
-    func decode(_ data: Data) throws -> PingResponse {
+    func decode(_ data: Data) throws -> DataCodable<GlobalGlobalResponse> {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(PingResponse.self, from: data)
+        let response = try decoder.decode(DataCodable<GlobalGlobalResponse>.self, from: data)
         return response
     }
 }
+

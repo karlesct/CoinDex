@@ -5,13 +5,13 @@
 	<key>API</key>
 	<dict>
 		<key>Scheme</key>
-		<string>https</string>
+		<string>https://</string>
 		<key>Host</key>
-		<string>test.com</string>
+		<string>api.coingecko.com</string>
 		<key>Port</key>
 		<string>0</string>
 		<key>Path</key>
-		<string></string>
+		<string>/api/v3</string>
 	</dict>
 </dict>
 </plist>

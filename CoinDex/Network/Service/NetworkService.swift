@@ -44,11 +44,14 @@ final class DefaultNetworkService: NetworkService {
             return completion(.failure(error))
         }
 
-        // 6
+        NSLog(url.absoluteString)
+
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.method.rawValue
         request.headers?.forEach { urlRequest.addValue($1.rawValue,
                                                        forHTTPHeaderField: $0.rawValue)}
+
+
 
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             if let error = error {
@@ -63,6 +66,9 @@ final class DefaultNetworkService: NetworkService {
             guard let data = data else {
                 return completion(.failure(NSError()))
             }
+
+            let str = String(decoding: data, as: UTF8.self)
+            NSLog(str)
 
             do {
                 try completion(.success(request.decode(data)))

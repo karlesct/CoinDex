@@ -23,11 +23,11 @@ class ConfigLoader {
 }
 
 struct Configuration: Decodable {
-    let API: configs?
+    let API: APIModel?
 //    let testFlags: TestFlags?
 }
 
-struct configs: Decodable {
+struct APIModel: Decodable {
     let Scheme: String
     let Host: String
     let Port: String
