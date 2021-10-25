@@ -21,8 +21,9 @@ class ViewController: UIViewController {
         let config = ConfigLoader.parseFile()
         print(config.API)
         let test = test()
-//        test.fetchPing()
-        test.fetchCoinList()
+        //        test.fetchPing()
+//        test.fetchCoinList()
+        test.fetchFinancePlatforms()
     }
 
 }
@@ -30,26 +31,39 @@ class ViewController: UIViewController {
 class test {
 
     func fetchPing() {
-            let request = PingRequest()
-            DefaultNetworkService().request(request) { [weak self] result in
-                switch result {
-                case .success(let model):
-                    NSLog("login url: \(model)")
-                case .failure(let error):
-                    NSLog("login url: \(error)")
-                }
+        let request = PingRequest()
+        DefaultNetworkService().request(request) { [weak self] result in
+            switch result {
+            case .success(let model):
+                NSLog("login url: \(model)")
+            case .failure(let error):
+                NSLog("login url: \(error)")
             }
         }
+    }
 
     func fetchCoinList() {
-            let request = CoinsListRequest()
-            DefaultNetworkService().request(request) { [weak self] result in
-                switch result {
-                case .success(let model):
-                    NSLog("login url: \(model)")
-                case .failure(let error):
-                    NSLog("login url: \(error)")
-                }
+        let request = CoinsListRequest()
+        DefaultNetworkService().request(request) { [weak self] result in
+            switch result {
+            case .success(let model):
+                NSLog("login url: \(model)")
+            case .failure(let error):
+                NSLog("login url: \(error)")
             }
         }
+    }
+
+    func fetchFinancePlatforms() {
+        let request = FinancePlatformsRequest()
+        DefaultNetworkService().request(request) { [weak self] result in
+            switch result {
+            case .success(let model):
+                NSLog("login url: \(model)")
+            case .failure(let error):
+                NSLog("login url: \(error)")
+            }
+        }
+    }
 }
+
