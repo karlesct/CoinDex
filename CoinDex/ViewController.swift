@@ -29,7 +29,8 @@ class ViewController: UIViewController {
 //        test.fetchGlobalGlobal(baseURL: baseURL)
 //        test.fetchGlobalDecentralizedFinanceDefi(baseURL: baseURL)
 //        test.fetchTrendingRequest(baseURL: baseURL)
-        test.fetchExchangeRate(baseURL: baseURL)
+//        test.fetchExchangeRate(baseURL: baseURL)
+        test.fetchAssetPlatform(baseURL: baseURL)
     }
 
 }
@@ -110,6 +111,18 @@ class test {
 
     func fetchExchangeRate(baseURL: String) {
         let request = ExchangeRateRequest(baseURL: baseURL)
+        DefaultNetworkService().request(request) { [weak self] result in
+            switch result {
+            case .success(let model):
+                NSLog("login url: \(model)")
+            case .failure(let error):
+                NSLog("login url: \(error)")
+            }
+        }
+    }
+
+    func fetchAssetPlatform(baseURL: String) {
+        let request = AssetPlatformsRequest(baseURL: baseURL)
         DefaultNetworkService().request(request) { [weak self] result in
             switch result {
             case .success(let model):

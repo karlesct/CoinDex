@@ -5,8 +5,8 @@
 
 import Foundation
 
-/// Use this to obtain all the coins' id in order to make API calls
-struct CoinsListRequest: DataRequest {
+/// List all asset platforms
+struct AssetPlatformsRequest: DataRequest {
 
     let baseURL: String
 
@@ -19,7 +19,7 @@ struct CoinsListRequest: DataRequest {
     }
 
     var path: String {
-        return "/coins/list"
+        return "/asset_platforms"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -38,10 +38,10 @@ struct CoinsListRequest: DataRequest {
         ]
     }
 
-    func decode(_ data: Data) throws -> CoinsListResponseArray {
+    func decode(_ data: Data) throws -> AssetPlatformsResponseArray {
         let decoder = JSONDecoder()
 
-        let response = try decoder.decode(CoinsListResponseArray.self, from: data)
+        let response = try decoder.decode(AssetPlatformsResponseArray.self, from: data)
         return response
     }
 }
