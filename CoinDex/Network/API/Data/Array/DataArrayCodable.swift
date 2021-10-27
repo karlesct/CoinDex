@@ -5,6 +5,6 @@
 
 import Foundation
 
-struct DataCodable<T: Codable>: Codable {
-    let data: T
+struct DataArrayCodable<T: Codable>: Codable {
+    let data: [T]
 }

@@ -41,13 +41,28 @@
 		27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA08F2726B87A000FD326 /* GlobalGlobalResponse.swift */; };
 		27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0922726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift */; };
 		27ABA0952726BE92000FD326 /* GlobalDecentralizedFinanceDefiResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0942726BE92000FD326 /* GlobalDecentralizedFinanceDefiResponse.swift */; };
-		27ABA0982726BF6A000FD326 /* DataCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0972726BF6A000FD326 /* DataCodable.swift */; };
+		27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0972726BF6A000FD326 /* DataItemCodable.swift */; };
 		27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0992726C374000FD326 /* TrendingRequest.swift */; };
 		27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA09B2726C380000FD326 /* TrendingResponse.swift */; };
 		27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA09D2726C5A4000FD326 /* ExchangeRateRequest.swift */; };
 		27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA09F2726C5AF000FD326 /* ExchangeRateResponse.swift */; };
 		27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0A12729689B000FD326 /* AssetPlatformsRequest.swift */; };
 		27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0A3272968A9000FD326 /* AssetPlatformsResponse.swift */; };
+		27ABA0A727296B17000FD326 /* CategoriesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0A627296B17000FD326 /* CategoriesListRequest.swift */; };
+		27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0A827296B27000FD326 /* CategoriesListResponse.swift */; };
+		27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0AB27296DB0000FD326 /* CategoriesRequest.swift */; };
+		27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0AD27296DBD000FD326 /* CategoriesResponse.swift */; };
+		27ABA0B127296F55000FD326 /* EventsCountriesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0B027296F55000FD326 /* EventsCountriesRequest.swift */; };
+		27ABA0B327296F62000FD326 /* EventsCountriesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0B227296F62000FD326 /* EventsCountriesResponse.swift */; };
+		27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0B627297633000FD326 /* DataArrayCodable.swift */; };
+		27ABA0BA272976B4000FD326 /* EventTypesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0B9272976B4000FD326 /* EventTypesRequest.swift */; };
+		27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0BB272976C9000FD326 /* EventTypesResponse.swift */; };
+		27ABA0BF27297BAC000FD326 /* EventsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0BE27297BAC000FD326 /* EventsRequest.swift */; };
+		27ABA0C127297BC6000FD326 /* EventsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0C027297BC6000FD326 /* EventsResponse.swift */; };
+		27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0C327299076000FD326 /* CompaniesRequest.swift */; };
+		27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0C52729908A000FD326 /* CompaniesResponse.swift */; };
+		27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0C7272993CC000FD326 /* StatusUpdateRequest.swift */; };
+		27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0C9272993E6000FD326 /* StatusUpdateResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -110,13 +125,28 @@
 		27ABA08F2726B87A000FD326 /* GlobalGlobalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalGlobalResponse.swift; sourceTree = "<group>"; };
 		27ABA0922726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDecentralizedFinanceDefiRequest.swift; sourceTree = "<group>"; };
 		27ABA0942726BE92000FD326 /* GlobalDecentralizedFinanceDefiResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDecentralizedFinanceDefiResponse.swift; sourceTree = "<group>"; };
-		27ABA0972726BF6A000FD326 /* DataCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataCodable.swift; sourceTree = "<group>"; };
+		27ABA0972726BF6A000FD326 /* DataItemCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataItemCodable.swift; sourceTree = "<group>"; };
 		27ABA0992726C374000FD326 /* TrendingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingRequest.swift; sourceTree = "<group>"; };
 		27ABA09B2726C380000FD326 /* TrendingResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrendingResponse.swift; sourceTree = "<group>"; };
 		27ABA09D2726C5A4000FD326 /* ExchangeRateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateRequest.swift; sourceTree = "<group>"; };
 		27ABA09F2726C5AF000FD326 /* ExchangeRateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeRateResponse.swift; sourceTree = "<group>"; };
 		27ABA0A12729689B000FD326 /* AssetPlatformsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPlatformsRequest.swift; sourceTree = "<group>"; };
 		27ABA0A3272968A9000FD326 /* AssetPlatformsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AssetPlatformsResponse.swift; sourceTree = "<group>"; };
+		27ABA0A627296B17000FD326 /* CategoriesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListRequest.swift; sourceTree = "<group>"; };
+		27ABA0A827296B27000FD326 /* CategoriesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesListResponse.swift; sourceTree = "<group>"; };
+		27ABA0AB27296DB0000FD326 /* CategoriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesRequest.swift; sourceTree = "<group>"; };
+		27ABA0AD27296DBD000FD326 /* CategoriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CategoriesResponse.swift; sourceTree = "<group>"; };
+		27ABA0B027296F55000FD326 /* EventsCountriesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCountriesRequest.swift; sourceTree = "<group>"; };
+		27ABA0B227296F62000FD326 /* EventsCountriesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsCountriesResponse.swift; sourceTree = "<group>"; };
+		27ABA0B627297633000FD326 /* DataArrayCodable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataArrayCodable.swift; sourceTree = "<group>"; };
+		27ABA0B9272976B4000FD326 /* EventTypesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypesRequest.swift; sourceTree = "<group>"; };
+		27ABA0BB272976C9000FD326 /* EventTypesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventTypesResponse.swift; sourceTree = "<group>"; };
+		27ABA0BE27297BAC000FD326 /* EventsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsRequest.swift; sourceTree = "<group>"; };
+		27ABA0C027297BC6000FD326 /* EventsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = EventsResponse.swift; sourceTree = "<group>"; };
+		27ABA0C327299076000FD326 /* CompaniesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesRequest.swift; sourceTree = "<group>"; };
+		27ABA0C52729908A000FD326 /* CompaniesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CompaniesResponse.swift; sourceTree = "<group>"; };
+		27ABA0C7272993CC000FD326 /* StatusUpdateRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUpdateRequest.swift; sourceTree = "<group>"; };
+		27ABA0C9272993E6000FD326 /* StatusUpdateResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StatusUpdateResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -194,11 +224,13 @@
 			path = Ping;
 			sourceTree = "<group>";
 		};
-		271EEA232720761400BA30FD /* Categrories */ = {
+		271EEA232720761400BA30FD /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				27ABA0AA27296D97000FD326 /* Categories */,
+				27ABA0A527296B05000FD326 /* List */,
 			);
-			path = Categrories;
+			path = Categories;
 			sourceTree = "<group>";
 		};
 		271EEA242720761F00BA30FD /* Exchanges */ = {
@@ -233,6 +265,8 @@
 		271EEA282720765800BA30FD /* StatusUpdates */ = {
 			isa = PBXGroup;
 			children = (
+				27ABA0C7272993CC000FD326 /* StatusUpdateRequest.swift */,
+				27ABA0C9272993E6000FD326 /* StatusUpdateResponse.swift */,
 			);
 			path = StatusUpdates;
 			sourceTree = "<group>";
@@ -240,6 +274,9 @@
 		271EEA292720766500BA30FD /* Events */ = {
 			isa = PBXGroup;
 			children = (
+				27ABA0BD27297B60000FD326 /* Events */,
+				27ABA0AF27296F37000FD326 /* Countries */,
+				27ABA0B82729768F000FD326 /* Types */,
 			);
 			path = Events;
 			sourceTree = "<group>";
@@ -280,7 +317,7 @@
 				271EEA1F272075DA00BA30FD /* Coins */,
 				271EEA20272075E700BA30FD /* Contract */,
 				271EEA21272075F900BA30FD /* AssetPlatforms */,
-				271EEA232720761400BA30FD /* Categrories */,
+				271EEA232720761400BA30FD /* Categories */,
 				271EEA242720761F00BA30FD /* Exchanges */,
 				271EEA252720763100BA30FD /* Finance */,
 				271EEA262720763E00BA30FD /* Indexes */,
@@ -290,6 +327,7 @@
 				271EEA2A2720767100BA30FD /* ExchangeRates */,
 				271EEA2B2720767E00BA30FD /* Trending */,
 				271EEA2C2720768B00BA30FD /* Global */,
+				27ABA0C22729905F000FD326 /* Companies */,
 			);
 			path = API;
 			sourceTree = "<group>";
@@ -594,9 +632,80 @@
 		27ABA0962726BF54000FD326 /* Data */ = {
 			isa = PBXGroup;
 			children = (
-				27ABA0972726BF6A000FD326 /* DataCodable.swift */,
+				27ABA0B5272975E0000FD326 /* Item */,
+				27ABA0B4272975D7000FD326 /* Array */,
 			);
 			path = Data;
+			sourceTree = "<group>";
+		};
+		27ABA0A527296B05000FD326 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0A627296B17000FD326 /* CategoriesListRequest.swift */,
+				27ABA0A827296B27000FD326 /* CategoriesListResponse.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		27ABA0AA27296D97000FD326 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0AB27296DB0000FD326 /* CategoriesRequest.swift */,
+				27ABA0AD27296DBD000FD326 /* CategoriesResponse.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		27ABA0AF27296F37000FD326 /* Countries */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0B027296F55000FD326 /* EventsCountriesRequest.swift */,
+				27ABA0B227296F62000FD326 /* EventsCountriesResponse.swift */,
+			);
+			path = Countries;
+			sourceTree = "<group>";
+		};
+		27ABA0B4272975D7000FD326 /* Array */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0B627297633000FD326 /* DataArrayCodable.swift */,
+			);
+			path = Array;
+			sourceTree = "<group>";
+		};
+		27ABA0B5272975E0000FD326 /* Item */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0972726BF6A000FD326 /* DataItemCodable.swift */,
+			);
+			path = Item;
+			sourceTree = "<group>";
+		};
+		27ABA0B82729768F000FD326 /* Types */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0B9272976B4000FD326 /* EventTypesRequest.swift */,
+				27ABA0BB272976C9000FD326 /* EventTypesResponse.swift */,
+			);
+			path = Types;
+			sourceTree = "<group>";
+		};
+		27ABA0BD27297B60000FD326 /* Events */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0BE27297BAC000FD326 /* EventsRequest.swift */,
+				27ABA0C027297BC6000FD326 /* EventsResponse.swift */,
+			);
+			path = Events;
+			sourceTree = "<group>";
+		};
+		27ABA0C22729905F000FD326 /* Companies */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0C327299076000FD326 /* CompaniesRequest.swift */,
+				27ABA0C52729908A000FD326 /* CompaniesResponse.swift */,
+			);
+			path = Companies;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -754,8 +863,11 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
 				2758FC652709B45E009BCB5A /* ViewController.swift in Sources */,
+				27ABA0C127297BC6000FD326 /* EventsResponse.swift in Sources */,
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
+				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */,
 				27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */,
@@ -766,25 +878,37 @@
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
+				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
+				27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
+				27ABA0B127296F55000FD326 /* EventsCountriesRequest.swift in Sources */,
 				271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */,
+				27ABA0BF27297BAC000FD326 /* EventsRequest.swift in Sources */,
+				27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */,
 				275710882725941F00348F93 /* DataRequest.swift in Sources */,
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
-				27ABA0982726BF6A000FD326 /* DataCodable.swift in Sources */,
+				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
 				275710912725954600348F93 /* PingRequest.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
 				271EEA3B27207E3D00BA30FD /* UIWindow+VisibleViewController.swift in Sources */,
+				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
 				27ABA0892726AF4F000FD326 /* FinancePlatformsRequest.swift in Sources */,
+				27ABA0BA272976B4000FD326 /* EventTypesRequest.swift in Sources */,
 				27ABA0952726BE92000FD326 /* GlobalDecentralizedFinanceDefiResponse.swift in Sources */,
+				27ABA0A727296B17000FD326 /* CategoriesListRequest.swift in Sources */,
 				2758FC632709B45E009BCB5A /* SceneDelegate.swift in Sources */,
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
+				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
+				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
+				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
+				27ABA0B327296F62000FD326 /* EventsCountriesResponse.swift in Sources */,
 				271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,

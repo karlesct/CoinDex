@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// Top-7 trending coins as searched by users in the last 24 hours (Ordered by most popular first)
 struct TrendingRequest: DataRequest {
 
     let baseURL: String

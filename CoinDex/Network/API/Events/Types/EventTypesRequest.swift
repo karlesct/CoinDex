@@ -5,8 +5,8 @@
 
 import Foundation
 
-/// List all asset platforms
-struct AssetPlatformsRequest: DataRequest {
+/// Get list of event types
+struct EventTypesRequest: DataRequest {
 
     let baseURL: String
 
@@ -19,7 +19,7 @@ struct AssetPlatformsRequest: DataRequest {
     }
 
     var path: String {
-        return "/asset_platforms"
+        return "/events/types"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -31,11 +31,11 @@ struct AssetPlatformsRequest: DataRequest {
     var method: HTTPMethod {
         .get
     }
-    
-    func decode(_ data: Data) throws -> AssetPlatformsResponseArray {
+
+    func decode(_ data: Data) throws -> EventTypesResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(AssetPlatformsResponseArray.self, from: data)
+        let response = try decoder.decode(EventTypesResponse.self, from: data)
         return response
     }
 }

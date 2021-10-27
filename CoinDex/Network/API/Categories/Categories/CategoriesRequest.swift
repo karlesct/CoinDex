@@ -5,8 +5,8 @@
 
 import Foundation
 
-/// List all asset platforms
-struct AssetPlatformsRequest: DataRequest {
+/// List all categories with market data
+struct CategoriesRequest: DataRequest {
 
     let baseURL: String
 
@@ -19,7 +19,7 @@ struct AssetPlatformsRequest: DataRequest {
     }
 
     var path: String {
-        return "/asset_platforms"
+        return "/coins/categories"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -31,11 +31,11 @@ struct AssetPlatformsRequest: DataRequest {
     var method: HTTPMethod {
         .get
     }
-    
-    func decode(_ data: Data) throws -> AssetPlatformsResponseArray {
+
+    func decode(_ data: Data) throws -> CategoriesResponseArray {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(AssetPlatformsResponseArray.self, from: data)
+        let response = try decoder.decode(CategoriesResponseArray.self, from: data)
         return response
     }
 }

@@ -5,8 +5,8 @@
 
 import Foundation
 
-/// List all asset platforms
-struct AssetPlatformsRequest: DataRequest {
+/// Get public companies bitcoin or ethereum holdings (Ordered by total holdings descending)
+struct CompaniesRequest: DataRequest {
 
     let baseURL: String
 
@@ -19,7 +19,7 @@ struct AssetPlatformsRequest: DataRequest {
     }
 
     var path: String {
-        return "/asset_platforms"
+        return "/companies/public_treasury/bitcoin"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -31,11 +31,17 @@ struct AssetPlatformsRequest: DataRequest {
     var method: HTTPMethod {
         .get
     }
-    
-    func decode(_ data: Data) throws -> AssetPlatformsResponseArray {
+
+//    var queryItems: [String : String]? {
+//        [
+//            "coin_id" : "bitcoin"          // bitcoin or ethereum
+//        ]
+//    }
+
+    func decode(_ data: Data) throws -> CompaniesResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(AssetPlatformsResponseArray.self, from: data)
+        let response = try decoder.decode(CompaniesResponse.self, from: data)
         return response
     }
 }

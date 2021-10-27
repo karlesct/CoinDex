@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// Get Top 100 Cryptocurrency Global Eecentralized Finance(defi) data
 struct GlobalDecentralizedFinanceDefiRequest: DataRequest {
 
     let baseURL: String
@@ -31,10 +32,10 @@ struct GlobalDecentralizedFinanceDefiRequest: DataRequest {
         .get
     }
 
-    func decode(_ data: Data) throws -> DataCodable<GlobalDecentralizedFinanceDefiResponse> {
+    func decode(_ data: Data) throws -> DataItemCodable<GlobalDecentralizedFinanceDefiResponse> {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(DataCodable<GlobalDecentralizedFinanceDefiResponse>.self, from: data)
+        let response = try decoder.decode(DataItemCodable<GlobalDecentralizedFinanceDefiResponse>.self, from: data)
         return response
     }
 }

@@ -5,8 +5,8 @@
 
 import Foundation
 
-/// List all asset platforms
-struct AssetPlatformsRequest: DataRequest {
+/// Get list of event countries
+struct EventsCountriesRequest: DataRequest {
 
     let baseURL: String
 
@@ -19,7 +19,7 @@ struct AssetPlatformsRequest: DataRequest {
     }
 
     var path: String {
-        return "/asset_platforms"
+        return "/events/countries"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -31,11 +31,11 @@ struct AssetPlatformsRequest: DataRequest {
     var method: HTTPMethod {
         .get
     }
-    
-    func decode(_ data: Data) throws -> AssetPlatformsResponseArray {
+
+    func decode(_ data: Data) throws -> DataArrayCodable<EventsCountriesResponse> {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(AssetPlatformsResponseArray.self, from: data)
+        let response = try decoder.decode(DataArrayCodable<EventsCountriesResponse>.self, from: data)
         return response
     }
 }

@@ -5,6 +5,7 @@
 
 import Foundation
 
+/// Get cryptocurrency global data
 struct GlobalGlobalRequest: DataRequest {
 
     let baseURL: String
@@ -31,10 +32,10 @@ struct GlobalGlobalRequest: DataRequest {
         .get
     }
 
-    func decode(_ data: Data) throws -> DataCodable<GlobalGlobalResponse> {
+    func decode(_ data: Data) throws -> DataItemCodable<GlobalGlobalResponse> {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(DataCodable<GlobalGlobalResponse>.self, from: data)
+        let response = try decoder.decode(DataItemCodable<GlobalGlobalResponse>.self, from: data)
         return response
     }
 }

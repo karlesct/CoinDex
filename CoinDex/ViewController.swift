@@ -22,107 +22,31 @@ class ViewController: UIViewController {
         else { return }
         print(configAPI)
         let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
+        
         let test = test()
-//        test.fetchPing(baseUR: baseURL)
-//        test.fetchCoinList(baseUR: baseURL)
-//        test.fetchFinancePlatforms(baseURL: baseURL)
-//        test.fetchGlobalGlobal(baseURL: baseURL)
-//        test.fetchGlobalDecentralizedFinanceDefi(baseURL: baseURL)
-//        test.fetchTrendingRequest(baseURL: baseURL)
-//        test.fetchExchangeRate(baseURL: baseURL)
-        test.fetchAssetPlatform(baseURL: baseURL)
+//        let request = PingRequest(baseURL: baseURL)
+//        let request = CoinsListRequest(baseURL: baseURL)
+//        let request = FinancePlatformsRequest(baseURL: baseURL)
+//        let request = GlobalGlobalRequest(baseURL: baseURL)
+//        let request = GlobalDecentralizedFinanceDefiRequest(baseURL: baseURL)
+//        let request = TrendingRequest(baseURL: baseURL)
+//        let request = ExchangeRateRequest(baseURL: baseURL)
+//        let request = AssetPlatformsRequest(baseURL: baseURL)
+//        let request = CategoriesListRequest(baseURL: baseURL)
+//        let request = CategoriesRequest(baseURL: baseURL)
+//        let request = EventsCountriesRequest(baseURL: baseURL)
+//        let request = EventTypesRequest(baseURL: baseURL)
+//        let request = EventsRequest(baseURL: baseURL)
+//        let request = CompaniesRequest(baseURL: baseURL)
+        let request = StatusUpdateRequest(baseURL: baseURL)
+        test.fetch(request: request)
     }
 
 }
 
 class test {
 
-    func fetchPing(baseURL: String) {
-        let request = PingRequest(baseURL: baseURL)
-        DefaultNetworkService().request(request) { [weak self] result in
-            switch result {
-            case .success(let model):
-                NSLog("login url: \(model)")
-            case .failure(let error):
-                NSLog("login url: \(error)")
-            }
-        }
-    }
-
-    func fetchCoinList(baseURL: String) {
-        let request = CoinsListRequest(baseURL: baseURL)
-        DefaultNetworkService().request(request) { [weak self] result in
-            switch result {
-            case .success(let model):
-                NSLog("login url: \(model)")
-            case .failure(let error):
-                NSLog("login url: \(error)")
-            }
-        }
-    }
-
-    func fetchFinancePlatforms(baseURL: String) {
-        let request = FinancePlatformsRequest(baseURL: baseURL)
-        DefaultNetworkService().request(request) { [weak self] result in
-            switch result {
-            case .success(let model):
-                NSLog("login url: \(model)")
-            case .failure(let error):
-                NSLog("login url: \(error)")
-            }
-        }
-    }
-
-    func fetchGlobalGlobal(baseURL: String) {
-        let request = GlobalGlobalRequest(baseURL: baseURL)
-        DefaultNetworkService().request(request) { [weak self] result in
-            switch result {
-            case .success(let model):
-                NSLog("login url: \(model)")
-            case .failure(let error):
-                NSLog("login url: \(error)")
-            }
-        }
-    }
-
-    func fetchGlobalDecentralizedFinanceDefi(baseURL: String) {
-        let request = GlobalDecentralizedFinanceDefiRequest(baseURL: baseURL)
-        DefaultNetworkService().request(request) { [weak self] result in
-            switch result {
-            case .success(let model):
-                NSLog("login url: \(model)")
-            case .failure(let error):
-                NSLog("login url: \(error)")
-            }
-        }
-    }
-
-    func fetchTrendingRequest(baseURL: String) {
-        let request = TrendingRequest(baseURL: baseURL)
-        DefaultNetworkService().request(request) { [weak self] result in
-            switch result {
-            case .success(let model):
-                NSLog("login url: \(model)")
-            case .failure(let error):
-                NSLog("login url: \(error)")
-            }
-        }
-    }
-
-    func fetchExchangeRate(baseURL: String) {
-        let request = ExchangeRateRequest(baseURL: baseURL)
-        DefaultNetworkService().request(request) { [weak self] result in
-            switch result {
-            case .success(let model):
-                NSLog("login url: \(model)")
-            case .failure(let error):
-                NSLog("login url: \(error)")
-            }
-        }
-    }
-
-    func fetchAssetPlatform(baseURL: String) {
-        let request = AssetPlatformsRequest(baseURL: baseURL)
+    func fetch<T: DataRequest>(request: T) {
         DefaultNetworkService().request(request) { [weak self] result in
             switch result {
             case .success(let model):
@@ -133,6 +57,8 @@ class test {
         }
     }
 }
+
+
 
 
 
