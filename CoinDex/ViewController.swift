@@ -38,7 +38,11 @@ class ViewController: UIViewController {
 //        let request = EventTypesRequest(baseURL: baseURL)
 //        let request = EventsRequest(baseURL: baseURL)
 //        let request = CompaniesRequest(baseURL: baseURL)
-        let request = StatusUpdateRequest(baseURL: baseURL)
+//        let request = StatusUpdateRequest(baseURL: baseURL)
+//        let request = DerivativesRequest(baseURL: baseURL)
+//        let request = DerivativesExchangesRequest(baseURL: baseURL)
+//        let request = ExchangesListRequest(baseURL: baseURL)
+        let request = ExchangeDataRequest(baseURL: baseURL)
         test.fetch(request: request)
     }
 
