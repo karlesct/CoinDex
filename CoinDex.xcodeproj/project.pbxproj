@@ -71,6 +71,12 @@
 		27ABA0DA2729B1C8000FD326 /* ExchangesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0D92729B1C8000FD326 /* ExchangesListResponse.swift */; };
 		27ABA0DD2729B2D5000FD326 /* ExchangeDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0DC2729B2D5000FD326 /* ExchangeDataRequest.swift */; };
 		27ABA0DF2729B2E2000FD326 /* ExchangeDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0DE2729B2E2000FD326 /* ExchangeDataResponse.swift */; };
+		27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E1272EC604000FD326 /* IndexesRequest.swift */; };
+		27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E3272EC613000FD326 /* IndexesResponse.swift */; };
+		27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E6272EC766000FD326 /* IndexesListRequest.swift */; };
+		27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E8272EC777000FD326 /* IndexesListResponse.swift */; };
+		27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0EB27317F4D000FD326 /* FinanceProductsRequest.swift */; };
+		27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -163,6 +169,12 @@
 		27ABA0D92729B1C8000FD326 /* ExchangesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListResponse.swift; sourceTree = "<group>"; };
 		27ABA0DC2729B2D5000FD326 /* ExchangeDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataRequest.swift; sourceTree = "<group>"; };
 		27ABA0DE2729B2E2000FD326 /* ExchangeDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataResponse.swift; sourceTree = "<group>"; };
+		27ABA0E1272EC604000FD326 /* IndexesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesRequest.swift; sourceTree = "<group>"; };
+		27ABA0E3272EC613000FD326 /* IndexesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesResponse.swift; sourceTree = "<group>"; };
+		27ABA0E6272EC766000FD326 /* IndexesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesListRequest.swift; sourceTree = "<group>"; };
+		27ABA0E8272EC777000FD326 /* IndexesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesListResponse.swift; sourceTree = "<group>"; };
+		27ABA0EB27317F4D000FD326 /* FinanceProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceProductsRequest.swift; sourceTree = "<group>"; };
+		27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceProductsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -260,6 +272,7 @@
 			isa = PBXGroup;
 			children = (
 				27ABA0872726AF35000FD326 /* Platforms */,
+				27ABA0EA27317F31000FD326 /* Products */,
 			);
 			path = Finance;
 			sourceTree = "<group>";
@@ -267,6 +280,8 @@
 		271EEA262720763E00BA30FD /* Indexes */ = {
 			isa = PBXGroup;
 			children = (
+				27ABA0E0272EC5F5000FD326 /* Indexes */,
+				27ABA0E5272EC750000FD326 /* List */,
 			);
 			path = Indexes;
 			sourceTree = "<group>";
@@ -764,6 +779,33 @@
 			path = ExchangeData;
 			sourceTree = "<group>";
 		};
+		27ABA0E0272EC5F5000FD326 /* Indexes */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0E1272EC604000FD326 /* IndexesRequest.swift */,
+				27ABA0E3272EC613000FD326 /* IndexesResponse.swift */,
+			);
+			path = Indexes;
+			sourceTree = "<group>";
+		};
+		27ABA0E5272EC750000FD326 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0E6272EC766000FD326 /* IndexesListRequest.swift */,
+				27ABA0E8272EC777000FD326 /* IndexesListResponse.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		27ABA0EA27317F31000FD326 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0EB27317F4D000FD326 /* FinanceProductsRequest.swift */,
+				27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */,
+			);
+			path = Products;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -930,8 +972,11 @@
 				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
+				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
+				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
+				27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */,
 				27ABA0DF2729B2E2000FD326 /* ExchangeDataResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
@@ -940,6 +985,7 @@
 				27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
+				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
 				27ABA0B127296F55000FD326 /* EventsCountriesRequest.swift in Sources */,
 				271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */,
@@ -975,7 +1021,9 @@
 				27ABA0D02729ADB3000FD326 /* DerivativesResponse.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
+				27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */,
 				27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */,
+				27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */,
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

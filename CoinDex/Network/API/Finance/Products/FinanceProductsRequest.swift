@@ -5,8 +5,8 @@
 
 import Foundation
 
-/// Show derivative exchange data
-struct ExchangeDataRequest: DataRequest {
+/// List all finance products
+struct FinanceProductsRequest: DataRequest {
 
     let baseURL: String
 
@@ -19,7 +19,7 @@ struct ExchangeDataRequest: DataRequest {
     }
 
     var path: String {
-        return "/derivatives/exchanges/bitmex"
+        return "/finance_products"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -34,14 +34,17 @@ struct ExchangeDataRequest: DataRequest {
 
     var queryItems: [String : String]? {
         [
-            "include_tickers" : "unexpired"              // ['all', 'unexpired'] - expired to show unexpired tickers, all to list all tickers, leave blank to omit tickers data in response
+            "per_page" : "10",               // Total results per page
+            "page" : "1",                    // page of results (paginated to 100 by default)
+//            "start_at" : "2019-10-30",       // start date of the financial products
+//            "end_at" : "2020-09-01"          // end date of the financial products
         ]
     }
 
-    func decode(_ data: Data) throws -> ExchangeDataResponse {
+    func decode(_ data: Data) throws -> FinanceProductsResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(ExchangeDataResponse.self, from: data)
+        let response = try decoder.decode(FinanceProductsResponse.self, from: data)
         return response
     }
 }
