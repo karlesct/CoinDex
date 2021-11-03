@@ -67,16 +67,28 @@
 		27ABA0D02729ADB3000FD326 /* DerivativesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0CF2729ADB3000FD326 /* DerivativesResponse.swift */; };
 		27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0D22729B004000FD326 /* DerivativesExchangesRequest.swift */; };
 		27ABA0D52729B012000FD326 /* DerivativesExchangeResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0D42729B012000FD326 /* DerivativesExchangeResponse.swift */; };
-		27ABA0D82729B1BB000FD326 /* ExchangesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0D72729B1BB000FD326 /* ExchangesListRequest.swift */; };
-		27ABA0DA2729B1C8000FD326 /* ExchangesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0D92729B1C8000FD326 /* ExchangesListResponse.swift */; };
-		27ABA0DD2729B2D5000FD326 /* ExchangeDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0DC2729B2D5000FD326 /* ExchangeDataRequest.swift */; };
-		27ABA0DF2729B2E2000FD326 /* ExchangeDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0DE2729B2E2000FD326 /* ExchangeDataResponse.swift */; };
+		27ABA0D82729B1BB000FD326 /* DerivativesExchangesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0D72729B1BB000FD326 /* DerivativesExchangesListRequest.swift */; };
+		27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0D92729B1C8000FD326 /* DerivativesExchangesListResponse.swift */; };
+		27ABA0DD2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0DC2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift */; };
+		27ABA0DF2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0DE2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift */; };
 		27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E1272EC604000FD326 /* IndexesRequest.swift */; };
 		27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E3272EC613000FD326 /* IndexesResponse.swift */; };
 		27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E6272EC766000FD326 /* IndexesListRequest.swift */; };
 		27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E8272EC777000FD326 /* IndexesListResponse.swift */; };
 		27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0EB27317F4D000FD326 /* FinanceProductsRequest.swift */; };
 		27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */; };
+		27ABA0F12731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0F02731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift */; };
+		27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0F2273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift */; };
+		27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0F5273184AD000FD326 /* SimpleTokenPriceRequest.swift */; };
+		27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0F7273184B9000FD326 /* SimpleTokenPriceResponse.swift */; };
+		27ABA0FB273186F6000FD326 /* ExchangesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0FA273186F6000FD326 /* ExchangesRequest.swift */; };
+		27ABA0FD27318703000FD326 /* ExchangesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0FC27318703000FD326 /* ExchangesResponse.swift */; };
+		27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0FF273188A4000FD326 /* ExchangesListRequest.swift */; };
+		27ABA102273188B0000FD326 /* ExchangesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA101273188B0000FD326 /* ExchangesListResponse.swift */; };
+		27ABA10527318B20000FD326 /* ExchangesIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10427318B20000FD326 /* ExchangesIdRequest.swift */; };
+		27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10627318B2E000FD326 /* ExchangesIdResponse.swift */; };
+		27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA109273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift */; };
+		27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -165,16 +177,28 @@
 		27ABA0CF2729ADB3000FD326 /* DerivativesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativesResponse.swift; sourceTree = "<group>"; };
 		27ABA0D22729B004000FD326 /* DerivativesExchangesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativesExchangesRequest.swift; sourceTree = "<group>"; };
 		27ABA0D42729B012000FD326 /* DerivativesExchangeResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativesExchangeResponse.swift; sourceTree = "<group>"; };
-		27ABA0D72729B1BB000FD326 /* ExchangesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListRequest.swift; sourceTree = "<group>"; };
-		27ABA0D92729B1C8000FD326 /* ExchangesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListResponse.swift; sourceTree = "<group>"; };
-		27ABA0DC2729B2D5000FD326 /* ExchangeDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataRequest.swift; sourceTree = "<group>"; };
-		27ABA0DE2729B2E2000FD326 /* ExchangeDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangeDataResponse.swift; sourceTree = "<group>"; };
+		27ABA0D72729B1BB000FD326 /* DerivativesExchangesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativesExchangesListRequest.swift; sourceTree = "<group>"; };
+		27ABA0D92729B1C8000FD326 /* DerivativesExchangesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativesExchangesListResponse.swift; sourceTree = "<group>"; };
+		27ABA0DC2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativesExchangeDataRequest.swift; sourceTree = "<group>"; };
+		27ABA0DE2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DerivativesExchangeDataResponse.swift; sourceTree = "<group>"; };
 		27ABA0E1272EC604000FD326 /* IndexesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesRequest.swift; sourceTree = "<group>"; };
 		27ABA0E3272EC613000FD326 /* IndexesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesResponse.swift; sourceTree = "<group>"; };
 		27ABA0E6272EC766000FD326 /* IndexesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesListRequest.swift; sourceTree = "<group>"; };
 		27ABA0E8272EC777000FD326 /* IndexesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesListResponse.swift; sourceTree = "<group>"; };
 		27ABA0EB27317F4D000FD326 /* FinanceProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceProductsRequest.swift; sourceTree = "<group>"; };
 		27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceProductsResponse.swift; sourceTree = "<group>"; };
+		27ABA0F02731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSupportedVsCurrenciesRequest.swift; sourceTree = "<group>"; };
+		27ABA0F2273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSupportedVsCurrenciesResponse.swift; sourceTree = "<group>"; };
+		27ABA0F5273184AD000FD326 /* SimpleTokenPriceRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTokenPriceRequest.swift; sourceTree = "<group>"; };
+		27ABA0F7273184B9000FD326 /* SimpleTokenPriceResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleTokenPriceResponse.swift; sourceTree = "<group>"; };
+		27ABA0FA273186F6000FD326 /* ExchangesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesRequest.swift; sourceTree = "<group>"; };
+		27ABA0FC27318703000FD326 /* ExchangesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesResponse.swift; sourceTree = "<group>"; };
+		27ABA0FF273188A4000FD326 /* ExchangesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListRequest.swift; sourceTree = "<group>"; };
+		27ABA101273188B0000FD326 /* ExchangesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListResponse.swift; sourceTree = "<group>"; };
+		27ABA10427318B20000FD326 /* ExchangesIdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdRequest.swift; sourceTree = "<group>"; };
+		27ABA10627318B2E000FD326 /* ExchangesIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdResponse.swift; sourceTree = "<group>"; };
+		27ABA109273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdVolumeChartRequest.swift; sourceTree = "<group>"; };
+		27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdVolumeChartResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -215,6 +239,8 @@
 			isa = PBXGroup;
 			children = (
 				275710982725B13100348F93 /* Price */,
+				27ABA0F427318490000FD326 /* TokenPrice */,
+				27ABA0EF2731837F000FD326 /* SupportedVsCurrencies */,
 			);
 			path = Simple;
 			sourceTree = "<group>";
@@ -264,6 +290,10 @@
 		271EEA242720761F00BA30FD /* Exchanges */ = {
 			isa = PBXGroup;
 			children = (
+				27ABA0F9273186E2000FD326 /* Exchanges */,
+				27ABA0FE27318891000FD326 /* List */,
+				27ABA10327318B03000FD326 /* Id */,
+				27ABA108273190B3000FD326 /* IdVolumeChart */,
 			);
 			path = Exchanges;
 			sourceTree = "<group>";
@@ -764,8 +794,8 @@
 		27ABA0D62729B18D000FD326 /* ExchangesList */ = {
 			isa = PBXGroup;
 			children = (
-				27ABA0D72729B1BB000FD326 /* ExchangesListRequest.swift */,
-				27ABA0D92729B1C8000FD326 /* ExchangesListResponse.swift */,
+				27ABA0D72729B1BB000FD326 /* DerivativesExchangesListRequest.swift */,
+				27ABA0D92729B1C8000FD326 /* DerivativesExchangesListResponse.swift */,
 			);
 			path = ExchangesList;
 			sourceTree = "<group>";
@@ -773,8 +803,8 @@
 		27ABA0DB2729B2BE000FD326 /* ExchangeData */ = {
 			isa = PBXGroup;
 			children = (
-				27ABA0DC2729B2D5000FD326 /* ExchangeDataRequest.swift */,
-				27ABA0DE2729B2E2000FD326 /* ExchangeDataResponse.swift */,
+				27ABA0DC2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift */,
+				27ABA0DE2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift */,
 			);
 			path = ExchangeData;
 			sourceTree = "<group>";
@@ -804,6 +834,60 @@
 				27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */,
 			);
 			path = Products;
+			sourceTree = "<group>";
+		};
+		27ABA0EF2731837F000FD326 /* SupportedVsCurrencies */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0F02731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift */,
+				27ABA0F2273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift */,
+			);
+			path = SupportedVsCurrencies;
+			sourceTree = "<group>";
+		};
+		27ABA0F427318490000FD326 /* TokenPrice */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0F5273184AD000FD326 /* SimpleTokenPriceRequest.swift */,
+				27ABA0F7273184B9000FD326 /* SimpleTokenPriceResponse.swift */,
+			);
+			path = TokenPrice;
+			sourceTree = "<group>";
+		};
+		27ABA0F9273186E2000FD326 /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0FA273186F6000FD326 /* ExchangesRequest.swift */,
+				27ABA0FC27318703000FD326 /* ExchangesResponse.swift */,
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		27ABA0FE27318891000FD326 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA0FF273188A4000FD326 /* ExchangesListRequest.swift */,
+				27ABA101273188B0000FD326 /* ExchangesListResponse.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		27ABA10327318B03000FD326 /* Id */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA10427318B20000FD326 /* ExchangesIdRequest.swift */,
+				27ABA10627318B2E000FD326 /* ExchangesIdResponse.swift */,
+			);
+			path = Id;
+			sourceTree = "<group>";
+		};
+		27ABA108273190B3000FD326 /* IdVolumeChart */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA109273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift */,
+				27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */,
+			);
+			path = IdVolumeChart;
 			sourceTree = "<group>";
 		};
 /* End PBXGroup section */
@@ -963,21 +1047,26 @@
 			files = (
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
 				2758FC652709B45E009BCB5A /* ViewController.swift in Sources */,
+				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
 				27ABA0C127297BC6000FD326 /* EventsResponse.swift in Sources */,
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
+				27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */,
 				27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */,
 				27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */,
+				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
 				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
+				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
+				27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
 				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
 				27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */,
-				27ABA0DF2729B2E2000FD326 /* ExchangeDataResponse.swift in Sources */,
+				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
 				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
@@ -996,15 +1085,18 @@
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
-				27ABA0DD2729B2D5000FD326 /* ExchangeDataRequest.swift in Sources */,
+				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift in Sources */,
 				275710912725954600348F93 /* PingRequest.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
-				27ABA0D82729B1BB000FD326 /* ExchangesListRequest.swift in Sources */,
+				27ABA0D82729B1BB000FD326 /* DerivativesExchangesListRequest.swift in Sources */,
+				27ABA0F12731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift in Sources */,
 				271EEA3B27207E3D00BA30FD /* UIWindow+VisibleViewController.swift in Sources */,
+				27ABA0FD27318703000FD326 /* ExchangesResponse.swift in Sources */,
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
+				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
 				27ABA0892726AF4F000FD326 /* FinancePlatformsRequest.swift in Sources */,
 				27ABA0BA272976B4000FD326 /* EventTypesRequest.swift in Sources */,
 				27ABA0952726BE92000FD326 /* GlobalDecentralizedFinanceDefiResponse.swift in Sources */,
@@ -1014,17 +1106,21 @@
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
-				27ABA0DA2729B1C8000FD326 /* ExchangesListResponse.swift in Sources */,
+				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
+				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
 				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
+				27ABA0FB273186F6000FD326 /* ExchangesRequest.swift in Sources */,
 				27ABA0B327296F62000FD326 /* EventsCountriesResponse.swift in Sources */,
 				271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */,
 				27ABA0D02729ADB3000FD326 /* DerivativesResponse.swift in Sources */,
+				27ABA10527318B20000FD326 /* ExchangesIdRequest.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
 				27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */,
 				27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */,
 				27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */,
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
+				27ABA102273188B0000FD326 /* ExchangesListResponse.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};

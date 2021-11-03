@@ -41,11 +41,17 @@ class ViewController: UIViewController {
 //        let request = StatusUpdateRequest(baseURL: baseURL)
 //        let request = DerivativesRequest(baseURL: baseURL)
 //        let request = DerivativesExchangesRequest(baseURL: baseURL)
-//        let request = ExchangesListRequest(baseURL: baseURL)
-//        let request = ExchangeDataRequest(baseURL: baseURL)
+//        let request = DerivativesExchangesListRequest(baseURL: baseURL)
+//        let request = DerivativesExchangeDataRequest(baseURL: baseURL)
 //        let request = IndexesRequest(baseURL: baseURL)
 //        let request = IndexesListRequest(baseURL: baseURL)
-        let request = FinanceProductsRequest(baseURL: baseURL)
+//        let request = FinanceProductsRequest(baseURL: baseURL)
+//        let request = SimpleSupportedVsCurrenciesRequest(baseURL: baseURL)
+//        let request = ExchangesRequest(baseURL: baseURL)
+//        let request = ExchangesListRequest(baseURL: baseURL)
+//        let request = ExchangesIdRequest(baseURL: baseURL)
+        let request = ExchangesIdVolumeChartRequest(baseURL: baseURL)
+
         test.fetch(request: request)
     }
 

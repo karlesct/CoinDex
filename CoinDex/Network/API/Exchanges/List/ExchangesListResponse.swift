@@ -5,9 +5,9 @@
 
 import Foundation
 
-typealias ExchangesListResponseArray = [ExchangesListResponse]
+typealias ExchangesListResponse = [ExchangesListResponseElement]
 
-struct ExchangesListResponse: Codable {
+struct ExchangesListResponseElement: Codable {
     let id: String
     let name: String
 }

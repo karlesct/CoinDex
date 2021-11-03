@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct ExchangeDataResponse: Codable {
+struct DerivativesExchangeDataResponse: Codable {
     let name: String
     let openInterestBtc: Double
     let tradeVolume24HBtc: String
@@ -15,11 +15,11 @@ struct ExchangeDataResponse: Codable {
     let country: String
     let exchangeDataResponseDescription: String?
     let url: String
-    let tickers: [ExchangeDataTicker]
+    let tickers: [DerivativesExchangeDataTicker]
 }
 
 
-struct ExchangeDataTicker: Codable {
+struct DerivativesExchangeDataTicker: Codable {
     let symbol, base: String
     let target: String
     let tradeUrl: String
@@ -32,13 +32,13 @@ struct ExchangeDataTicker: Codable {
     let fundingRate: Double
     let openInterestUsd: Double
     let h24Volume: Double
-    let convertedVolume: ExchangeDataConverted?
-    let convertedLast: ExchangeDataConverted
+    let convertedVolume: DerivativesExchangeDataConverted?
+    let convertedLast: DerivativesExchangeDataConverted
     let lastTraded: Int
     let expiredAt: Int?
 }
 
-struct ExchangeDataConverted: Codable {
+struct DerivativesExchangeDataConverted: Codable {
     let btc: String
     let eth: String
     let usd: String

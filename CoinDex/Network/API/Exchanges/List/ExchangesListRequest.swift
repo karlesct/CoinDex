@@ -5,7 +5,8 @@
 
 import Foundation
 
-/// List all derivative exchanges name and identifier
+/// List all supported markets id and name (no pagination required)
+/// Use this to obtain all the markets' id in order to make API calls
 struct ExchangesListRequest: DataRequest {
 
     let baseURL: String
@@ -19,7 +20,7 @@ struct ExchangesListRequest: DataRequest {
     }
 
     var path: String {
-        return "/derivatives/exchanges/list"
+        return "/exchanges/list"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -32,10 +33,10 @@ struct ExchangesListRequest: DataRequest {
         .get
     }
 
-    func decode(_ data: Data) throws -> ExchangesListResponseArray {
+    func decode(_ data: Data) throws -> ExchangesListResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(ExchangesListResponseArray.self, from: data)
+        let response = try decoder.decode(ExchangesListResponse.self, from: data)
         return response
     }
 }
