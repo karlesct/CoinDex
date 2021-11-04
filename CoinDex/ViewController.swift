@@ -50,7 +50,8 @@ class ViewController: UIViewController {
 //        let request = ExchangesRequest(baseURL: baseURL)
 //        let request = ExchangesListRequest(baseURL: baseURL)
 //        let request = ExchangesIdRequest(baseURL: baseURL)
-        let request = ExchangesIdVolumeChartRequest(baseURL: baseURL)
+//        let request = ExchangesIdVolumeChartRequest(baseURL: baseURL)
+        let request = CoinsMarketsRequest(baseURL: baseURL)
 
         test.fetch(request: request)
     }

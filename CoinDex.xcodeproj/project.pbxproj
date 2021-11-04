@@ -89,6 +89,8 @@
 		27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10627318B2E000FD326 /* ExchangesIdResponse.swift */; };
 		27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA109273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift */; };
 		27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */; };
+		27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */; };
+		27ABA1112732E30B000FD326 /* CoinsMarketsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */; };
 /* End PBXBuildFile section */
 
 /* Begin PBXContainerItemProxy section */
@@ -199,6 +201,8 @@
 		27ABA10627318B2E000FD326 /* ExchangesIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdResponse.swift; sourceTree = "<group>"; };
 		27ABA109273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdVolumeChartRequest.swift; sourceTree = "<group>"; };
 		27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdVolumeChartResponse.swift; sourceTree = "<group>"; };
+		27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMarketsRequest.swift; sourceTree = "<group>"; };
+		27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMarketsResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
 
 /* Begin PBXFrameworksBuildPhase section */
@@ -249,6 +253,7 @@
 			isa = PBXGroup;
 			children = (
 				2757109D2725B1F800348F93 /* List */,
+				27ABA10D2732E2E8000FD326 /* Markets */,
 			);
 			path = Coins;
 			sourceTree = "<group>";
@@ -890,6 +895,15 @@
 			path = IdVolumeChart;
 			sourceTree = "<group>";
 		};
+		27ABA10D2732E2E8000FD326 /* Markets */ = {
+			isa = PBXGroup;
+			children = (
+				27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */,
+				27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */,
+			);
+			path = Markets;
+			sourceTree = "<group>";
+		};
 /* End PBXGroup section */
 
 /* Begin PBXNativeTarget section */
@@ -1072,6 +1086,7 @@
 				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
 				27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */,
+				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
@@ -1099,6 +1114,7 @@
 				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
 				27ABA0892726AF4F000FD326 /* FinancePlatformsRequest.swift in Sources */,
 				27ABA0BA272976B4000FD326 /* EventTypesRequest.swift in Sources */,
+				27ABA1112732E30B000FD326 /* CoinsMarketsResponse.swift in Sources */,
 				27ABA0952726BE92000FD326 /* GlobalDecentralizedFinanceDefiResponse.swift in Sources */,
 				27ABA0A727296B17000FD326 /* CategoriesListRequest.swift in Sources */,
 				2758FC632709B45E009BCB5A /* SceneDelegate.swift in Sources */,
