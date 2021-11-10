@@ -50,9 +50,7 @@ struct CoinsMarketsRequest: DataRequest {
     func decode(_ data: Data) throws -> CoinsMarketsResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let dateFormatter = DateFormatter()
-        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss.SSS'Z'"
-        decoder.dateDecodingStrategy = .formatted(dateFormatter)
+        decoder.dateDecodingStrategy = .formatted(.yyyyMMddTHHmmssSSSZ)
         let response = try decoder.decode(CoinsMarketsResponse.self, from: data)
         return response
     }
