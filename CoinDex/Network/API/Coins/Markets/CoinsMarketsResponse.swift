@@ -44,7 +44,7 @@ struct CoinsMarketsRoi: Codable {
 }
 
 enum CoinsMarketsCurrency: String, Codable {
-    case btc = "btc"
-    case eth = "eth"
-    case usd = "usd"
+    case btc
+    case eth
+    case usd
 }
