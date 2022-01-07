@@ -9,11 +9,30 @@ import UIKit
 
 class ViewController: UIViewController {
 
+    @IBOutlet weak var tutorialButton: UIButton! {
+        didSet {
+            self.tutorialButton.setTitle("Open Tutorial",
+                                         for: .normal)
+
+            self.tutorialButton.addTarget(self,
+                                          action: #selector(self.tutorialButtonAction),
+                                          for: .touchUpInside)
+        }
+    }
+
     override func viewDidLoad() {
         super.viewDidLoad()
         // Do any additional setup after loading the view.
     }
 
+    @objc func tutorialButtonAction() {
+        let assembler = TutorialAssembler()
+        let viewController = assembler.viewController()
+        viewController.modalPresentationStyle = .overFullScreen
+        self.present(viewController,
+                     animated: true,
+                     completion: nil)
+    }
 
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
@@ -23,7 +42,7 @@ class ViewController: UIViewController {
         print(configAPI)
         let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
         
-        let test = test()
+//        let test = test()
 //        let request = PingRequest(baseURL: baseURL)
 //        let request = CoinsListRequest(baseURL: baseURL)
 //        let request = FinancePlatformsRequest(baseURL: baseURL)
@@ -54,7 +73,7 @@ class ViewController: UIViewController {
 //        let request = CoinsMarketsRequest(baseURL: baseURL)
         let request = CoinsIdRequest(baseURL: baseURL)
 
-        test.fetch(request: request)
+//        test.fetch(request: request)
     }
 
 }
