@@ -5,7 +5,7 @@
 
 import UIKit
 
-final class LaunchScreenNavigator: Navigator {
+final class MainNavigator: Navigator {
 
     enum Destination {
         case main
@@ -33,8 +33,8 @@ final class LaunchScreenNavigator: Navigator {
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
         case .main:
-            let assembler = MainAssembler(navigationController: self.navigationController)
-            return assembler.viewController()
+            return TutorialAssembler().viewController()
         }
     }
 }
+

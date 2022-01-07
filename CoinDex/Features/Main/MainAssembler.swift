@@ -5,7 +5,7 @@
 
 import UIKit
 
-final class LaunchScreenAssembler {
+final class MainAssembler {
 
     // MARK: - Properties
 
@@ -13,26 +13,26 @@ final class LaunchScreenAssembler {
 
     // MARK: - Init
 
-    init(navigationController: UINavigationController) {
+    public init(navigationController: UINavigationController) {
         self.navigationController = navigationController
     }
 
     // MARK: - Methods
 
     func viewController() -> UIViewController {
-        let viewController = LaunchScreenViewController.loadFromNib()
+        let viewController = MainViewController.loadFromNib()
         viewController.viewModel = self.viewModel()
         viewController.navigator = self.navigator()
         return viewController
     }
 
-    private func viewModel() -> LaunchScreenViewModelProtocol {
-        let viewModel = LaunchScreenViewModel()
+    private func viewModel() -> MainViewModelProtocol {
+        let viewModel = MainViewModel()
         return viewModel
     }
 
-    private func navigator() -> LaunchScreenNavigator {
-        let navigator = LaunchScreenNavigator(navigationController: self.navigationController)
+    private func navigator() -> MainNavigator {
+        let navigator = MainNavigator(navigationController: self.navigationController)
         return navigator
     }
 }

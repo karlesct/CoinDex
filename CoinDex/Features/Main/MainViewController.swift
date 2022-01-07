@@ -1,13 +1,13 @@
 //
-//  ViewController.swift
-//  CoinDex
+//  Copyright © 2022 CCT. All rights reserved.
 //
-//  Created by Carles Cañadas Torrents on 3/10/21.
-//
+
 
 import UIKit
 
-class ViewController: UIViewController {
+class MainViewController: UIViewController {
+
+    // MARK: - IBoutlets
 
     @IBOutlet weak var tutorialButton: UIButton! {
         didSet {
@@ -20,18 +20,16 @@ class ViewController: UIViewController {
         }
     }
 
+
+    // MARK: - Properties
+
+    var viewModel: MainViewModelProtocol?
+    var navigator: MainNavigator?
+
+    // MARK: - Life cycle
+
     override func viewDidLoad() {
         super.viewDidLoad()
-        // Do any additional setup after loading the view.
-    }
-
-    @objc func tutorialButtonAction() {
-        let assembler = TutorialAssembler()
-        let viewController = assembler.viewController()
-        viewController.modalPresentationStyle = .overFullScreen
-        self.present(viewController,
-                     animated: true,
-                     completion: nil)
     }
 
     override func viewDidAppear(_ animated: Bool) {
@@ -40,8 +38,8 @@ class ViewController: UIViewController {
         guard let configAPI = ConfigLoader.parseFile().API
         else { return }
         print(configAPI)
-        let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
-        
+//        let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
+
 //        let test = test()
 //        let request = PingRequest(baseURL: baseURL)
 //        let request = CoinsListRequest(baseURL: baseURL)
@@ -71,12 +69,32 @@ class ViewController: UIViewController {
 //        let request = ExchangesIdRequest(baseURL: baseURL)
 //        let request = ExchangesIdVolumeChartRequest(baseURL: baseURL)
 //        let request = CoinsMarketsRequest(baseURL: baseURL)
-        let request = CoinsIdRequest(baseURL: baseURL)
+//        let request = CoinsIdRequest(baseURL: baseURL)
 
 //        test.fetch(request: request)
     }
 
+
+    // MARK: - Methods
+
+    
 }
+
+// MARK: - Button actions
+
+extension MainViewController {
+
+    @objc func tutorialButtonAction() {
+        let assembler = TutorialAssembler()
+        let viewController = assembler.viewController()
+        viewController.modalPresentationStyle = .overFullScreen
+        self.present(viewController,
+                     animated: true,
+                     completion: nil)
+    }
+
+}
+
 
 class test {
 
@@ -91,8 +109,3 @@ class test {
         }
     }
 }
-
-
-
-
-

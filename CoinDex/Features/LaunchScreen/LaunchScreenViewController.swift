@@ -13,13 +13,18 @@ class LaunchScreenViewController: UIViewController {
     // MARK: - Properties
 
     var viewModel: LaunchScreenViewModelProtocol?
+    var navigator: LaunchScreenNavigator?
 
     // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
+    }
 
-        self.view.backgroundColor = .red
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+
+        self.navigator?.navigate(to: .main)
     }
 
     // MARK: - Methods

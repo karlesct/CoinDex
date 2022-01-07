@@ -5,7 +5,7 @@
 
 import Foundation
 
-protocol MDNavigator {
+protocol Navigator {
     associatedtype Destination
 
     func navigate(to destination: Destination)
