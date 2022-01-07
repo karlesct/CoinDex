@@ -105,6 +105,12 @@
 		27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */; };
 		27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */; };
 		27ABA1112732E30B000FD326 /* CoinsMarketsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */; };
+		27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */; };
+		27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */; };
+		27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */; };
+		27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB13212788AC2C00B5FE4D /* LaunchScreenViewModel.swift */; };
+		27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB13242788AF0F00B5FE4D /* Navigator.swift */; };
+		27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB13262788AF6100B5FE4D /* LaunchScreenNavigator.swift */; };
 		27E636E12733EEEE00FC1210 /* CoinsIdRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E636E02733EEEE00FC1210 /* CoinsIdRequest.swift */; };
 		27E636E32733EEFB00FC1210 /* CoinsIdResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27E636E22733EEFB00FC1210 /* CoinsIdResponse.swift */; };
 /* End PBXBuildFile section */
@@ -233,6 +239,12 @@
 		27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdVolumeChartResponse.swift; sourceTree = "<group>"; };
 		27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMarketsRequest.swift; sourceTree = "<group>"; };
 		27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMarketsResponse.swift; sourceTree = "<group>"; };
+		27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAssembler.swift; sourceTree = "<group>"; };
+		27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
+		27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
+		27BB13212788AC2C00B5FE4D /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
+		27BB13242788AF0F00B5FE4D /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
+		27BB13262788AF6100B5FE4D /* LaunchScreenNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenNavigator.swift; sourceTree = "<group>"; };
 		27E636E02733EEEE00FC1210 /* CoinsIdRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsIdRequest.swift; sourceTree = "<group>"; };
 		27E636E22733EEFB00FC1210 /* CoinsIdResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsIdResponse.swift; sourceTree = "<group>"; };
 /* End PBXFileReference section */
@@ -582,8 +594,8 @@
 				2758FC602709B45E009BCB5A /* AppDelegate.swift */,
 				2758FC622709B45E009BCB5A /* SceneDelegate.swift */,
 				2758FC642709B45E009BCB5A /* ViewController.swift */,
-				2758FC662709B45E009BCB5A /* Main.storyboard */,
 				2758FC6B2709B469009BCB5A /* LaunchScreen.storyboard */,
+				2758FC662709B45E009BCB5A /* Main.storyboard */,
 			);
 			path = CoinDex;
 			sourceTree = "<group>";
@@ -623,6 +635,7 @@
 			isa = PBXGroup;
 			children = (
 				279B6711278462E400480155 /* Common */,
+				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
 				279B670A27845F5E00480155 /* Tutorial */,
 			);
 			path = Features;
@@ -752,6 +765,7 @@
 			isa = PBXGroup;
 			children = (
 				279B67222784712900480155 /* T */,
+				27BB13232788AEF500B5FE4D /* Navigator */,
 			);
 			path = Common;
 			sourceTree = "<group>";
@@ -1015,6 +1029,26 @@
 			path = Markets;
 			sourceTree = "<group>";
 		};
+		27BB131A2788AB4B00B5FE4D /* LaunchScreen */ = {
+			isa = PBXGroup;
+			children = (
+				27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */,
+				27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */,
+				27BB13262788AF6100B5FE4D /* LaunchScreenNavigator.swift */,
+				27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */,
+				27BB13212788AC2C00B5FE4D /* LaunchScreenViewModel.swift */,
+			);
+			path = LaunchScreen;
+			sourceTree = "<group>";
+		};
+		27BB13232788AEF500B5FE4D /* Navigator */ = {
+			isa = PBXGroup;
+			children = (
+				27BB13242788AF0F00B5FE4D /* Navigator.swift */,
+			);
+			path = Navigator;
+			sourceTree = "<group>";
+		};
 		27E636DF2733EECE00FC1210 /* Id */ = {
 			isa = PBXGroup;
 			children = (
@@ -1132,6 +1166,7 @@
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
 				279B67152784652A00480155 /* TutorialViewController.xib in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
+				27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */,
 				279B672127846F6B00480155 /* TutorialPageViewController.xib in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 				2758FC682709B45E009BCB5A /* Main.storyboard in Resources */,
@@ -1186,12 +1221,15 @@
 				2758FC652709B45E009BCB5A /* ViewController.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
 				27ABA0C127297BC6000FD326 /* EventsResponse.swift in Sources */,
+				27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */,
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
+				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
 				27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */,
 				27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */,
 				27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */,
+				27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */,
 				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
 				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
@@ -1212,6 +1250,7 @@
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
 				27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */,
 				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
+				27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
@@ -1231,6 +1270,7 @@
 				279B671B27846F3000480155 /* TutorialPageAssembler.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
+				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
 				279B67102784617600480155 /* TutorialViewController.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
 				27ABA0D82729B1BB000FD326 /* DerivativesExchangesListRequest.swift in Sources */,

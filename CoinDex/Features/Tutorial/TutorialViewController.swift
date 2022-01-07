@@ -65,7 +65,7 @@ class TutorialViewController: UIViewController {
         }
     }
 
-    // MARK: - Life Cycle
+    // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
