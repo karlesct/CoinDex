@@ -7,6 +7,13 @@
 	objects = {
 
 /* Begin PBXBuildFile section */
+		270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FBC279D6DC1005DE9FB /* ChatAssembler.swift */; };
+		270F0FBF279D6DCE005DE9FB /* ChatViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FBE279D6DCE005DE9FB /* ChatViewController.swift */; };
+		270F0FC1279D6DDC005DE9FB /* ChatViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC0279D6DDC005DE9FB /* ChatViewModel.swift */; };
+		270F0FC3279D6DF1005DE9FB /* ChatViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 270F0FC2279D6DF1005DE9FB /* ChatViewController.xib */; };
+		270F0FC5279D71ED005DE9FB /* ChatUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC4279D71ED005DE9FB /* ChatUseCase.swift */; };
+		270F0FC8279D787E005DE9FB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC7279D787E005DE9FB /* Observable.swift */; };
+		270F0FCA279D7BA3005DE9FB /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC9279D7BA3005DE9FB /* BubbleView.swift */; };
 		271EEA302720785700BA30FD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA2F2720785700BA30FD /* NetworkService.swift */; };
 		271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA3327207BE900BA30FD /* HTTPMethod.swift */; };
 		271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA3727207DAB00BA30FD /* UIAlertController+Builder.swift */; };
@@ -136,6 +143,13 @@
 /* End PBXContainerItemProxy section */
 
 /* Begin PBXFileReference section */
+		270F0FBC279D6DC1005DE9FB /* ChatAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatAssembler.swift; sourceTree = "<group>"; };
+		270F0FBE279D6DCE005DE9FB /* ChatViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewController.swift; sourceTree = "<group>"; };
+		270F0FC0279D6DDC005DE9FB /* ChatViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatViewModel.swift; sourceTree = "<group>"; };
+		270F0FC2279D6DF1005DE9FB /* ChatViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ChatViewController.xib; sourceTree = "<group>"; };
+		270F0FC4279D71ED005DE9FB /* ChatUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUseCase.swift; sourceTree = "<group>"; };
+		270F0FC7279D787E005DE9FB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		270F0FC9279D7BA3005DE9FB /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		271EEA2F2720785700BA30FD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		271EEA3327207BE900BA30FD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		271EEA3727207DAB00BA30FD /* UIAlertController+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Builder.swift"; sourceTree = "<group>"; };
@@ -280,6 +294,35 @@
 /* End PBXFrameworksBuildPhase section */
 
 /* Begin PBXGroup section */
+		270F0FBB279D6D99005DE9FB /* Chat */ = {
+			isa = PBXGroup;
+			children = (
+				270F0FCB279D7BA9005DE9FB /* Bubble */,
+				270F0FBC279D6DC1005DE9FB /* ChatAssembler.swift */,
+				270F0FBE279D6DCE005DE9FB /* ChatViewController.swift */,
+				270F0FC2279D6DF1005DE9FB /* ChatViewController.xib */,
+				270F0FC0279D6DDC005DE9FB /* ChatViewModel.swift */,
+				270F0FC4279D71ED005DE9FB /* ChatUseCase.swift */,
+			);
+			path = Chat;
+			sourceTree = "<group>";
+		};
+		270F0FC6279D7868005DE9FB /* Observable */ = {
+			isa = PBXGroup;
+			children = (
+				270F0FC7279D787E005DE9FB /* Observable.swift */,
+			);
+			path = Observable;
+			sourceTree = "<group>";
+		};
+		270F0FCB279D7BA9005DE9FB /* Bubble */ = {
+			isa = PBXGroup;
+			children = (
+				270F0FC9279D7BA3005DE9FB /* BubbleView.swift */,
+			);
+			path = Bubble;
+			sourceTree = "<group>";
+		};
 		271EEA1D272075C700BA30FD /* Network */ = {
 			isa = PBXGroup;
 			children = (
@@ -641,6 +684,7 @@
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
 				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
 				27BB13282788B1CD00B5FE4D /* Main */,
+				270F0FBB279D6D99005DE9FB /* Chat */,
 				279B670A27845F5E00480155 /* Tutorial */,
 			);
 			path = Features;
@@ -656,6 +700,7 @@
 		2758FC962709B4E9009BCB5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				270F0FC6279D7868005DE9FB /* Observable */,
 				2758FCE02709C467009BCB5A /* Config */,
 			);
 			path = Utils;
@@ -1194,6 +1239,7 @@
 				27BB13322788B22000B5FE4D /* MainViewController.xib in Resources */,
 				27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */,
 				279B672127846F6B00480155 /* TutorialPageViewController.xib in Resources */,
+				270F0FC3279D6DF1005DE9FB /* ChatViewController.xib in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -1245,6 +1291,7 @@
 				279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
 				27ABA0C127297BC6000FD326 /* EventsResponse.swift in Sources */,
+				270F0FCA279D7BA3005DE9FB /* BubbleView.swift in Sources */,
 				27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */,
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
@@ -1262,6 +1309,7 @@
 				27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
+				270F0FC5279D71ED005DE9FB /* ChatUseCase.swift in Sources */,
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
 				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
@@ -1269,7 +1317,9 @@
 				27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */,
 				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
+				270F0FBF279D6DCE005DE9FB /* ChatViewController.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
+				270F0FC8279D787E005DE9FB /* Observable.swift in Sources */,
 				27E636E32733EEFB00FC1210 /* CoinsIdResponse.swift in Sources */,
 				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
@@ -1295,6 +1345,7 @@
 				275710912725954600348F93 /* PingRequest.swift in Sources */,
 				279B671B27846F3000480155 /* TutorialPageAssembler.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
+				270F0FC1279D6DDC005DE9FB /* ChatViewModel.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
 				279B67102784617600480155 /* TutorialViewController.swift in Sources */,
@@ -1318,6 +1369,7 @@
 				27E636E12733EEEE00FC1210 /* CoinsIdRequest.swift in Sources */,
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
+				270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */,
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
 				27BB132C2788B1FC00B5FE4D /* MainViewController.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,

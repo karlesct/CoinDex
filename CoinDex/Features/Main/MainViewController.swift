@@ -20,6 +20,17 @@ class MainViewController: UIViewController {
         }
     }
 
+    @IBOutlet weak var chatButton: UIButton!{
+        didSet {
+            self.chatButton.setTitle("Open Chat",
+                                         for: .normal)
+
+            self.chatButton.addTarget(self,
+                                          action: #selector(self.chatButtonAction),
+                                          for: .touchUpInside)
+        }
+    }
+
 
     // MARK: - Properties
 
@@ -86,6 +97,15 @@ extension MainViewController {
 
     @objc func tutorialButtonAction() {
         let assembler = TutorialAssembler()
+        let viewController = assembler.viewController()
+        viewController.modalPresentationStyle = .overFullScreen
+        self.present(viewController,
+                     animated: true,
+                     completion: nil)
+    }
+
+    @objc func chatButtonAction() {
+        let assembler = ChatAssembler()
         let viewController = assembler.viewController()
         viewController.modalPresentationStyle = .overFullScreen
         self.present(viewController,
