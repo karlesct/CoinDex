@@ -39,6 +39,10 @@
 		2758FC832709B46A009BCB5A /* CoinDexUITests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FC822709B46A009BCB5A /* CoinDexUITests.swift */; };
 		2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2758FCD82709C463009BCB5A /* ConfigLoader.swift */; };
 		2758FCF92709D615009BCB5A /* Config.plist in Resources */ = {isa = PBXBuildFile; fileRef = 2758FCF82709D615009BCB5A /* Config.plist */; };
+		2763D37627A47C7B00796FA8 /* UIColor+Hex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37527A47C7B00796FA8 /* UIColor+Hex.swift */; };
+		2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37727A480D100796FA8 /* UIColor+DynamicColor.swift */; };
+		2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37927A481BF00796FA8 /* UIColor+Colors.swift */; };
+		2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37B27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift */; };
 		27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */; };
 		27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
@@ -183,6 +187,10 @@
 		2758FCEA2709CF52009BCB5A /* Release.xcconfig */ = {isa = PBXFileReference; lastKnownFileType = text.xcconfig; path = Release.xcconfig; sourceTree = "<group>"; };
 		2758FCF82709D615009BCB5A /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
 		2758FCFD2709D69A009BCB5A /* Config.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist.xml; path = Config.plist; sourceTree = "<group>"; };
+		2763D37527A47C7B00796FA8 /* UIColor+Hex.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Hex.swift"; sourceTree = "<group>"; };
+		2763D37727A480D100796FA8 /* UIColor+DynamicColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DynamicColor.swift"; sourceTree = "<group>"; };
+		2763D37927A481BF00796FA8 /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
+		2763D37B27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetBackgroundColorForState.swift"; sourceTree = "<group>"; };
 		27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateDecodingStrategyFormatters.swift"; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
@@ -525,12 +533,12 @@
 			path = Method;
 			sourceTree = "<group>";
 		};
-		271EEA3527207D8F00BA30FD /* Alert */ = {
+		271EEA3527207D8F00BA30FD /* UIAlertController */ = {
 			isa = PBXGroup;
 			children = (
 				271EEA3727207DAB00BA30FD /* UIAlertController+Builder.swift */,
 			);
-			path = Alert;
+			path = UIAlertController;
 			sourceTree = "<group>";
 		};
 		271EEA3927207E2000BA30FD /* Window */ = {
@@ -667,8 +675,10 @@
 		2758FC932709B4C9009BCB5A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
-				271EEA3527207D8F00BA30FD /* Alert */,
 				271EEA4227208BA600BA30FD /* String */,
+				2763D37D27A483EC00796FA8 /* UIButton */,
+				2763D37427A47C3900796FA8 /* UIColor */,
+				271EEA3527207D8F00BA30FD /* UIAlertController */,
 				271EEA3F2720841600BA30FD /* URLRequest */,
 				279B67172784685000480155 /* UIView */,
 				271EEA3C27207E5B00BA30FD /* UIViewController */,
@@ -772,6 +782,24 @@
 				2758FCF82709D615009BCB5A /* Config.plist */,
 			);
 			path = Config;
+			sourceTree = "<group>";
+		};
+		2763D37427A47C3900796FA8 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+				2763D37527A47C7B00796FA8 /* UIColor+Hex.swift */,
+				2763D37727A480D100796FA8 /* UIColor+DynamicColor.swift */,
+				2763D37927A481BF00796FA8 /* UIColor+Colors.swift */,
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		2763D37D27A483EC00796FA8 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+				2763D37B27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift */,
+			);
+			path = UIButton;
 			sourceTree = "<group>";
 		};
 		27696B38273C3EC500D17FC4 /* Extensions */ = {
@@ -1355,6 +1383,7 @@
 				271EEA3B27207E3D00BA30FD /* UIWindow+VisibleViewController.swift in Sources */,
 				27ABA0FD27318703000FD326 /* ExchangesResponse.swift in Sources */,
 				27BB132E2788B20800B5FE4D /* MainNavigator.swift in Sources */,
+				2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */,
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
 				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
@@ -1368,10 +1397,12 @@
 				27ABA0D52729B012000FD326 /* DerivativesExchangeResponse.swift in Sources */,
 				27E636E12733EEEE00FC1210 /* CoinsIdRequest.swift in Sources */,
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
+				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */,
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
 				27BB132C2788B1FC00B5FE4D /* MainViewController.swift in Sources */,
+				2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
 				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
@@ -1387,6 +1418,7 @@
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
 				27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */,
 				27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */,
+				2763D37627A47C7B00796FA8 /* UIColor+Hex.swift in Sources */,
 				27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */,
 				27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */,
 				279B6726278471BE00480155 /* TutorialPageModel.swift in Sources */,

@@ -11,6 +11,12 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ChatViewController" customModule="CoinDexRelease" customModuleProvider="target">
             <connections>
+                <outlet property="bottomConstraint" destination="FDC-x3-5RT" id="kAT-ZW-ZlH"/>
+                <outlet property="clipButton" destination="Bmg-De-UVq" id="Jzd-xO-pQA"/>
+                <outlet property="emojiButton" destination="pFD-5a-gLE" id="Uq8-n2-XEj"/>
+                <outlet property="messageTextView" destination="zaO-Kf-R7Q" id="ktT-a0-3Wf"/>
+                <outlet property="messageTextViewContainer" destination="und-tc-9BM" id="6t0-Zr-ND1"/>
+                <outlet property="sendButton" destination="vet-XA-1Pr" id="lmi-9E-Fh3"/>
                 <outlet property="view" destination="iN0-l3-epB" id="gN1-Ib-wdu"/>
             </connections>
         </placeholder>
@@ -19,27 +25,123 @@
             <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
             <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
             <subviews>
-                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1E-Pm-8hK" customClass="BubbleView" customModule="CoinDexRelease" customModuleProvider="target">
-                    <rect key="frame" x="87" y="384" width="240" height="128"/>
-                    <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="ezf-RW-tsc">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                    <subviews>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohl-Pv-g2I">
+                            <rect key="frame" x="20" y="665" width="374" height="138"/>
+                            <subviews>
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="kEv-tb-FvO">
+                                    <rect key="frame" x="0.0" y="0.0" width="374" height="138"/>
+                                    <subviews>
+                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmg-De-UVq">
+                                            <rect key="frame" x="0.0" y="0.0" width="35" height="35"/>
+                                            <constraints>
+                                                <constraint firstAttribute="width" secondItem="Bmg-De-UVq" secondAttribute="height" multiplier="1:1" id="Pfn-rw-FsJ"/>
+                                                <constraint firstAttribute="height" constant="35" id="XQM-bV-Xa7"/>
+                                            </constraints>
+                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                            <state key="normal" image="iconClip"/>
+                                        </button>
+                                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="und-tc-9BM">
+                                            <rect key="frame" x="35" y="0.0" width="339" height="138"/>
+                                            <subviews>
+                                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="r2r-BH-Jab">
+                                                    <rect key="frame" x="10" y="5" width="319" height="128"/>
+                                                    <subviews>
+                                                        <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zaO-Kf-R7Q" customClass="EmojiTextView" customModule="CoinDexRelease" customModuleProvider="target">
+                                                            <rect key="frame" x="0.0" y="0.0" width="221" height="128"/>
+                                                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                            <color key="textColor" systemColor="labelColor"/>
+                                                            <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                                                            <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
+                                                        </textView>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-5a-gLE">
+                                                            <rect key="frame" x="235" y="0.0" width="35" height="35"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="height" constant="35" id="4Qp-bq-1YZ"/>
+                                                                <constraint firstAttribute="width" secondItem="pFD-5a-gLE" secondAttribute="height" multiplier="1:1" id="shB-qo-gdK"/>
+                                                            </constraints>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="iconEmoji"/>
+                                                        </button>
+                                                        <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vet-XA-1Pr">
+                                                            <rect key="frame" x="284" y="0.0" width="35" height="35"/>
+                                                            <constraints>
+                                                                <constraint firstAttribute="width" secondItem="vet-XA-1Pr" secondAttribute="height" multiplier="1:1" id="1Qx-7E-C6R"/>
+                                                                <constraint firstAttribute="height" constant="35" id="JIs-6G-2TX"/>
+                                                            </constraints>
+                                                            <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                                                            <state key="normal" image="iconSend"/>
+                                                        </button>
+                                                    </subviews>
+                                                    <constraints>
+                                                        <constraint firstItem="zaO-Kf-R7Q" firstAttribute="top" secondItem="r2r-BH-Jab" secondAttribute="top" id="DL2-ud-p3i"/>
+                                                        <constraint firstAttribute="bottom" secondItem="zaO-Kf-R7Q" secondAttribute="bottom" id="p3c-AD-PZj"/>
+                                                    </constraints>
+                                                </stackView>
+                                            </subviews>
+                                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                                            <constraints>
+                                                <constraint firstAttribute="bottom" secondItem="r2r-BH-Jab" secondAttribute="bottom" constant="5" id="5oH-mG-VeN"/>
+                                                <constraint firstItem="r2r-BH-Jab" firstAttribute="top" secondItem="und-tc-9BM" secondAttribute="top" constant="5" id="Qne-gO-EiO"/>
+                                                <constraint firstAttribute="trailing" secondItem="r2r-BH-Jab" secondAttribute="trailing" constant="10" id="cV5-NO-4gh"/>
+                                                <constraint firstItem="r2r-BH-Jab" firstAttribute="leading" secondItem="und-tc-9BM" secondAttribute="leading" constant="10" id="fmH-kk-G7m"/>
+                                            </constraints>
+                                        </view>
+                                    </subviews>
+                                </stackView>
+                            </subviews>
+                            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                            <constraints>
+                                <constraint firstAttribute="bottom" secondItem="kEv-tb-FvO" secondAttribute="bottom" id="0Wd-iB-HS1"/>
+                                <constraint firstItem="kEv-tb-FvO" firstAttribute="leading" secondItem="Ohl-Pv-g2I" secondAttribute="leading" id="e5C-38-0YP"/>
+                                <constraint firstItem="kEv-tb-FvO" firstAttribute="top" secondItem="Ohl-Pv-g2I" secondAttribute="top" id="iGc-nE-eK9"/>
+                                <constraint firstAttribute="trailing" secondItem="kEv-tb-FvO" secondAttribute="trailing" id="ibG-Fd-fFM"/>
+                            </constraints>
+                        </view>
+                        <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="D1E-Pm-8hK" customClass="BubbleView" customModule="CoinDexRelease" customModuleProvider="target">
+                            <rect key="frame" x="87" y="345" width="240" height="128"/>
+                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+                            <constraints>
+                                <constraint firstAttribute="height" constant="128" id="isz-ZN-cHc"/>
+                                <constraint firstAttribute="width" constant="240" id="uOm-tY-4EM"/>
+                            </constraints>
+                        </view>
+                    </subviews>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                     <constraints>
-                        <constraint firstAttribute="height" constant="128" id="isz-ZN-cHc"/>
-                        <constraint firstAttribute="width" constant="240" id="uOm-tY-4EM"/>
+                        <constraint firstItem="D1E-Pm-8hK" firstAttribute="centerY" secondItem="ezf-RW-tsc" secondAttribute="centerY" id="57q-7U-E5O"/>
+                        <constraint firstAttribute="trailing" secondItem="Ohl-Pv-g2I" secondAttribute="trailing" constant="20" id="WEZ-zg-nvV"/>
+                        <constraint firstAttribute="bottom" secondItem="Ohl-Pv-g2I" secondAttribute="bottom" constant="15" id="WjM-HI-9Ba"/>
+                        <constraint firstItem="D1E-Pm-8hK" firstAttribute="centerX" secondItem="ezf-RW-tsc" secondAttribute="centerX" id="gLh-Vm-RxR"/>
+                        <constraint firstItem="Ohl-Pv-g2I" firstAttribute="leading" secondItem="ezf-RW-tsc" secondAttribute="leading" constant="20" id="osc-9N-7eY"/>
                     </constraints>
                 </view>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
-            <color key="backgroundColor" systemColor="systemGreenColor"/>
+            <color key="backgroundColor" white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
             <constraints>
-                <constraint firstItem="D1E-Pm-8hK" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="5LL-UX-BKs"/>
-                <constraint firstItem="D1E-Pm-8hK" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="wZM-tw-MFX"/>
+                <constraint firstItem="ezf-RW-tsc" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="FDC-x3-5RT"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="ezf-RW-tsc" secondAttribute="trailing" id="cI0-Ad-xaN"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="top" secondItem="ezf-RW-tsc" secondAttribute="top" id="fUR-a1-N8u"/>
+                <constraint firstItem="ezf-RW-tsc" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="hrb-mK-OAb"/>
             </constraints>
-            <point key="canvasLocation" x="139" y="121"/>
+            <point key="canvasLocation" x="137.68115942028987" y="120.53571428571428"/>
         </view>
     </objects>
     <resources>
-        <systemColor name="systemGreenColor">
-            <color red="0.20392156862745098" green="0.7803921568627451" blue="0.34901960784313724" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
+        <image name="iconClip" width="11" height="22"/>
+        <image name="iconEmoji" width="25" height="25"/>
+        <image name="iconSend" width="17" height="16"/>
+        <systemColor name="labelColor">
+            <color white="0.0" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+        <systemColor name="systemRedColor">
+            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>

@@ -21,7 +21,6 @@ public enum positionYEnum: String, CaseIterable {
 // Horizontal
 public enum positionXEnum: String, CaseIterable {
     case left
-    case center
     case right
 }
 
@@ -79,8 +78,6 @@ public class BubbleView: UIView {
                 return [ .topRight, .bottomRight]
             case .right:
                 return [ .topLeft, .bottomLeft]
-            case .center:
-                return [.allCorners]
             }
         }()
         let cornerRadii: CGSize = CGSize(width: cornerRadius,
@@ -98,8 +95,6 @@ public class BubbleView: UIView {
             addRightTriangle(to: roundRectPath, type: triangleYType)
         case .left:
             addLeftTriangle(to: roundRectPath, type: triangleYType)
-        case .center:
-            break
         }
 
         setColor(to: roundRectPath)
