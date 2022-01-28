@@ -16,7 +16,7 @@ class ChatViewController: UIViewController {
                                           action: #selector(self.emojiButtonAction),
                                           for: .touchUpInside)
             self.emojiButton.imageView?.image = UIImage(named: "iconEmoji")
-            self.emojiButton.imageView?.tintColor = .primaryColor
+            self.emojiButton.tintColor = .primaryColor
         }
     }
 
@@ -26,14 +26,13 @@ class ChatViewController: UIViewController {
             self.clipButton.setBackgroundColor(color: .x555555,
                                                for: .normal)
             self.clipButton.imageView?.image = UIImage(named: "iconClip")
-            self.clipButton.imageView?.tintColor = .xFFFFFF
+            self.clipButton.tintColor = .xFFFFFF
         }
     }
     @IBOutlet weak var messageTextViewContainer: UIView! {
         didSet {
             self.messageTextViewContainer.layer.borderWidth = 1
             self.messageTextViewContainer.layer.borderColor = UIColor.xE2E2E2.cgColor
-            self.messageTextViewContainer.layer.cornerRadius = self.messageTextViewContainer.frame.height / 2
         }
     }
 
@@ -43,11 +42,16 @@ class ChatViewController: UIViewController {
             self.sendButton.setBackgroundColor(color: .primaryColor,
                                                 for: .normal)
             self.sendButton.imageView?.image = UIImage(named: "iconSend")
-            self.sendButton.imageView?.tintColor = .xFFFFFF
+            self.sendButton.tintColor = .xFFFFFF
         }
     }
 
-    @IBOutlet weak var messageTextView: EmojiTextView!
+    @IBOutlet weak var messageTextView: EmojiTextView! {
+        didSet {
+            self.messageTextView.placeholder = "Escribe aquí..."
+            self.messageTextView.placeholderColor = .x999999
+        }
+    }
 
     // MARK: - Properties
 
@@ -65,6 +69,11 @@ class ChatViewController: UIViewController {
         NotificationCenter.default.addObserver(self, selector: #selector(keyboardWillHide), name: UIResponder.keyboardWillHideNotification, object: nil)
 
         self.hideKeyboardWhenTappedAround()
+    }
+
+    override func viewDidAppear(_ animated: Bool) {
+        super.viewDidAppear(animated)
+        self.messageTextViewContainer.layer.cornerRadius = self.messageTextViewContainer.frame.height / 2
     }
 
     // MARK: - Methods

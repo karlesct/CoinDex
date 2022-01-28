@@ -43,6 +43,7 @@
 		2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37727A480D100796FA8 /* UIColor+DynamicColor.swift */; };
 		2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37927A481BF00796FA8 /* UIColor+Colors.swift */; };
 		2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37B27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift */; };
+		2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D38327A4997300796FA8 /* UITextView+Placeholder.swift */; };
 		27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */; };
 		27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
@@ -191,6 +192,7 @@
 		2763D37727A480D100796FA8 /* UIColor+DynamicColor.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+DynamicColor.swift"; sourceTree = "<group>"; };
 		2763D37927A481BF00796FA8 /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		2763D37B27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetBackgroundColorForState.swift"; sourceTree = "<group>"; };
+		2763D38327A4997300796FA8 /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
 		27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateDecodingStrategyFormatters.swift"; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
@@ -646,6 +648,7 @@
 				2758FC932709B4C9009BCB5A /* Extensions */,
 				2758FC942709B4D1009BCB5A /* Features */,
 				2758FC952709B4DD009BCB5A /* Services */,
+				2763D37E27A4958200796FA8 /* UIComponents */,
 				2758FC962709B4E9009BCB5A /* Utils */,
 				271EEA1D272075C700BA30FD /* Network */,
 				2758FC602709B45E009BCB5A /* AppDelegate.swift */,
@@ -680,6 +683,7 @@
 				2763D37427A47C3900796FA8 /* UIColor */,
 				271EEA3527207D8F00BA30FD /* UIAlertController */,
 				271EEA3F2720841600BA30FD /* URLRequest */,
+				2763D38227A4994600796FA8 /* UITextView */,
 				279B67172784685000480155 /* UIView */,
 				271EEA3C27207E5B00BA30FD /* UIViewController */,
 				271EEA3927207E2000BA30FD /* Window */,
@@ -800,6 +804,21 @@
 				2763D37B27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		2763D37E27A4958200796FA8 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		2763D38227A4994600796FA8 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+				2763D38327A4997300796FA8 /* UITextView+Placeholder.swift */,
+			);
+			path = UITextView;
 			sourceTree = "<group>";
 		};
 		27696B38273C3EC500D17FC4 /* Extensions */ = {
@@ -1365,6 +1384,7 @@
 				27ABA0BF27297BAC000FD326 /* EventsRequest.swift in Sources */,
 				27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */,
 				275710882725941F00348F93 /* DataRequest.swift in Sources */,
+				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
 				279B67242784713D00480155 /* TModel.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,

@@ -31,7 +31,7 @@
                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="Ohl-Pv-g2I">
                             <rect key="frame" x="20" y="665" width="374" height="138"/>
                             <subviews>
-                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" translatesAutoresizingMaskIntoConstraints="NO" id="kEv-tb-FvO">
+                                <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="15" translatesAutoresizingMaskIntoConstraints="NO" id="kEv-tb-FvO">
                                     <rect key="frame" x="0.0" y="0.0" width="374" height="138"/>
                                     <subviews>
                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Bmg-De-UVq">
@@ -44,20 +44,20 @@
                                             <state key="normal" image="iconClip"/>
                                         </button>
                                         <view contentMode="scaleToFill" translatesAutoresizingMaskIntoConstraints="NO" id="und-tc-9BM">
-                                            <rect key="frame" x="35" y="0.0" width="339" height="138"/>
+                                            <rect key="frame" x="50" y="0.0" width="324" height="138"/>
                                             <subviews>
                                                 <stackView opaque="NO" contentMode="scaleToFill" alignment="top" spacing="14" translatesAutoresizingMaskIntoConstraints="NO" id="r2r-BH-Jab">
-                                                    <rect key="frame" x="10" y="5" width="319" height="128"/>
+                                                    <rect key="frame" x="10" y="5" width="304" height="128"/>
                                                     <subviews>
                                                         <textView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" textAlignment="natural" translatesAutoresizingMaskIntoConstraints="NO" id="zaO-Kf-R7Q" customClass="EmojiTextView" customModule="CoinDexRelease" customModuleProvider="target">
-                                                            <rect key="frame" x="0.0" y="0.0" width="221" height="128"/>
-                                                            <color key="backgroundColor" systemColor="systemRedColor"/>
+                                                            <rect key="frame" x="0.0" y="0.0" width="206" height="128"/>
+                                                            <color key="backgroundColor" white="0.0" alpha="0.0" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
                                                             <color key="textColor" systemColor="labelColor"/>
                                                             <fontDescription key="fontDescription" type="system" pointSize="14"/>
                                                             <textInputTraits key="textInputTraits" autocapitalizationType="sentences"/>
                                                         </textView>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="pFD-5a-gLE">
-                                                            <rect key="frame" x="235" y="0.0" width="35" height="35"/>
+                                                            <rect key="frame" x="220" y="0.0" width="35" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="height" constant="35" id="4Qp-bq-1YZ"/>
                                                                 <constraint firstAttribute="width" secondItem="pFD-5a-gLE" secondAttribute="height" multiplier="1:1" id="shB-qo-gdK"/>
@@ -66,7 +66,7 @@
                                                             <state key="normal" image="iconEmoji"/>
                                                         </button>
                                                         <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vet-XA-1Pr">
-                                                            <rect key="frame" x="284" y="0.0" width="35" height="35"/>
+                                                            <rect key="frame" x="269" y="0.0" width="35" height="35"/>
                                                             <constraints>
                                                                 <constraint firstAttribute="width" secondItem="vet-XA-1Pr" secondAttribute="height" multiplier="1:1" id="1Qx-7E-C6R"/>
                                                                 <constraint firstAttribute="height" constant="35" id="JIs-6G-2TX"/>
@@ -139,9 +139,6 @@
         </systemColor>
         <systemColor name="systemBackgroundColor">
             <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
-        </systemColor>
-        <systemColor name="systemRedColor">
-            <color red="1" green="0.23137254901960785" blue="0.18823529411764706" alpha="1" colorSpace="custom" customColorSpace="sRGB"/>
         </systemColor>
     </resources>
 </document>
