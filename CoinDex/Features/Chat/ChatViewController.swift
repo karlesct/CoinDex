@@ -9,6 +9,18 @@ class ChatViewController: UIViewController {
 
     // MARK: - IBoutlets
 
+    @IBOutlet weak var tableView: UITableView! {
+        didSet {
+            self.tableView.delegate = self
+            self.tableView.dataSource = self
+            self.tableView.rowHeight = UITableView.automaticDimension
+            self.tableView.tableFooterView = UIView()
+
+            //self.tableView.register()
+        }
+    }
+
+
     @IBOutlet weak var bottomConstraint: NSLayoutConstraint!
     @IBOutlet weak var emojiButton: UIButton! {
         didSet {
@@ -114,6 +126,29 @@ extension ChatViewController {
         self.view.layoutIfNeeded()
     }
 }
+
+extension ChatViewController: UITableViewDelegate {}
+
+extension ChatViewController: UITableViewDataSource {
+
+    func tableView(_ tableView: UITableView,
+                   cellForRowAt indexPath: IndexPath) -> UITableViewCell {
+//        if let item = self.viewModel?.dataSource?[indexPath.row] as? Message,
+//           item.kind == .text {
+//            let cell = self.tableView.dequeueReusableCell(TextBubbleTableViewCell.self,
+//                                                          for: indexPath)
+//            return cell
+//        }
+        return UITableViewCell()
+    }
+
+    func tableView(_ tableView: UITableView,
+                   numberOfRowsInSection section: Int) -> Int {
+
+        return self.viewModel?.dataSource?.count ?? 0
+    }
+}
+
 
 class EmojiTextView: UITextView {
     override var textInputMode: UITextInputMode? {

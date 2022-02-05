@@ -44,6 +44,14 @@
 		2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37927A481BF00796FA8 /* UIColor+Colors.swift */; };
 		2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D37B27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift */; };
 		2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D38327A4997300796FA8 /* UITextView+Placeholder.swift */; };
+		2763D38927A5CE6100796FA8 /* UITableView+ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D38827A5CE6100796FA8 /* UITableView+ReusableCell.swift */; };
+		2763D38B27A5CEF700796FA8 /* ReusableCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D38A27A5CEF700796FA8 /* ReusableCell.swift */; };
+		2763D39027A5D07100796FA8 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D38F27A5D07100796FA8 /* NibLoadable.swift */; };
+		2763D39327A5D5C600796FA8 /* Message.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D39227A5D5C600796FA8 /* Message.swift */; };
+		2763D39527A5D5EF00796FA8 /* Sender.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D39427A5D5EF00796FA8 /* Sender.swift */; };
+		2763D39727A5D76A00796FA8 /* MessageKind.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D39627A5D76A00796FA8 /* MessageKind.swift */; };
+		2763D39927A5D7FF00796FA8 /* MediaItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D39827A5D7FF00796FA8 /* MediaItem.swift */; };
+		2763D39C27A5E79900796FA8 /* TextBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D39B27A5E79900796FA8 /* TextBubbleTableViewCell.swift */; };
 		27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */; };
 		27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
@@ -193,6 +201,14 @@
 		2763D37927A481BF00796FA8 /* UIColor+Colors.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+Colors.swift"; sourceTree = "<group>"; };
 		2763D37B27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+SetBackgroundColorForState.swift"; sourceTree = "<group>"; };
 		2763D38327A4997300796FA8 /* UITextView+Placeholder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITextView+Placeholder.swift"; sourceTree = "<group>"; };
+		2763D38827A5CE6100796FA8 /* UITableView+ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableCell.swift"; sourceTree = "<group>"; };
+		2763D38A27A5CEF700796FA8 /* ReusableCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCell.swift; sourceTree = "<group>"; };
+		2763D38F27A5D07100796FA8 /* NibLoadable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadable.swift; sourceTree = "<group>"; };
+		2763D39227A5D5C600796FA8 /* Message.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Message.swift; sourceTree = "<group>"; };
+		2763D39427A5D5EF00796FA8 /* Sender.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Sender.swift; sourceTree = "<group>"; };
+		2763D39627A5D76A00796FA8 /* MessageKind.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MessageKind.swift; sourceTree = "<group>"; };
+		2763D39827A5D7FF00796FA8 /* MediaItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MediaItem.swift; sourceTree = "<group>"; };
+		2763D39B27A5E79900796FA8 /* TextBubbleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBubbleTableViewCell.swift; sourceTree = "<group>"; };
 		27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateDecodingStrategyFormatters.swift"; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
@@ -307,6 +323,8 @@
 		270F0FBB279D6D99005DE9FB /* Chat */ = {
 			isa = PBXGroup;
 			children = (
+				2763D39A27A5E77400796FA8 /* Cells */,
+				2763D39127A5D5A800796FA8 /* Message */,
 				270F0FCB279D7BA9005DE9FB /* Bubble */,
 				270F0FBC279D6DC1005DE9FB /* ChatAssembler.swift */,
 				270F0FBE279D6DCE005DE9FB /* ChatViewController.swift */,
@@ -683,6 +701,8 @@
 				2763D37427A47C3900796FA8 /* UIColor */,
 				271EEA3527207D8F00BA30FD /* UIAlertController */,
 				271EEA3F2720841600BA30FD /* URLRequest */,
+				2763D38527A5CE1500796FA8 /* UITableView */,
+				2763D38C27A5CEFD00796FA8 /* UITableViewCell */,
 				2763D38227A4994600796FA8 /* UITextView */,
 				279B67172784685000480155 /* UIView */,
 				271EEA3C27207E5B00BA30FD /* UIViewController */,
@@ -714,6 +734,8 @@
 		2758FC962709B4E9009BCB5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2763D38E27A5D05200796FA8 /* NibLoadable */,
+				2763D38D27A5CF7700796FA8 /* ReusableCell */,
 				270F0FC6279D7868005DE9FB /* Observable */,
 				2758FCE02709C467009BCB5A /* Config */,
 			);
@@ -819,6 +841,56 @@
 				2763D38327A4997300796FA8 /* UITextView+Placeholder.swift */,
 			);
 			path = UITextView;
+			sourceTree = "<group>";
+		};
+		2763D38527A5CE1500796FA8 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+				2763D38827A5CE6100796FA8 /* UITableView+ReusableCell.swift */,
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		2763D38C27A5CEFD00796FA8 /* UITableViewCell */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableViewCell;
+			sourceTree = "<group>";
+		};
+		2763D38D27A5CF7700796FA8 /* ReusableCell */ = {
+			isa = PBXGroup;
+			children = (
+				2763D38A27A5CEF700796FA8 /* ReusableCell.swift */,
+			);
+			path = ReusableCell;
+			sourceTree = "<group>";
+		};
+		2763D38E27A5D05200796FA8 /* NibLoadable */ = {
+			isa = PBXGroup;
+			children = (
+				2763D38F27A5D07100796FA8 /* NibLoadable.swift */,
+			);
+			path = NibLoadable;
+			sourceTree = "<group>";
+		};
+		2763D39127A5D5A800796FA8 /* Message */ = {
+			isa = PBXGroup;
+			children = (
+				2763D39227A5D5C600796FA8 /* Message.swift */,
+				2763D39427A5D5EF00796FA8 /* Sender.swift */,
+				2763D39627A5D76A00796FA8 /* MessageKind.swift */,
+				2763D39827A5D7FF00796FA8 /* MediaItem.swift */,
+			);
+			path = Message;
+			sourceTree = "<group>";
+		};
+		2763D39A27A5E77400796FA8 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2763D39B27A5E79900796FA8 /* TextBubbleTableViewCell.swift */,
+			);
+			path = Cells;
 			sourceTree = "<group>";
 		};
 		27696B38273C3EC500D17FC4 /* Extensions */ = {
@@ -1335,6 +1407,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
+				2763D39327A5D5C600796FA8 /* Message.swift in Sources */,
 				279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
 				27ABA0C127297BC6000FD326 /* EventsResponse.swift in Sources */,
@@ -1361,7 +1434,9 @@
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
 				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
+				2763D39027A5D07100796FA8 /* NibLoadable.swift in Sources */,
 				27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */,
+				2763D39727A5D76A00796FA8 /* MessageKind.swift in Sources */,
 				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
 				270F0FBF279D6DCE005DE9FB /* ChatViewController.swift in Sources */,
@@ -1385,6 +1460,7 @@
 				27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */,
 				275710882725941F00348F93 /* DataRequest.swift in Sources */,
 				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
+				2763D38B27A5CEF700796FA8 /* ReusableCell.swift in Sources */,
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
 				279B67242784713D00480155 /* TModel.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
@@ -1406,6 +1482,7 @@
 				2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */,
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
+				2763D38927A5CE6100796FA8 /* UITableView+ReusableCell.swift in Sources */,
 				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
 				27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */,
 				27ABA0892726AF4F000FD326 /* FinancePlatformsRequest.swift in Sources */,
@@ -1420,6 +1497,8 @@
 				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */,
+				2763D39C27A5E79900796FA8 /* TextBubbleTableViewCell.swift in Sources */,
+				2763D39927A5D7FF00796FA8 /* MediaItem.swift in Sources */,
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
 				27BB132C2788B1FC00B5FE4D /* MainViewController.swift in Sources */,
 				2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */,
@@ -1444,6 +1523,7 @@
 				279B6726278471BE00480155 /* TutorialPageModel.swift in Sources */,
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
 				27ABA102273188B0000FD326 /* ExchangesListResponse.swift in Sources */,
+				2763D39527A5D5EF00796FA8 /* Sender.swift in Sources */,
 				279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;

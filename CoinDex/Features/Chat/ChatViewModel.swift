@@ -6,7 +6,7 @@
 import Foundation
 
 protocol ChatViewModelProtocol {
-
+    var dataSource: [TModel]? { get set }
 }
 
 class ChatViewModel: ChatViewModelProtocol {
@@ -15,7 +15,18 @@ class ChatViewModel: ChatViewModelProtocol {
 
     var useCase: ChatUseCaseProtocol?
 
+    var dataSource: [TModel]?
     // MARK: - Init
+
+    init() {
+        self.dataSource = [
+            Message(sender: Sender(senderId: UUID(),
+                                   senderName: "Test"),
+                    messageId: UUID(),
+                    sentDate: Date(),
+                    kind: .text("Hola"))
+        ]
+    }
 
     // MARK: - Methods
 
