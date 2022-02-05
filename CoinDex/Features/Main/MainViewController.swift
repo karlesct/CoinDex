@@ -20,7 +20,7 @@ class MainViewController: UIViewController {
         }
     }
 
-    @IBOutlet weak var chatButton: UIButton!{
+    @IBOutlet weak var chatButton: UIButton! {
         didSet {
             self.chatButton.setTitle("Open Chat",
                                          for: .normal)
@@ -31,6 +31,16 @@ class MainViewController: UIViewController {
         }
     }
 
+    @IBOutlet weak var formButton: UIButton! {
+        didSet {
+            self.formButton.setTitle("Open form",
+                                         for: .normal)
+
+            self.formButton.addTarget(self,
+                                          action: #selector(self.formButtonAction),
+                                          for: .touchUpInside)
+        }
+    }
 
     // MARK: - Properties
 
@@ -113,13 +123,24 @@ extension MainViewController {
                      completion: nil)
     }
 
+    @objc func formButtonAction() {
+        let assembler = ChatAssembler()
+        let viewController = assembler.viewController()
+        viewController.modalPresentationStyle = .overFullScreen
+
+        let module = FormDemoModule()
+        self.present(module.view,
+                     animated: true,
+                     completion: nil)
+    }
+
 }
 
 
 class test {
 
     func fetch<T: DataRequest>(request: T) {
-        DefaultNetworkService().request(request) { [weak self] result in
+        DefaultNetworkService().request(request) { /*[weak self]*/ result in
             switch result {
             case .success(let model):
                 NSLog("login url: \(model)")

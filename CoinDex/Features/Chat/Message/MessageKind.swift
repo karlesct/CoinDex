@@ -10,4 +10,3 @@ enum MessageKind {
     case image(MediaItem)
 }
 
-extension MessageKind: Equatable {}

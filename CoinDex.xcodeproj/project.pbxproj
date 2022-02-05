@@ -54,6 +54,43 @@
 		2763D39C27A5E79900796FA8 /* TextBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D39B27A5E79900796FA8 /* TextBubbleTableViewCell.swift */; };
 		27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */; };
 		27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */; };
+		2780808827AF09FE00AA44E3 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808727AF09FE00AA44E3 /* FormViewController.swift */; };
+		2780808A27AF0B9000AA44E3 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808927AF0B9000AA44E3 /* FormField.swift */; };
+		2780808C27AF0BB100AA44E3 /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808B27AF0BB100AA44E3 /* FormHeader.swift */; };
+		2780808E27AF0BCD00AA44E3 /* FormSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808D27AF0BCD00AA44E3 /* FormSection.swift */; };
+		2780809127AF0C3C00AA44E3 /* FieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809027AF0C3C00AA44E3 /* FieldDataSource.swift */; };
+		2780809327AF0C5500AA44E3 /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809227AF0C5500AA44E3 /* FormDataSource.swift */; };
+		2780809527AF0C7800AA44E3 /* InputDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809427AF0C7800AA44E3 /* InputDataSource.swift */; };
+		2780809927AF0D4A00AA44E3 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809827AF0D4A00AA44E3 /* TextInputTableViewCell.swift */; };
+		2780809B27AF0D7C00AA44E3 /* TextInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809A27AF0D7C00AA44E3 /* TextInputFormField.swift */; };
+		2780809D27AF0D9600AA44E3 /* TextInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809C27AF0D9600AA44E3 /* TextInputViewModel.swift */; };
+		2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2780809E27AF0E2500AA44E3 /* TextInputTableViewCell.xib */; };
+		278080A427AF108F00AA44E3 /* FormDemoAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A327AF108F00AA44E3 /* FormDemoAssembler.swift */; };
+		278080A627AF10C100AA44E3 /* FormDemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A527AF10C100AA44E3 /* FormDemoRouter.swift */; };
+		278080A827AF10E500AA44E3 /* FormDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A727AF10E500AA44E3 /* FormDemoViewController.swift */; };
+		278080AA27AF110200AA44E3 /* FormDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A927AF110200AA44E3 /* FormDemoViewModel.swift */; };
+		278080AD27AF12AE00AA44E3 /* TitleFormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080AC27AF12AE00AA44E3 /* TitleFormHeader.swift */; };
+		278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080AE27AF12D300AA44E3 /* TitleHeaderFooterView.swift */; };
+		278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B127AF137200AA44E3 /* DateInputTableViewCell.swift */; };
+		278080B427AF13A100AA44E3 /* DateInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B327AF13A100AA44E3 /* DateInputFormField.swift */; };
+		278080B627AF13D500AA44E3 /* DateInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B527AF13D500AA44E3 /* DateInputViewModel.swift */; };
+		278080B827AF17DC00AA44E3 /* DateInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080B727AF17DC00AA44E3 /* DateInputTableViewCell.xib */; };
+		278080BB27AF18F800AA44E3 /* ToggleInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BA27AF18F800AA44E3 /* ToggleInputTableViewCell.swift */; };
+		278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BC27AF192400AA44E3 /* ToggleInputFormField.swift */; };
+		278080BF27AF196800AA44E3 /* ToggleInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BE27AF196800AA44E3 /* ToggleInputViewModel.swift */; };
+		278080C127AF199100AA44E3 /* ToggleInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080C027AF199100AA44E3 /* ToggleInputTableViewCell.xib */; };
+		278080C427AF1A3D00AA44E3 /* SelectInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C327AF1A3D00AA44E3 /* SelectInputTableViewCell.swift */; };
+		278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080C527AF1A4600AA44E3 /* SelectInputTableViewCell.xib */; };
+		278080C827AF1A7900AA44E3 /* SelectInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C727AF1A7900AA44E3 /* SelectInputFormField.swift */; };
+		278080CA27AF1AB600AA44E3 /* SelectInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C927AF1AB600AA44E3 /* SelectInputViewModel.swift */; };
+		278080CD27AF1B5D00AA44E3 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080CC27AF1B5D00AA44E3 /* Country.swift */; };
+		278080CF27AF1B7A00AA44E3 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080CE27AF1B7A00AA44E3 /* Province.swift */; };
+		278080D227AF1BD100AA44E3 /* SelectableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D127AF1BD100AA44E3 /* SelectableItem.swift */; };
+		278080D427AF1C0400AA44E3 /* OpenSelectRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D327AF1C0400AA44E3 /* OpenSelectRouterInput.swift */; };
+		278080D627AF1C1C00AA44E3 /* SelectModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D527AF1C1C00AA44E3 /* SelectModule.swift */; };
+		278080D827AF1C3900AA44E3 /* SelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D727AF1C3900AA44E3 /* SelectViewModel.swift */; };
+		278080DA27AF1C5400AA44E3 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D927AF1C5400AA44E3 /* SelectViewController.swift */; };
+		278080DC27AF1DB700AA44E3 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080DB27AF1DB700AA44E3 /* SelectViewController.xib */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
 		279B670E2784616900480155 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
 		279B67102784617600480155 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
@@ -211,6 +248,43 @@
 		2763D39B27A5E79900796FA8 /* TextBubbleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBubbleTableViewCell.swift; sourceTree = "<group>"; };
 		27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateDecodingStrategyFormatters.swift"; sourceTree = "<group>"; };
+		2780808727AF09FE00AA44E3 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
+		2780808927AF0B9000AA44E3 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
+		2780808B27AF0BB100AA44E3 /* FormHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeader.swift; sourceTree = "<group>"; };
+		2780808D27AF0BCD00AA44E3 /* FormSection.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormSection.swift; sourceTree = "<group>"; };
+		2780809027AF0C3C00AA44E3 /* FieldDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FieldDataSource.swift; sourceTree = "<group>"; };
+		2780809227AF0C5500AA44E3 /* FormDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDataSource.swift; sourceTree = "<group>"; };
+		2780809427AF0C7800AA44E3 /* InputDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDataSource.swift; sourceTree = "<group>"; };
+		2780809827AF0D4A00AA44E3 /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
+		2780809A27AF0D7C00AA44E3 /* TextInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputFormField.swift; sourceTree = "<group>"; };
+		2780809C27AF0D9600AA44E3 /* TextInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputViewModel.swift; sourceTree = "<group>"; };
+		2780809E27AF0E2500AA44E3 /* TextInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputTableViewCell.xib; sourceTree = "<group>"; };
+		278080A327AF108F00AA44E3 /* FormDemoAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemoAssembler.swift; sourceTree = "<group>"; };
+		278080A527AF10C100AA44E3 /* FormDemoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemoRouter.swift; sourceTree = "<group>"; };
+		278080A727AF10E500AA44E3 /* FormDemoViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemoViewController.swift; sourceTree = "<group>"; };
+		278080A927AF110200AA44E3 /* FormDemoViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemoViewModel.swift; sourceTree = "<group>"; };
+		278080AC27AF12AE00AA44E3 /* TitleFormHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleFormHeader.swift; sourceTree = "<group>"; };
+		278080AE27AF12D300AA44E3 /* TitleHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderFooterView.swift; sourceTree = "<group>"; };
+		278080B127AF137200AA44E3 /* DateInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputTableViewCell.swift; sourceTree = "<group>"; };
+		278080B327AF13A100AA44E3 /* DateInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputFormField.swift; sourceTree = "<group>"; };
+		278080B527AF13D500AA44E3 /* DateInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputViewModel.swift; sourceTree = "<group>"; };
+		278080B727AF17DC00AA44E3 /* DateInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateInputTableViewCell.xib; sourceTree = "<group>"; };
+		278080BA27AF18F800AA44E3 /* ToggleInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleInputTableViewCell.swift; sourceTree = "<group>"; };
+		278080BC27AF192400AA44E3 /* ToggleInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleInputFormField.swift; sourceTree = "<group>"; };
+		278080BE27AF196800AA44E3 /* ToggleInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleInputViewModel.swift; sourceTree = "<group>"; };
+		278080C027AF199100AA44E3 /* ToggleInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToggleInputTableViewCell.xib; sourceTree = "<group>"; };
+		278080C327AF1A3D00AA44E3 /* SelectInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInputTableViewCell.swift; sourceTree = "<group>"; };
+		278080C527AF1A4600AA44E3 /* SelectInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectInputTableViewCell.xib; sourceTree = "<group>"; };
+		278080C727AF1A7900AA44E3 /* SelectInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInputFormField.swift; sourceTree = "<group>"; };
+		278080C927AF1AB600AA44E3 /* SelectInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInputViewModel.swift; sourceTree = "<group>"; };
+		278080CC27AF1B5D00AA44E3 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
+		278080CE27AF1B7A00AA44E3 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
+		278080D127AF1BD100AA44E3 /* SelectableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableItem.swift; sourceTree = "<group>"; };
+		278080D327AF1C0400AA44E3 /* OpenSelectRouterInput.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = OpenSelectRouterInput.swift; sourceTree = "<group>"; };
+		278080D527AF1C1C00AA44E3 /* SelectModule.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectModule.swift; sourceTree = "<group>"; };
+		278080D727AF1C3900AA44E3 /* SelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewModel.swift; sourceTree = "<group>"; };
+		278080D927AF1C5400AA44E3 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
+		278080DB27AF1DB700AA44E3 /* SelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -717,6 +791,7 @@
 				279B6711278462E400480155 /* Common */,
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
 				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
+				278080A227AF107900AA44E3 /* FormDemo */,
 				27BB13282788B1CD00B5FE4D /* Main */,
 				270F0FBB279D6D99005DE9FB /* Chat */,
 				279B670A27845F5E00480155 /* Tutorial */,
@@ -734,6 +809,7 @@
 		2758FC962709B4E9009BCB5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2780808627AF092C00AA44E3 /* Form */,
 				2763D38E27A5D05200796FA8 /* NibLoadable */,
 				2763D38D27A5CF7700796FA8 /* ReusableCell */,
 				270F0FC6279D7868005DE9FB /* Observable */,
@@ -916,6 +992,129 @@
 				27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */,
 			);
 			path = JSONDecoder;
+			sourceTree = "<group>";
+		};
+		2780808627AF092C00AA44E3 /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				2780809627AF0D1500AA44E3 /* Cells */,
+				2780808F27AF0C2900AA44E3 /* Datasource */,
+				2780808927AF0B9000AA44E3 /* FormField.swift */,
+				2780808B27AF0BB100AA44E3 /* FormHeader.swift */,
+				2780808D27AF0BCD00AA44E3 /* FormSection.swift */,
+				2780808727AF09FE00AA44E3 /* FormViewController.swift */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		2780808F27AF0C2900AA44E3 /* Datasource */ = {
+			isa = PBXGroup;
+			children = (
+				2780809027AF0C3C00AA44E3 /* FieldDataSource.swift */,
+				2780809227AF0C5500AA44E3 /* FormDataSource.swift */,
+				2780809427AF0C7800AA44E3 /* InputDataSource.swift */,
+			);
+			path = Datasource;
+			sourceTree = "<group>";
+		};
+		2780809627AF0D1500AA44E3 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				278080AB27AF127E00AA44E3 /* TitleHeader */,
+				2780809727AF0D3800AA44E3 /* TextInputCell */,
+				278080B027AF134D00AA44E3 /* DateInputCell */,
+				278080B927AF18D300AA44E3 /* ToggleInputCell */,
+				278080C227AF1A2200AA44E3 /* SelectInputCell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2780809727AF0D3800AA44E3 /* TextInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				2780809827AF0D4A00AA44E3 /* TextInputTableViewCell.swift */,
+				2780809E27AF0E2500AA44E3 /* TextInputTableViewCell.xib */,
+				2780809A27AF0D7C00AA44E3 /* TextInputFormField.swift */,
+				2780809C27AF0D9600AA44E3 /* TextInputViewModel.swift */,
+			);
+			path = TextInputCell;
+			sourceTree = "<group>";
+		};
+		278080A227AF107900AA44E3 /* FormDemo */ = {
+			isa = PBXGroup;
+			children = (
+				278080D027AF1BC100AA44E3 /* Select */,
+				278080CB27AF1B4000AA44E3 /* Models */,
+				278080A327AF108F00AA44E3 /* FormDemoAssembler.swift */,
+				278080A527AF10C100AA44E3 /* FormDemoRouter.swift */,
+				278080A727AF10E500AA44E3 /* FormDemoViewController.swift */,
+				278080A927AF110200AA44E3 /* FormDemoViewModel.swift */,
+			);
+			path = FormDemo;
+			sourceTree = "<group>";
+		};
+		278080AB27AF127E00AA44E3 /* TitleHeader */ = {
+			isa = PBXGroup;
+			children = (
+				278080AC27AF12AE00AA44E3 /* TitleFormHeader.swift */,
+				278080AE27AF12D300AA44E3 /* TitleHeaderFooterView.swift */,
+			);
+			path = TitleHeader;
+			sourceTree = "<group>";
+		};
+		278080B027AF134D00AA44E3 /* DateInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				278080B127AF137200AA44E3 /* DateInputTableViewCell.swift */,
+				278080B727AF17DC00AA44E3 /* DateInputTableViewCell.xib */,
+				278080B327AF13A100AA44E3 /* DateInputFormField.swift */,
+				278080B527AF13D500AA44E3 /* DateInputViewModel.swift */,
+			);
+			path = DateInputCell;
+			sourceTree = "<group>";
+		};
+		278080B927AF18D300AA44E3 /* ToggleInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				278080BA27AF18F800AA44E3 /* ToggleInputTableViewCell.swift */,
+				278080C027AF199100AA44E3 /* ToggleInputTableViewCell.xib */,
+				278080BC27AF192400AA44E3 /* ToggleInputFormField.swift */,
+				278080BE27AF196800AA44E3 /* ToggleInputViewModel.swift */,
+			);
+			path = ToggleInputCell;
+			sourceTree = "<group>";
+		};
+		278080C227AF1A2200AA44E3 /* SelectInputCell */ = {
+			isa = PBXGroup;
+			children = (
+				278080C327AF1A3D00AA44E3 /* SelectInputTableViewCell.swift */,
+				278080C527AF1A4600AA44E3 /* SelectInputTableViewCell.xib */,
+				278080C727AF1A7900AA44E3 /* SelectInputFormField.swift */,
+				278080C927AF1AB600AA44E3 /* SelectInputViewModel.swift */,
+			);
+			path = SelectInputCell;
+			sourceTree = "<group>";
+		};
+		278080CB27AF1B4000AA44E3 /* Models */ = {
+			isa = PBXGroup;
+			children = (
+				278080CC27AF1B5D00AA44E3 /* Country.swift */,
+				278080CE27AF1B7A00AA44E3 /* Province.swift */,
+			);
+			path = Models;
+			sourceTree = "<group>";
+		};
+		278080D027AF1BC100AA44E3 /* Select */ = {
+			isa = PBXGroup;
+			children = (
+				278080D127AF1BD100AA44E3 /* SelectableItem.swift */,
+				278080D327AF1C0400AA44E3 /* OpenSelectRouterInput.swift */,
+				278080D527AF1C1C00AA44E3 /* SelectModule.swift */,
+				278080D727AF1C3900AA44E3 /* SelectViewModel.swift */,
+				278080D927AF1C5400AA44E3 /* SelectViewController.swift */,
+				278080DB27AF1DB700AA44E3 /* SelectViewController.xib */,
+			);
+			path = Select;
 			sourceTree = "<group>";
 		};
 		279B670A27845F5E00480155 /* Tutorial */ = {
@@ -1355,11 +1554,16 @@
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
 				279B67152784652A00480155 /* TutorialViewController.xib in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
+				278080B827AF17DC00AA44E3 /* DateInputTableViewCell.xib in Resources */,
 				27BB13322788B22000B5FE4D /* MainViewController.xib in Resources */,
 				27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */,
+				278080C127AF199100AA44E3 /* ToggleInputTableViewCell.xib in Resources */,
 				279B672127846F6B00480155 /* TutorialPageViewController.xib in Resources */,
+				278080DC27AF1DB700AA44E3 /* SelectViewController.xib in Resources */,
 				270F0FC3279D6DF1005DE9FB /* ChatViewController.xib in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
+				2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */,
+				278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1406,7 +1610,9 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278080D827AF1C3900AA44E3 /* SelectViewModel.swift in Sources */,
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
+				278080CA27AF1AB600AA44E3 /* SelectInputViewModel.swift in Sources */,
 				2763D39327A5D5C600796FA8 /* Message.swift in Sources */,
 				279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
@@ -1415,17 +1621,24 @@
 				27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */,
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
+				278080B427AF13A100AA44E3 /* DateInputFormField.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
 				27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */,
 				27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */,
+				2780808A27AF0B9000AA44E3 /* FormField.swift in Sources */,
 				27BB13352788BFAA00B5FE4D /* AppDelegateAssembler.swift in Sources */,
+				2780809127AF0C3C00AA44E3 /* FieldDataSource.swift in Sources */,
 				27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */,
 				27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */,
+				278080D627AF1C1C00AA44E3 /* SelectModule.swift in Sources */,
 				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
+				278080A427AF108F00AA44E3 /* FormDemoAssembler.swift in Sources */,
 				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
+				2780808E27AF0BCD00AA44E3 /* FormSection.swift in Sources */,
 				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
+				278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */,
 				27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
@@ -1435,20 +1648,30 @@
 				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
 				2763D39027A5D07100796FA8 /* NibLoadable.swift in Sources */,
+				2780809B27AF0D7C00AA44E3 /* TextInputFormField.swift in Sources */,
+				278080D427AF1C0400AA44E3 /* OpenSelectRouterInput.swift in Sources */,
 				27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */,
 				2763D39727A5D76A00796FA8 /* MessageKind.swift in Sources */,
+				2780809927AF0D4A00AA44E3 /* TextInputTableViewCell.swift in Sources */,
 				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
 				270F0FBF279D6DCE005DE9FB /* ChatViewController.swift in Sources */,
+				2780809527AF0C7800AA44E3 /* InputDataSource.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
 				270F0FC8279D787E005DE9FB /* Observable.swift in Sources */,
 				27E636E32733EEFB00FC1210 /* CoinsIdResponse.swift in Sources */,
 				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
+				278080CD27AF1B5D00AA44E3 /* Country.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
+				278080BF27AF196800AA44E3 /* ToggleInputViewModel.swift in Sources */,
 				27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */,
 				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
 				27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */,
+				278080B627AF13D500AA44E3 /* DateInputViewModel.swift in Sources */,
+				278080AA27AF110200AA44E3 /* FormDemoViewModel.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
+				278080DA27AF1C5400AA44E3 /* SelectViewController.swift in Sources */,
+				2780808C27AF0BB100AA44E3 /* FormHeader.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				27BB132A2788B1EE00B5FE4D /* MainAssembler.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
@@ -1459,6 +1682,7 @@
 				27ABA0BF27297BAC000FD326 /* EventsRequest.swift in Sources */,
 				27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */,
 				275710882725941F00348F93 /* DataRequest.swift in Sources */,
+				278080C827AF1A7900AA44E3 /* SelectInputFormField.swift in Sources */,
 				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
 				2763D38B27A5CEF700796FA8 /* ReusableCell.swift in Sources */,
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
@@ -1467,23 +1691,30 @@
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
 				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift in Sources */,
 				275710912725954600348F93 /* PingRequest.swift in Sources */,
+				2780809327AF0C5500AA44E3 /* FormDataSource.swift in Sources */,
 				279B671B27846F3000480155 /* TutorialPageAssembler.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
 				270F0FC1279D6DDC005DE9FB /* ChatViewModel.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
+				278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */,
 				279B67102784617600480155 /* TutorialViewController.swift in Sources */,
+				278080CF27AF1B7A00AA44E3 /* Province.swift in Sources */,
+				278080C427AF1A3D00AA44E3 /* SelectInputTableViewCell.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
 				27ABA0D82729B1BB000FD326 /* DerivativesExchangesListRequest.swift in Sources */,
 				27ABA0F12731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift in Sources */,
 				271EEA3B27207E3D00BA30FD /* UIWindow+VisibleViewController.swift in Sources */,
 				27ABA0FD27318703000FD326 /* ExchangesResponse.swift in Sources */,
+				278080D227AF1BD100AA44E3 /* SelectableItem.swift in Sources */,
 				27BB132E2788B20800B5FE4D /* MainNavigator.swift in Sources */,
 				2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */,
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
 				2763D38927A5CE6100796FA8 /* UITableView+ReusableCell.swift in Sources */,
 				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
+				2780808827AF09FE00AA44E3 /* FormViewController.swift in Sources */,
+				278080AD27AF12AE00AA44E3 /* TitleFormHeader.swift in Sources */,
 				27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */,
 				27ABA0892726AF4F000FD326 /* FinancePlatformsRequest.swift in Sources */,
 				27ABA0BA272976B4000FD326 /* EventTypesRequest.swift in Sources */,
@@ -1497,6 +1728,7 @@
 				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */,
+				278080BB27AF18F800AA44E3 /* ToggleInputTableViewCell.swift in Sources */,
 				2763D39C27A5E79900796FA8 /* TextBubbleTableViewCell.swift in Sources */,
 				2763D39927A5D7FF00796FA8 /* MediaItem.swift in Sources */,
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
@@ -1504,6 +1736,7 @@
 				2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
+				278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */,
 				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
 				279B670E2784616900480155 /* TutorialViewModel.swift in Sources */,
 				27ABA0FB273186F6000FD326 /* ExchangesRequest.swift in Sources */,
@@ -1514,17 +1747,20 @@
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,
 				27BB13302788B21300B5FE4D /* MainViewModel.swift in Sources */,
 				279B6713278463DB00480155 /* UIViewController+loadFromNib.swift in Sources */,
+				2780809D27AF0D9600AA44E3 /* TextInputViewModel.swift in Sources */,
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
 				27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */,
 				27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */,
 				2763D37627A47C7B00796FA8 /* UIColor+Hex.swift in Sources */,
 				27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */,
 				27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */,
+				278080A627AF10C100AA44E3 /* FormDemoRouter.swift in Sources */,
 				279B6726278471BE00480155 /* TutorialPageModel.swift in Sources */,
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
 				27ABA102273188B0000FD326 /* ExchangesListResponse.swift in Sources */,
 				2763D39527A5D5EF00796FA8 /* Sender.swift in Sources */,
 				279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */,
+				278080A827AF10E500AA44E3 /* FormDemoViewController.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
