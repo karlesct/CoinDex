@@ -7,13 +7,17 @@ import UIKit
 
 protocol DateInputCellDelegate: AnyObject {
 
-    func cell(_ cell: DateInputTableViewCell, didChangeValue value: Date)
+    func cell(_ cell: DateInputTableViewCell,
+              didChangeValue value: Date)
 }
 
-final class DateInputTableViewCell: UITableViewCell, NibLoadable, ReusableCell {
+final class DateInputTableViewCell: UITableViewCell,
+                                    NibLoadable,
+                                    ReusableCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var textField: UITextField!
+
     private let datePicker = UIDatePicker()
     private let toolbar = UIToolbar(frame: .init(x: 0.0, y: 0.0, width: 100.0, height: 100.0))
 

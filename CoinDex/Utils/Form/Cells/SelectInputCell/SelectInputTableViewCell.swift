@@ -5,7 +5,9 @@
 
 import UIKit
 
-final class SelectInputTableViewCell: UITableViewCell, NibLoadable, ReusableCell {
+final class SelectInputTableViewCell: UITableViewCell,
+                                      NibLoadable,
+                                      ReusableCell {
 
     @IBOutlet weak var titleLabel: UILabel!
     @IBOutlet weak var valueLabel: UILabel!

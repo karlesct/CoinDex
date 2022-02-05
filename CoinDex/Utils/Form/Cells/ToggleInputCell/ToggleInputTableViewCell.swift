@@ -7,29 +7,31 @@ import UIKit
 
 protocol ToggleInputCellDelegate: AnyObject {
 
-    func cell(_ cell: ToggleInputTableViewCell, didChangeValue value: Bool)
+    func cell(_ cell: ToggleInputTableViewCell,
+              didChangeValue value: Bool)
 }
 
-final class ToggleInputTableViewCell: UITableViewCell, NibLoadable, ReusableCell {
+final class ToggleInputTableViewCell: UITableViewCell,
+                                      NibLoadable,
+                                      ReusableCell {
 
     @IBOutlet weak var titleLabel: UILabel!
-    @IBOutlet weak var valueSwitch: UISwitch!
+    @IBOutlet weak var valueSwitch: UISwitch! {
+        didSet {
+            self.valueSwitch.addTarget(self, action: #selector(valueSwitchDidChange), for: .valueChanged)
+        }
+    }
 
     weak var delegate: ToggleInputCellDelegate?
 
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
-        commonInit()
-    }
-
-    private func commonInit() {
-
-        valueSwitch.addTarget(self, action: #selector(valueSwitchDidChange), for: .valueChanged)
     }
 
     @objc private func valueSwitchDidChange() {
-        delegate?.cell(self, didChangeValue: valueSwitch.isOn)
+        delegate?.cell(self,
+                       didChangeValue: valueSwitch.isOn)
     }
 }
 
