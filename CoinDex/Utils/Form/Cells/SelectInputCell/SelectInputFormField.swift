@@ -8,7 +8,7 @@ import UIKit
 final class SelectInputFormField<Value: SelectableItem> {
 
     let key: String
-    var viewModel: SelectInputViewModel
+    var viewModel: SelectInputCellModel
     var dataSource: [Value]
 
     weak var cell: SelectInputTableViewCell?
@@ -17,7 +17,7 @@ final class SelectInputFormField<Value: SelectableItem> {
 
     private var selectedIndex: Int?
 
-    init(key: String, viewModel: SelectInputViewModel, dataSource: [Value] = [], router: OpenSelectRouterInput?) {
+    init(key: String, viewModel: SelectInputCellModel, dataSource: [Value] = [], router: OpenSelectRouterInput?) {
         self.key = key
         self.viewModel = viewModel
         self.dataSource = dataSource
@@ -28,8 +28,6 @@ final class SelectInputFormField<Value: SelectableItem> {
 // MARK: - FormField
 extension SelectInputFormField: FormField {
 
-    var height: CGFloat { 44.0 }
-
     func register(for tableView: UITableView) {
         tableView.register(SelectInputTableViewCell.self)
     }
@@ -37,7 +35,7 @@ extension SelectInputFormField: FormField {
     func dequeue(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(SelectInputTableViewCell.self,
                                                  for: indexPath)
-        cell.configure(viewModel)
+        cell.configure(with: viewModel)
         self.cell = cell
         return cell
     }
@@ -86,6 +84,6 @@ extension SelectInputFormField: SelectModuleOutput {
 
     func didSelectItem(at index: Int) {
         value = dataSource[index]
-        cell?.configure(viewModel)
+        cell?.configure(with: viewModel)
     }
 }

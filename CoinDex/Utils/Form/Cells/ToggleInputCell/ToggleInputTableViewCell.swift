@@ -38,8 +38,8 @@ final class ToggleInputTableViewCell: UITableViewCell,
 // MARK: - Configure
 extension ToggleInputTableViewCell {
 
-    func configure(_ viewModel: ToggleInputViewModel) {
-        titleLabel.text = viewModel.title
-        valueSwitch.isOn = viewModel.value
+    func configure(with item: ToggleInputCellModel) {
+        titleLabel.text = item.title
+        valueSwitch.isOn = item.value
     }
 }

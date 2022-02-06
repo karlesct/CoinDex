@@ -18,11 +18,26 @@ public extension UITableView {
         register(nib, forCellReuseIdentifier: T.reuseIdentifier)
     }
 
+    func register<T: UITableViewHeaderFooterView>(_: T.Type) where T: ReusableCell, T: NibLoadable {
+        let bundle = Bundle(for: T.self)
+        let nib = UINib(nibName: T.nibName, bundle: bundle)
+
+        register(nib, forHeaderFooterViewReuseIdentifier: T.reuseIdentifier)
+    }
+
     /**
         Dequeue a reusable cell conforming the ReusableView protocol
      **/
     func dequeueReusableCell<T: UITableViewCell>(_: T.Type) -> T where T: ReusableCell {
         guard let cell = dequeueReusableCell(withIdentifier: T.reuseIdentifier) as? T else {
+            fatalError("Could not dequeue cell with identifier: \(T.reuseIdentifier)")
+        }
+
+        return cell
+    }
+
+    func dequeueReusableHeaderFooterView<T: UITableViewHeaderFooterView>(_: T.Type) -> T where T: ReusableCell {
+        guard let cell = dequeueReusableHeaderFooterView(withIdentifier: T.reuseIdentifier) as? T else {
             fatalError("Could not dequeue cell with identifier: \(T.reuseIdentifier)")
         }
 

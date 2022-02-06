@@ -8,11 +8,11 @@ import UIKit
 final class ToggleInputFormField {
 
     let key: String
-    var viewModel: ToggleInputViewModel
+    var viewModel: ToggleInputCellModel
 
     weak var delegate: FormFieldDelegate?
 
-    init(key: String, viewModel: ToggleInputViewModel) {
+    init(key: String, viewModel: ToggleInputCellModel) {
         self.key = key
         self.viewModel = viewModel
     }
@@ -21,8 +21,6 @@ final class ToggleInputFormField {
 // MARK: - FormField
 extension ToggleInputFormField: FormField {
 
-    var height: CGFloat { 44.0 }
-
     func register(for tableView: UITableView) {
         tableView.register(ToggleInputTableViewCell.self)
     }
@@ -30,7 +28,7 @@ extension ToggleInputFormField: FormField {
     func dequeue(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(ToggleInputTableViewCell.self,
                                                  for: indexPath)
-        cell.configure(viewModel)
+        cell.configure(with: viewModel)
         cell.delegate = self
         return cell
     }

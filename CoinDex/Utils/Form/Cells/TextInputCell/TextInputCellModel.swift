@@ -3,7 +3,7 @@
 //
 
 
-struct TextInputViewModel {
+struct TextInputCellModel {
     var title: String
     var value: String?
     var isSecure: Bool = false

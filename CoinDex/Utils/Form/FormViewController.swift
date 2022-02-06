@@ -39,6 +39,7 @@ extension FormViewController {
 
     private func setUpViews() {
         tableView.backgroundColor = .systemGroupedBackground
+        tableView.rowHeight = UITableView.automaticDimension
         tableView.delegate = self
         tableView.dataSource = self
         dataSource.delegate = self
@@ -116,10 +117,10 @@ extension FormViewController: UITableViewDataSource {
 
 extension FormViewController: UITableViewDelegate {
 
-    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
-        let field = dataSource.sections[indexPath.section].fields[indexPath.row]
-        return field.height
-    }
+//    func tableView(_ tableView: UITableView, heightForRowAt indexPath: IndexPath) -> CGFloat {
+//        let field = dataSource.sections[indexPath.section].fields[indexPath.row]
+//        return field.height
+//    }
 
     func tableView(_ tableView: UITableView, viewForHeaderInSection section: Int) -> UIView? {
         dataSource.sections[section].header?.dequeue(for: tableView, in: section)

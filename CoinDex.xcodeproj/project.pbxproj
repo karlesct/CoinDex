@@ -54,6 +54,9 @@
 		2763D39C27A5E79900796FA8 /* TextBubbleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D39B27A5E79900796FA8 /* TextBubbleTableViewCell.swift */; };
 		27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */; };
 		27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */; };
+		277B58C827B0093E00EAEA24 /* TitleHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277B58C727B0093E00EAEA24 /* TitleHeaderFooterView.xib */; };
+		277B58CA27B00E4F00EAEA24 /* TitleHeaderFooterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B58C927B00E4F00EAEA24 /* TitleHeaderFooterModel.swift */; };
+		277B58CC27B012E700EAEA24 /* UIView+LoadFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B58CB27B012E700EAEA24 /* UIView+LoadFromNib.swift */; };
 		2780808827AF09FE00AA44E3 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808727AF09FE00AA44E3 /* FormViewController.swift */; };
 		2780808A27AF0B9000AA44E3 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808927AF0B9000AA44E3 /* FormField.swift */; };
 		2780808C27AF0BB100AA44E3 /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808B27AF0BB100AA44E3 /* FormHeader.swift */; };
@@ -63,7 +66,7 @@
 		2780809527AF0C7800AA44E3 /* InputDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809427AF0C7800AA44E3 /* InputDataSource.swift */; };
 		2780809927AF0D4A00AA44E3 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809827AF0D4A00AA44E3 /* TextInputTableViewCell.swift */; };
 		2780809B27AF0D7C00AA44E3 /* TextInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809A27AF0D7C00AA44E3 /* TextInputFormField.swift */; };
-		2780809D27AF0D9600AA44E3 /* TextInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809C27AF0D9600AA44E3 /* TextInputViewModel.swift */; };
+		2780809D27AF0D9600AA44E3 /* TextInputCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809C27AF0D9600AA44E3 /* TextInputCellModel.swift */; };
 		2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2780809E27AF0E2500AA44E3 /* TextInputTableViewCell.xib */; };
 		278080A427AF108F00AA44E3 /* FormDemoAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A327AF108F00AA44E3 /* FormDemoAssembler.swift */; };
 		278080A627AF10C100AA44E3 /* FormDemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A527AF10C100AA44E3 /* FormDemoRouter.swift */; };
@@ -73,16 +76,16 @@
 		278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080AE27AF12D300AA44E3 /* TitleHeaderFooterView.swift */; };
 		278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B127AF137200AA44E3 /* DateInputTableViewCell.swift */; };
 		278080B427AF13A100AA44E3 /* DateInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B327AF13A100AA44E3 /* DateInputFormField.swift */; };
-		278080B627AF13D500AA44E3 /* DateInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B527AF13D500AA44E3 /* DateInputViewModel.swift */; };
+		278080B627AF13D500AA44E3 /* DateInputCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B527AF13D500AA44E3 /* DateInputCellModel.swift */; };
 		278080B827AF17DC00AA44E3 /* DateInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080B727AF17DC00AA44E3 /* DateInputTableViewCell.xib */; };
 		278080BB27AF18F800AA44E3 /* ToggleInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BA27AF18F800AA44E3 /* ToggleInputTableViewCell.swift */; };
 		278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BC27AF192400AA44E3 /* ToggleInputFormField.swift */; };
-		278080BF27AF196800AA44E3 /* ToggleInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BE27AF196800AA44E3 /* ToggleInputViewModel.swift */; };
+		278080BF27AF196800AA44E3 /* ToggleInputCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BE27AF196800AA44E3 /* ToggleInputCellModel.swift */; };
 		278080C127AF199100AA44E3 /* ToggleInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080C027AF199100AA44E3 /* ToggleInputTableViewCell.xib */; };
 		278080C427AF1A3D00AA44E3 /* SelectInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C327AF1A3D00AA44E3 /* SelectInputTableViewCell.swift */; };
 		278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080C527AF1A4600AA44E3 /* SelectInputTableViewCell.xib */; };
 		278080C827AF1A7900AA44E3 /* SelectInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C727AF1A7900AA44E3 /* SelectInputFormField.swift */; };
-		278080CA27AF1AB600AA44E3 /* SelectInputViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C927AF1AB600AA44E3 /* SelectInputViewModel.swift */; };
+		278080CA27AF1AB600AA44E3 /* SelectInputCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C927AF1AB600AA44E3 /* SelectInputCellModel.swift */; };
 		278080CD27AF1B5D00AA44E3 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080CC27AF1B5D00AA44E3 /* Country.swift */; };
 		278080CF27AF1B7A00AA44E3 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080CE27AF1B7A00AA44E3 /* Province.swift */; };
 		278080D227AF1BD100AA44E3 /* SelectableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D127AF1BD100AA44E3 /* SelectableItem.swift */; };
@@ -94,7 +97,7 @@
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
 		279B670E2784616900480155 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
 		279B67102784617600480155 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
-		279B6713278463DB00480155 /* UIViewController+loadFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B6712278463DB00480155 /* UIViewController+loadFromNib.swift */; };
+		279B6713278463DB00480155 /* UIViewController+LoadFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B6712278463DB00480155 /* UIViewController+LoadFromNib.swift */; };
 		279B67152784652A00480155 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279B67142784652A00480155 /* TutorialViewController.xib */; };
 		279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67182784688100480155 /* UIView+AddFullSubview.swift */; };
 		279B671B27846F3000480155 /* TutorialPageAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B671A27846F3000480155 /* TutorialPageAssembler.swift */; };
@@ -248,6 +251,9 @@
 		2763D39B27A5E79900796FA8 /* TextBubbleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextBubbleTableViewCell.swift; sourceTree = "<group>"; };
 		27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateFormatter.swift; sourceTree = "<group>"; };
 		27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateDecodingStrategyFormatters.swift"; sourceTree = "<group>"; };
+		277B58C727B0093E00EAEA24 /* TitleHeaderFooterView.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleHeaderFooterView.xib; sourceTree = "<group>"; };
+		277B58C927B00E4F00EAEA24 /* TitleHeaderFooterModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderFooterModel.swift; sourceTree = "<group>"; };
+		277B58CB27B012E700EAEA24 /* UIView+LoadFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+LoadFromNib.swift"; sourceTree = "<group>"; };
 		2780808727AF09FE00AA44E3 /* FormViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormViewController.swift; sourceTree = "<group>"; };
 		2780808927AF0B9000AA44E3 /* FormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormField.swift; sourceTree = "<group>"; };
 		2780808B27AF0BB100AA44E3 /* FormHeader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormHeader.swift; sourceTree = "<group>"; };
@@ -257,7 +263,7 @@
 		2780809427AF0C7800AA44E3 /* InputDataSource.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = InputDataSource.swift; sourceTree = "<group>"; };
 		2780809827AF0D4A00AA44E3 /* TextInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputTableViewCell.swift; sourceTree = "<group>"; };
 		2780809A27AF0D7C00AA44E3 /* TextInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputFormField.swift; sourceTree = "<group>"; };
-		2780809C27AF0D9600AA44E3 /* TextInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputViewModel.swift; sourceTree = "<group>"; };
+		2780809C27AF0D9600AA44E3 /* TextInputCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextInputCellModel.swift; sourceTree = "<group>"; };
 		2780809E27AF0E2500AA44E3 /* TextInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TextInputTableViewCell.xib; sourceTree = "<group>"; };
 		278080A327AF108F00AA44E3 /* FormDemoAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemoAssembler.swift; sourceTree = "<group>"; };
 		278080A527AF10C100AA44E3 /* FormDemoRouter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FormDemoRouter.swift; sourceTree = "<group>"; };
@@ -267,16 +273,16 @@
 		278080AE27AF12D300AA44E3 /* TitleHeaderFooterView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleHeaderFooterView.swift; sourceTree = "<group>"; };
 		278080B127AF137200AA44E3 /* DateInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputTableViewCell.swift; sourceTree = "<group>"; };
 		278080B327AF13A100AA44E3 /* DateInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputFormField.swift; sourceTree = "<group>"; };
-		278080B527AF13D500AA44E3 /* DateInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputViewModel.swift; sourceTree = "<group>"; };
+		278080B527AF13D500AA44E3 /* DateInputCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DateInputCellModel.swift; sourceTree = "<group>"; };
 		278080B727AF17DC00AA44E3 /* DateInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = DateInputTableViewCell.xib; sourceTree = "<group>"; };
 		278080BA27AF18F800AA44E3 /* ToggleInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleInputTableViewCell.swift; sourceTree = "<group>"; };
 		278080BC27AF192400AA44E3 /* ToggleInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleInputFormField.swift; sourceTree = "<group>"; };
-		278080BE27AF196800AA44E3 /* ToggleInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleInputViewModel.swift; sourceTree = "<group>"; };
+		278080BE27AF196800AA44E3 /* ToggleInputCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ToggleInputCellModel.swift; sourceTree = "<group>"; };
 		278080C027AF199100AA44E3 /* ToggleInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ToggleInputTableViewCell.xib; sourceTree = "<group>"; };
 		278080C327AF1A3D00AA44E3 /* SelectInputTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInputTableViewCell.swift; sourceTree = "<group>"; };
 		278080C527AF1A4600AA44E3 /* SelectInputTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectInputTableViewCell.xib; sourceTree = "<group>"; };
 		278080C727AF1A7900AA44E3 /* SelectInputFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInputFormField.swift; sourceTree = "<group>"; };
-		278080C927AF1AB600AA44E3 /* SelectInputViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInputViewModel.swift; sourceTree = "<group>"; };
+		278080C927AF1AB600AA44E3 /* SelectInputCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectInputCellModel.swift; sourceTree = "<group>"; };
 		278080CC27AF1B5D00AA44E3 /* Country.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Country.swift; sourceTree = "<group>"; };
 		278080CE27AF1B7A00AA44E3 /* Province.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Province.swift; sourceTree = "<group>"; };
 		278080D127AF1BD100AA44E3 /* SelectableItem.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectableItem.swift; sourceTree = "<group>"; };
@@ -288,7 +294,7 @@
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
-		279B6712278463DB00480155 /* UIViewController+loadFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+loadFromNib.swift"; sourceTree = "<group>"; };
+		279B6712278463DB00480155 /* UIViewController+LoadFromNib.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+LoadFromNib.swift"; sourceTree = "<group>"; };
 		279B67142784652A00480155 /* TutorialViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TutorialViewController.xib; sourceTree = "<group>"; };
 		279B67182784688100480155 /* UIView+AddFullSubview.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIView+AddFullSubview.swift"; sourceTree = "<group>"; };
 		279B671A27846F3000480155 /* TutorialPageAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageAssembler.swift; sourceTree = "<group>"; };
@@ -647,7 +653,7 @@
 			isa = PBXGroup;
 			children = (
 				271EEA3D27207E7A00BA30FD /* UIViewController+GetTopViewController.swift */,
-				279B6712278463DB00480155 /* UIViewController+loadFromNib.swift */,
+				279B6712278463DB00480155 /* UIViewController+LoadFromNib.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1035,7 +1041,7 @@
 				2780809827AF0D4A00AA44E3 /* TextInputTableViewCell.swift */,
 				2780809E27AF0E2500AA44E3 /* TextInputTableViewCell.xib */,
 				2780809A27AF0D7C00AA44E3 /* TextInputFormField.swift */,
-				2780809C27AF0D9600AA44E3 /* TextInputViewModel.swift */,
+				2780809C27AF0D9600AA44E3 /* TextInputCellModel.swift */,
 			);
 			path = TextInputCell;
 			sourceTree = "<group>";
@@ -1058,6 +1064,8 @@
 			children = (
 				278080AC27AF12AE00AA44E3 /* TitleFormHeader.swift */,
 				278080AE27AF12D300AA44E3 /* TitleHeaderFooterView.swift */,
+				277B58C727B0093E00EAEA24 /* TitleHeaderFooterView.xib */,
+				277B58C927B00E4F00EAEA24 /* TitleHeaderFooterModel.swift */,
 			);
 			path = TitleHeader;
 			sourceTree = "<group>";
@@ -1068,7 +1076,7 @@
 				278080B127AF137200AA44E3 /* DateInputTableViewCell.swift */,
 				278080B727AF17DC00AA44E3 /* DateInputTableViewCell.xib */,
 				278080B327AF13A100AA44E3 /* DateInputFormField.swift */,
-				278080B527AF13D500AA44E3 /* DateInputViewModel.swift */,
+				278080B527AF13D500AA44E3 /* DateInputCellModel.swift */,
 			);
 			path = DateInputCell;
 			sourceTree = "<group>";
@@ -1079,7 +1087,7 @@
 				278080BA27AF18F800AA44E3 /* ToggleInputTableViewCell.swift */,
 				278080C027AF199100AA44E3 /* ToggleInputTableViewCell.xib */,
 				278080BC27AF192400AA44E3 /* ToggleInputFormField.swift */,
-				278080BE27AF196800AA44E3 /* ToggleInputViewModel.swift */,
+				278080BE27AF196800AA44E3 /* ToggleInputCellModel.swift */,
 			);
 			path = ToggleInputCell;
 			sourceTree = "<group>";
@@ -1090,7 +1098,7 @@
 				278080C327AF1A3D00AA44E3 /* SelectInputTableViewCell.swift */,
 				278080C527AF1A4600AA44E3 /* SelectInputTableViewCell.xib */,
 				278080C727AF1A7900AA44E3 /* SelectInputFormField.swift */,
-				278080C927AF1AB600AA44E3 /* SelectInputViewModel.swift */,
+				278080C927AF1AB600AA44E3 /* SelectInputCellModel.swift */,
 			);
 			path = SelectInputCell;
 			sourceTree = "<group>";
@@ -1153,6 +1161,7 @@
 			isa = PBXGroup;
 			children = (
 				279B67182784688100480155 /* UIView+AddFullSubview.swift */,
+				277B58CB27B012E700EAEA24 /* UIView+LoadFromNib.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1564,6 +1573,7 @@
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 				2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */,
 				278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */,
+				277B58C827B0093E00EAEA24 /* TitleHeaderFooterView.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -1612,7 +1622,7 @@
 			files = (
 				278080D827AF1C3900AA44E3 /* SelectViewModel.swift in Sources */,
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
-				278080CA27AF1AB600AA44E3 /* SelectInputViewModel.swift in Sources */,
+				278080CA27AF1AB600AA44E3 /* SelectInputCellModel.swift in Sources */,
 				2763D39327A5D5C600796FA8 /* Message.swift in Sources */,
 				279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
@@ -1663,11 +1673,11 @@
 				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
 				278080CD27AF1B5D00AA44E3 /* Country.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
-				278080BF27AF196800AA44E3 /* ToggleInputViewModel.swift in Sources */,
+				278080BF27AF196800AA44E3 /* ToggleInputCellModel.swift in Sources */,
 				27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */,
 				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
 				27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */,
-				278080B627AF13D500AA44E3 /* DateInputViewModel.swift in Sources */,
+				278080B627AF13D500AA44E3 /* DateInputCellModel.swift in Sources */,
 				278080AA27AF110200AA44E3 /* FormDemoViewModel.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
 				278080DA27AF1C5400AA44E3 /* SelectViewController.swift in Sources */,
@@ -1723,6 +1733,7 @@
 				27ABA0952726BE92000FD326 /* GlobalDecentralizedFinanceDefiResponse.swift in Sources */,
 				27ABA0A727296B17000FD326 /* CategoriesListRequest.swift in Sources */,
 				27ABA0D52729B012000FD326 /* DerivativesExchangeResponse.swift in Sources */,
+				277B58CC27B012E700EAEA24 /* UIView+LoadFromNib.swift in Sources */,
 				27E636E12733EEEE00FC1210 /* CoinsIdRequest.swift in Sources */,
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
 				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
@@ -1746,8 +1757,8 @@
 				27ABA10527318B20000FD326 /* ExchangesIdRequest.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,
 				27BB13302788B21300B5FE4D /* MainViewModel.swift in Sources */,
-				279B6713278463DB00480155 /* UIViewController+loadFromNib.swift in Sources */,
-				2780809D27AF0D9600AA44E3 /* TextInputViewModel.swift in Sources */,
+				279B6713278463DB00480155 /* UIViewController+LoadFromNib.swift in Sources */,
+				2780809D27AF0D9600AA44E3 /* TextInputCellModel.swift in Sources */,
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
 				27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */,
 				27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */,
@@ -1756,6 +1767,7 @@
 				27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */,
 				278080A627AF10C100AA44E3 /* FormDemoRouter.swift in Sources */,
 				279B6726278471BE00480155 /* TutorialPageModel.swift in Sources */,
+				277B58CA27B00E4F00EAEA24 /* TitleHeaderFooterModel.swift in Sources */,
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
 				27ABA102273188B0000FD326 /* ExchangesListResponse.swift in Sources */,
 				2763D39527A5D5EF00796FA8 /* Sender.swift in Sources */,

@@ -13,7 +13,6 @@ protocol FormFieldDelegate: AnyObject {
 protocol FormField: AnyObject {
 
     var key: String { get }
-    var height: CGFloat { get }
     var delegate: FormFieldDelegate? { get set }
 
     func register(for tableView: UITableView)

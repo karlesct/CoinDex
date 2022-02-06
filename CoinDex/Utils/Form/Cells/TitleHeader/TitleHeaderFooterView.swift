@@ -5,41 +5,25 @@
 
 import UIKit
 
-struct TitleHeaderFooterViewModel {
+final class TitleHeaderFooterView: UITableViewHeaderFooterView,
+                                   NibLoadable,
+                                   ReusableCell {
 
-    let title: String
-}
-
-final class TitleHeaderFooterView: UITableViewHeaderFooterView {
-
-    private let titleLabel = UILabel()
-
-    override init(reuseIdentifier: String?) {
-        super.init(reuseIdentifier: reuseIdentifier)
-        setUpView()
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            self.titleLabel.textColor = .systemGray
+            self.titleLabel.font = UIFont.systemFont(ofSize: 12.0)
+        }
     }
 
-    required init?(coder: NSCoder) {
-        super.init(coder: coder)
-        setUpView()
+    override func awakeFromNib() {
+        super.awakeFromNib()
     }
 
-    func configure(with viewModel: TitleHeaderFooterViewModel) {
-        titleLabel.text = viewModel.title
+    func configure(with item: TitleHeaderFooterModel) {
+        titleLabel.text = item.title
     }
 }
 
 // MARK: - Private helper
-extension TitleHeaderFooterView {
-
-    private func setUpView() {
-        contentView.addSubview(titleLabel)
-//        titleLabel.snp.makeConstraints {
-//            $0.leading.trailing.equalToSuperview().inset(16.0)
-//            $0.bottom.equalToSuperview().inset(8.0)
-//        }
-
-        titleLabel.textColor = .systemGray
-        titleLabel.font = UIFont.systemFont(ofSize: 12.0)
-    }
-}
+extension TitleHeaderFooterView {}

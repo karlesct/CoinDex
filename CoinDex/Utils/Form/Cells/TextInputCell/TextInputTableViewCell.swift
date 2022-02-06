@@ -42,12 +42,12 @@ final class TextInputTableViewCell: UITableViewCell,
 // MARK: - Configure
 extension TextInputTableViewCell {
 
-    func configure(_ viewModel: TextInputViewModel) {
-        titleLabel.text = viewModel.title
+    func configure(with item: TextInputCellModel) {
+        titleLabel.text = item.title
 
-        textField.placeholder = viewModel.title
-        textField.text = viewModel.value
-        textField.isSecureTextEntry = viewModel.isSecure
+        textField.placeholder = item.title
+        textField.text = item.value
+        textField.isSecureTextEntry = item.isSecure
 
     }
 }

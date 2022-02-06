@@ -8,11 +8,11 @@ import UIKit
 final class DateInputFormField {
 
     let key: String
-    var viewModel: DateInputViewModel
+    var viewModel: DateInputCellModel
 
     weak var delegate: FormFieldDelegate?
 
-    init(key: String, viewModel: DateInputViewModel) {
+    init(key: String, viewModel: DateInputCellModel) {
         self.key = key
         self.viewModel = viewModel
     }
@@ -21,8 +21,6 @@ final class DateInputFormField {
 // MARK: - FormField
 extension DateInputFormField: FormField {
 
-    var height: CGFloat { 44.0 }
-
     func register(for tableView: UITableView) {
         tableView.register(DateInputTableViewCell.self)
     }
@@ -30,7 +28,7 @@ extension DateInputFormField: FormField {
     func dequeue(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(DateInputTableViewCell.self,
                                                  for: indexPath)
-        cell.configure(viewModel)
+        cell.configure(with: viewModel)
         cell.delegate = self
         return cell
     }
@@ -54,6 +52,6 @@ extension DateInputFormField: DateInputCellDelegate {
 
     func cell(_ cell: DateInputTableViewCell, didChangeValue value: Date) {
         viewModel.value = value
-        cell.configure(viewModel)
+        cell.configure(with: viewModel)
     }
 }

@@ -5,7 +5,7 @@
 
 import Foundation
 
-struct DateInputViewModel {
+struct DateInputCellModel {
 
     let title: String
     var value: Date?

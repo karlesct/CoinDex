@@ -17,6 +17,6 @@ extension OpenSelectRouterInput {
     func showSelectScreen(output: SelectModuleOutput?) {
         let module = SelectModule()
         module.output = output
-        viewController?.navigationController?.pushViewController(module.view, animated: true)
+        viewController?.present(module.view, animated: true)
     }
 }

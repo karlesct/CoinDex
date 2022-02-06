@@ -22,8 +22,8 @@ final class SelectInputTableViewCell: UITableViewCell,
 // MARK: - Configure
 extension SelectInputTableViewCell {
 
-    func configure(_ viewModel: SelectInputViewModel) {
-        titleLabel.text = viewModel.title
-        valueLabel.text = viewModel.value
+    func configure(with item: SelectInputCellModel) {
+        titleLabel.text = item.title
+        valueLabel.text = item.value
     }
 }

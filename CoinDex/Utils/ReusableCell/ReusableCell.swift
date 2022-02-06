@@ -16,10 +16,16 @@ public extension ReusableCell where Self: UITableViewCell {
     }
 }
 
-public extension ReusableCell where Self: UICollectionViewCell {
+public extension ReusableCell where Self: UITableViewHeaderFooterView {
 
     static var reuseIdentifier: String {
         return String(describing: self)
     }
 }
 
+public extension ReusableCell where Self: UICollectionViewCell {
+
+    static var reuseIdentifier: String {
+        return String(describing: self)
+    }
+}

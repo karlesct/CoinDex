@@ -8,11 +8,11 @@ import UIKit
 final class TextInputFormField {
 
     let key: String
-    var viewModel: TextInputViewModel
+    var viewModel: TextInputCellModel
 
     weak var delegate: FormFieldDelegate?
 
-    init(key: String, viewModel: TextInputViewModel) {
+    init(key: String, viewModel: TextInputCellModel) {
         self.key = key
         self.viewModel = viewModel
     }
@@ -21,18 +21,17 @@ final class TextInputFormField {
 // MARK: - FormField
 extension TextInputFormField: FormField {
 
-    var height: CGFloat { 44.0 }
-
     func register(for tableView: UITableView) {
         tableView.register(TextInputTableViewCell.self)
     }
 
-    func dequeue(for tableView: UITableView, at indexPath: IndexPath) -> UITableViewCell {
+    func dequeue(for tableView: UITableView,
+                 at indexPath: IndexPath) -> UITableViewCell {
         let cell = tableView.dequeueReusableCell(TextInputTableViewCell.self,
                                                  for: indexPath)
 
         cell.delegate = self
-        cell.configure(viewModel)
+        cell.configure(with: viewModel)
         return cell
     }
 }
@@ -53,7 +52,8 @@ extension TextInputFormField: FieldDataSource {
 // MARK: - TextInputCellDelegate
 extension TextInputFormField: TextInputCellDelegate {
 
-    func cell(_ cell: TextInputTableViewCell, didChangeValue value: String?) {
+    func cell(_ cell: TextInputTableViewCell,
+              didChangeValue value: String?) {
         viewModel.value = value
     }
 }

@@ -5,12 +5,12 @@
 
 import Foundation
 
-struct SelectInputViewModel {
+struct ToggleInputCellModel {
 
     var title: String
-    var value: String?
+    var value: Bool
 
-    init(title: String, value: String? = nil) {
+    init(title: String, value: Bool = false) {
         self.title = title
         self.value = value
     }

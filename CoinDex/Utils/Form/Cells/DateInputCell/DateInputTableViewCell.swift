@@ -61,10 +61,10 @@ final class DateInputTableViewCell: UITableViewCell,
 // MARK: - Configure
 extension DateInputTableViewCell {
 
-    func configure(_ viewModel: DateInputViewModel) {
-        titleLabel.text = viewModel.title
+    func configure(with item: DateInputCellModel) {
+        titleLabel.text = item.title
 
-        textField.placeholder = viewModel.title
-        textField.text = viewModel.valueString
+        textField.placeholder = item.title
+        textField.text = item.valueString
     }
 }
