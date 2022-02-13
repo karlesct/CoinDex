@@ -94,6 +94,8 @@
 		278080D827AF1C3900AA44E3 /* SelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D727AF1C3900AA44E3 /* SelectViewModel.swift */; };
 		278080DA27AF1C5400AA44E3 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D927AF1C5400AA44E3 /* SelectViewController.swift */; };
 		278080DC27AF1DB700AA44E3 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080DB27AF1DB700AA44E3 /* SelectViewController.xib */; };
+		2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31027B9126C00DC5523 /* UIView+SetGradient.swift */; };
+		2787E31427B9178300DC5523 /* UIImage+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31327B9178300DC5523 /* UIImage+Image.swift */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
 		279B670E2784616900480155 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
 		279B67102784617600480155 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
@@ -291,6 +293,8 @@
 		278080D727AF1C3900AA44E3 /* SelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewModel.swift; sourceTree = "<group>"; };
 		278080D927AF1C5400AA44E3 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		278080DB27AF1DB700AA44E3 /* SelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
+		2787E31027B9126C00DC5523 /* UIView+SetGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SetGradient.swift"; sourceTree = "<group>"; };
+		2787E31327B9178300DC5523 /* UIImage+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Image.swift"; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -777,9 +781,10 @@
 			isa = PBXGroup;
 			children = (
 				271EEA4227208BA600BA30FD /* String */,
+				271EEA3527207D8F00BA30FD /* UIAlertController */,
 				2763D37D27A483EC00796FA8 /* UIButton */,
 				2763D37427A47C3900796FA8 /* UIColor */,
-				271EEA3527207D8F00BA30FD /* UIAlertController */,
+				2787E31227B9175D00DC5523 /* UIImage */,
 				271EEA3F2720841600BA30FD /* URLRequest */,
 				2763D38527A5CE1500796FA8 /* UITableView */,
 				2763D38C27A5CEFD00796FA8 /* UITableViewCell */,
@@ -1125,6 +1130,14 @@
 			path = Select;
 			sourceTree = "<group>";
 		};
+		2787E31227B9175D00DC5523 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+				2787E31327B9178300DC5523 /* UIImage+Image.swift */,
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
 		279B670A27845F5E00480155 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
@@ -1162,6 +1175,7 @@
 			children = (
 				279B67182784688100480155 /* UIView+AddFullSubview.swift */,
 				277B58CB27B012E700EAEA24 /* UIView+LoadFromNib.swift */,
+				2787E31027B9126C00DC5523 /* UIView+SetGradient.swift */,
 			);
 			path = UIView;
 			sourceTree = "<group>";
@@ -1693,10 +1707,12 @@
 				27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */,
 				275710882725941F00348F93 /* DataRequest.swift in Sources */,
 				278080C827AF1A7900AA44E3 /* SelectInputFormField.swift in Sources */,
+				2787E31427B9178300DC5523 /* UIImage+Image.swift in Sources */,
 				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
 				2763D38B27A5CEF700796FA8 /* ReusableCell.swift in Sources */,
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
 				279B67242784713D00480155 /* TModel.swift in Sources */,
+				2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
 				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift in Sources */,

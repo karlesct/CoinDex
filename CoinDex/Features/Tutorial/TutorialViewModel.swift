@@ -15,17 +15,17 @@ class TutorialViewModel: TutorialViewModelProtocol {
 
     var datasource: [TModel]? = [
         TutorialPageModel(imageName: "👽",
-                          title: "Title1",
-                          body: "Body1"),
+                          title: "Get a date",
+                          body: "Swipe right to get a match with people you likefrom your area."),
         TutorialPageModel(imageName: "🥶",
-                          title: "Title2",
-                          body: "Body2"),
+                          title: "Private Message",
+                          body: "Chat privately with people you match"),
         TutorialPageModel(imageName: "🥵",
-                          title: "Title3",
-                          body: "Body3"),
+                          title: "Send Photos",
+                          body: "have fun with your matches by sending photos and videos to each other"),
         TutorialPageModel(imageName: "🤢",
-                          title: "Title4",
-                          body: "Body4"),
+                          title: "Get Notified",
+                          body: "Receive notifications when you get messages and matches"),
     ]
 
     // MARK: - Init

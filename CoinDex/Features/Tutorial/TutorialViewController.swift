@@ -15,12 +15,16 @@ class TutorialViewController: UIViewController {
             self.pageViewController = UIPageViewController(transitionStyle: .scroll,
                                                            navigationOrientation: .horizontal,
                                                            options: nil)
+            self.pageContainer.backgroundColor = .clear
             self.pageContainer.addFullSubview(self.pageViewController?.view ?? UIView())
         }
     }
 
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
+            self.closeButton.tintColor = .xFFFFFF
+            self.closeButton.setImage(.common.iconClose,
+                                      for: .normal)
             self.closeButton.addTarget(self,
                                        action: #selector(self.closeButtonAction),
                                        for: .touchUpInside)
@@ -36,8 +40,8 @@ class TutorialViewController: UIViewController {
             self.pageViewController?.delegate = self
 
             let pageControl = UIPageControl.appearance()
-            pageControl.pageIndicatorTintColor = .lightGray
-            pageControl.currentPageIndicatorTintColor = .red
+            pageControl.pageIndicatorTintColor = .xFFFFFF.withAlphaComponent(0.5)
+            pageControl.currentPageIndicatorTintColor = .xFFFFFF
 
             guard let pages = pages,
                   let firstViewController = pages.first else { return }
@@ -69,6 +73,10 @@ class TutorialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
+        self.view.setGradient(start: .center,
+                              end: .bottomCenter,
+                              colors: [.primaryColor,
+                                       .secondaryColor])
     }
 
     // MARK: - Methods
