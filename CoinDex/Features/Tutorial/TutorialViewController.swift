@@ -43,7 +43,7 @@ class TutorialViewController: UIViewController {
             pageControl.pageIndicatorTintColor = .xFFFFFF.withAlphaComponent(0.5)
             pageControl.currentPageIndicatorTintColor = .xFFFFFF
 
-            guard let pages = pages,
+            guard let pages = self.pages,
                   let firstViewController = pages.first else { return }
 
             self.pageViewController?.setViewControllers([firstViewController],

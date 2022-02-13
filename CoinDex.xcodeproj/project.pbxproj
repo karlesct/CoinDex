@@ -96,6 +96,12 @@
 		278080DC27AF1DB700AA44E3 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080DB27AF1DB700AA44E3 /* SelectViewController.xib */; };
 		2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31027B9126C00DC5523 /* UIView+SetGradient.swift */; };
 		2787E31427B9178300DC5523 /* UIImage+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31327B9178300DC5523 /* UIImage+Image.swift */; };
+		2787E31727B93EE200DC5523 /* TabBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31627B93EE200DC5523 /* TabBarAssembler.swift */; };
+		2787E31927B93F4A00DC5523 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31827B93F4A00DC5523 /* TabBarController.swift */; };
+		2787E31C27B94CE000DC5523 /* CircularView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31B27B94CE000DC5523 /* CircularView.swift */; };
+		2787E31E27B94D3700DC5523 /* ScrollingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31D27B94D3700DC5523 /* ScrollingPageControl.swift */; };
+		2787E32027B94DDC00DC5523 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31F27B94DDC00DC5523 /* TestViewController.swift */; };
+		2787E32227B94EB000DC5523 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2787E32127B94EB000DC5523 /* TestViewController.xib */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
 		279B670E2784616900480155 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
 		279B67102784617600480155 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
@@ -295,6 +301,12 @@
 		278080DB27AF1DB700AA44E3 /* SelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
 		2787E31027B9126C00DC5523 /* UIView+SetGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SetGradient.swift"; sourceTree = "<group>"; };
 		2787E31327B9178300DC5523 /* UIImage+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Image.swift"; sourceTree = "<group>"; };
+		2787E31627B93EE200DC5523 /* TabBarAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembler.swift; sourceTree = "<group>"; };
+		2787E31827B93F4A00DC5523 /* TabBarController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarController.swift; sourceTree = "<group>"; };
+		2787E31B27B94CE000DC5523 /* CircularView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CircularView.swift; sourceTree = "<group>"; };
+		2787E31D27B94D3700DC5523 /* ScrollingPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingPageControl.swift; sourceTree = "<group>"; };
+		2787E31F27B94DDC00DC5523 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
+		2787E32127B94EB000DC5523 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -799,12 +811,13 @@
 		2758FC942709B4D1009BCB5A /* Features */ = {
 			isa = PBXGroup;
 			children = (
-				279B6711278462E400480155 /* Common */,
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
-				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
-				278080A227AF107900AA44E3 /* FormDemo */,
-				27BB13282788B1CD00B5FE4D /* Main */,
+				279B6711278462E400480155 /* Common */,
 				270F0FBB279D6D99005DE9FB /* Chat */,
+				278080A227AF107900AA44E3 /* FormDemo */,
+				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
+				27BB13282788B1CD00B5FE4D /* Main */,
+				2787E31527B93E9C00DC5523 /* TabBar */,
 				279B670A27845F5E00480155 /* Tutorial */,
 			);
 			path = Features;
@@ -918,6 +931,7 @@
 		2763D37E27A4958200796FA8 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				2787E31A27B94CC600DC5523 /* UIView */,
 			);
 			path = UIComponents;
 			sourceTree = "<group>";
@@ -1138,6 +1152,24 @@
 			path = UIImage;
 			sourceTree = "<group>";
 		};
+		2787E31527B93E9C00DC5523 /* TabBar */ = {
+			isa = PBXGroup;
+			children = (
+				2787E31627B93EE200DC5523 /* TabBarAssembler.swift */,
+				2787E31827B93F4A00DC5523 /* TabBarController.swift */,
+			);
+			path = TabBar;
+			sourceTree = "<group>";
+		};
+		2787E31A27B94CC600DC5523 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+				2787E31B27B94CE000DC5523 /* CircularView.swift */,
+				2787E31D27B94D3700DC5523 /* ScrollingPageControl.swift */,
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
 		279B670A27845F5E00480155 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
@@ -1146,6 +1178,8 @@
 				279B670F2784617600480155 /* TutorialViewController.swift */,
 				279B67142784652A00480155 /* TutorialViewController.xib */,
 				279B670D2784616900480155 /* TutorialViewModel.swift */,
+				2787E31F27B94DDC00DC5523 /* TestViewController.swift */,
+				2787E32127B94EB000DC5523 /* TestViewController.xib */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -1575,6 +1609,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
+				2787E32227B94EB000DC5523 /* TestViewController.xib in Resources */,
 				279B67152784652A00480155 /* TutorialViewController.xib in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
 				278080B827AF17DC00AA44E3 /* DateInputTableViewCell.xib in Resources */,
@@ -1637,6 +1672,7 @@
 				278080D827AF1C3900AA44E3 /* SelectViewModel.swift in Sources */,
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
 				278080CA27AF1AB600AA44E3 /* SelectInputCellModel.swift in Sources */,
+				2787E31E27B94D3700DC5523 /* ScrollingPageControl.swift in Sources */,
 				2763D39327A5D5C600796FA8 /* Message.swift in Sources */,
 				279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
@@ -1668,6 +1704,7 @@
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
 				270F0FC5279D71ED005DE9FB /* ChatUseCase.swift in Sources */,
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
+				2787E31727B93EE200DC5523 /* TabBarAssembler.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
 				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
@@ -1682,6 +1719,7 @@
 				270F0FBF279D6DCE005DE9FB /* ChatViewController.swift in Sources */,
 				2780809527AF0C7800AA44E3 /* InputDataSource.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
+				2787E32027B94DDC00DC5523 /* TestViewController.swift in Sources */,
 				270F0FC8279D787E005DE9FB /* Observable.swift in Sources */,
 				27E636E32733EEFB00FC1210 /* CoinsIdResponse.swift in Sources */,
 				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
@@ -1712,6 +1750,7 @@
 				2763D38B27A5CEF700796FA8 /* ReusableCell.swift in Sources */,
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
 				279B67242784713D00480155 /* TModel.swift in Sources */,
+				2787E31C27B94CE000DC5523 /* CircularView.swift in Sources */,
 				2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
@@ -1764,6 +1803,7 @@
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
 				278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */,
+				2787E31927B93F4A00DC5523 /* TabBarController.swift in Sources */,
 				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
 				279B670E2784616900480155 /* TutorialViewModel.swift in Sources */,
 				27ABA0FB273186F6000FD326 /* ExchangesRequest.swift in Sources */,

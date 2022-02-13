@@ -1,0 +1,53 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="TestViewController" customModule="CoinDexRelease" customModuleProvider="target">
+            <connections>
+                <outlet property="pageControl" destination="5YK-lp-buj" id="X6o-Wg-vNg"/>
+                <outlet property="scrollView" destination="1Vn-5b-74g" id="Wd4-aA-Paw"/>
+                <outlet property="view" destination="iN0-l3-epB" id="Ef7-h2-67a"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <scrollView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="1Vn-5b-74g">
+                    <rect key="frame" x="20" y="130" width="374" height="573"/>
+                    <viewLayoutGuide key="contentLayoutGuide" id="HZf-ph-2tN"/>
+                    <viewLayoutGuide key="frameLayoutGuide" id="k5N-0p-MwG"/>
+                </scrollView>
+                <view contentMode="scaleToFill" ambiguous="YES" translatesAutoresizingMaskIntoConstraints="NO" id="5YK-lp-buj" customClass="ScrollingPageControl" customModule="CoinDexRelease" customModuleProvider="target">
+                    <rect key="frame" x="0.0" y="711" width="414" height="43"/>
+                    <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+                </view>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5YK-lp-buj" secondAttribute="bottom" constant="100" id="FdT-DH-i91"/>
+                <constraint firstItem="1Vn-5b-74g" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Fp3-U8-Z72"/>
+                <constraint firstItem="1Vn-5b-74g" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="O1C-oE-9hS"/>
+                <constraint firstItem="5YK-lp-buj" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="SRT-ei-of7"/>
+                <constraint firstItem="5YK-lp-buj" firstAttribute="top" secondItem="1Vn-5b-74g" secondAttribute="bottom" id="hVR-WY-sis"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="1Vn-5b-74g" secondAttribute="trailing" id="l51-Mk-B3O"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5YK-lp-buj" secondAttribute="trailing" id="xzr-3J-ZzT"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="91.741071428571431"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>

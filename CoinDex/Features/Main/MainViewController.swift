@@ -42,6 +42,18 @@ class MainViewController: UIViewController {
         }
     }
 
+    @IBOutlet weak var tabBarButton: UIButton!{
+        didSet {
+            self.tabBarButton.setTitle("Open tabBar",
+                                         for: .normal)
+            self.tabBarButton.addTarget(self,
+                                          action: #selector(self.tabBarButtonAction),
+                                          for: .touchUpInside)
+        }
+    }
+
+
+
     // MARK: - Properties
 
     var viewModel: MainViewModelProtocol?
@@ -130,6 +142,16 @@ extension MainViewController {
 
         let module = FormDemoModule()
         self.present(module.view,
+                     animated: true,
+                     completion: nil)
+    }
+
+    @objc func tabBarButtonAction() {
+        let assembler = TabBarAssembler()
+        let viewController = assembler.viewController()
+        viewController.modalPresentationStyle = .overFullScreen
+
+        self.present(viewController,
                      animated: true,
                      completion: nil)
     }
