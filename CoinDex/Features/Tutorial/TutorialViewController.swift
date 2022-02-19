@@ -16,7 +16,7 @@ class TutorialViewController: UIViewController {
                                                            navigationOrientation: .horizontal,
                                                            options: nil)
             self.pageContainer.backgroundColor = .clear
-            self.pageContainer.addFullSubview(self.pageViewController?.view ?? UIView())
+            self.pageContainer.addFullSubview(view: self.pageViewController?.view ?? UIView())
         }
     }
 

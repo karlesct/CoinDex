@@ -7,13 +7,15 @@ import UIKit
 
 extension UIView {
 
-    func addFullSubview(_ subview: UIView) {
+    func addFullSubview(view: UIView?) {
 
-        self.addSubview(subview)
+        guard let view = view else { return }
 
-        subview.translatesAutoresizingMaskIntoConstraints = false
+        self.addSubview(view)
 
-        let bindings: [String: Any] = ["view": subview]
+        view.translatesAutoresizingMaskIntoConstraints = false
+
+        let bindings: [String: Any] = ["view": view]
 
         self.addConstraints(NSLayoutConstraint.constraints(withVisualFormat: "H:|[view]|",
                                                            options: [],

@@ -102,6 +102,11 @@
 		2787E31E27B94D3700DC5523 /* ScrollingPageControl.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31D27B94D3700DC5523 /* ScrollingPageControl.swift */; };
 		2787E32027B94DDC00DC5523 /* TestViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31F27B94DDC00DC5523 /* TestViewController.swift */; };
 		2787E32227B94EB000DC5523 /* TestViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2787E32127B94EB000DC5523 /* TestViewController.xib */; };
+		2787E32527C16DCE00DC5523 /* TAndCAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E32427C16DCE00DC5523 /* TAndCAssembler.swift */; };
+		2787E32727C16E1E00DC5523 /* TAndCViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2787E32627C16E1E00DC5523 /* TAndCViewController.xib */; };
+		2787E32927C16E2B00DC5523 /* TAndCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E32827C16E2B00DC5523 /* TAndCViewController.swift */; };
+		2787E32C27C172B300DC5523 /* WKWebView+load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E32B27C172B300DC5523 /* WKWebView+load.swift */; };
+		2787E32F27C179BB00DC5523 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E32E27C179BB00DC5523 /* ImagePicker.swift */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
 		279B670E2784616900480155 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
 		279B67102784617600480155 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
@@ -307,6 +312,11 @@
 		2787E31D27B94D3700DC5523 /* ScrollingPageControl.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ScrollingPageControl.swift; sourceTree = "<group>"; };
 		2787E31F27B94DDC00DC5523 /* TestViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestViewController.swift; sourceTree = "<group>"; };
 		2787E32127B94EB000DC5523 /* TestViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestViewController.xib; sourceTree = "<group>"; };
+		2787E32427C16DCE00DC5523 /* TAndCAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAndCAssembler.swift; sourceTree = "<group>"; };
+		2787E32627C16E1E00DC5523 /* TAndCViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TAndCViewController.xib; sourceTree = "<group>"; };
+		2787E32827C16E2B00DC5523 /* TAndCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAndCViewController.swift; sourceTree = "<group>"; };
+		2787E32B27C172B300DC5523 /* WKWebView+load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+load.swift"; sourceTree = "<group>"; };
+		2787E32E27C179BB00DC5523 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -803,6 +813,7 @@
 				2763D38227A4994600796FA8 /* UITextView */,
 				279B67172784685000480155 /* UIView */,
 				271EEA3C27207E5B00BA30FD /* UIViewController */,
+				2787E32A27C1728B00DC5523 /* WKWebView */,
 				271EEA3927207E2000BA30FD /* Window */,
 			);
 			path = Extensions;
@@ -818,6 +829,7 @@
 				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
 				27BB13282788B1CD00B5FE4D /* Main */,
 				2787E31527B93E9C00DC5523 /* TabBar */,
+				2787E32327C16D7300DC5523 /* TAndC */,
 				279B670A27845F5E00480155 /* Tutorial */,
 			);
 			path = Features;
@@ -833,6 +845,7 @@
 		2758FC962709B4E9009BCB5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2787E32D27C179A900DC5523 /* MediaPicker */,
 				2780808627AF092C00AA44E3 /* Form */,
 				2763D38E27A5D05200796FA8 /* NibLoadable */,
 				2763D38D27A5CF7700796FA8 /* ReusableCell */,
@@ -1168,6 +1181,32 @@
 				2787E31D27B94D3700DC5523 /* ScrollingPageControl.swift */,
 			);
 			path = UIView;
+			sourceTree = "<group>";
+		};
+		2787E32327C16D7300DC5523 /* TAndC */ = {
+			isa = PBXGroup;
+			children = (
+				2787E32427C16DCE00DC5523 /* TAndCAssembler.swift */,
+				2787E32627C16E1E00DC5523 /* TAndCViewController.xib */,
+				2787E32827C16E2B00DC5523 /* TAndCViewController.swift */,
+			);
+			path = TAndC;
+			sourceTree = "<group>";
+		};
+		2787E32A27C1728B00DC5523 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+				2787E32B27C172B300DC5523 /* WKWebView+load.swift */,
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		2787E32D27C179A900DC5523 /* MediaPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2787E32E27C179BB00DC5523 /* ImagePicker.swift */,
+			);
+			path = MediaPicker;
 			sourceTree = "<group>";
 		};
 		279B670A27845F5E00480155 /* Tutorial */ = {
@@ -1609,6 +1648,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
+				2787E32727C16E1E00DC5523 /* TAndCViewController.xib in Resources */,
 				2787E32227B94EB000DC5523 /* TestViewController.xib in Resources */,
 				279B67152784652A00480155 /* TutorialViewController.xib in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
@@ -1686,6 +1726,7 @@
 				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
 				27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */,
 				27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */,
+				2787E32F27C179BB00DC5523 /* ImagePicker.swift in Sources */,
 				2780808A27AF0B9000AA44E3 /* FormField.swift in Sources */,
 				27BB13352788BFAA00B5FE4D /* AppDelegateAssembler.swift in Sources */,
 				2780809127AF0C3C00AA44E3 /* FieldDataSource.swift in Sources */,
@@ -1744,6 +1785,7 @@
 				27ABA0BF27297BAC000FD326 /* EventsRequest.swift in Sources */,
 				27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */,
 				275710882725941F00348F93 /* DataRequest.swift in Sources */,
+				2787E32927C16E2B00DC5523 /* TAndCViewController.swift in Sources */,
 				278080C827AF1A7900AA44E3 /* SelectInputFormField.swift in Sources */,
 				2787E31427B9178300DC5523 /* UIImage+Image.swift in Sources */,
 				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
@@ -1795,6 +1837,8 @@
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */,
 				278080BB27AF18F800AA44E3 /* ToggleInputTableViewCell.swift in Sources */,
+				2787E32C27C172B300DC5523 /* WKWebView+load.swift in Sources */,
+				2787E32527C16DCE00DC5523 /* TAndCAssembler.swift in Sources */,
 				2763D39C27A5E79900796FA8 /* TextBubbleTableViewCell.swift in Sources */,
 				2763D39927A5D7FF00796FA8 /* MediaItem.swift in Sources */,
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,

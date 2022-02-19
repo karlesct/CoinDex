@@ -53,6 +53,15 @@ class MainViewController: UIViewController {
     }
 
 
+    @IBOutlet weak var tAndCButton: UIButton! {
+        didSet {
+            self.tAndCButton.setTitle("Open TandC",
+                                         for: .normal)
+            self.tAndCButton.addTarget(self,
+                                          action: #selector(self.tAndCButtonAction),
+                                          for: .touchUpInside)
+        }
+    }
 
     // MARK: - Properties
 
@@ -156,6 +165,15 @@ extension MainViewController {
                      completion: nil)
     }
 
+    @objc func tAndCButtonAction() {
+        let assembler = TAndCAssembler(stringURL: "https://apple.com")
+        let viewController = assembler.viewController()
+        viewController.modalPresentationStyle = .overFullScreen
+
+        self.present(viewController,
+                     animated: true,
+                     completion: nil)
+    }
 }
 
 

@@ -34,7 +34,7 @@ extension FormViewController {
     private func setUpLayout() {
         //view.addSubview(tableView)
 
-        view.addFullSubview(tableView)
+        view.addFullSubview(view: tableView)
     }
 
     private func setUpViews() {

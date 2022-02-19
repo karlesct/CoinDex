@@ -17,6 +17,7 @@ extension UIAlertController {
         private var alertActions: [UIAlertAction] = [UIAlertAction]()
         private var sourceView: UIView?
         private var sourceRect: CGRect?
+        private var permittedArrowDirections: UIPopoverArrowDirection?
 
         // MARK: - Init
 
@@ -61,6 +62,12 @@ extension UIAlertController {
             return self
         }
 
+        func permittedArrowDirections(_ permittedArrowDirections: UIPopoverArrowDirection?) -> Builder {
+
+            self.permittedArrowDirections = permittedArrowDirections
+            return self
+        }
+
 
         func showIn(_ viewController: UIViewController,
                     animater: Bool = true,
@@ -83,6 +90,10 @@ extension UIAlertController {
 
             if let sourceRect = self.sourceRect {
                 alertController.popoverPresentationController?.sourceRect = sourceRect
+            }
+
+            if let permittedArrowDirections = self.permittedArrowDirections {
+                alertController.popoverPresentationController?.permittedArrowDirections = permittedArrowDirections
             }
 
             alertActions.forEach { action in

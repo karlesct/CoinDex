@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="chatButton" destination="64a-Nv-Oz2" id="EnG-F6-jw5"/>
                 <outlet property="formButton" destination="6Zu-w7-Qo5" id="6mE-WI-MkE"/>
+                <outlet property="tAndCButton" destination="Ace-ww-hhh" id="M2b-d0-i3U"/>
                 <outlet property="tabBarButton" destination="sgO-ZD-DPz" id="Ivq-99-EBE"/>
                 <outlet property="tutorialButton" destination="zon-Eg-rcS" id="NmD-xX-2la"/>
                 <outlet property="view" destination="iN0-l3-epB" id="7DM-Sx-tS6"/>
@@ -40,6 +41,12 @@
                 </button>
                 <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="sgO-ZD-DPz">
                     <rect key="frame" x="184" y="483" width="46" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" fixedFrame="YES" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="Ace-ww-hhh">
+                    <rect key="frame" x="183" y="586" width="46" height="30"/>
+                    <autoresizingMask key="autoresizingMask" flexibleMaxX="YES" flexibleMaxY="YES"/>
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Button"/>
                 </button>
