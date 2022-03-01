@@ -94,6 +94,19 @@
 		278080D827AF1C3900AA44E3 /* SelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D727AF1C3900AA44E3 /* SelectViewModel.swift */; };
 		278080DA27AF1C5400AA44E3 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D927AF1C5400AA44E3 /* SelectViewController.swift */; };
 		278080DC27AF1DB700AA44E3 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080DB27AF1DB700AA44E3 /* SelectViewController.xib */; };
+		2781E35227CD13CC0011BE14 /* isoCountryCode.json in Resources */ = {isa = PBXBuildFile; fileRef = 2781E35127CD13CC0011BE14 /* isoCountryCode.json */; };
+		2781E35527CD14810011BE14 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E35427CD14810011BE14 /* CountryModel.swift */; };
+		2781E35A27CD15D90011BE14 /* CountryPickerTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E35927CD15D90011BE14 /* CountryPickerTableViewCell.swift */; };
+		2781E35C27CD17050011BE14 /* CountryPickerTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2781E35B27CD17050011BE14 /* CountryPickerTableViewCell.xib */; };
+		2781E35E27CD17190011BE14 /* CountryPickerCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E35D27CD17190011BE14 /* CountryPickerCellModel.swift */; };
+		2781E36127CD173D0011BE14 /* CountryPickerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36027CD173D0011BE14 /* CountryPickerAssembler.swift */; };
+		2781E36327CD17510011BE14 /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36227CD17510011BE14 /* CountryPickerViewController.swift */; };
+		2781E36527CD175E0011BE14 /* CountryPickerViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2781E36427CD175E0011BE14 /* CountryPickerViewController.xib */; };
+		2781E36727CD17AA0011BE14 /* CountryPickerViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36627CD17AA0011BE14 /* CountryPickerViewModel.swift */; };
+		2781E36927CD1A5C0011BE14 /* CountryPickerRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36827CD1A5C0011BE14 /* CountryPickerRepository.swift */; };
+		2781E36C27CD278A0011BE14 /* Filterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36B27CD278A0011BE14 /* Filterable.swift */; };
+		2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36D27CD2E530011BE14 /* String+GetFlag.swift */; };
+		2781E37027CE7CFC0011BE14 /* Flags.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = 2781E36F27CE7CFC0011BE14 /* Flags.xcassets */; };
 		2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31027B9126C00DC5523 /* UIView+SetGradient.swift */; };
 		2787E31427B9178300DC5523 /* UIImage+Image.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31327B9178300DC5523 /* UIImage+Image.swift */; };
 		2787E31727B93EE200DC5523 /* TabBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31627B93EE200DC5523 /* TabBarAssembler.swift */; };
@@ -107,6 +120,15 @@
 		2787E32927C16E2B00DC5523 /* TAndCViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E32827C16E2B00DC5523 /* TAndCViewController.swift */; };
 		2787E32C27C172B300DC5523 /* WKWebView+load.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E32B27C172B300DC5523 /* WKWebView+load.swift */; };
 		2787E32F27C179BB00DC5523 /* ImagePicker.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E32E27C179BB00DC5523 /* ImagePicker.swift */; };
+		2787E33427C23CD100DC5523 /* PermissionProvider.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E33327C23CD100DC5523 /* PermissionProvider.swift */; };
+		2787E33727C2420C00DC5523 /* MicrophonePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E33627C2420C00DC5523 /* MicrophonePermission.swift */; };
+		2787E33927C243E800DC5523 /* PermissionTypeEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E33827C243E800DC5523 /* PermissionTypeEnum.swift */; };
+		2787E33B27C2443E00DC5523 /* PermissionStatusEnum.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E33A27C2443E00DC5523 /* PermissionStatusEnum.swift */; };
+		2787E33D27C244E400DC5523 /* Permission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E33C27C244E400DC5523 /* Permission.swift */; };
+		2787E34127C245BF00DC5523 /* CameraPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E34027C245BF00DC5523 /* CameraPermission.swift */; };
+		2787E34427C246BC00DC5523 /* NotificationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E34327C246BC00DC5523 /* NotificationPermission.swift */; };
+		2787E34727C2480B00DC5523 /* PhotoLibraryPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E34627C2480B00DC5523 /* PhotoLibraryPermission.swift */; };
+		2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E34A27C25C5800DC5523 /* TrackingPermission.swift */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
 		279B670E2784616900480155 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
 		279B67102784617600480155 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
@@ -304,6 +326,19 @@
 		278080D727AF1C3900AA44E3 /* SelectViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewModel.swift; sourceTree = "<group>"; };
 		278080D927AF1C5400AA44E3 /* SelectViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SelectViewController.swift; sourceTree = "<group>"; };
 		278080DB27AF1DB700AA44E3 /* SelectViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = SelectViewController.xib; sourceTree = "<group>"; };
+		2781E35127CD13CC0011BE14 /* isoCountryCode.json */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = text.json; path = isoCountryCode.json; sourceTree = "<group>"; };
+		2781E35427CD14810011BE14 /* CountryModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryModel.swift; sourceTree = "<group>"; };
+		2781E35927CD15D90011BE14 /* CountryPickerTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerTableViewCell.swift; sourceTree = "<group>"; };
+		2781E35B27CD17050011BE14 /* CountryPickerTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryPickerTableViewCell.xib; sourceTree = "<group>"; };
+		2781E35D27CD17190011BE14 /* CountryPickerCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerCellModel.swift; sourceTree = "<group>"; };
+		2781E36027CD173D0011BE14 /* CountryPickerAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerAssembler.swift; sourceTree = "<group>"; };
+		2781E36227CD17510011BE14 /* CountryPickerViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerViewController.swift; sourceTree = "<group>"; };
+		2781E36427CD175E0011BE14 /* CountryPickerViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = CountryPickerViewController.xib; sourceTree = "<group>"; };
+		2781E36627CD17AA0011BE14 /* CountryPickerViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerViewModel.swift; sourceTree = "<group>"; };
+		2781E36827CD1A5C0011BE14 /* CountryPickerRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CountryPickerRepository.swift; sourceTree = "<group>"; };
+		2781E36B27CD278A0011BE14 /* Filterable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Filterable.swift; sourceTree = "<group>"; };
+		2781E36D27CD2E530011BE14 /* String+GetFlag.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GetFlag.swift"; sourceTree = "<group>"; };
+		2781E36F27CE7CFC0011BE14 /* Flags.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Flags.xcassets; sourceTree = "<group>"; };
 		2787E31027B9126C00DC5523 /* UIView+SetGradient.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+SetGradient.swift"; sourceTree = "<group>"; };
 		2787E31327B9178300DC5523 /* UIImage+Image.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImage+Image.swift"; sourceTree = "<group>"; };
 		2787E31627B93EE200DC5523 /* TabBarAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TabBarAssembler.swift; sourceTree = "<group>"; };
@@ -317,6 +352,15 @@
 		2787E32827C16E2B00DC5523 /* TAndCViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TAndCViewController.swift; sourceTree = "<group>"; };
 		2787E32B27C172B300DC5523 /* WKWebView+load.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "WKWebView+load.swift"; sourceTree = "<group>"; };
 		2787E32E27C179BB00DC5523 /* ImagePicker.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ImagePicker.swift; sourceTree = "<group>"; };
+		2787E33327C23CD100DC5523 /* PermissionProvider.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionProvider.swift; sourceTree = "<group>"; };
+		2787E33627C2420C00DC5523 /* MicrophonePermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MicrophonePermission.swift; sourceTree = "<group>"; };
+		2787E33827C243E800DC5523 /* PermissionTypeEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionTypeEnum.swift; sourceTree = "<group>"; };
+		2787E33A27C2443E00DC5523 /* PermissionStatusEnum.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PermissionStatusEnum.swift; sourceTree = "<group>"; };
+		2787E33C27C244E400DC5523 /* Permission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Permission.swift; sourceTree = "<group>"; };
+		2787E34027C245BF00DC5523 /* CameraPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CameraPermission.swift; sourceTree = "<group>"; };
+		2787E34327C246BC00DC5523 /* NotificationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermission.swift; sourceTree = "<group>"; };
+		2787E34627C2480B00DC5523 /* PhotoLibraryPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPermission.swift; sourceTree = "<group>"; };
+		2787E34A27C25C5800DC5523 /* TrackingPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingPermission.swift; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -697,6 +741,7 @@
 			children = (
 				271EEA4327208BC300BA30FD /* String+Empty.swift */,
 				279B67272784C64E00480155 /* String+TextToImage.swift */,
+				2781E36D27CD2E530011BE14 /* String+GetFlag.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -825,6 +870,7 @@
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
 				279B6711278462E400480155 /* Common */,
 				270F0FBB279D6D99005DE9FB /* Chat */,
+				2781E35327CD14380011BE14 /* CountryPicker */,
 				278080A227AF107900AA44E3 /* FormDemo */,
 				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
 				27BB13282788B1CD00B5FE4D /* Main */,
@@ -845,6 +891,7 @@
 		2758FC962709B4E9009BCB5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2787E33027C23B8E00DC5523 /* Permission */,
 				2787E32D27C179A900DC5523 /* MediaPicker */,
 				2780808627AF092C00AA44E3 /* Form */,
 				2763D38E27A5D05200796FA8 /* NibLoadable */,
@@ -858,6 +905,7 @@
 		2758FC972709B4FB009BCB5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
+				2781E34F27CD13AC0011BE14 /* Jsons */,
 				2758FCF62709D56C009BCB5A /* Generated */,
 				2758FC9B2709B58D009BCB5A /* Environments */,
 				2758FC692709B469009BCB5A /* Assets.xcassets */,
@@ -1157,6 +1205,55 @@
 			path = Select;
 			sourceTree = "<group>";
 		};
+		2781E34F27CD13AC0011BE14 /* Jsons */ = {
+			isa = PBXGroup;
+			children = (
+				2781E35027CD13B80011BE14 /* IsoCountryCodes */,
+			);
+			path = Jsons;
+			sourceTree = "<group>";
+		};
+		2781E35027CD13B80011BE14 /* IsoCountryCodes */ = {
+			isa = PBXGroup;
+			children = (
+				2781E35127CD13CC0011BE14 /* isoCountryCode.json */,
+			);
+			path = IsoCountryCodes;
+			sourceTree = "<group>";
+		};
+		2781E35327CD14380011BE14 /* CountryPicker */ = {
+			isa = PBXGroup;
+			children = (
+				2781E35827CD15BC0011BE14 /* Cells */,
+				2781E35427CD14810011BE14 /* CountryModel.swift */,
+				2781E36027CD173D0011BE14 /* CountryPickerAssembler.swift */,
+				2781E36227CD17510011BE14 /* CountryPickerViewController.swift */,
+				2781E36427CD175E0011BE14 /* CountryPickerViewController.xib */,
+				2781E36627CD17AA0011BE14 /* CountryPickerViewModel.swift */,
+				2781E36827CD1A5C0011BE14 /* CountryPickerRepository.swift */,
+				2781E36F27CE7CFC0011BE14 /* Flags.xcassets */,
+			);
+			path = CountryPicker;
+			sourceTree = "<group>";
+		};
+		2781E35827CD15BC0011BE14 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2781E35927CD15D90011BE14 /* CountryPickerTableViewCell.swift */,
+				2781E35B27CD17050011BE14 /* CountryPickerTableViewCell.xib */,
+				2781E35D27CD17190011BE14 /* CountryPickerCellModel.swift */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		2781E36A27CD276B0011BE14 /* Filterable */ = {
+			isa = PBXGroup;
+			children = (
+				2781E36B27CD278A0011BE14 /* Filterable.swift */,
+			);
+			path = Filterable;
+			sourceTree = "<group>";
+		};
 		2787E31227B9175D00DC5523 /* UIImage */ = {
 			isa = PBXGroup;
 			children = (
@@ -1209,6 +1306,78 @@
 			path = MediaPicker;
 			sourceTree = "<group>";
 		};
+		2787E33027C23B8E00DC5523 /* Permission */ = {
+			isa = PBXGroup;
+			children = (
+				2787E34827C257AE00DC5523 /* Enum */,
+				2787E33E27C2451400DC5523 /* Permissions */,
+				2787E33327C23CD100DC5523 /* PermissionProvider.swift */,
+				2787E33C27C244E400DC5523 /* Permission.swift */,
+			);
+			path = Permission;
+			sourceTree = "<group>";
+		};
+		2787E33527C241F700DC5523 /* Microphone */ = {
+			isa = PBXGroup;
+			children = (
+				2787E33627C2420C00DC5523 /* MicrophonePermission.swift */,
+			);
+			path = Microphone;
+			sourceTree = "<group>";
+		};
+		2787E33E27C2451400DC5523 /* Permissions */ = {
+			isa = PBXGroup;
+			children = (
+				2787E33F27C245AB00DC5523 /* Camera */,
+				2787E33527C241F700DC5523 /* Microphone */,
+				2787E34227C246A100DC5523 /* Notification */,
+				2787E34527C247F400DC5523 /* PhotoLibrary */,
+				2787E34927C25C3C00DC5523 /* Tracking */,
+			);
+			path = Permissions;
+			sourceTree = "<group>";
+		};
+		2787E33F27C245AB00DC5523 /* Camera */ = {
+			isa = PBXGroup;
+			children = (
+				2787E34027C245BF00DC5523 /* CameraPermission.swift */,
+			);
+			path = Camera;
+			sourceTree = "<group>";
+		};
+		2787E34227C246A100DC5523 /* Notification */ = {
+			isa = PBXGroup;
+			children = (
+				2787E34327C246BC00DC5523 /* NotificationPermission.swift */,
+			);
+			path = Notification;
+			sourceTree = "<group>";
+		};
+		2787E34527C247F400DC5523 /* PhotoLibrary */ = {
+			isa = PBXGroup;
+			children = (
+				2787E34627C2480B00DC5523 /* PhotoLibraryPermission.swift */,
+			);
+			path = PhotoLibrary;
+			sourceTree = "<group>";
+		};
+		2787E34827C257AE00DC5523 /* Enum */ = {
+			isa = PBXGroup;
+			children = (
+				2787E33827C243E800DC5523 /* PermissionTypeEnum.swift */,
+				2787E33A27C2443E00DC5523 /* PermissionStatusEnum.swift */,
+			);
+			path = Enum;
+			sourceTree = "<group>";
+		};
+		2787E34927C25C3C00DC5523 /* Tracking */ = {
+			isa = PBXGroup;
+			children = (
+				2787E34A27C25C5800DC5523 /* TrackingPermission.swift */,
+			);
+			path = Tracking;
+			sourceTree = "<group>";
+		};
 		279B670A27845F5E00480155 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
@@ -1227,6 +1396,7 @@
 			isa = PBXGroup;
 			children = (
 				279B67222784712900480155 /* T */,
+				2781E36A27CD276B0011BE14 /* Filterable */,
 				27BB13232788AEF500B5FE4D /* Navigator */,
 			);
 			path = Common;
@@ -1649,6 +1819,9 @@
 			files = (
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
 				2787E32727C16E1E00DC5523 /* TAndCViewController.xib in Resources */,
+				2781E36527CD175E0011BE14 /* CountryPickerViewController.xib in Resources */,
+				2781E35C27CD17050011BE14 /* CountryPickerTableViewCell.xib in Resources */,
+				2781E35227CD13CC0011BE14 /* isoCountryCode.json in Resources */,
 				2787E32227B94EB000DC5523 /* TestViewController.xib in Resources */,
 				279B67152784652A00480155 /* TutorialViewController.xib in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
@@ -1659,6 +1832,7 @@
 				279B672127846F6B00480155 /* TutorialPageViewController.xib in Resources */,
 				278080DC27AF1DB700AA44E3 /* SelectViewController.xib in Resources */,
 				270F0FC3279D6DF1005DE9FB /* ChatViewController.xib in Resources */,
+				2781E37027CE7CFC0011BE14 /* Flags.xcassets in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 				2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */,
 				278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */,
@@ -1724,14 +1898,17 @@
 				278080B427AF13A100AA44E3 /* DateInputFormField.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
+				2787E34427C246BC00DC5523 /* NotificationPermission.swift in Sources */,
 				27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */,
 				27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */,
 				2787E32F27C179BB00DC5523 /* ImagePicker.swift in Sources */,
+				2781E36127CD173D0011BE14 /* CountryPickerAssembler.swift in Sources */,
 				2780808A27AF0B9000AA44E3 /* FormField.swift in Sources */,
 				27BB13352788BFAA00B5FE4D /* AppDelegateAssembler.swift in Sources */,
 				2780809127AF0C3C00AA44E3 /* FieldDataSource.swift in Sources */,
 				27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */,
 				27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */,
+				2781E35E27CD17190011BE14 /* CountryPickerCellModel.swift in Sources */,
 				278080D627AF1C1C00AA44E3 /* SelectModule.swift in Sources */,
 				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
 				278080A427AF108F00AA44E3 /* FormDemoAssembler.swift in Sources */,
@@ -1747,6 +1924,7 @@
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
 				2787E31727B93EE200DC5523 /* TabBarAssembler.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
+				2781E36727CD17AA0011BE14 /* CountryPickerViewModel.swift in Sources */,
 				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
 				2763D39027A5D07100796FA8 /* NibLoadable.swift in Sources */,
@@ -1758,6 +1936,7 @@
 				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
 				270F0FBF279D6DCE005DE9FB /* ChatViewController.swift in Sources */,
+				2781E35527CD14810011BE14 /* CountryModel.swift in Sources */,
 				2780809527AF0C7800AA44E3 /* InputDataSource.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
 				2787E32027B94DDC00DC5523 /* TestViewController.swift in Sources */,
@@ -1765,6 +1944,7 @@
 				27E636E32733EEFB00FC1210 /* CoinsIdResponse.swift in Sources */,
 				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
 				278080CD27AF1B5D00AA44E3 /* Country.swift in Sources */,
+				2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
 				278080BF27AF196800AA44E3 /* ToggleInputCellModel.swift in Sources */,
 				27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */,
@@ -1781,10 +1961,12 @@
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
 				27ABA0B127296F55000FD326 /* EventsCountriesRequest.swift in Sources */,
 				271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */,
+				2787E33727C2420C00DC5523 /* MicrophonePermission.swift in Sources */,
 				27ABA0CE2729ADA5000FD326 /* DerivativesRequest.swift in Sources */,
 				27ABA0BF27297BAC000FD326 /* EventsRequest.swift in Sources */,
 				27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */,
 				275710882725941F00348F93 /* DataRequest.swift in Sources */,
+				2787E34727C2480B00DC5523 /* PhotoLibraryPermission.swift in Sources */,
 				2787E32927C16E2B00DC5523 /* TAndCViewController.swift in Sources */,
 				278080C827AF1A7900AA44E3 /* SelectInputFormField.swift in Sources */,
 				2787E31427B9178300DC5523 /* UIImage+Image.swift in Sources */,
@@ -1802,6 +1984,8 @@
 				279B671B27846F3000480155 /* TutorialPageAssembler.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
 				270F0FC1279D6DDC005DE9FB /* ChatViewModel.swift in Sources */,
+				2787E34127C245BF00DC5523 /* CameraPermission.swift in Sources */,
+				2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
 				278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */,
@@ -1815,11 +1999,13 @@
 				27ABA0FD27318703000FD326 /* ExchangesResponse.swift in Sources */,
 				278080D227AF1BD100AA44E3 /* SelectableItem.swift in Sources */,
 				27BB132E2788B20800B5FE4D /* MainNavigator.swift in Sources */,
+				2787E33927C243E800DC5523 /* PermissionTypeEnum.swift in Sources */,
 				2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */,
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
 				2763D38927A5CE6100796FA8 /* UITableView+ReusableCell.swift in Sources */,
 				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
+				2781E36927CD1A5C0011BE14 /* CountryPickerRepository.swift in Sources */,
 				2780808827AF09FE00AA44E3 /* FormViewController.swift in Sources */,
 				278080AD27AF12AE00AA44E3 /* TitleFormHeader.swift in Sources */,
 				27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */,
@@ -1841,9 +2027,12 @@
 				2787E32527C16DCE00DC5523 /* TAndCAssembler.swift in Sources */,
 				2763D39C27A5E79900796FA8 /* TextBubbleTableViewCell.swift in Sources */,
 				2763D39927A5D7FF00796FA8 /* MediaItem.swift in Sources */,
+				2787E33D27C244E400DC5523 /* Permission.swift in Sources */,
+				2781E36327CD17510011BE14 /* CountryPickerViewController.swift in Sources */,
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
 				27BB132C2788B1FC00B5FE4D /* MainViewController.swift in Sources */,
 				2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */,
+				2781E35A27CD15D90011BE14 /* CountryPickerTableViewCell.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
 				278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */,
@@ -1868,8 +2057,11 @@
 				278080A627AF10C100AA44E3 /* FormDemoRouter.swift in Sources */,
 				279B6726278471BE00480155 /* TutorialPageModel.swift in Sources */,
 				277B58CA27B00E4F00EAEA24 /* TitleHeaderFooterModel.swift in Sources */,
+				2781E36C27CD278A0011BE14 /* Filterable.swift in Sources */,
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
+				2787E33427C23CD100DC5523 /* PermissionProvider.swift in Sources */,
 				27ABA102273188B0000FD326 /* ExchangesListResponse.swift in Sources */,
+				2787E33B27C2443E00DC5523 /* PermissionStatusEnum.swift in Sources */,
 				2763D39527A5D5EF00796FA8 /* Sender.swift in Sources */,
 				279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */,
 				278080A827AF10E500AA44E3 /* FormDemoViewController.swift in Sources */,

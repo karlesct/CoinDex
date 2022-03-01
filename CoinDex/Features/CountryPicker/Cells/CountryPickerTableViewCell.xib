@@ -1,0 +1,50 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="19162" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="19144"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner"/>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <tableViewCell clipsSubviews="YES" contentMode="scaleToFill" preservesSuperviewLayoutMargins="YES" selectionStyle="default" indentationWidth="10" rowHeight="69" id="VOO-v5-wk0" customClass="CountryPickerTableViewCell" customModule="CoinDexRelease" customModuleProvider="target">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+            <autoresizingMask key="autoresizingMask"/>
+            <tableViewCellContentView key="contentView" opaque="NO" clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="center" preservesSuperviewLayoutMargins="YES" insetsLayoutMarginsFromSafeArea="NO" tableViewCell="VOO-v5-wk0" id="kUf-fY-XFq">
+                <rect key="frame" x="0.0" y="0.0" width="414" height="69"/>
+                <autoresizingMask key="autoresizingMask"/>
+                <subviews>
+                    <imageView clipsSubviews="YES" userInteractionEnabled="NO" contentMode="scaleAspectFit" horizontalHuggingPriority="251" verticalHuggingPriority="251" translatesAutoresizingMaskIntoConstraints="NO" id="mPT-YY-Pdj">
+                        <rect key="frame" x="20" y="10" width="50" height="40"/>
+                        <constraints>
+                            <constraint firstAttribute="height" constant="40" id="TCo-Ai-NIE"/>
+                            <constraint firstAttribute="width" constant="50" id="yby-SJ-yep"/>
+                        </constraints>
+                    </imageView>
+                    <label opaque="NO" userInteractionEnabled="NO" contentMode="left" horizontalHuggingPriority="251" verticalHuggingPriority="251" text="Label" textAlignment="natural" lineBreakMode="tailTruncation" baselineAdjustment="alignBaselines" adjustsFontSizeToFit="NO" translatesAutoresizingMaskIntoConstraints="NO" id="LEG-sz-eGL">
+                        <rect key="frame" x="90" y="19.5" width="41.5" height="21"/>
+                        <fontDescription key="fontDescription" type="system" pointSize="17"/>
+                        <nil key="textColor"/>
+                        <nil key="highlightedColor"/>
+                    </label>
+                </subviews>
+                <constraints>
+                    <constraint firstItem="mPT-YY-Pdj" firstAttribute="centerY" secondItem="kUf-fY-XFq" secondAttribute="centerY" id="RTE-Ik-ms9"/>
+                    <constraint firstAttribute="bottom" secondItem="mPT-YY-Pdj" secondAttribute="bottom" constant="10" id="SJ2-tQ-chT"/>
+                    <constraint firstItem="mPT-YY-Pdj" firstAttribute="leading" secondItem="kUf-fY-XFq" secondAttribute="leading" constant="20" id="WB8-ou-Hym"/>
+                    <constraint firstItem="mPT-YY-Pdj" firstAttribute="top" secondItem="kUf-fY-XFq" secondAttribute="top" constant="10" id="WDy-ZG-DMb"/>
+                    <constraint firstAttribute="trailing" relation="greaterThanOrEqual" secondItem="LEG-sz-eGL" secondAttribute="trailing" constant="20" id="WLY-zk-q9j"/>
+                    <constraint firstItem="LEG-sz-eGL" firstAttribute="centerY" secondItem="kUf-fY-XFq" secondAttribute="centerY" id="qic-9P-EU3"/>
+                    <constraint firstItem="LEG-sz-eGL" firstAttribute="leading" secondItem="mPT-YY-Pdj" secondAttribute="trailing" constant="20" id="s82-90-373"/>
+                </constraints>
+            </tableViewCellContentView>
+            <connections>
+                <outlet property="countryFlagImageView" destination="mPT-YY-Pdj" id="eSm-6Z-5U3"/>
+                <outlet property="countryNameLabel" destination="LEG-sz-eGL" id="6PR-ab-Rxy"/>
+            </connections>
+            <point key="canvasLocation" x="-455.07246376811599" y="85.379464285714278"/>
+        </tableViewCell>
+    </objects>
+</document>

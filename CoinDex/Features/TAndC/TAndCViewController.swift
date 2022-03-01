@@ -14,7 +14,7 @@ class TAndCViewController: UIViewController {
 
     // MARK: - Properties
 
-    private var wkWebView: WKWebView? = WKWebView()
+    private var wkWebView: WKWebView?
 
     var stringURL: String?
 

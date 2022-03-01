@@ -13,7 +13,7 @@ extension UIAlertController {
 
         private var preferredStyle: UIAlertController.Style = .alert
         private var title: String?
-        private var message: String?
+        private var message: String? 
         private var alertActions: [UIAlertAction] = [UIAlertAction]()
         private var sourceView: UIView?
         private var sourceRect: CGRect?
@@ -26,48 +26,48 @@ extension UIAlertController {
 
         // MARK: - Methods
 
-        func preferredStyle(_ preferredStyle: UIAlertController.Style) -> Builder {
-
+        func withPreferredStyle(_ preferredStyle: UIAlertController.Style) -> Builder {
             self.preferredStyle = preferredStyle
             return self
         }
 
-        func title(_ title: String?) -> Builder {
-
+        func withTitle(_ title: String?) -> Builder {
             self.title = title
             return self
         }
 
-        func message(_ message: String?) -> Builder {
-
+        func withMessage(_ message: String?) -> Builder {
             self.message = message
             return self
         }
 
-        func alertActions(_ alertActions: [UIAlertAction]) -> Builder {
-
+        func withAlertActions(_ alertActions: [UIAlertAction]) -> Builder {
             self.alertActions = alertActions
             return self
         }
 
-        func sourceView(_ sourceView: UIView?) -> Builder {
-
+        func withSourceView(_ sourceView: UIView?) -> Builder {
             self.sourceView = sourceView
             return self
         }
 
-        func sourceRect(_ sourceRect: CGRect?) -> Builder {
-
+        func withSourceRect(_ sourceRect: CGRect?) -> Builder {
             self.sourceRect = sourceRect
             return self
         }
 
-        func permittedArrowDirections(_ permittedArrowDirections: UIPopoverArrowDirection?) -> Builder {
-
+        func withpermittedArrowDirections(_ permittedArrowDirections: UIPopoverArrowDirection?) -> Builder {
             self.permittedArrowDirections = permittedArrowDirections
             return self
         }
 
+        func addActionWithTitle(_ title: String,
+                                alertActionStyle: UIAlertAction.Style = .default,
+                                handler: ((UIAlertAction) -> Void)? = nil) -> Builder {
+            let action = UIAlertAction(title: title, style: alertActionStyle, handler: handler)
+            self.alertActions.append(action)
+            return self
+        }
 
         func showIn(_ viewController: UIViewController,
                     animater: Bool = true,
@@ -76,6 +76,15 @@ extension UIAlertController {
             viewController.present(build(),
                                    animated: animater,
                                    completion: completion)
+        }
+
+        func show(animater: Bool = true, completion: (() -> Void)? = nil) {
+            DispatchQueue.main.async {
+                guard let viewController = UIViewController().getTopViewController else { return }
+                viewController.present(self.build(),
+                                       animated: true,
+                                       completion: nil)
+            }
         }
 
         func build() -> UIAlertController {

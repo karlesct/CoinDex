@@ -62,6 +62,27 @@ class MainViewController: UIViewController {
                                           for: .touchUpInside)
         }
     }
+    @IBOutlet weak var mediaPickerButton: UIButton! {
+        didSet {
+            self.mediaPickerButton.setTitle("Open mediaPicker",
+                                         for: .normal)
+            self.mediaPickerButton.addTarget(self,
+                                          action: #selector(self.mediaPickerButtonAction),
+                                          for: .touchUpInside)
+        }
+    }
+
+//    var imagePicker: ImagePicker {
+//        let mediaPicker = ImagePicker(presentationController: self,
+//                                      delegate: self)
+//        return mediaPicker
+//    }
+
+    private lazy var imagePicker: ImagePicker = {
+           let imagePicker = ImagePicker()
+           imagePicker.delegate = self
+           return imagePicker
+       }()
 
     // MARK: - Properties
 
@@ -166,13 +187,47 @@ extension MainViewController {
     }
 
     @objc func tAndCButtonAction() {
-        let assembler = TAndCAssembler(stringURL: "https://apple.com")
+//        let assembler = TAndCAssembler(stringURL: "https://apple.com")
+        let assembler = CountryPickerAssembler()
         let viewController = assembler.viewController()
         viewController.modalPresentationStyle = .overFullScreen
 
         self.present(viewController,
                      animated: true,
                      completion: nil)
+    }
+
+    @objc func mediaPickerButtonAction() {
+
+        if #available(iOS 14.5, *) {
+            PermissionsProvider.request(permission: .tracking) { result in
+                NSLog("PermissionsProvider result: \(result)")
+            }
+        }
+        //imagePicker.photoGalleryAsscessRequest()
+    }
+
+
+
+}
+
+extension MainViewController: ImagePickerDelegate {
+
+    func imagePicker(_ imagePicker: ImagePicker,
+                     didSelect image: UIImage) {
+        NSLog("Image: \(image)")
+        imagePicker.dismiss()
+    }
+
+    func cancelButtonDidClick(on imageView: ImagePicker) {
+        imagePicker.dismiss()
+    }
+    
+    func imagePicker(_ imagePicker: ImagePicker,
+                     grantedAccess: Bool,
+                     to sourceType: UIImagePickerController.SourceType) {
+        guard grantedAccess else { return }
+        imagePicker.present(parent: self, sourceType: sourceType)
     }
 }
 
