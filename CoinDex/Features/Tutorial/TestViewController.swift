@@ -40,8 +40,8 @@ class TestViewController: UIViewController {
 
         self.view.setGradient(start: .center,
                               end: .bottomCenter,
-                              colors: [.primaryColor,
-                                       .secondaryColor])
+                              colors: [.primary,
+                                       .secondary])
 
 
         pageControl.pages = pages?.count ?? 0

@@ -5,7 +5,7 @@
 
 import Foundation
 
-protocol CountryPickerViewModelProtocol {
+protocol CountryPickerViewModelProtocol: AnyObject {
     var dictionary: [String: [CountryPickerCellModel]] { get set }
     var sectionTitles: [String] { get set }
     var view: CountryPickerViewProtocol? { get set }
@@ -13,13 +13,14 @@ protocol CountryPickerViewModelProtocol {
     func searchTextDidChange(text: String)
 }
 
-protocol CountryPickerViewProtocol {
+protocol CountryPickerViewProtocol: AnyObject {
     func reloadData()
 }
 
-class CountryPickerViewModel: CountryPickerViewModelProtocol {
+final class CountryPickerViewModel: CountryPickerViewModelProtocol {
 
     // MARK: - Properties
+    
     var dataSource: [CountryPickerCellModel] = []
 
     var dictionary: [String: [CountryPickerCellModel]] = [String: [CountryPickerCellModel]]()

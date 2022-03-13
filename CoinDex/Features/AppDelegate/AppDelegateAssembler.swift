@@ -10,7 +10,7 @@ final class AppDelegateAssembler {
     private(set) lazy var window = UIWindow(frame: UIScreen.main.bounds)
     private(set) lazy var launchScreenAssembler = LaunchScreenAssembler(navigationController: navigationController)
     private(set) lazy var navigationController: UINavigationController = {
-        return UINavigationController()
+        return CustomNavigationController()
     }()
 
     // MARK: - Init

@@ -16,17 +16,17 @@ extension UIColor {
     static let x88B14B = #colorLiteral(red: 0.5333333333, green: 0.6941176471, blue: 0.2941176471, alpha: 1)
 
 
-    static var primaryColor: UIColor {
+    static var primary: UIColor {
         return UIColor.dynamicColor(light: .x88B14B,
                                     dark: .x88B14B)
     }
 
-    static var secondaryColor: UIColor {
+    static var secondary: UIColor {
         return UIColor.dynamicColor(light: .xFCE224,
                                     dark: .xFCE224)
     }
 
-    static var defaultTextColor: UIColor {
+    static var defaultText: UIColor {
         return UIColor.dynamicColor(light: .x555555,
                                     dark: .xFFFFFF)
     }

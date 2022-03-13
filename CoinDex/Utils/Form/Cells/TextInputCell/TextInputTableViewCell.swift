@@ -16,10 +16,14 @@ final class TextInputTableViewCell: UITableViewCell,
                                     ReusableCell {
 
 
-    @IBOutlet weak var titleLabel: UILabel!
+    @IBOutlet weak var titleLabel: UILabel! {
+        didSet {
+            self.titleLabel.textColor = .primary
+            self.titleLabel.font = .systemFont(ofSize: 14)
+        }
+    }
     @IBOutlet weak var textField: UITextField! {
         didSet {
-            self.textField.textAlignment = .right
             self.textField.addTarget(self,
                                 action: #selector(textFieldEditingChanged),
                                 for: .editingChanged)
@@ -45,7 +49,7 @@ extension TextInputTableViewCell {
     func configure(with item: TextInputCellModel) {
         titleLabel.text = item.title
 
-        textField.placeholder = item.title
+        textField.placeholder = item.placeholder
         textField.text = item.value
         textField.isSecureTextEntry = item.isSecure
 

@@ -5,6 +5,7 @@
 
 struct TextInputCellModel {
     var title: String
+    var placeholder: String?
     var value: String?
     var isSecure: Bool = false
 }

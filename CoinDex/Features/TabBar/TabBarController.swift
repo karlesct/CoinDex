@@ -27,7 +27,7 @@ class TabBarController: UITabBarController {
 
         self.tabBar.barTintColor = .xFFFFFF
         self.tabBar.isTranslucent = false
-        self.tabBar.tintColor = .primaryColor
+        self.tabBar.tintColor = .primary
 
         let firstVc = UIViewController()
         firstVc.title = "First"

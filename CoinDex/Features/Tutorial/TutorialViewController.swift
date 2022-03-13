@@ -75,8 +75,8 @@ class TutorialViewController: UIViewController {
         super.viewDidLoad()
         self.view.setGradient(start: .center,
                               end: .bottomCenter,
-                              colors: [.primaryColor,
-                                       .secondaryColor])
+                              colors: [.primary,
+                                       .secondary])
     }
 
     // MARK: - Methods

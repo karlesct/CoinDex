@@ -38,10 +38,12 @@ extension FormViewController {
     }
 
     private func setUpViews() {
-        tableView.backgroundColor = .systemGroupedBackground
-        tableView.rowHeight = UITableView.automaticDimension
-        tableView.delegate = self
-        tableView.dataSource = self
+        self.tableView.backgroundColor = .xFFFFFF
+        self.tableView.rowHeight = UITableView.automaticDimension
+        self.tableView.delegate = self
+        self.tableView.dataSource = self
+        self.tableView.tableFooterView = UIView()
+        self.tableView.separatorStyle = .none
         dataSource.delegate = self
     }
 }

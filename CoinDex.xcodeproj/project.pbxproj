@@ -129,6 +129,16 @@
 		2787E34427C246BC00DC5523 /* NotificationPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E34327C246BC00DC5523 /* NotificationPermission.swift */; };
 		2787E34727C2480B00DC5523 /* PhotoLibraryPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E34627C2480B00DC5523 /* PhotoLibraryPermission.swift */; };
 		2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E34A27C25C5800DC5523 /* TrackingPermission.swift */; };
+		278FD03127DE498A00A54EAB /* LoginViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD03027DE498A00A54EAB /* LoginViewController.swift */; };
+		278FD03327DE499D00A54EAB /* LoginAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD03227DE499D00A54EAB /* LoginAssembler.swift */; };
+		278FD03527DE49A800A54EAB /* LoginNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD03427DE49A800A54EAB /* LoginNavigator.swift */; };
+		278FD03727DE49B500A54EAB /* LoginViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD03627DE49B500A54EAB /* LoginViewModel.swift */; };
+		278FD03927DE49CA00A54EAB /* LoginRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD03827DE49CA00A54EAB /* LoginRepository.swift */; };
+		278FD03E27DE4F5700A54EAB /* CustomNavigationController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD03D27DE4F5700A54EAB /* CustomNavigationController.swift */; };
+		278FD04227DE55F800A54EAB /* TitleTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD04127DE55F800A54EAB /* TitleTableViewCell.swift */; };
+		278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD04527DE561800A54EAB /* TitleFormField.swift */; };
+		278FD04827DE562800A54EAB /* TitleCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD04727DE562800A54EAB /* TitleCellModel.swift */; };
+		278FD04A27DE5EB200A54EAB /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278FD04927DE5EB200A54EAB /* TitleTableViewCell.xib */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
 		279B670E2784616900480155 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
 		279B67102784617600480155 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
@@ -361,6 +371,16 @@
 		2787E34327C246BC00DC5523 /* NotificationPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NotificationPermission.swift; sourceTree = "<group>"; };
 		2787E34627C2480B00DC5523 /* PhotoLibraryPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PhotoLibraryPermission.swift; sourceTree = "<group>"; };
 		2787E34A27C25C5800DC5523 /* TrackingPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TrackingPermission.swift; sourceTree = "<group>"; };
+		278FD03027DE498A00A54EAB /* LoginViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewController.swift; sourceTree = "<group>"; };
+		278FD03227DE499D00A54EAB /* LoginAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginAssembler.swift; sourceTree = "<group>"; };
+		278FD03427DE49A800A54EAB /* LoginNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginNavigator.swift; sourceTree = "<group>"; };
+		278FD03627DE49B500A54EAB /* LoginViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginViewModel.swift; sourceTree = "<group>"; };
+		278FD03827DE49CA00A54EAB /* LoginRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoginRepository.swift; sourceTree = "<group>"; };
+		278FD03D27DE4F5700A54EAB /* CustomNavigationController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomNavigationController.swift; sourceTree = "<group>"; };
+		278FD04127DE55F800A54EAB /* TitleTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleTableViewCell.swift; sourceTree = "<group>"; };
+		278FD04527DE561800A54EAB /* TitleFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleFormField.swift; sourceTree = "<group>"; };
+		278FD04727DE562800A54EAB /* TitleCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCellModel.swift; sourceTree = "<group>"; };
+		278FD04927DE5EB200A54EAB /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -867,6 +887,7 @@
 		2758FC942709B4D1009BCB5A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				278FD02F27DE497100A54EAB /* Login */,
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
 				279B6711278462E400480155 /* Common */,
 				270F0FBB279D6D99005DE9FB /* Chat */,
@@ -992,6 +1013,7 @@
 		2763D37E27A4958200796FA8 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				278FD03C27DE4F2600A54EAB /* UINavigationController */,
 				2787E31A27B94CC600DC5523 /* UIView */,
 			);
 			path = UIComponents;
@@ -1376,6 +1398,46 @@
 				2787E34A27C25C5800DC5523 /* TrackingPermission.swift */,
 			);
 			path = Tracking;
+			sourceTree = "<group>";
+		};
+		278FD02F27DE497100A54EAB /* Login */ = {
+			isa = PBXGroup;
+			children = (
+				278FD03F27DE55BB00A54EAB /* Form */,
+				278FD03027DE498A00A54EAB /* LoginViewController.swift */,
+				278FD03227DE499D00A54EAB /* LoginAssembler.swift */,
+				278FD03427DE49A800A54EAB /* LoginNavigator.swift */,
+				278FD03627DE49B500A54EAB /* LoginViewModel.swift */,
+				278FD03827DE49CA00A54EAB /* LoginRepository.swift */,
+			);
+			path = Login;
+			sourceTree = "<group>";
+		};
+		278FD03C27DE4F2600A54EAB /* UINavigationController */ = {
+			isa = PBXGroup;
+			children = (
+				278FD03D27DE4F5700A54EAB /* CustomNavigationController.swift */,
+			);
+			path = UINavigationController;
+			sourceTree = "<group>";
+		};
+		278FD03F27DE55BB00A54EAB /* Form */ = {
+			isa = PBXGroup;
+			children = (
+				278FD04027DE55CF00A54EAB /* TitleCell */,
+			);
+			path = Form;
+			sourceTree = "<group>";
+		};
+		278FD04027DE55CF00A54EAB /* TitleCell */ = {
+			isa = PBXGroup;
+			children = (
+				278FD04127DE55F800A54EAB /* TitleTableViewCell.swift */,
+				278FD04527DE561800A54EAB /* TitleFormField.swift */,
+				278FD04727DE562800A54EAB /* TitleCellModel.swift */,
+				278FD04927DE5EB200A54EAB /* TitleTableViewCell.xib */,
+			);
+			path = TitleCell;
 			sourceTree = "<group>";
 		};
 		279B670A27845F5E00480155 /* Tutorial */ = {
@@ -1817,6 +1879,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				278FD04A27DE5EB200A54EAB /* TitleTableViewCell.xib in Resources */,
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
 				2787E32727C16E1E00DC5523 /* TAndCViewController.xib in Resources */,
 				2781E36527CD175E0011BE14 /* CountryPickerViewController.xib in Resources */,
@@ -1890,6 +1953,8 @@
 				2763D39327A5D5C600796FA8 /* Message.swift in Sources */,
 				279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
+				278FD04227DE55F800A54EAB /* TitleTableViewCell.swift in Sources */,
+				278FD03927DE49CA00A54EAB /* LoginRepository.swift in Sources */,
 				27ABA0C127297BC6000FD326 /* EventsResponse.swift in Sources */,
 				270F0FCA279D7BA3005DE9FB /* BubbleView.swift in Sources */,
 				27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */,
@@ -1897,6 +1962,7 @@
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
 				278080B427AF13A100AA44E3 /* DateInputFormField.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
+				278FD03327DE499D00A54EAB /* LoginAssembler.swift in Sources */,
 				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
 				2787E34427C246BC00DC5523 /* NotificationPermission.swift in Sources */,
 				27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */,
@@ -1907,6 +1973,7 @@
 				27BB13352788BFAA00B5FE4D /* AppDelegateAssembler.swift in Sources */,
 				2780809127AF0C3C00AA44E3 /* FieldDataSource.swift in Sources */,
 				27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */,
+				278FD03127DE498A00A54EAB /* LoginViewController.swift in Sources */,
 				27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */,
 				2781E35E27CD17190011BE14 /* CountryPickerCellModel.swift in Sources */,
 				278080D627AF1C1C00AA44E3 /* SelectModule.swift in Sources */,
@@ -1918,9 +1985,11 @@
 				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
 				278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */,
 				27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */,
+				278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
 				270F0FC5279D71ED005DE9FB /* ChatUseCase.swift in Sources */,
+				278FD03527DE49A800A54EAB /* LoginNavigator.swift in Sources */,
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
 				2787E31727B93EE200DC5523 /* TabBarAssembler.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
@@ -1979,6 +2048,7 @@
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
 				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift in Sources */,
+				278FD03E27DE4F5700A54EAB /* CustomNavigationController.swift in Sources */,
 				275710912725954600348F93 /* PingRequest.swift in Sources */,
 				2780809327AF0C5500AA44E3 /* FormDataSource.swift in Sources */,
 				279B671B27846F3000480155 /* TutorialPageAssembler.swift in Sources */,
@@ -1990,6 +2060,7 @@
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
 				278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */,
 				279B67102784617600480155 /* TutorialViewController.swift in Sources */,
+				278FD03727DE49B500A54EAB /* LoginViewModel.swift in Sources */,
 				278080CF27AF1B7A00AA44E3 /* Province.swift in Sources */,
 				278080C427AF1A3D00AA44E3 /* SelectInputTableViewCell.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
@@ -1997,6 +2068,7 @@
 				27ABA0F12731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift in Sources */,
 				271EEA3B27207E3D00BA30FD /* UIWindow+VisibleViewController.swift in Sources */,
 				27ABA0FD27318703000FD326 /* ExchangesResponse.swift in Sources */,
+				278FD04827DE562800A54EAB /* TitleCellModel.swift in Sources */,
 				278080D227AF1BD100AA44E3 /* SelectableItem.swift in Sources */,
 				27BB132E2788B20800B5FE4D /* MainNavigator.swift in Sources */,
 				2787E33927C243E800DC5523 /* PermissionTypeEnum.swift in Sources */,

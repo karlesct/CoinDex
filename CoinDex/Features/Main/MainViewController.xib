@@ -13,6 +13,7 @@
             <connections>
                 <outlet property="chatButton" destination="64a-Nv-Oz2" id="EnG-F6-jw5"/>
                 <outlet property="formButton" destination="6Zu-w7-Qo5" id="6mE-WI-MkE"/>
+                <outlet property="loginButton" destination="vyX-Qe-N86" id="4PH-sp-0RH"/>
                 <outlet property="mediaPickerButton" destination="9i8-hr-Bbl" id="g8N-2A-C1a"/>
                 <outlet property="tAndCButton" destination="Ace-ww-hhh" id="M2b-d0-i3U"/>
                 <outlet property="tabBarButton" destination="sgO-ZD-DPz" id="Ivq-99-EBE"/>
@@ -55,10 +56,16 @@
                     <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
                     <state key="normal" title="Button"/>
                 </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="vyX-Qe-N86">
+                    <rect key="frame" x="184" y="623" width="46" height="30"/>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                    <state key="normal" title="Button"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="vyX-Qe-N86" firstAttribute="top" secondItem="9i8-hr-Bbl" secondAttribute="bottom" constant="10" id="0BF-rd-Dq4"/>
                 <constraint firstItem="zon-Eg-rcS" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="1qA-Hy-H7b"/>
                 <constraint firstItem="6Zu-w7-Qo5" firstAttribute="top" secondItem="64a-Nv-Oz2" secondAttribute="bottom" constant="79" id="3xl-Iu-Gzl"/>
                 <constraint firstItem="sgO-ZD-DPz" firstAttribute="top" secondItem="6Zu-w7-Qo5" secondAttribute="bottom" constant="70" id="5jI-YU-wIa"/>
@@ -69,6 +76,7 @@
                 <constraint firstItem="64a-Nv-Oz2" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="TfK-d0-N9v"/>
                 <constraint firstItem="zon-Eg-rcS" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="100" id="Usw-yh-DMt"/>
                 <constraint firstItem="9i8-hr-Bbl" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="bbF-QS-2tS"/>
+                <constraint firstItem="vyX-Qe-N86" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="op2-oM-ZYU"/>
                 <constraint firstItem="64a-Nv-Oz2" firstAttribute="top" secondItem="zon-Eg-rcS" secondAttribute="bottom" constant="100" id="uaC-eD-YCm"/>
                 <constraint firstItem="9i8-hr-Bbl" firstAttribute="top" secondItem="Ace-ww-hhh" secondAttribute="bottom" constant="20" id="yaG-N0-Pqd"/>
             </constraints>

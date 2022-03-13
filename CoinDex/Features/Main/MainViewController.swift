@@ -23,32 +23,32 @@ class MainViewController: UIViewController {
     @IBOutlet weak var chatButton: UIButton! {
         didSet {
             self.chatButton.setTitle("Open Chat",
-                                         for: .normal)
+                                     for: .normal)
 
             self.chatButton.addTarget(self,
-                                          action: #selector(self.chatButtonAction),
-                                          for: .touchUpInside)
+                                      action: #selector(self.chatButtonAction),
+                                      for: .touchUpInside)
         }
     }
 
     @IBOutlet weak var formButton: UIButton! {
         didSet {
             self.formButton.setTitle("Open form",
-                                         for: .normal)
+                                     for: .normal)
 
             self.formButton.addTarget(self,
-                                          action: #selector(self.formButtonAction),
-                                          for: .touchUpInside)
+                                      action: #selector(self.formButtonAction),
+                                      for: .touchUpInside)
         }
     }
 
     @IBOutlet weak var tabBarButton: UIButton!{
         didSet {
             self.tabBarButton.setTitle("Open tabBar",
-                                         for: .normal)
+                                       for: .normal)
             self.tabBarButton.addTarget(self,
-                                          action: #selector(self.tabBarButtonAction),
-                                          for: .touchUpInside)
+                                        action: #selector(self.tabBarButtonAction),
+                                        for: .touchUpInside)
         }
     }
 
@@ -56,33 +56,43 @@ class MainViewController: UIViewController {
     @IBOutlet weak var tAndCButton: UIButton! {
         didSet {
             self.tAndCButton.setTitle("Open TandC",
-                                         for: .normal)
+                                      for: .normal)
             self.tAndCButton.addTarget(self,
-                                          action: #selector(self.tAndCButtonAction),
-                                          for: .touchUpInside)
+                                       action: #selector(self.tAndCButtonAction),
+                                       for: .touchUpInside)
         }
     }
     @IBOutlet weak var mediaPickerButton: UIButton! {
         didSet {
             self.mediaPickerButton.setTitle("Open mediaPicker",
-                                         for: .normal)
+                                            for: .normal)
             self.mediaPickerButton.addTarget(self,
-                                          action: #selector(self.mediaPickerButtonAction),
-                                          for: .touchUpInside)
+                                             action: #selector(self.mediaPickerButtonAction),
+                                             for: .touchUpInside)
         }
     }
 
-//    var imagePicker: ImagePicker {
-//        let mediaPicker = ImagePicker(presentationController: self,
-//                                      delegate: self)
-//        return mediaPicker
-//    }
+    @IBOutlet weak var loginButton: UIButton!{
+        didSet {
+            self.loginButton.setTitle("Open login",
+                                      for: .normal)
+            self.loginButton.addTarget(self,
+                                       action: #selector(self.loginButtonAction),
+                                       for: .touchUpInside)
+        }
+    }
+
+    //    var imagePicker: ImagePicker {
+    //        let mediaPicker = ImagePicker(presentationController: self,
+    //                                      delegate: self)
+    //        return mediaPicker
+    //    }
 
     private lazy var imagePicker: ImagePicker = {
-           let imagePicker = ImagePicker()
-           imagePicker.delegate = self
-           return imagePicker
-       }()
+        let imagePicker = ImagePicker()
+        imagePicker.delegate = self
+        return imagePicker
+    }()
 
     // MARK: - Properties
 
@@ -101,40 +111,40 @@ class MainViewController: UIViewController {
         guard let configAPI = ConfigLoader.parseFile().API
         else { return }
         print(configAPI)
-//        let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
+        //        let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
 
-//        let test = test()
-//        let request = PingRequest(baseURL: baseURL)
-//        let request = CoinsListRequest(baseURL: baseURL)
-//        let request = FinancePlatformsRequest(baseURL: baseURL)
-//        let request = GlobalGlobalRequest(baseURL: baseURL)
-//        let request = GlobalDecentralizedFinanceDefiRequest(baseURL: baseURL)
-//        let request = TrendingRequest(baseURL: baseURL)
-//        let request = ExchangeRateRequest(baseURL: baseURL)
-//        let request = AssetPlatformsRequest(baseURL: baseURL)
-//        let request = CategoriesListRequest(baseURL: baseURL)
-//        let request = CategoriesRequest(baseURL: baseURL)
-//        let request = EventsCountriesRequest(baseURL: baseURL)
-//        let request = EventTypesRequest(baseURL: baseURL)
-//        let request = EventsRequest(baseURL: baseURL)
-//        let request = CompaniesRequest(baseURL: baseURL)
-//        let request = StatusUpdateRequest(baseURL: baseURL)
-//        let request = DerivativesRequest(baseURL: baseURL)
-//        let request = DerivativesExchangesRequest(baseURL: baseURL)
-//        let request = DerivativesExchangesListRequest(baseURL: baseURL)
-//        let request = DerivativesExchangeDataRequest(baseURL: baseURL)
-//        let request = IndexesRequest(baseURL: baseURL)
-//        let request = IndexesListRequest(baseURL: baseURL)
-//        let request = FinanceProductsRequest(baseURL: baseURL)
-//        let request = SimpleSupportedVsCurrenciesRequest(baseURL: baseURL)
-//        let request = ExchangesRequest(baseURL: baseURL)
-//        let request = ExchangesListRequest(baseURL: baseURL)
-//        let request = ExchangesIdRequest(baseURL: baseURL)
-//        let request = ExchangesIdVolumeChartRequest(baseURL: baseURL)
-//        let request = CoinsMarketsRequest(baseURL: baseURL)
-//        let request = CoinsIdRequest(baseURL: baseURL)
+        //        let test = test()
+        //        let request = PingRequest(baseURL: baseURL)
+        //        let request = CoinsListRequest(baseURL: baseURL)
+        //        let request = FinancePlatformsRequest(baseURL: baseURL)
+        //        let request = GlobalGlobalRequest(baseURL: baseURL)
+        //        let request = GlobalDecentralizedFinanceDefiRequest(baseURL: baseURL)
+        //        let request = TrendingRequest(baseURL: baseURL)
+        //        let request = ExchangeRateRequest(baseURL: baseURL)
+        //        let request = AssetPlatformsRequest(baseURL: baseURL)
+        //        let request = CategoriesListRequest(baseURL: baseURL)
+        //        let request = CategoriesRequest(baseURL: baseURL)
+        //        let request = EventsCountriesRequest(baseURL: baseURL)
+        //        let request = EventTypesRequest(baseURL: baseURL)
+        //        let request = EventsRequest(baseURL: baseURL)
+        //        let request = CompaniesRequest(baseURL: baseURL)
+        //        let request = StatusUpdateRequest(baseURL: baseURL)
+        //        let request = DerivativesRequest(baseURL: baseURL)
+        //        let request = DerivativesExchangesRequest(baseURL: baseURL)
+        //        let request = DerivativesExchangesListRequest(baseURL: baseURL)
+        //        let request = DerivativesExchangeDataRequest(baseURL: baseURL)
+        //        let request = IndexesRequest(baseURL: baseURL)
+        //        let request = IndexesListRequest(baseURL: baseURL)
+        //        let request = FinanceProductsRequest(baseURL: baseURL)
+        //        let request = SimpleSupportedVsCurrenciesRequest(baseURL: baseURL)
+        //        let request = ExchangesRequest(baseURL: baseURL)
+        //        let request = ExchangesListRequest(baseURL: baseURL)
+        //        let request = ExchangesIdRequest(baseURL: baseURL)
+        //        let request = ExchangesIdVolumeChartRequest(baseURL: baseURL)
+        //        let request = CoinsMarketsRequest(baseURL: baseURL)
+        //        let request = CoinsIdRequest(baseURL: baseURL)
 
-//        test.fetch(request: request)
+        //        test.fetch(request: request)
     }
 
 
@@ -187,7 +197,7 @@ extension MainViewController {
     }
 
     @objc func tAndCButtonAction() {
-//        let assembler = TAndCAssembler(stringURL: "https://apple.com")
+        //        let assembler = TAndCAssembler(stringURL: "https://apple.com")
         let assembler = CountryPickerAssembler()
         let viewController = assembler.viewController()
         viewController.modalPresentationStyle = .overFullScreen
@@ -207,7 +217,14 @@ extension MainViewController {
         //imagePicker.photoGalleryAsscessRequest()
     }
 
+    @objc func loginButtonAction() {
+        //        let assembler = TAndCAssembler(stringURL: "https://apple.com")
+        let assembler = LoginAssembler(navigationController: self.navigationController)
+        let viewController = assembler.viewController()
 
+        self.navigationController?.pushViewController(viewController,
+                                                      animated: true)
+    }
 
 }
 

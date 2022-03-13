@@ -29,7 +29,7 @@ class ChatViewController: UIViewController {
                                           action: #selector(self.emojiButtonAction),
                                           for: .touchUpInside)
             self.emojiButton.imageView?.image = .chat.iconEmoji
-            self.emojiButton.tintColor = .primaryColor
+            self.emojiButton.tintColor = .primary
         }
     }
 
@@ -52,7 +52,7 @@ class ChatViewController: UIViewController {
     @IBOutlet weak var sendButton: UIButton! {
         didSet {
             self.sendButton.layer.cornerRadius = self.sendButton.frame.height / 2
-            self.sendButton.setBackgroundColor(color: .primaryColor,
+            self.sendButton.setBackgroundColor(color: .primary,
                                                 for: .normal)
             self.sendButton.imageView?.image = .chat.iconSend
             self.sendButton.tintColor = .xFFFFFF
