@@ -6,7 +6,8 @@
 import Foundation
 
 protocol CountryPickerViewModelProtocol {
-    var dataSource: [TModel]? { get set }
+    var dictionary: [String: [CountryPickerCellModel]] { get set }
+    var sectionTitles: [String] { get set }
     var view: CountryPickerViewProtocol? { get set }
     func viewDidLoad()
     func searchTextDidChange(text: String)
@@ -19,8 +20,12 @@ protocol CountryPickerViewProtocol {
 class CountryPickerViewModel: CountryPickerViewModelProtocol {
 
     // MARK: - Properties
-    var dataSourceAll: [TModel]? = []
-    var dataSource: [TModel]? = []
+    var dataSource: [CountryPickerCellModel] = []
+
+    var dictionary: [String: [CountryPickerCellModel]] = [String: [CountryPickerCellModel]]()
+    var dictionaryAll: [String: [CountryPickerCellModel]] = [String: [CountryPickerCellModel]]()
+    var sectionTitles: [String] = []
+
     var view: CountryPickerViewProtocol?
 
     var respository: CountryPickerRepositoryProtocol
@@ -37,17 +42,25 @@ class CountryPickerViewModel: CountryPickerViewModelProtocol {
         let countries = self.respository.getCountries()
         countries.forEach { item in
             let item = CountryPickerCellModel(item: item)
-            self.dataSource?.append(item)
-            self.dataSourceAll?.append(item)
+            self.dataSource.append(item)
         }
+        self.dictionaryAll = Dictionary(grouping: self.dataSource,
+                                     by: {String($0.countryName.prefix(1))})
+        self.dictionary = self.dictionaryAll
+        self.sectionTitles = dictionary.keys.sorted()
     }
 
     func searchTextDidChange(text: String) {
-        if let dataSource = self.dataSourceAll as? [CountryPickerCellModel] {
-            self.dataSource =  dataSource.filter({
-                $0.value.contains(text)
-            })
-            self.view?.reloadData()
+        if text.isEmpty {
+            self.dictionary = self.dictionaryAll
+        } else {
+            self.dictionary = self.dictionaryAll.mapValues{
+                $0.filter{ $0.value.contains(text)}
+            }
         }
+        self.sectionTitles = dictionary.filter {
+            !$0.value.isEmpty
+        }.keys.sorted()
+        self.view?.reloadData()
     }
 }

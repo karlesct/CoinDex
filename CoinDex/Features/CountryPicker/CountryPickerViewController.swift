@@ -47,6 +47,7 @@ class CountryPickerViewController: UIViewController {
 extension CountryPickerViewController: CountryPickerViewProtocol {
     func reloadData() {
         self.tableView.reloadData()
+        self.tableView.reloadSectionIndexTitles()
     }
 }
 
@@ -56,9 +57,11 @@ extension CountryPickerViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let item = self.viewModel?.dataSource?[indexPath.row] as? CountryPickerCellModel {
+        if let key = self.viewModel?.sectionTitles[indexPath.section],
+           let value = self.viewModel?.dictionary[key] {
             let cell = self.tableView.dequeueReusableCell(CountryPickerTableViewCell.self,
                                                           for: indexPath)
+            let item = value[indexPath.row] 
             cell.bind(with: item,
                       delegate: self)
             return cell
@@ -66,10 +69,27 @@ extension CountryPickerViewController: UITableViewDataSource {
         return UITableViewCell()
     }
 
+    func numberOfSections(in tableView: UITableView) -> Int {
+        return self.viewModel?.sectionTitles.count ?? 0
+    }
+
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
 
-        return self.viewModel?.dataSource?.count ?? 0
+        if let key = self.viewModel?.sectionTitles[section],
+           let value = self.viewModel?.dictionary[key] {
+            return value.count
+        }
+
+        return 0
+    }
+
+    func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
+        return self.viewModel?.sectionTitles[section]
+    }
+
+    func sectionIndexTitles(for tableView: UITableView) -> [String]? {
+        return self.viewModel?.sectionTitles
     }
 }
 
