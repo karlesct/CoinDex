@@ -72,7 +72,7 @@ class MainViewController: UIViewController {
         }
     }
 
-    @IBOutlet weak var loginButton: UIButton!{
+    @IBOutlet weak var loginButton: UIButton! {
         didSet {
             self.loginButton.setTitle("Open login",
                                       for: .normal)
@@ -82,6 +82,15 @@ class MainViewController: UIViewController {
         }
     }
 
+    @IBOutlet weak var fuelButton: UIButton! {
+        didSet {
+            self.fuelButton.setTitle("Open fuel main",
+                                      for: .normal)
+            self.fuelButton.addTarget(self,
+                                       action: #selector(self.fuelButtonAction),
+                                       for: .touchUpInside)
+        }
+    }
     //    var imagePicker: ImagePicker {
     //        let mediaPicker = ImagePicker(presentationController: self,
     //                                      delegate: self)
@@ -220,6 +229,14 @@ extension MainViewController {
     @objc func loginButtonAction() {
         //        let assembler = TAndCAssembler(stringURL: "https://apple.com")
         let assembler = LoginAssembler(navigationController: self.navigationController)
+        let viewController = assembler.viewController()
+
+        self.navigationController?.pushViewController(viewController,
+                                                      animated: true)
+    }
+
+    @objc func fuelButtonAction() {
+        let assembler = FuelHomeAssembler(navigationController: self.navigationController)
         let viewController = assembler.viewController()
 
         self.navigationController?.pushViewController(viewController,

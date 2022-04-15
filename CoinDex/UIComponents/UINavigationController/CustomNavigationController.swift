@@ -41,6 +41,14 @@ final class CustomNavigationController: UINavigationController {
 
 }
 
+extension CustomNavigationController {
+    //NOTE: if you have view controllers embedded into UINavigationController and your view controller's preferredStatusBarStyle method not getting called - you will have to workaround it by writing something like following:
+    override public var preferredStatusBarStyle: UIStatusBarStyle {
+        return  .lightContent //topViewController?.preferredStatusBarStyle ?? .lightContent
+    }
+}
+
+
 extension CustomNavigationController: UINavigationControllerDelegate {
 
     // MARK: - Delegate

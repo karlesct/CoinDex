@@ -139,6 +139,13 @@
 		278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD04527DE561800A54EAB /* TitleFormField.swift */; };
 		278FD04827DE562800A54EAB /* TitleCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD04727DE562800A54EAB /* TitleCellModel.swift */; };
 		278FD04A27DE5EB200A54EAB /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278FD04927DE5EB200A54EAB /* TitleTableViewCell.xib */; };
+		2794AAC627F1AF3A00E30828 /* FuelHomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AAC527F1AF3A00E30828 /* FuelHomeAssembler.swift */; };
+		2794AAC827F1AF4F00E30828 /* FuelHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AAC727F1AF4F00E30828 /* FuelHomeViewController.swift */; };
+		2794AACC27F1AFC300E30828 /* FuelHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AACB27F1AFC300E30828 /* FuelHomeViewModel.swift */; };
+		2794AACE27F1AFD900E30828 /* DefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AACD27F1AFD900E30828 /* DefaultRepository.swift */; };
+		2794AAD027F1B3FD00E30828 /* FuelHomeViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2794AACF27F1B3FD00E30828 /* FuelHomeViewController.xib */; };
+		2794AAD227F1B56B00E30828 /* FuelHomeAPIResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AAD127F1B56B00E30828 /* FuelHomeAPIResponse.swift */; };
+		2794AAD427F1B67500E30828 /* FuelHomeAPIRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AAD327F1B67500E30828 /* FuelHomeAPIRequest.swift */; };
 		279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
 		279B670E2784616900480155 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
 		279B67102784617600480155 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
@@ -381,6 +388,13 @@
 		278FD04527DE561800A54EAB /* TitleFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleFormField.swift; sourceTree = "<group>"; };
 		278FD04727DE562800A54EAB /* TitleCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCellModel.swift; sourceTree = "<group>"; };
 		278FD04927DE5EB200A54EAB /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		2794AAC527F1AF3A00E30828 /* FuelHomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelHomeAssembler.swift; sourceTree = "<group>"; };
+		2794AAC727F1AF4F00E30828 /* FuelHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelHomeViewController.swift; sourceTree = "<group>"; };
+		2794AACB27F1AFC300E30828 /* FuelHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelHomeViewModel.swift; sourceTree = "<group>"; };
+		2794AACD27F1AFD900E30828 /* DefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRepository.swift; sourceTree = "<group>"; };
+		2794AACF27F1B3FD00E30828 /* FuelHomeViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FuelHomeViewController.xib; sourceTree = "<group>"; };
+		2794AAD127F1B56B00E30828 /* FuelHomeAPIResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelHomeAPIResponse.swift; sourceTree = "<group>"; };
+		2794AAD327F1B67500E30828 /* FuelHomeAPIRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelHomeAPIRequest.swift; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewModel.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -701,6 +715,7 @@
 				275710892725944000348F93 /* DataRequest */,
 				271EEA3127207BCA00BA30FD /* HTTP */,
 				271EEA2F2720785700BA30FD /* NetworkService.swift */,
+				2794AACD27F1AFD900E30828 /* DefaultRepository.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -893,6 +908,7 @@
 				270F0FBB279D6D99005DE9FB /* Chat */,
 				2781E35327CD14380011BE14 /* CountryPicker */,
 				278080A227AF107900AA44E3 /* FormDemo */,
+				2794AAC427F1AF1B00E30828 /* FuelHome */,
 				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
 				27BB13282788B1CD00B5FE4D /* Main */,
 				2787E31527B93E9C00DC5523 /* TabBar */,
@@ -1440,6 +1456,27 @@
 			path = TitleCell;
 			sourceTree = "<group>";
 		};
+		2794AAC427F1AF1B00E30828 /* FuelHome */ = {
+			isa = PBXGroup;
+			children = (
+				2794AAD727F1C3AF00E30828 /* Cells */,
+				2794AAC527F1AF3A00E30828 /* FuelHomeAssembler.swift */,
+				2794AAC727F1AF4F00E30828 /* FuelHomeViewController.swift */,
+				2794AACF27F1B3FD00E30828 /* FuelHomeViewController.xib */,
+				2794AACB27F1AFC300E30828 /* FuelHomeViewModel.swift */,
+				2794AAD327F1B67500E30828 /* FuelHomeAPIRequest.swift */,
+				2794AAD127F1B56B00E30828 /* FuelHomeAPIResponse.swift */,
+			);
+			path = FuelHome;
+			sourceTree = "<group>";
+		};
+		2794AAD727F1C3AF00E30828 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		279B670A27845F5E00480155 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
@@ -1898,6 +1935,7 @@
 				2781E37027CE7CFC0011BE14 /* Flags.xcassets in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 				2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */,
+				2794AAD027F1B3FD00E30828 /* FuelHomeViewController.xib in Resources */,
 				278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */,
 				277B58C827B0093E00EAEA24 /* TitleHeaderFooterView.xib in Resources */,
 			);
@@ -1952,6 +1990,7 @@
 				2787E31E27B94D3700DC5523 /* ScrollingPageControl.swift in Sources */,
 				2763D39327A5D5C600796FA8 /* Message.swift in Sources */,
 				279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */,
+				2794AACE27F1AFD900E30828 /* DefaultRepository.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
 				278FD04227DE55F800A54EAB /* TitleTableViewCell.swift in Sources */,
 				278FD03927DE49CA00A54EAB /* LoginRepository.swift in Sources */,
@@ -2026,6 +2065,8 @@
 				2780808C27AF0BB100AA44E3 /* FormHeader.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				27BB132A2788B1EE00B5FE4D /* MainAssembler.swift in Sources */,
+				2794AAC627F1AF3A00E30828 /* FuelHomeAssembler.swift in Sources */,
+				2794AAD227F1B56B00E30828 /* FuelHomeAPIResponse.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
 				27ABA0B127296F55000FD326 /* EventsCountriesRequest.swift in Sources */,
@@ -2076,6 +2117,7 @@
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
 				2763D38927A5CE6100796FA8 /* UITableView+ReusableCell.swift in Sources */,
+				2794AAD427F1B67500E30828 /* FuelHomeAPIRequest.swift in Sources */,
 				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
 				2781E36927CD1A5C0011BE14 /* CountryPickerRepository.swift in Sources */,
 				2780808827AF09FE00AA44E3 /* FormViewController.swift in Sources */,
@@ -2094,6 +2136,7 @@
 				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */,
+				2794AACC27F1AFC300E30828 /* FuelHomeViewModel.swift in Sources */,
 				278080BB27AF18F800AA44E3 /* ToggleInputTableViewCell.swift in Sources */,
 				2787E32C27C172B300DC5523 /* WKWebView+load.swift in Sources */,
 				2787E32527C16DCE00DC5523 /* TAndCAssembler.swift in Sources */,
@@ -2117,6 +2160,7 @@
 				27ABA0D02729ADB3000FD326 /* DerivativesResponse.swift in Sources */,
 				27ABA10527318B20000FD326 /* ExchangesIdRequest.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,
+				2794AAC827F1AF4F00E30828 /* FuelHomeViewController.swift in Sources */,
 				27BB13302788B21300B5FE4D /* MainViewModel.swift in Sources */,
 				279B6713278463DB00480155 /* UIViewController+LoadFromNib.swift in Sources */,
 				2780809D27AF0D9600AA44E3 /* TextInputCellModel.swift in Sources */,
