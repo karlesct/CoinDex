@@ -1,4 +1,6 @@
-//  Copyright © 2022 MeetingDoctors. All rights reserved.
+//
+//  Copyright © 2022 CCT. All rights reserved.
+//
 
 import Foundation
 

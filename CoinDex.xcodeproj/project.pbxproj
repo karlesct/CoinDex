@@ -28,6 +28,11 @@
 		27397E32280B145C00093CB8 /* FirebaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E31280B145C00093CB8 /* FirebaseAppDelegate.swift */; };
 		27397E36280B14AD00093CB8 /* LoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E35280B14AD00093CB8 /* LoggingService.swift */; };
 		27397E38280B14D400093CB8 /* LoggingServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E37280B14D400093CB8 /* LoggingServiceAssembler.swift */; };
+		27397E3C280B282900093CB8 /* LocationAlwaysPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E3B280B282900093CB8 /* LocationAlwaysPermission.swift */; };
+		27397E3E280B2BAE00093CB8 /* LocationAlwaysHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E3D280B2BAE00093CB8 /* LocationAlwaysHandler.swift */; };
+		27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E40280B2D5000093CB8 /* LocationWhenInUsePermission.swift */; };
+		27397E43280B2DAC00093CB8 /* LocationWhenInUseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */; };
+		27397E46280B2ED500093CB8 /* LocationAccuracy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E45280B2ED500093CB8 /* LocationAccuracy.swift */; };
 		275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710852721AABF00348F93 /* HTTPStatusCode.swift */; };
 		275710882725941F00348F93 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710872725941F00348F93 /* DataRequest.swift */; };
 		2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757108A2725945D00348F93 /* DataRequest+Decode.swift */; };
@@ -274,6 +279,11 @@
 		27397E31280B145C00093CB8 /* FirebaseAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegate.swift; sourceTree = "<group>"; };
 		27397E35280B14AD00093CB8 /* LoggingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingService.swift; sourceTree = "<group>"; };
 		27397E37280B14D400093CB8 /* LoggingServiceAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingServiceAssembler.swift; sourceTree = "<group>"; };
+		27397E3B280B282900093CB8 /* LocationAlwaysPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlwaysPermission.swift; sourceTree = "<group>"; };
+		27397E3D280B2BAE00093CB8 /* LocationAlwaysHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAlwaysHandler.swift; sourceTree = "<group>"; };
+		27397E40280B2D5000093CB8 /* LocationWhenInUsePermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWhenInUsePermission.swift; sourceTree = "<group>"; };
+		27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWhenInUseHandler.swift; sourceTree = "<group>"; };
+		27397E45280B2ED500093CB8 /* LocationAccuracy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccuracy.swift; sourceTree = "<group>"; };
 		275710852721AABF00348F93 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		275710872725941F00348F93 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		2757108A2725945D00348F93 /* DataRequest+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Decode.swift"; sourceTree = "<group>"; };
@@ -833,6 +843,42 @@
 				27397E35280B14AD00093CB8 /* LoggingService.swift */,
 			);
 			path = Logging;
+			sourceTree = "<group>";
+		};
+		27397E39280B27FD00093CB8 /* Location */ = {
+			isa = PBXGroup;
+			children = (
+				27397E44280B2EC200093CB8 /* Accuracy */,
+				27397E3A280B280700093CB8 /* Always */,
+				27397E3F280B2D3C00093CB8 /* WhenInUse */,
+			);
+			path = Location;
+			sourceTree = "<group>";
+		};
+		27397E3A280B280700093CB8 /* Always */ = {
+			isa = PBXGroup;
+			children = (
+				27397E3B280B282900093CB8 /* LocationAlwaysPermission.swift */,
+				27397E3D280B2BAE00093CB8 /* LocationAlwaysHandler.swift */,
+			);
+			path = Always;
+			sourceTree = "<group>";
+		};
+		27397E3F280B2D3C00093CB8 /* WhenInUse */ = {
+			isa = PBXGroup;
+			children = (
+				27397E40280B2D5000093CB8 /* LocationWhenInUsePermission.swift */,
+				27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */,
+			);
+			path = WhenInUse;
+			sourceTree = "<group>";
+		};
+		27397E44280B2EC200093CB8 /* Accuracy */ = {
+			isa = PBXGroup;
+			children = (
+				27397E45280B2ED500093CB8 /* LocationAccuracy.swift */,
+			);
+			path = Accuracy;
 			sourceTree = "<group>";
 		};
 		275710842721AAAA00348F93 /* StatusCode */ = {
@@ -1405,6 +1451,7 @@
 			isa = PBXGroup;
 			children = (
 				2787E33F27C245AB00DC5523 /* Camera */,
+				27397E39280B27FD00093CB8 /* Location */,
 				2787E33527C241F700DC5523 /* Microphone */,
 				2787E34227C246A100DC5523 /* Notification */,
 				2787E34527C247F400DC5523 /* PhotoLibrary */,
@@ -2065,6 +2112,7 @@
 				278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */,
 				27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */,
 				278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */,
+				27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
 				270F0FC5279D71ED005DE9FB /* ChatUseCase.swift in Sources */,
@@ -2072,6 +2120,7 @@
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
 				2787E31727B93EE200DC5523 /* TabBarAssembler.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
+				27397E46280B2ED500093CB8 /* LocationAccuracy.swift in Sources */,
 				2781E36727CD17AA0011BE14 /* CountryPickerViewModel.swift in Sources */,
 				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
@@ -2114,6 +2163,7 @@
 				27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */,
 				271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */,
 				2787E33727C2420C00DC5523 /* MicrophonePermission.swift in Sources */,
+				27397E43280B2DAC00093CB8 /* LocationWhenInUseHandler.swift in Sources */,
 				27ABA0CE2729ADA5000FD326 /* DerivativesRequest.swift in Sources */,
 				27ABA0BF27297BAC000FD326 /* EventsRequest.swift in Sources */,
 				27ABA0C8272993CC000FD326 /* StatusUpdateRequest.swift in Sources */,
@@ -2194,6 +2244,7 @@
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
 				278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */,
 				2787E31927B93F4A00DC5523 /* TabBarController.swift in Sources */,
+				27397E3C280B282900093CB8 /* LocationAlwaysPermission.swift in Sources */,
 				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
 				279B670E2784616900480155 /* TutorialViewModel.swift in Sources */,
 				27ABA0FB273186F6000FD326 /* ExchangesRequest.swift in Sources */,
@@ -2216,6 +2267,7 @@
 				278080A627AF10C100AA44E3 /* FormDemoRouter.swift in Sources */,
 				279B6726278471BE00480155 /* TutorialPageModel.swift in Sources */,
 				277B58CA27B00E4F00EAEA24 /* TitleHeaderFooterModel.swift in Sources */,
+				27397E3E280B2BAE00093CB8 /* LocationAlwaysHandler.swift in Sources */,
 				2781E36C27CD278A0011BE14 /* Filterable.swift in Sources */,
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
 				2787E33427C23CD100DC5523 /* PermissionProvider.swift in Sources */,
