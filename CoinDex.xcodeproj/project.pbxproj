@@ -23,6 +23,11 @@
 		271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA4327208BC300BA30FD /* String+Empty.swift */; };
 		271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA4D2720AD4800BA30FD /* HTTPHeaderKey.swift */; };
 		271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA4F2720ADB800BA30FD /* HTTPHeaderValue.swift */; };
+		27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E2D280B141100093CB8 /* FirebaseAppDelegateAssembler.swift */; };
+		27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E2F280B144400093CB8 /* CompositeAppDelegate.swift */; };
+		27397E32280B145C00093CB8 /* FirebaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E31280B145C00093CB8 /* FirebaseAppDelegate.swift */; };
+		27397E36280B14AD00093CB8 /* LoggingService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E35280B14AD00093CB8 /* LoggingService.swift */; };
+		27397E38280B14D400093CB8 /* LoggingServiceAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E37280B14D400093CB8 /* LoggingServiceAssembler.swift */; };
 		275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710852721AABF00348F93 /* HTTPStatusCode.swift */; };
 		275710882725941F00348F93 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710872725941F00348F93 /* DataRequest.swift */; };
 		2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757108A2725945D00348F93 /* DataRequest+Decode.swift */; };
@@ -264,6 +269,11 @@
 		271EEA4327208BC300BA30FD /* String+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Empty.swift"; sourceTree = "<group>"; };
 		271EEA4D2720AD4800BA30FD /* HTTPHeaderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaderKey.swift; sourceTree = "<group>"; };
 		271EEA4F2720ADB800BA30FD /* HTTPHeaderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaderValue.swift; sourceTree = "<group>"; };
+		27397E2D280B141100093CB8 /* FirebaseAppDelegateAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegateAssembler.swift; sourceTree = "<group>"; };
+		27397E2F280B144400093CB8 /* CompositeAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegate.swift; sourceTree = "<group>"; };
+		27397E31280B145C00093CB8 /* FirebaseAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegate.swift; sourceTree = "<group>"; };
+		27397E35280B14AD00093CB8 /* LoggingService.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingService.swift; sourceTree = "<group>"; };
+		27397E37280B14D400093CB8 /* LoggingServiceAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = LoggingServiceAssembler.swift; sourceTree = "<group>"; };
 		275710852721AABF00348F93 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		275710872725941F00348F93 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		2757108A2725945D00348F93 /* DataRequest+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Decode.swift"; sourceTree = "<group>"; };
@@ -790,6 +800,41 @@
 			path = Header;
 			sourceTree = "<group>";
 		};
+		27397E2B280B13E400093CB8 /* Composite */ = {
+			isa = PBXGroup;
+			children = (
+				27397E2F280B144400093CB8 /* CompositeAppDelegate.swift */,
+				27397E2C280B140100093CB8 /* Firebase */,
+			);
+			path = Composite;
+			sourceTree = "<group>";
+		};
+		27397E2C280B140100093CB8 /* Firebase */ = {
+			isa = PBXGroup;
+			children = (
+				27397E2D280B141100093CB8 /* FirebaseAppDelegateAssembler.swift */,
+				27397E31280B145C00093CB8 /* FirebaseAppDelegate.swift */,
+			);
+			path = Firebase;
+			sourceTree = "<group>";
+		};
+		27397E33280B148300093CB8 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				27397E34280B149100093CB8 /* Logging */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		27397E34280B149100093CB8 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				27397E37280B14D400093CB8 /* LoggingServiceAssembler.swift */,
+				27397E35280B14AD00093CB8 /* LoggingService.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
 		275710842721AAAA00348F93 /* StatusCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -851,7 +896,7 @@
 				2758FC972709B4FB009BCB5A /* Resources */,
 				2758FC932709B4C9009BCB5A /* Extensions */,
 				2758FC942709B4D1009BCB5A /* Features */,
-				2758FC952709B4DD009BCB5A /* Services */,
+				27397E33280B148300093CB8 /* Services */,
 				2763D37E27A4958200796FA8 /* UIComponents */,
 				2758FC962709B4E9009BCB5A /* Utils */,
 				271EEA1D272075C700BA30FD /* Network */,
@@ -916,13 +961,6 @@
 				279B670A27845F5E00480155 /* Tutorial */,
 			);
 			path = Features;
-			sourceTree = "<group>";
-		};
-		2758FC952709B4DD009BCB5A /* Services */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Services;
 			sourceTree = "<group>";
 		};
 		2758FC962709B4E9009BCB5A /* Utils */ = {
@@ -1797,6 +1835,7 @@
 		27BB13332788B91F00B5FE4D /* AppDelegate */ = {
 			isa = PBXGroup;
 			children = (
+				27397E2B280B13E400093CB8 /* Composite */,
 				27BB13342788BFAA00B5FE4D /* AppDelegateAssembler.swift */,
 			);
 			path = AppDelegate;
@@ -2017,6 +2056,7 @@
 				2781E35E27CD17190011BE14 /* CountryPickerCellModel.swift in Sources */,
 				278080D627AF1C1C00AA44E3 /* SelectModule.swift in Sources */,
 				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
+				27397E32280B145C00093CB8 /* FirebaseAppDelegate.swift in Sources */,
 				278080A427AF108F00AA44E3 /* FormDemoAssembler.swift in Sources */,
 				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
@@ -2068,8 +2108,10 @@
 				2794AAC627F1AF3A00E30828 /* FuelHomeAssembler.swift in Sources */,
 				2794AAD227F1B56B00E30828 /* FuelHomeAPIResponse.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
+				27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
 				27ABA0B127296F55000FD326 /* EventsCountriesRequest.swift in Sources */,
+				27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */,
 				271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */,
 				2787E33727C2420C00DC5523 /* MicrophonePermission.swift in Sources */,
 				27ABA0CE2729ADA5000FD326 /* DerivativesRequest.swift in Sources */,
@@ -2167,6 +2209,7 @@
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
 				27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */,
 				27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */,
+				27397E36280B14AD00093CB8 /* LoggingService.swift in Sources */,
 				2763D37627A47C7B00796FA8 /* UIColor+Hex.swift in Sources */,
 				27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */,
 				27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */,
@@ -2179,6 +2222,7 @@
 				27ABA102273188B0000FD326 /* ExchangesListResponse.swift in Sources */,
 				2787E33B27C2443E00DC5523 /* PermissionStatusEnum.swift in Sources */,
 				2763D39527A5D5EF00796FA8 /* Sender.swift in Sources */,
+				27397E38280B14D400093CB8 /* LoggingServiceAssembler.swift in Sources */,
 				279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */,
 				278080A827AF10E500AA44E3 /* FormDemoViewController.swift in Sources */,
 			);
