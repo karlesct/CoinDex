@@ -66,4 +66,15 @@ class CompositeAppDelegate: AppDelegateType {
                                                   restorationHandler: restorationHandler)}
         return true
     }
+    
+    // MARK: Deep Links
+    
+    func application(_ application: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey : Any]) -> Bool {
+        appDelegates.forEach { _ = $0?.application?(application,
+                                                    open: url,
+                                                    options: options)}
+        return true
+    }
 }

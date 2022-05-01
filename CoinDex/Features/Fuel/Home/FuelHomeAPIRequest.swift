@@ -9,7 +9,7 @@ struct FuelHomeAPIRequest: DataRequest {
 
     let baseURL: String
 
-    init(baseURL: String = "https://sedeaplicaciones.minetur.gob.es/") {
+    init(baseURL: String = "https://sedeaplicaciones.minetur.gob.es") {
         self.baseURL = baseURL
     }
 

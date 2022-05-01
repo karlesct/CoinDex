@@ -33,6 +33,10 @@
 		27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E40280B2D5000093CB8 /* LocationWhenInUsePermission.swift */; };
 		27397E43280B2DAC00093CB8 /* LocationWhenInUseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */; };
 		27397E46280B2ED500093CB8 /* LocationAccuracy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E45280B2ED500093CB8 /* LocationAccuracy.swift */; };
+		27397E4A280B310400093CB8 /* FuelMapAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E49280B310400093CB8 /* FuelMapAssembler.swift */; };
+		27397E4C280B313500093CB8 /* FuelMapViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E4B280B313500093CB8 /* FuelMapViewModel.swift */; };
+		27397E4E280B31A600093CB8 /* FuelMapViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E4D280B31A600093CB8 /* FuelMapViewController.swift */; };
+		27397E50280B31B000093CB8 /* FuelMapViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27397E4F280B31B000093CB8 /* FuelMapViewController.xib */; };
 		275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710852721AABF00348F93 /* HTTPStatusCode.swift */; };
 		275710882725941F00348F93 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710872725941F00348F93 /* DataRequest.swift */; };
 		2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757108A2725945D00348F93 /* DataRequest+Decode.swift */; };
@@ -149,6 +153,11 @@
 		278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD04527DE561800A54EAB /* TitleFormField.swift */; };
 		278FD04827DE562800A54EAB /* TitleCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278FD04727DE562800A54EAB /* TitleCellModel.swift */; };
 		278FD04A27DE5EB200A54EAB /* TitleTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278FD04927DE5EB200A54EAB /* TitleTableViewCell.xib */; };
+		2792472F281EA57F00737A1C /* DeepLink.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2792472E281EA57F00737A1C /* DeepLink.swift */; };
+		27924731281EA7A100737A1C /* DeepLinkTemplate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27924730281EA7A100737A1C /* DeepLinkTemplate.swift */; };
+		27924733281EA7BE00737A1C /* DeepLinkRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27924732281EA7BE00737A1C /* DeepLinkRecognizer.swift */; };
+		27924735281EA7FE00737A1C /* DeepLinkValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27924734281EA7FE00737A1C /* DeepLinkValues.swift */; };
+		27924737281EB7B600737A1C /* DeepLinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27924736281EB7B600737A1C /* DeepLinkingTests.swift */; };
 		2794AAC627F1AF3A00E30828 /* FuelHomeAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AAC527F1AF3A00E30828 /* FuelHomeAssembler.swift */; };
 		2794AAC827F1AF4F00E30828 /* FuelHomeViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AAC727F1AF4F00E30828 /* FuelHomeViewController.swift */; };
 		2794AACC27F1AFC300E30828 /* FuelHomeViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AACB27F1AFC300E30828 /* FuelHomeViewModel.swift */; };
@@ -284,6 +293,10 @@
 		27397E40280B2D5000093CB8 /* LocationWhenInUsePermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWhenInUsePermission.swift; sourceTree = "<group>"; };
 		27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWhenInUseHandler.swift; sourceTree = "<group>"; };
 		27397E45280B2ED500093CB8 /* LocationAccuracy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccuracy.swift; sourceTree = "<group>"; };
+		27397E49280B310400093CB8 /* FuelMapAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMapAssembler.swift; sourceTree = "<group>"; };
+		27397E4B280B313500093CB8 /* FuelMapViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMapViewModel.swift; sourceTree = "<group>"; };
+		27397E4D280B31A600093CB8 /* FuelMapViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelMapViewController.swift; sourceTree = "<group>"; };
+		27397E4F280B31B000093CB8 /* FuelMapViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = FuelMapViewController.xib; sourceTree = "<group>"; };
 		275710852721AABF00348F93 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		275710872725941F00348F93 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
 		2757108A2725945D00348F93 /* DataRequest+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Decode.swift"; sourceTree = "<group>"; };
@@ -408,6 +421,11 @@
 		278FD04527DE561800A54EAB /* TitleFormField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleFormField.swift; sourceTree = "<group>"; };
 		278FD04727DE562800A54EAB /* TitleCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleCellModel.swift; sourceTree = "<group>"; };
 		278FD04927DE5EB200A54EAB /* TitleTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TitleTableViewCell.xib; sourceTree = "<group>"; };
+		2792472E281EA57F00737A1C /* DeepLink.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLink.swift; sourceTree = "<group>"; };
+		27924730281EA7A100737A1C /* DeepLinkTemplate.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkTemplate.swift; sourceTree = "<group>"; };
+		27924732281EA7BE00737A1C /* DeepLinkRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkRecognizer.swift; sourceTree = "<group>"; };
+		27924734281EA7FE00737A1C /* DeepLinkValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkValues.swift; sourceTree = "<group>"; };
+		27924736281EB7B600737A1C /* DeepLinkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkingTests.swift; sourceTree = "<group>"; };
 		2794AAC527F1AF3A00E30828 /* FuelHomeAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelHomeAssembler.swift; sourceTree = "<group>"; };
 		2794AAC727F1AF4F00E30828 /* FuelHomeViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelHomeViewController.swift; sourceTree = "<group>"; };
 		2794AACB27F1AFC300E30828 /* FuelHomeViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FuelHomeViewModel.swift; sourceTree = "<group>"; };
@@ -585,13 +603,6 @@
 			path = Coins;
 			sourceTree = "<group>";
 		};
-		271EEA20272075E700BA30FD /* Contract */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Contract;
-			sourceTree = "<group>";
-		};
 		271EEA21272075F900BA30FD /* AssetPlatforms */ = {
 			isa = PBXGroup;
 			children = (
@@ -712,7 +723,6 @@
 				271EEA222720760600BA30FD /* Ping */,
 				271EEA1E272075D100BA30FD /* Simple */,
 				271EEA1F272075DA00BA30FD /* Coins */,
-				271EEA20272075E700BA30FD /* Contract */,
 				271EEA21272075F900BA30FD /* AssetPlatforms */,
 				271EEA232720761400BA30FD /* Categories */,
 				271EEA242720761F00BA30FD /* Exchanges */,
@@ -881,6 +891,31 @@
 			path = Accuracy;
 			sourceTree = "<group>";
 		};
+		27397E47280B30DC00093CB8 /* Home */ = {
+			isa = PBXGroup;
+			children = (
+				2794AAD727F1C3AF00E30828 /* Cells */,
+				2794AAC527F1AF3A00E30828 /* FuelHomeAssembler.swift */,
+				2794AAC727F1AF4F00E30828 /* FuelHomeViewController.swift */,
+				2794AACF27F1B3FD00E30828 /* FuelHomeViewController.xib */,
+				2794AACB27F1AFC300E30828 /* FuelHomeViewModel.swift */,
+				2794AAD327F1B67500E30828 /* FuelHomeAPIRequest.swift */,
+				2794AAD127F1B56B00E30828 /* FuelHomeAPIResponse.swift */,
+			);
+			path = Home;
+			sourceTree = "<group>";
+		};
+		27397E48280B30E800093CB8 /* Map */ = {
+			isa = PBXGroup;
+			children = (
+				27397E49280B310400093CB8 /* FuelMapAssembler.swift */,
+				27397E4B280B313500093CB8 /* FuelMapViewModel.swift */,
+				27397E4D280B31A600093CB8 /* FuelMapViewController.swift */,
+				27397E4F280B31B000093CB8 /* FuelMapViewController.xib */,
+			);
+			path = Map;
+			sourceTree = "<group>";
+		};
 		275710842721AAAA00348F93 /* StatusCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -956,6 +991,7 @@
 			isa = PBXGroup;
 			children = (
 				2758FC772709B46A009BCB5A /* CoinDexTests.swift */,
+				27924736281EB7B600737A1C /* DeepLinkingTests.swift */,
 				2758FC792709B46A009BCB5A /* Info.plist */,
 			);
 			path = CoinDexTests;
@@ -980,7 +1016,6 @@
 				2787E31227B9175D00DC5523 /* UIImage */,
 				271EEA3F2720841600BA30FD /* URLRequest */,
 				2763D38527A5CE1500796FA8 /* UITableView */,
-				2763D38C27A5CEFD00796FA8 /* UITableViewCell */,
 				2763D38227A4994600796FA8 /* UITextView */,
 				279B67172784685000480155 /* UIView */,
 				271EEA3C27207E5B00BA30FD /* UIViewController */,
@@ -999,7 +1034,7 @@
 				270F0FBB279D6D99005DE9FB /* Chat */,
 				2781E35327CD14380011BE14 /* CountryPicker */,
 				278080A227AF107900AA44E3 /* FormDemo */,
-				2794AAC427F1AF1B00E30828 /* FuelHome */,
+				2794AAC427F1AF1B00E30828 /* Fuel */,
 				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
 				27BB13282788B1CD00B5FE4D /* Main */,
 				2787E31527B93E9C00DC5523 /* TabBar */,
@@ -1012,6 +1047,7 @@
 		2758FC962709B4E9009BCB5A /* Utils */ = {
 			isa = PBXGroup;
 			children = (
+				2792472D281E9CF400737A1C /* DeepLinking */,
 				2787E33027C23B8E00DC5523 /* Permission */,
 				2787E32D27C179A900DC5523 /* MediaPicker */,
 				2780808627AF092C00AA44E3 /* Form */,
@@ -1133,13 +1169,6 @@
 				2763D38827A5CE6100796FA8 /* UITableView+ReusableCell.swift */,
 			);
 			path = UITableView;
-			sourceTree = "<group>";
-		};
-		2763D38C27A5CEFD00796FA8 /* UITableViewCell */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = UITableViewCell;
 			sourceTree = "<group>";
 		};
 		2763D38D27A5CF7700796FA8 /* ReusableCell */ = {
@@ -1541,25 +1570,32 @@
 			path = TitleCell;
 			sourceTree = "<group>";
 		};
-		2794AAC427F1AF1B00E30828 /* FuelHome */ = {
+		2792472D281E9CF400737A1C /* DeepLinking */ = {
 			isa = PBXGroup;
 			children = (
-				2794AAD727F1C3AF00E30828 /* Cells */,
-				2794AAC527F1AF3A00E30828 /* FuelHomeAssembler.swift */,
-				2794AAC727F1AF4F00E30828 /* FuelHomeViewController.swift */,
-				2794AACF27F1B3FD00E30828 /* FuelHomeViewController.xib */,
-				2794AACB27F1AFC300E30828 /* FuelHomeViewModel.swift */,
-				2794AAD327F1B67500E30828 /* FuelHomeAPIRequest.swift */,
-				2794AAD127F1B56B00E30828 /* FuelHomeAPIResponse.swift */,
+				2792472E281EA57F00737A1C /* DeepLink.swift */,
+				27924734281EA7FE00737A1C /* DeepLinkValues.swift */,
+				27924730281EA7A100737A1C /* DeepLinkTemplate.swift */,
+				27924732281EA7BE00737A1C /* DeepLinkRecognizer.swift */,
 			);
-			path = FuelHome;
+			path = DeepLinking;
+			sourceTree = "<group>";
+		};
+		2794AAC427F1AF1B00E30828 /* Fuel */ = {
+			isa = PBXGroup;
+			children = (
+				27397E47280B30DC00093CB8 /* Home */,
+				27397E48280B30E800093CB8 /* Map */,
+			);
+			path = Fuel;
 			sourceTree = "<group>";
 		};
 		2794AAD727F1C3AF00E30828 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
 			);
-			path = Cells;
+			name = Cells;
+			path = ../Cells;
 			sourceTree = "<group>";
 		};
 		279B670A27845F5E00480155 /* Tutorial */ = {
@@ -2014,6 +2050,7 @@
 				278080B827AF17DC00AA44E3 /* DateInputTableViewCell.xib in Resources */,
 				27BB13322788B22000B5FE4D /* MainViewController.xib in Resources */,
 				27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */,
+				27397E50280B31B000093CB8 /* FuelMapViewController.xib in Resources */,
 				278080C127AF199100AA44E3 /* ToggleInputTableViewCell.xib in Resources */,
 				279B672127846F6B00480155 /* TutorialPageViewController.xib in Resources */,
 				278080DC27AF1DB700AA44E3 /* SelectViewController.xib in Resources */,
@@ -2089,6 +2126,7 @@
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				278FD03327DE499D00A54EAB /* LoginAssembler.swift in Sources */,
 				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
+				27924735281EA7FE00737A1C /* DeepLinkValues.swift in Sources */,
 				2787E34427C246BC00DC5523 /* NotificationPermission.swift in Sources */,
 				27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */,
 				27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */,
@@ -2135,6 +2173,7 @@
 				270F0FBF279D6DCE005DE9FB /* ChatViewController.swift in Sources */,
 				2781E35527CD14810011BE14 /* CountryModel.swift in Sources */,
 				2780809527AF0C7800AA44E3 /* InputDataSource.swift in Sources */,
+				27924731281EA7A100737A1C /* DeepLinkTemplate.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
 				2787E32027B94DDC00DC5523 /* TestViewController.swift in Sources */,
 				270F0FC8279D787E005DE9FB /* Observable.swift in Sources */,
@@ -2159,6 +2198,7 @@
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
 				27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
+				27397E4A280B310400093CB8 /* FuelMapAssembler.swift in Sources */,
 				27ABA0B127296F55000FD326 /* EventsCountriesRequest.swift in Sources */,
 				27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */,
 				271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */,
@@ -2180,12 +2220,14 @@
 				2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
+				27397E4C280B313500093CB8 /* FuelMapViewModel.swift in Sources */,
 				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeDataRequest.swift in Sources */,
 				278FD03E27DE4F5700A54EAB /* CustomNavigationController.swift in Sources */,
 				275710912725954600348F93 /* PingRequest.swift in Sources */,
 				2780809327AF0C5500AA44E3 /* FormDataSource.swift in Sources */,
 				279B671B27846F3000480155 /* TutorialPageAssembler.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
+				27924733281EA7BE00737A1C /* DeepLinkRecognizer.swift in Sources */,
 				270F0FC1279D6DDC005DE9FB /* ChatViewModel.swift in Sources */,
 				2787E34127C245BF00DC5523 /* CameraPermission.swift in Sources */,
 				2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */,
@@ -2193,6 +2235,7 @@
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
 				278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */,
 				279B67102784617600480155 /* TutorialViewController.swift in Sources */,
+				27397E4E280B31A600093CB8 /* FuelMapViewController.swift in Sources */,
 				278FD03727DE49B500A54EAB /* LoginViewModel.swift in Sources */,
 				278080CF27AF1B7A00AA44E3 /* Province.swift in Sources */,
 				278080C427AF1A3D00AA44E3 /* SelectInputTableViewCell.swift in Sources */,
@@ -2268,6 +2311,7 @@
 				279B6726278471BE00480155 /* TutorialPageModel.swift in Sources */,
 				277B58CA27B00E4F00EAEA24 /* TitleHeaderFooterModel.swift in Sources */,
 				27397E3E280B2BAE00093CB8 /* LocationAlwaysHandler.swift in Sources */,
+				2792472F281EA57F00737A1C /* DeepLink.swift in Sources */,
 				2781E36C27CD278A0011BE14 /* Filterable.swift in Sources */,
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
 				2787E33427C23CD100DC5523 /* PermissionProvider.swift in Sources */,
@@ -2284,6 +2328,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27924737281EB7B600737A1C /* DeepLinkingTests.swift in Sources */,
 				2758FC782709B46A009BCB5A /* CoinDexTests.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2496,7 +2541,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinDex.app/CoinDex";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinDexRelease.app/CoinDexRelease";
 			};
 			name = Debug;
 		};
@@ -2517,7 +2562,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinDex.app/CoinDex";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinDexRelease.app/CoinDexRelease";
 			};
 			name = Release;
 		};
@@ -2652,7 +2697,7 @@
 				PRODUCT_NAME = "$(TARGET_NAME)";
 				SWIFT_VERSION = 5.0;
 				TARGETED_DEVICE_FAMILY = "1,2";
-				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinDex.app/CoinDex";
+				TEST_HOST = "$(BUILT_PRODUCTS_DIR)/CoinDexRelease.app/CoinDexRelease";
 			};
 			name = Staging;
 		};

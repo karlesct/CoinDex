@@ -236,7 +236,7 @@ extension MainViewController {
     }
 
     @objc func fuelButtonAction() {
-        let assembler = FuelHomeAssembler(navigationController: self.navigationController)
+        let assembler = FuelMapAssembler(navigationController: self.navigationController)
         let viewController = assembler.viewController()
 
         self.navigationController?.pushViewController(viewController,

@@ -6,7 +6,7 @@
 //
 
 import XCTest
-@testable import CoinDex
+@testable import CoinDexRelease
 
 class CoinDexTests: XCTestCase {
 

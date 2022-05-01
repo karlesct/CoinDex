@@ -21,7 +21,9 @@ final class AppDelegateAssembler {
     // MARK: - Methods
     
     func compositeAppDelegate() -> AppDelegateType {
-        return CompositeAppDelegate(appDelegates: [self.firebaseAppDelegate()])
+        return CompositeAppDelegate(appDelegates: [
+            self.firebaseAppDelegate()
+        ])
     }
     
     private func firebaseAppDelegate() -> AppDelegateType? {

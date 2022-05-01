@@ -41,6 +41,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
 
 }
 
+// MARK: - Notification
+
 extension AppDelegate: UNUserNotificationCenterDelegate {
 
     // Received in Foreground:
@@ -53,9 +55,9 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
     }
 
     // Received in Background:
-    public func userNotificationCenter(_ userNotificationCenter: UNUserNotificationCenter,
-                                       didReceive response: UNNotificationResponse,
-                                       withCompletionHandler completionHandler: @escaping () -> Void) {
+    func userNotificationCenter(_ userNotificationCenter: UNUserNotificationCenter,
+                                didReceive response: UNNotificationResponse,
+                                withCompletionHandler completionHandler: @escaping () -> Void) {
         _ = composite?.userNotificationCenter?(userNotificationCenter,
                                                 didReceive: response,
                                                 withCompletionHandler: completionHandler)
@@ -63,9 +65,9 @@ extension AppDelegate: UNUserNotificationCenterDelegate {
 
 }
 
-extension AppDelegate {
+// MARK: Universal Links
 
-    // MARK: Universal Links
+extension AppDelegate {
 
     func application(_ application: UIApplication,
                      continue userActivity: NSUserActivity,
@@ -77,3 +79,16 @@ extension AppDelegate {
     }
 }
     
+// MARK: Deep Links
+
+extension AppDelegate {
+    
+    func application(_ application: UIApplication,
+                     open url: URL,
+                     options: [UIApplication.OpenURLOptionsKey : Any] = [:]) -> Bool {
+        
+        return composite?.application?(application,
+                                       open: url,
+                                       options: options) ?? true
+    }
+}

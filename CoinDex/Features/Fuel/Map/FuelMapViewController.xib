@@ -1,0 +1,49 @@
+<?xml version="1.0" encoding="UTF-8"?>
+<document type="com.apple.InterfaceBuilder3.CocoaTouch.XIB" version="3.0" toolsVersion="20037" targetRuntime="iOS.CocoaTouch" propertyAccessControl="none" useAutolayout="YES" useTraitCollections="YES" useSafeAreas="YES" colorMatched="YES">
+    <device id="retina6_1" orientation="portrait" appearance="light"/>
+    <dependencies>
+        <deployment identifier="iOS"/>
+        <plugIn identifier="com.apple.InterfaceBuilder.IBCocoaTouchPlugin" version="20020"/>
+        <capability name="Safe area layout guides" minToolsVersion="9.0"/>
+        <capability name="System colors in document resources" minToolsVersion="11.0"/>
+        <capability name="documents saved in the Xcode 8 format" minToolsVersion="8.0"/>
+    </dependencies>
+    <objects>
+        <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="FuelMapViewController" customModule="CoinDexRelease" customModuleProvider="target">
+            <connections>
+                <outlet property="activityIndicator" destination="qFd-IX-5j4" id="SJx-tj-deW"/>
+                <outlet property="mapView" destination="gK8-IA-9ap" id="PrE-Av-GIe"/>
+                <outlet property="view" destination="iN0-l3-epB" id="iWS-hf-DEX"/>
+            </connections>
+        </placeholder>
+        <placeholder placeholderIdentifier="IBFirstResponder" id="-2" customClass="UIResponder"/>
+        <view contentMode="scaleToFill" id="iN0-l3-epB">
+            <rect key="frame" x="0.0" y="0.0" width="414" height="896"/>
+            <autoresizingMask key="autoresizingMask" widthSizable="YES" heightSizable="YES"/>
+            <subviews>
+                <mapView clipsSubviews="YES" multipleTouchEnabled="YES" contentMode="scaleToFill" mapType="standard" translatesAutoresizingMaskIntoConstraints="NO" id="gK8-IA-9ap">
+                    <rect key="frame" x="0.0" y="44" width="414" height="818"/>
+                </mapView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="qFd-IX-5j4">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
+            </subviews>
+            <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
+            <color key="backgroundColor" systemColor="systemBackgroundColor"/>
+            <constraints>
+                <constraint firstItem="gK8-IA-9ap" firstAttribute="bottom" secondItem="vUN-kp-3ea" secondAttribute="bottom" id="7ei-hs-CfL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="gK8-IA-9ap" secondAttribute="trailing" id="RjD-QR-hHr"/>
+                <constraint firstItem="gK8-IA-9ap" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="U4I-Dj-eQs"/>
+                <constraint firstItem="gK8-IA-9ap" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="eiD-kj-cRd"/>
+                <constraint firstItem="qFd-IX-5j4" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vNh-yU-tn1"/>
+                <constraint firstItem="qFd-IX-5j4" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="xEa-BY-Qfc"/>
+            </constraints>
+            <point key="canvasLocation" x="137.68115942028987" y="110.49107142857143"/>
+        </view>
+    </objects>
+    <resources>
+        <systemColor name="systemBackgroundColor">
+            <color white="1" alpha="1" colorSpace="custom" customColorSpace="genericGamma22GrayColorSpace"/>
+        </systemColor>
+    </resources>
+</document>
