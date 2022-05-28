@@ -894,7 +894,6 @@
 		27397E47280B30DC00093CB8 /* Home */ = {
 			isa = PBXGroup;
 			children = (
-				2794AAD727F1C3AF00E30828 /* Cells */,
 				2794AAC527F1AF3A00E30828 /* FuelHomeAssembler.swift */,
 				2794AAC727F1AF4F00E30828 /* FuelHomeViewController.swift */,
 				2794AACF27F1B3FD00E30828 /* FuelHomeViewController.xib */,
@@ -1588,14 +1587,6 @@
 				27397E48280B30E800093CB8 /* Map */,
 			);
 			path = Fuel;
-			sourceTree = "<group>";
-		};
-		2794AAD727F1C3AF00E30828 /* Cells */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			name = Cells;
-			path = ../Cells;
 			sourceTree = "<group>";
 		};
 		279B670A27845F5E00480155 /* Tutorial */ = {

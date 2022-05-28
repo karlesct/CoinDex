@@ -44,7 +44,7 @@ class CountryPickerTableViewCell: UITableViewCell,
               delegate: CountryPickerTableViewCellDelegate) {
         self.item = item
         self.delegate = delegate
-        self.countryNameLabel.text = item.flag + " (+\(item.phoneCode)) " + item.countryName
+        self.countryNameLabel.text = item.countryName //item.flag + " (+\(item.phoneCode)) " + item.countryName
 
         self.countryFlagImageView.image = item.flagImage
     }

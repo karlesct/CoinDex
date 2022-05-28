@@ -33,7 +33,6 @@ class TestViewController: UIViewController {
             self.pages = viewControllers
         }
     }
-//    let pages: Int = 8
 
     override func viewDidLoad() {
         super.viewDidLoad()
