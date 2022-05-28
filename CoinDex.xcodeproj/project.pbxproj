@@ -1358,7 +1358,6 @@
 		2781E34F27CD13AC0011BE14 /* Jsons */ = {
 			isa = PBXGroup;
 			children = (
-				2781E35027CD13B80011BE14 /* IsoCountryCodes */,
 			);
 			path = Jsons;
 			sourceTree = "<group>";
@@ -1374,6 +1373,7 @@
 		2781E35327CD14380011BE14 /* CountryPicker */ = {
 			isa = PBXGroup;
 			children = (
+				2781E35027CD13B80011BE14 /* IsoCountryCodes */,
 				2781E35827CD15BC0011BE14 /* Cells */,
 				2781E35427CD14810011BE14 /* CountryModel.swift */,
 				2781E36027CD173D0011BE14 /* CountryPickerAssembler.swift */,
