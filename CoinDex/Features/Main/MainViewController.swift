@@ -227,12 +227,20 @@ extension MainViewController {
     }
 
     @objc func loginButtonAction() {
-        //        let assembler = TAndCAssembler(stringURL: "https://apple.com")
-        let assembler = LoginAssembler(navigationController: self.navigationController)
-        let viewController = assembler.viewController()
+        ///        let assembler = LoginAssembler(navigationController: self.navigationController)
+        //        let viewController = assembler.viewController()
+        //
+        //        self.navigationController?.pushViewController(viewController,
+        //                                                      animated: true)
+        //        guard let item: AlertTitleView = .instantiateFromNib() else {
+        //            return
+        //        }
+                
+                let viewController = CustomAlert()
+                
+                viewController.modalPresentationStyle = .overFullScreen
+                self.navigationController?.present(viewController, animated: false)
 
-        self.navigationController?.pushViewController(viewController,
-                                                      animated: true)
     }
 
     @objc func fuelButtonAction() {

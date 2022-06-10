@@ -35,6 +35,7 @@ extension UIColor {
     static let x52519B = #colorLiteral(red: 0.3215686275, green: 0.3176470588, blue: 0.6078431373, alpha: 1)
     static let x35348A = #colorLiteral(red: 0.2078431373, green: 0.2039215686, blue: 0.5411764706, alpha: 1)
     static let x00FFFFFF = #colorLiteral(red: 1, green: 1, blue: 1, alpha: 0) // 0% alpha
+    static let x80000000 = #colorLiteral(red: 0, green: 0, blue: 0, alpha: 0.5)
     static let x8000BBF7 = #colorLiteral(red: 0, green: 0.7333333333, blue: 0.968627451, alpha: 0.5) // 50% alpha
     
     
