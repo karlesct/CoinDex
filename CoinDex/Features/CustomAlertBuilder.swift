@@ -28,7 +28,6 @@ class CustomAlert: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .boldSystemFont(ofSize: 16)
         label.textColor = .x555555
-        label.backgroundColor = .red
         label.numberOfLines = 0
         label.text = "Test"
         return label
@@ -39,7 +38,6 @@ class CustomAlert: UIViewController {
         label.translatesAutoresizingMaskIntoConstraints = false
         label.font = .systemFont(ofSize: 16)
         label.textColor = .x555555
-        label.backgroundColor = .red
         label.numberOfLines = 0
         label.text = "This is an example of sample text that goes on for a long time. This is an example of sample text that goes on for a long time."
         return label
@@ -63,7 +61,7 @@ class CustomAlert: UIViewController {
         stackView.distribution = .fill
         stackView.alignment = .trailing
         
-        stackView.addArrangedSubview(self.buttonHorizontalContainerStackView)
+        
         return stackView
     }()
     
@@ -104,7 +102,7 @@ class CustomAlert: UIViewController {
     
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.setupUI()
+//        self.setupUI()
     }
 //
 //    init() {
@@ -168,12 +166,121 @@ class CustomAlert: UIViewController {
         self.containerStackView.addArrangedSubview(self.titleLabel)
         self.containerStackView.addArrangedSubview(self.sutitleLabel)
         self.containerStackView.addArrangedSubview(self.image)
+        
         self.containerStackView.addArrangedSubview(self.buttonVerticalContainerStackView)
+        self.buttonVerticalContainerStackView.addArrangedSubview(self.buttonHorizontalContainerStackView)
         self.buttonHorizontalContainerStackView.addArrangedSubview(self.button)
         self.buttonHorizontalContainerStackView.addArrangedSubview(self.buttonCancel)
         
         
     }
     
-}
+    class Builder {
+        
+        private var titleLabel: UILabel?
+        private var bodyLabel: UILabel?
+        private var buttons: [UIButton] = []
+        
+        // MARK: - Init
 
+        init() {
+        }
+
+        // MARK: - Methods
+        
+        func with(titleLabel: UILabel?) -> Builder {
+            self.titleLabel = titleLabel
+            return self
+        }
+        
+        func with(bodyLabel: UILabel?) -> Builder {
+            self.bodyLabel = bodyLabel
+            return self
+        }
+        
+        func with(button: UIButton) -> Builder {
+            self.buttons.append(button)
+            return self
+        }
+        
+        func build() -> CustomAlert {
+            
+            let customAlert = CustomAlert()
+            
+            customAlert.view.addFullSubview(view: customAlert.backgroundView)
+            
+            customAlert.backgroundView.addSubview(customAlert.containerView)
+            
+            NSLayoutConstraint.activate([
+                customAlert.containerView
+                    .centerXAnchor
+                    .constraint(equalTo: customAlert.backgroundView
+                        .centerXAnchor),
+                customAlert.containerView
+                    .centerYAnchor
+                    .constraint(equalTo: customAlert.backgroundView
+                        .centerYAnchor),
+                customAlert.containerView
+                    .leadingAnchor
+                    .constraint(lessThanOrEqualTo: customAlert.backgroundView
+                        .leadingAnchor,
+                                constant: 20),
+                customAlert.containerView
+                    .trailingAnchor
+                    .constraint(lessThanOrEqualTo: customAlert.backgroundView
+                        .trailingAnchor,
+                                constant: -20)
+            ])
+            
+            customAlert.containerView
+                .addSubview(customAlert.containerStackView)
+            
+            
+            
+            NSLayoutConstraint.activate([
+                customAlert.containerStackView
+                    .topAnchor
+                    .constraint(equalTo: customAlert.containerView
+                        .topAnchor,
+                                constant: 20),
+                customAlert.containerStackView
+                    .bottomAnchor
+                    .constraint(equalTo: customAlert.containerView
+                        .bottomAnchor,
+                                constant: -20),
+                customAlert.containerStackView
+                    .leadingAnchor
+                    .constraint(equalTo: customAlert.containerView
+                        .leadingAnchor,
+                                constant: 20),
+                customAlert.containerStackView
+                    .trailingAnchor
+                    .constraint(equalTo: customAlert.containerView
+                        .trailingAnchor,
+                                constant: -20)
+            ])
+            
+            if let titleLabel = self.titleLabel {
+                customAlert.containerStackView.addArrangedSubview(titleLabel)
+            }
+            
+            if let bodyLabel = self.bodyLabel {
+                customAlert.containerStackView.addArrangedSubview(bodyLabel)
+            }
+            
+            customAlert.containerStackView.addArrangedSubview(customAlert.image)
+            
+            customAlert.containerStackView.addArrangedSubview(customAlert.buttonVerticalContainerStackView)
+            customAlert.buttonVerticalContainerStackView.addArrangedSubview(customAlert.buttonHorizontalContainerStackView)
+            
+            buttons.forEach {
+                customAlert.buttonHorizontalContainerStackView.addArrangedSubview($0)
+            }
+
+            return customAlert
+
+        }
+        
+    }
+    
+}

@@ -238,8 +238,31 @@ extension MainViewController {
                 
                 let viewController = CustomAlert()
                 
-                viewController.modalPresentationStyle = .overFullScreen
-                self.navigationController?.present(viewController, animated: false)
+        let customAlert = CustomAlert
+            .Builder()
+            .with(titleLabel: UILabel
+                .Builder()
+                .with(text: "Test")
+                .with(font: .boldSystemFont(ofSize: 16))
+                .build())
+            .with(bodyLabel: UILabel
+                .Builder()
+                .with(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+                .with(numberOfLines: 0)
+                .build())
+            .with(button: UIButton
+                .Builder()
+                .with(text: "Accept")
+                .build())
+            .with(button: UIButton
+                .Builder()
+                .with(text: "Cancelar")
+                .build())
+            .build()
+                
+                
+        customAlert.modalPresentationStyle = .overFullScreen
+                self.navigationController?.present(customAlert, animated: false)
 
     }
 
