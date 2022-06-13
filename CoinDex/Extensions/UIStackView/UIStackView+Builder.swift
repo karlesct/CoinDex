@@ -52,6 +52,12 @@ extension UIStackView {
             return self
         }
         
+        @discardableResult
+        func with(arrangedSubviews: [UIView]) -> Builder {
+            self.arrangedSubviews.append(contentsOf: arrangedSubviews)
+            return self
+        }
+        
         func build() -> UIStackView {
             let stackView = UIStackView()
             stackView.translatesAutoresizingMaskIntoConstraints = false

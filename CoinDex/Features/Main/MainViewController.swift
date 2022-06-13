@@ -6,42 +6,42 @@
 import UIKit
 
 class MainViewController: UIViewController {
-
+    
     // MARK: - IBoutlets
-
+    
     @IBOutlet weak var tutorialButton: UIButton! {
         didSet {
             self.tutorialButton.setTitle("Open Tutorial",
                                          for: .normal)
-
+            
             self.tutorialButton.addTarget(self,
                                           action: #selector(self.tutorialButtonAction),
                                           for: .touchUpInside)
         }
     }
-
+    
     @IBOutlet weak var chatButton: UIButton! {
         didSet {
             self.chatButton.setTitle("Open Chat",
                                      for: .normal)
-
+            
             self.chatButton.addTarget(self,
                                       action: #selector(self.chatButtonAction),
                                       for: .touchUpInside)
         }
     }
-
+    
     @IBOutlet weak var formButton: UIButton! {
         didSet {
             self.formButton.setTitle("Open form",
                                      for: .normal)
-
+            
             self.formButton.addTarget(self,
                                       action: #selector(self.formButtonAction),
                                       for: .touchUpInside)
         }
     }
-
+    
     @IBOutlet weak var tabBarButton: UIButton!{
         didSet {
             self.tabBarButton.setTitle("Open tabBar",
@@ -51,8 +51,8 @@ class MainViewController: UIViewController {
                                         for: .touchUpInside)
         }
     }
-
-
+    
+    
     @IBOutlet weak var tAndCButton: UIButton! {
         didSet {
             self.tAndCButton.setTitle("Open TandC",
@@ -71,7 +71,7 @@ class MainViewController: UIViewController {
                                              for: .touchUpInside)
         }
     }
-
+    
     @IBOutlet weak var loginButton: UIButton! {
         didSet {
             self.loginButton.setTitle("Open login",
@@ -81,14 +81,14 @@ class MainViewController: UIViewController {
                                        for: .touchUpInside)
         }
     }
-
+    
     @IBOutlet weak var fuelButton: UIButton! {
         didSet {
             self.fuelButton.setTitle("Open fuel main",
-                                      for: .normal)
+                                     for: .normal)
             self.fuelButton.addTarget(self,
-                                       action: #selector(self.fuelButtonAction),
-                                       for: .touchUpInside)
+                                      action: #selector(self.fuelButtonAction),
+                                      for: .touchUpInside)
         }
     }
     //    var imagePicker: ImagePicker {
@@ -96,32 +96,32 @@ class MainViewController: UIViewController {
     //                                      delegate: self)
     //        return mediaPicker
     //    }
-
+    
     private lazy var imagePicker: ImagePicker = {
         let imagePicker = ImagePicker()
         imagePicker.delegate = self
         return imagePicker
     }()
-
+    
     // MARK: - Properties
-
+    
     var viewModel: MainViewModelProtocol?
     var navigator: MainNavigator?
-
+    
     // MARK: - Life cycle
-
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
-
+    
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
-
+        
         guard let configAPI = ConfigLoader.parseFile().API
         else { return }
         print(configAPI)
         //        let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
-
+        
         //        let test = test()
         //        let request = PingRequest(baseURL: baseURL)
         //        let request = CoinsListRequest(baseURL: baseURL)
@@ -152,20 +152,20 @@ class MainViewController: UIViewController {
         //        let request = ExchangesIdVolumeChartRequest(baseURL: baseURL)
         //        let request = CoinsMarketsRequest(baseURL: baseURL)
         //        let request = CoinsIdRequest(baseURL: baseURL)
-
+        
         //        test.fetch(request: request)
     }
-
-
+    
+    
     // MARK: - Methods
-
+    
     
 }
 
 // MARK: - Button actions
 
 extension MainViewController {
-
+    
     @objc func tutorialButtonAction() {
         let assembler = TutorialAssembler()
         let viewController = assembler.viewController()
@@ -174,7 +174,7 @@ extension MainViewController {
                      animated: true,
                      completion: nil)
     }
-
+    
     @objc func chatButtonAction() {
         let assembler = ChatAssembler()
         let viewController = assembler.viewController()
@@ -183,41 +183,41 @@ extension MainViewController {
                      animated: true,
                      completion: nil)
     }
-
+    
     @objc func formButtonAction() {
         let assembler = ChatAssembler()
         let viewController = assembler.viewController()
         viewController.modalPresentationStyle = .overFullScreen
-
+        
         let module = FormDemoModule()
         self.present(module.view,
                      animated: true,
                      completion: nil)
     }
-
+    
     @objc func tabBarButtonAction() {
         let assembler = TabBarAssembler()
         let viewController = assembler.viewController()
         viewController.modalPresentationStyle = .overFullScreen
-
+        
         self.present(viewController,
                      animated: true,
                      completion: nil)
     }
-
+    
     @objc func tAndCButtonAction() {
         //        let assembler = TAndCAssembler(stringURL: "https://apple.com")
         let assembler = CountryPickerAssembler()
         let viewController = assembler.viewController()
         viewController.modalPresentationStyle = .overFullScreen
-
+        
         self.present(viewController,
                      animated: true,
                      completion: nil)
     }
-
+    
     @objc func mediaPickerButtonAction() {
-
+        
         if #available(iOS 14.5, *) {
             PermissionsProvider.request(permission: .tracking) { result in
                 NSLog("PermissionsProvider result: \(result)")
@@ -225,7 +225,7 @@ extension MainViewController {
         }
         //imagePicker.photoGalleryAsscessRequest()
     }
-
+    
     @objc func loginButtonAction() {
         ///        let assembler = LoginAssembler(navigationController: self.navigationController)
         //        let viewController = assembler.viewController()
@@ -235,63 +235,78 @@ extension MainViewController {
         //        guard let item: AlertTitleView = .instantiateFromNib() else {
         //            return
         //        }
-                
+        
         let customAlert = CustomAlert
-            .Builder()
-            .with(titleLabel: UILabel
-                .Builder()
-                .with(text: "Test")
-                .with(font: .boldSystemFont(ofSize: 16))
-                .build())
-            .with(bodyLabel: UILabel
-                .Builder()
-                .with(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
-                .with(numberOfLines: 0)
-                .build())
-            .with(view: UIStackView
-                .Builder()
-                .with(alignment: .center)
-                .with(arrangedSubview: UIImageView
-                    .Builder()
-                    .with(imageName: "iconEmoji")
-                    .with(height: 50)
-                    .with(width: 50)
+            .Builder().with(view: UIStackView.Builder()
+                .with(spacing: 15)
+                .with(arrangedSubviews: [
+                    UILabel
+                        .Builder()
+                        .with(text: "Test")
+                        .with(font: .boldSystemFont(ofSize: 16))
+                        .build(),
+                    UILabel
+                        .Builder()
+                        .with(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
+                        .with(numberOfLines: 0)
+                        .build(),
+                    UIStackView.Builder()
+                        .with(alignment: .center)
+                        .with(arrangedSubview:
+                                UIImageView
+                            .Builder()
+                            .with(imageName: "iconEmoji")
+                            .with(height: 50)
+                            .with(width: 50)
+                            .build())
+                        .build(),
+                    UIStackView.Builder()
+                        .with(alignment: .trailing)
+                        .with(arrangedSubview:
+                                UIStackView.Builder()
+                            .with(axis: .horizontal)
+                            .with(alignment: .trailing)
+                            .with(spacing: 15)
+                            .with(arrangedSubviews: [
+                                UIButton.Builder()
+                                    .with(text: "Accept")
+                                    .build(),
+                                UIButton.Builder()
+                                    .with(text: "Cancelar")
+                                    .build()
+                            ]
+                                 )
+                                .build()
+                             )
+                        .build()
+                ])
                     .build())
-                .build())
-            .with(button: UIButton
-                .Builder()
-                .with(text: "Accept")
-                .build())
-            .with(button: UIButton
-                .Builder()
-                .with(text: "Cancelar")
-                .build())
             .build()
-                
-                
+        
+        
         customAlert.modalPresentationStyle = .overFullScreen
-                self.navigationController?.present(customAlert, animated: false)
-
+        self.navigationController?.present(customAlert, animated: false)
+        
     }
-
+    
     @objc func fuelButtonAction() {
         let assembler = FuelMapAssembler(navigationController: self.navigationController)
         let viewController = assembler.viewController()
-
+        
         self.navigationController?.pushViewController(viewController,
                                                       animated: true)
     }
-
+    
 }
 
 extension MainViewController: ImagePickerDelegate {
-
+    
     func imagePicker(_ imagePicker: ImagePicker,
                      didSelect image: UIImage) {
         NSLog("Image: \(image)")
         imagePicker.dismiss()
     }
-
+    
     func cancelButtonDidClick(on imageView: ImagePicker) {
         imagePicker.dismiss()
     }
@@ -306,7 +321,7 @@ extension MainViewController: ImagePickerDelegate {
 
 
 class test {
-
+    
     func fetch<T: DataRequest>(request: T) {
         DefaultNetworkService().request(request) { /*[weak self]*/ result in
             switch result {
