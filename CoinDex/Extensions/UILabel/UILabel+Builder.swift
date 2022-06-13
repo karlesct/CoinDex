@@ -6,13 +6,13 @@
 import UIKit
 
 extension UILabel {
+    
     class Builder {
         private var text: String?
         private var font: UIFont?
         private var textColor: UIColor?
         private var numberOfLines: Int?
         private var textAlignment: NSTextAlignment?
-        
         
         // MARK: - Init
 
@@ -53,12 +53,12 @@ extension UILabel {
         
         func build() -> UILabel {
             let label = UILabel()
+            label.translatesAutoresizingMaskIntoConstraints = false
             label.text = self.text
             label.font = self.font ?? .systemFont(ofSize: 17)
             label.textColor = self.textColor ?? .x555555
             label.textAlignment = self.textAlignment ?? .natural
             label.numberOfLines = self.numberOfLines ?? 1
-            label.translatesAutoresizingMaskIntoConstraints = false
             return label
 
         }

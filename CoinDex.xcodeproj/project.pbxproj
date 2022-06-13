@@ -17,6 +17,8 @@
 		271B08242853EEA800AF1790 /* CustomAlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B08232853EEA800AF1790 /* CustomAlertBuilder.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
+		271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D128572C2300A52DBB /* UIImageView+Builder.swift */; };
+		271D71D528572EE400A52DBB /* UIStackView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D428572EE400A52DBB /* UIStackView+Builder.swift */; };
 		271EEA302720785700BA30FD /* NetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA2F2720785700BA30FD /* NetworkService.swift */; };
 		271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA3327207BE900BA30FD /* HTTPMethod.swift */; };
 		271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA3727207DAB00BA30FD /* UIAlertController+Builder.swift */; };
@@ -280,6 +282,8 @@
 		271B08232853EEA800AF1790 /* CustomAlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertBuilder.swift; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
+		271D71D128572C2300A52DBB /* UIImageView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Builder.swift"; sourceTree = "<group>"; };
+		271D71D428572EE400A52DBB /* UIStackView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+Builder.swift"; sourceTree = "<group>"; };
 		271EEA2F2720785700BA30FD /* NetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkService.swift; sourceTree = "<group>"; };
 		271EEA3327207BE900BA30FD /* HTTPMethod.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPMethod.swift; sourceTree = "<group>"; };
 		271EEA3727207DAB00BA30FD /* UIAlertController+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIAlertController+Builder.swift"; sourceTree = "<group>"; };
@@ -585,6 +589,22 @@
 				271D71CC2854E43300A52DBB /* UILabel+Builder.swift */,
 			);
 			path = UILabel;
+			sourceTree = "<group>";
+		};
+		271D71D028572C0A00A52DBB /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+				271D71D128572C2300A52DBB /* UIImageView+Builder.swift */,
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		271D71D328572EC800A52DBB /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+				271D71D428572EE400A52DBB /* UIStackView+Builder.swift */,
+			);
+			path = UIStackView;
 			sourceTree = "<group>";
 		};
 		271EEA1D272075C700BA30FD /* Network */ = {
@@ -1027,8 +1047,10 @@
 				2763D37D27A483EC00796FA8 /* UIButton */,
 				2763D37427A47C3900796FA8 /* UIColor */,
 				2787E31227B9175D00DC5523 /* UIImage */,
+				271D71D028572C0A00A52DBB /* UIImageView */,
 				271D71CB2854E41D00A52DBB /* UILabel */,
 				271EEA3F2720841600BA30FD /* URLRequest */,
+				271D71D328572EC800A52DBB /* UIStackView */,
 				2763D38527A5CE1500796FA8 /* UITableView */,
 				2763D38227A4994600796FA8 /* UITextView */,
 				279B67172784685000480155 /* UIView */,
@@ -2236,7 +2258,9 @@
 				2780809327AF0C5500AA44E3 /* FormDataSource.swift in Sources */,
 				279B671B27846F3000480155 /* TutorialPageAssembler.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
+				271D71D528572EE400A52DBB /* UIStackView+Builder.swift in Sources */,
 				27924733281EA7BE00737A1C /* DeepLinkRecognizer.swift in Sources */,
+				271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */,
 				270F0FC1279D6DDC005DE9FB /* ChatViewModel.swift in Sources */,
 				2787E34127C245BF00DC5523 /* CameraPermission.swift in Sources */,
 				2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */,

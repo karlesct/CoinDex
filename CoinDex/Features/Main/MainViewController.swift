@@ -236,8 +236,6 @@ extension MainViewController {
         //            return
         //        }
                 
-                let viewController = CustomAlert()
-                
         let customAlert = CustomAlert
             .Builder()
             .with(titleLabel: UILabel
@@ -249,6 +247,16 @@ extension MainViewController {
                 .Builder()
                 .with(text: "Lorem ipsum dolor sit amet, consectetur adipiscing elit, sed do eiusmod tempor incididunt ut labore et dolore magna aliqua. Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris nisi ut aliquip ex ea commodo consequat. Duis aute irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. Excepteur sint occaecat cupidatat non proident, sunt in culpa qui officia deserunt mollit anim id est laborum.")
                 .with(numberOfLines: 0)
+                .build())
+            .with(view: UIStackView
+                .Builder()
+                .with(alignment: .center)
+                .with(arrangedSubview: UIImageView
+                    .Builder()
+                    .with(imageName: "iconEmoji")
+                    .with(height: 50)
+                    .with(width: 50)
+                    .build())
                 .build())
             .with(button: UIButton
                 .Builder()

@@ -14,6 +14,7 @@ class CustomAlert: UIViewController {
         view.backgroundColor = .x80000000
         return view
     }()
+    
     private lazy var containerView: UIView = {
     let view = UIView()
         view.translatesAutoresizingMaskIntoConstraints = false
@@ -21,26 +22,6 @@ class CustomAlert: UIViewController {
         view.layer.cornerRadius = 5
         view.layer.masksToBounds = true
         return view
-    }()
-    
-    private lazy var titleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .boldSystemFont(ofSize: 16)
-        label.textColor = .x555555
-        label.numberOfLines = 0
-        label.text = "Test"
-        return label
-    }()
-    
-    private lazy var sutitleLabel: UILabel = {
-        let label = UILabel()
-        label.translatesAutoresizingMaskIntoConstraints = false
-        label.font = .systemFont(ofSize: 16)
-        label.textColor = .x555555
-        label.numberOfLines = 0
-        label.text = "This is an example of sample text that goes on for a long time. This is an example of sample text that goes on for a long time."
-        return label
     }()
     
     private lazy var containerStackView: UIStackView = {
@@ -75,110 +56,15 @@ class CustomAlert: UIViewController {
         return stackView
     }()
     
-    private lazy var button: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(.red, for: .normal)
-        button.setTitle("ACEPTAR", for: .normal)
-        return button
-    }()
-    
-    private lazy var buttonCancel: UIButton = {
-        let button = UIButton()
-        button.translatesAutoresizingMaskIntoConstraints = false
-        button.setTitleColor(.red, for: .normal)
-        button.setTitle("CANCELAR", for: .normal)
-        return button
-    }()
-    
-    private lazy var image: UIImageView = {
-        let imageView = UIImageView()
-        //imageView.translatesAutoresizingMaskIntoConstraints = false
-        imageView.image = UIImage(named: "iconEmoji")
-        imageView.heightAnchor.constraint(equalToConstant: 50).isActive = true
-        imageView.widthAnchor.constraint(equalToConstant: 50).isActive = true
-        return imageView
-    }()
-    
     override func viewDidLoad() {
         super.viewDidLoad()
-//        self.setupUI()
-    }
-//
-//    init() {
-//        self.setupUI()
-//    }
-    
-    private func setupUI() {
-        self.view.addFullSubview(view: self.backgroundView)
-        
-        self.backgroundView.addSubview(self.containerView)
-        
-        NSLayoutConstraint.activate([
-            self.containerView
-                .centerXAnchor
-                .constraint(equalTo: self.backgroundView
-                    .centerXAnchor),
-            self.containerView
-                .centerYAnchor
-                .constraint(equalTo: self.backgroundView
-                    .centerYAnchor),
-            self.containerView
-                .leadingAnchor
-                .constraint(lessThanOrEqualTo: self.backgroundView
-                    .leadingAnchor,
-                            constant: 20),
-            self.containerView
-                .trailingAnchor
-                .constraint(lessThanOrEqualTo: self.backgroundView
-                    .trailingAnchor,
-                            constant: -20)
-        ])
-        
-        self.containerView
-            .addSubview(self.containerStackView)
-        
-        
-        
-        NSLayoutConstraint.activate([
-            self.containerStackView
-                .topAnchor
-                .constraint(equalTo: self.containerView
-                    .topAnchor,
-                            constant: 20),
-            self.containerStackView
-                .bottomAnchor
-                .constraint(equalTo: self.containerView
-                    .bottomAnchor,
-                            constant: -20),
-            self.containerStackView
-                .leadingAnchor
-                .constraint(equalTo: self.containerView
-                    .leadingAnchor,
-                            constant: 20),
-            self.containerStackView
-                .trailingAnchor
-                .constraint(equalTo: self.containerView
-                    .trailingAnchor,
-                            constant: -20)
-        ])
-        
-        self.containerStackView.addArrangedSubview(self.titleLabel)
-        self.containerStackView.addArrangedSubview(self.sutitleLabel)
-        self.containerStackView.addArrangedSubview(self.image)
-        
-        self.containerStackView.addArrangedSubview(self.buttonVerticalContainerStackView)
-        self.buttonVerticalContainerStackView.addArrangedSubview(self.buttonHorizontalContainerStackView)
-        self.buttonHorizontalContainerStackView.addArrangedSubview(self.button)
-        self.buttonHorizontalContainerStackView.addArrangedSubview(self.buttonCancel)
-        
-        
     }
     
     class Builder {
         
         private var titleLabel: UILabel?
         private var bodyLabel: UILabel?
+        private var views: [UIView] = []
         private var buttons: [UIButton] = []
         
         // MARK: - Init
@@ -195,6 +81,11 @@ class CustomAlert: UIViewController {
         
         func with(bodyLabel: UILabel?) -> Builder {
             self.bodyLabel = bodyLabel
+            return self
+        }
+        
+        func with(view: UIView) -> Builder {
+            self.views.append(view)
             return self
         }
         
@@ -268,12 +159,14 @@ class CustomAlert: UIViewController {
                 customAlert.containerStackView.addArrangedSubview(bodyLabel)
             }
             
-            customAlert.containerStackView.addArrangedSubview(customAlert.image)
+            self.views.forEach {
+                customAlert.containerStackView.addArrangedSubview($0)
+            }
             
             customAlert.containerStackView.addArrangedSubview(customAlert.buttonVerticalContainerStackView)
             customAlert.buttonVerticalContainerStackView.addArrangedSubview(customAlert.buttonHorizontalContainerStackView)
             
-            buttons.forEach {
+            self.buttons.forEach {
                 customAlert.buttonHorizontalContainerStackView.addArrangedSubview($0)
             }
 

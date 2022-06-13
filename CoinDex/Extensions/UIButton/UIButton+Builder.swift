@@ -19,7 +19,6 @@ extension UIButton {
         private var textColor: UIColor?
         private var buttonActions: [ButtonAction] = []
         
-        
         // MARK: - Init
 
         init() {
@@ -58,22 +57,17 @@ extension UIButton {
         
         func build() -> UIButton {
             let button = UIButton(type: .system)
-            button
-                .setTitle(self.text,
-                          for: .normal)
-            button
-                .setTitleColor(self.textColor ?? .primary,
-                               for: .normal)
+            button.translatesAutoresizingMaskIntoConstraints = false
+            button.setTitle(self.text,
+                            for: .normal)
+            button.setTitleColor(self.textColor ?? .primary,
+                                 for: .normal)
             button.titleLabel?.font = self.font
-            
             buttonActions.forEach {
                 button.addTarget($0.target,
                                  action: $0.selector,
                                  for: $0.controlEvent)
             }
-            
-            button.translatesAutoresizingMaskIntoConstraints = false
-            
             return button
 
         }
