@@ -9,7 +9,21 @@ class LaunchScreenViewController: UIViewController {
 
     // MARK: - IBoutlets
 
-
+    @IBOutlet weak var imageView: UIImageView! {
+        didSet {
+            self.imageView.image = UIImage(named: "coingeckoLogo")
+        }
+    }
+    
+    @IBOutlet weak var label: UILabel!{
+        didSet {
+            self.label.text = "Powered by CoinGecko"
+            self.label.textColor = .primary
+            self.label.font = .boldSystemFont(ofSize: 18)
+        }
+    }
+    
+    
     // MARK: - Properties
 
     var viewModel: LaunchScreenViewModelProtocol?

@@ -54,7 +54,7 @@ final class CountryPickerViewModel: CountryPickerViewModelProtocol {
     func searchTextDidChange(text: String) {
         if text.isEmpty {
             self.dictionary = self.dictionaryAll
-        } else {
+        } else if text.count > 2 {
             self.dictionary = self.dictionaryAll.mapValues{
                 $0.filter{ $0.value.contains(text)}
             }

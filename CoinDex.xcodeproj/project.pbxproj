@@ -14,7 +14,8 @@
 		270F0FC5279D71ED005DE9FB /* ChatUseCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC4279D71ED005DE9FB /* ChatUseCase.swift */; };
 		270F0FC8279D787E005DE9FB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC7279D787E005DE9FB /* Observable.swift */; };
 		270F0FCA279D7BA3005DE9FB /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC9279D7BA3005DE9FB /* BubbleView.swift */; };
-		271B08242853EEA800AF1790 /* CustomAlertBuilder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B08232853EEA800AF1790 /* CustomAlertBuilder.swift */; };
+		27182935285C788C00E66073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 27182934285C788C00E66073 /* README.md */; };
+		271B08242853EEA800AF1790 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B08232853EEA800AF1790 /* CustomAlert.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
 		271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D128572C2300A52DBB /* UIImageView+Builder.swift */; };
@@ -279,7 +280,8 @@
 		270F0FC4279D71ED005DE9FB /* ChatUseCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ChatUseCase.swift; sourceTree = "<group>"; };
 		270F0FC7279D787E005DE9FB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		270F0FC9279D7BA3005DE9FB /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
-		271B08232853EEA800AF1790 /* CustomAlertBuilder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlertBuilder.swift; sourceTree = "<group>"; };
+		27182934285C788C00E66073 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		271B08232853EEA800AF1790 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
 		271D71D128572C2300A52DBB /* UIImageView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Builder.swift"; sourceTree = "<group>"; };
@@ -987,6 +989,7 @@
 		2758FC542709B45E009BCB5A = {
 			isa = PBXGroup;
 			children = (
+				27182934285C788C00E66073 /* README.md */,
 				2758FC5F2709B45E009BCB5A /* CoinDex */,
 				2758FC762709B46A009BCB5A /* CoinDexTests */,
 				2758FC812709B46A009BCB5A /* CoinDexUITests */,
@@ -1064,9 +1067,9 @@
 		2758FC942709B4D1009BCB5A /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				279B6711278462E400480155 /* Common */,
 				278FD02F27DE497100A54EAB /* Login */,
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
-				279B6711278462E400480155 /* Common */,
 				270F0FBB279D6D99005DE9FB /* Chat */,
 				2781E35327CD14380011BE14 /* CountryPicker */,
 				278080A227AF107900AA44E3 /* FormDemo */,
@@ -1076,7 +1079,7 @@
 				2787E31527B93E9C00DC5523 /* TabBar */,
 				2787E32327C16D7300DC5523 /* TAndC */,
 				279B670A27845F5E00480155 /* Tutorial */,
-				271B08232853EEA800AF1790 /* CustomAlertBuilder.swift */,
+				271B08232853EEA800AF1790 /* CustomAlert.swift */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -1099,7 +1102,6 @@
 		2758FC972709B4FB009BCB5A /* Resources */ = {
 			isa = PBXGroup;
 			children = (
-				2781E34F27CD13AC0011BE14 /* Jsons */,
 				2758FCF62709D56C009BCB5A /* Generated */,
 				2758FC9B2709B58D009BCB5A /* Environments */,
 				2758FC692709B469009BCB5A /* Assets.xcassets */,
@@ -1392,13 +1394,6 @@
 				278080DB27AF1DB700AA44E3 /* SelectViewController.xib */,
 			);
 			path = Select;
-			sourceTree = "<group>";
-		};
-		2781E34F27CD13AC0011BE14 /* Jsons */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Jsons;
 			sourceTree = "<group>";
 		};
 		2781E35027CD13B80011BE14 /* IsoCountryCodes */ = {
@@ -2074,6 +2069,7 @@
 				2781E36527CD175E0011BE14 /* CountryPickerViewController.xib in Resources */,
 				2781E35C27CD17050011BE14 /* CountryPickerTableViewCell.xib in Resources */,
 				2781E35227CD13CC0011BE14 /* isoCountryCode.json in Resources */,
+				27182935285C788C00E66073 /* README.md in Resources */,
 				2787E32227B94EB000DC5523 /* TestViewController.xib in Resources */,
 				279B67152784652A00480155 /* TutorialViewController.xib in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
@@ -2318,7 +2314,7 @@
 				2781E35A27CD15D90011BE14 /* CountryPickerTableViewCell.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
-				271B08242853EEA800AF1790 /* CustomAlertBuilder.swift in Sources */,
+				271B08242853EEA800AF1790 /* CustomAlert.swift in Sources */,
 				278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */,
 				2787E31927B93F4A00DC5523 /* TabBarController.swift in Sources */,
 				271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */,

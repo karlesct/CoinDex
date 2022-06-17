@@ -18,6 +18,7 @@ final class CountryPickerAssembler {
     func viewController() -> UIViewController {
         let viewController = CountryPickerViewController.loadFromNib()
         viewController.viewModel = self.viewModel()
+        viewController.loggingService = self.logging()
         return viewController
     }
 
@@ -29,6 +30,11 @@ final class CountryPickerAssembler {
     private func repository() -> CountryPickerRepositoryProtocol {
         let repository = CountryPickerRepository()
         return repository
+    }
+    
+    private func logging() -> LoggingServiceProtocol {
+        let loggingService = LoggingService()
+        return loggingService
     }
 }
 

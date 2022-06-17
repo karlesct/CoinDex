@@ -31,7 +31,8 @@ class CountryPickerViewController: UIViewController {
     // MARK: - Properties
 
     var viewModel: CountryPickerViewModelProtocol?
-
+    var loggingService: LoggingServiceProtocol?
+    
     // MARK: - Life cycle
 
     override func viewDidLoad() {
@@ -103,8 +104,9 @@ extension CountryPickerViewController: UISearchBarDelegate {
 extension CountryPickerViewController: CountryPickerTableViewCellDelegate {
     func cellSelected(item: CountryPickerCellModel?) {
         guard let item = item else { return }
-
-        NSLog("[CountryPickerViewController] - Cell selected with phone Code: \(item.phoneCode) and CountryName: \(item.countryName)")
+        
+        self.loggingService?.log("[CountryPickerViewController] - Cell selected with phone Code: \(item.phoneCode) and CountryName: \(item.countryName)")
+        
         self.dismiss(animated: false,
                      completion: nil)
     }

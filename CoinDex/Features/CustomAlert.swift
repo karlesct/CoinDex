@@ -24,10 +24,15 @@ class CustomAlert: UIViewController {
         return view
     }()
     
+    // MARK: - Life cycle
+    
     override func viewDidLoad() {
         super.viewDidLoad()
     }
     
+}
+
+extension CustomAlert {
     class Builder {
         private var view: UIView?
         
@@ -105,5 +110,4 @@ class CustomAlert: UIViewController {
         }
         
     }
-    
 }
