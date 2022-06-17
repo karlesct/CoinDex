@@ -8,12 +8,14 @@ import UIKit
 
 extension UIImage {
     struct common {
-        static let iconClose = #imageLiteral(resourceName: "iconClose")
+        static let closeIcon = #imageLiteral(resourceName: "iconClose")
+        static let noImageIcon = #imageLiteral(resourceName: "noImageIcon")
     }
 
     struct chat {
-        static let iconClip = #imageLiteral(resourceName: "iconClip")
-        static let iconEmoji = #imageLiteral(resourceName: "iconEmoji")
-        static let iconSend = #imageLiteral(resourceName: "iconSend")
+        static let clipIcon = #imageLiteral(resourceName: "iconClip")
+        static let emojiIcon = #imageLiteral(resourceName: "iconEmoji")
+        static let sendIcon = #imageLiteral(resourceName: "iconSend")
     }
+    
 }

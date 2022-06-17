@@ -38,7 +38,7 @@ class LaunchScreenViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.navigator?.navigate(to: .main)
+        self.navigator?.navigate(to: .coinListMaster)
     }
 
     // MARK: - Methods

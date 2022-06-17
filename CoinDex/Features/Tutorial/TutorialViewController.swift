@@ -23,7 +23,7 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
             self.closeButton.tintColor = .xFFFFFF
-            self.closeButton.setImage(.common.iconClose,
+            self.closeButton.setImage(.common.closeIcon,
                                       for: .normal)
             self.closeButton.addTarget(self,
                                        action: #selector(self.closeButtonAction),

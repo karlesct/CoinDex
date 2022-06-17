@@ -5,11 +5,10 @@
 
 import UIKit
 
-final class LaunchScreenNavigator: Navigator {
+final class ExchangesListMasterNavigator: Navigator {
 
     enum Destination {
-        case coinListMaster
-        case mainTest
+        case detail(id: String)
     }
 
     private var navigationController: UINavigationController
@@ -25,19 +24,18 @@ final class LaunchScreenNavigator: Navigator {
     func navigate(to destination: Destination) {
 
         let viewController = makeViewController(for: destination)
-        self.navigationController.viewControllers = [viewController]
+        self.navigationController.pushViewController(viewController, animated: true)
+
     }
 
     // MARK: - Private
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
-        case .mainTest:
+        case let .detail(id):
             let assembler = MainAssembler(navigationController: self.navigationController)
-            return assembler.viewController()
-        case .coinListMaster:
-            let assembler = ExchangesListMasterAssembler(navigationController: self.navigationController)
             return assembler.viewController()
         }
     }
 }
+

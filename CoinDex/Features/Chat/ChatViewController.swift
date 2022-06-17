@@ -28,7 +28,7 @@ class ChatViewController: UIViewController {
             self.emojiButton.addTarget(self,
                                           action: #selector(self.emojiButtonAction),
                                           for: .touchUpInside)
-            self.emojiButton.imageView?.image = .chat.iconEmoji
+            self.emojiButton.imageView?.image = .chat.emojiIcon
             self.emojiButton.tintColor = .primary
         }
     }
@@ -38,7 +38,7 @@ class ChatViewController: UIViewController {
             self.clipButton.layer.cornerRadius = self.clipButton.frame.height / 2
             self.clipButton.setBackgroundColor(color: .x555555,
                                                for: .normal)
-            self.clipButton.imageView?.image = .chat.iconClip
+            self.clipButton.imageView?.image = .chat.clipIcon
             self.clipButton.tintColor = .xFFFFFF
         }
     }
@@ -54,7 +54,7 @@ class ChatViewController: UIViewController {
             self.sendButton.layer.cornerRadius = self.sendButton.frame.height / 2
             self.sendButton.setBackgroundColor(color: .primary,
                                                 for: .normal)
-            self.sendButton.imageView?.image = .chat.iconSend
+            self.sendButton.imageView?.image = .chat.sendIcon
             self.sendButton.tintColor = .xFFFFFF
         }
     }

@@ -120,11 +120,11 @@ class MainViewController: UIViewController {
         guard let configAPI = ConfigLoader.parseFile().API
         else { return }
         print(configAPI)
-        //        let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
+                let baseURL = configAPI.Scheme + configAPI.Host + configAPI.Path
         
-        //        let test = test()
+                let test = test()
         //        let request = PingRequest(baseURL: baseURL)
-        //        let request = CoinsListRequest(baseURL: baseURL)
+                let request = CoinsListRequest(baseURL: baseURL)
         //        let request = FinancePlatformsRequest(baseURL: baseURL)
         //        let request = GlobalGlobalRequest(baseURL: baseURL)
         //        let request = GlobalDecentralizedFinanceDefiRequest(baseURL: baseURL)
@@ -153,7 +153,7 @@ class MainViewController: UIViewController {
         //        let request = CoinsMarketsRequest(baseURL: baseURL)
         //        let request = CoinsIdRequest(baseURL: baseURL)
         
-        //        test.fetch(request: request)
+                test.fetch(request: request)
     }
     
     

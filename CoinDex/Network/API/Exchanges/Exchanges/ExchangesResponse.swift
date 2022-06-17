@@ -8,7 +8,8 @@ import Foundation
 typealias ExchangesResponse = [ExchangesResponseElement]
 
 struct ExchangesResponseElement: Codable {
-    let id, name: String
+    let id: String
+    let name: String
     let yearEstablished: Int?
     let country: String?
     let exchangesResponseDescription: String?

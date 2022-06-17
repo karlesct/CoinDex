@@ -9,9 +9,13 @@ import Foundation
 struct ExchangesRequest: DataRequest {
 
     let baseURL: String
+    let page: Int
+    let perPage: Int
 
-    init(baseURL: String) {
+    init(baseURL: String, page: Int, perPage: Int = 100) {
         self.baseURL = baseURL
+        self.page = page
+        self.perPage = perPage
     }
 
     var url: String {
@@ -34,8 +38,8 @@ struct ExchangesRequest: DataRequest {
 
     var queryItems: [String : String]? {
         [
-            "per_page" : "100",                // Valid values: 1...250 | Total results per page | Default value: 100
-            "page" : "1",                     // page through results
+            "per_page" : "\(perPage)",                // Valid values: 1...250 | Total results per page | Default value: 100
+            "page" : "\(page)",                     // page through results. Max: 6
         ]
     }
 

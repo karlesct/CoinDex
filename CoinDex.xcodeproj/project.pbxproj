@@ -29,6 +29,16 @@
 		2718296F285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718296E285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift */; };
 		27182971285CB0CB00E66073 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718295D285C9FB100E66073 /* String+Regex.swift */; };
 		27182972285CB0CF00E66073 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718295E285C9FB100E66073 /* String+Localized.swift */; };
+		27182981285CC12200E66073 /* ExchangesListMasterNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718297B285CC05A00E66073 /* ExchangesListMasterNavigator.swift */; };
+		27182982285CC12500E66073 /* ExchangesListMasterAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182979285CC04200E66073 /* ExchangesListMasterAssembler.swift */; };
+		27182984285CC12A00E66073 /* ExchangesListMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182977285CC02300E66073 /* ExchangesListMasterViewController.swift */; };
+		27182985285CC12D00E66073 /* ExchangesListMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718297F285CC07900E66073 /* ExchangesListMasterViewController.xib */; };
+		27182987285CC13200E66073 /* ExchangesListMasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718297D285CC06900E66073 /* ExchangesListMasterViewModel.swift */; };
+		27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182988285CCC0900E66073 /* ExchangesListMasterRepository.swift */; };
+		2718298C285CDD0700E66073 /* ExchangesListMasterCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718298B285CDD0700E66073 /* ExchangesListMasterCellModel.swift */; };
+		2718298E285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718298D285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift */; };
+		27182990285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718298F285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib */; };
+		27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182992285CF3A500E66073 /* UIImageView+LoadThumbnail.swift */; };
 		271B08242853EEA800AF1790 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B08232853EEA800AF1790 /* CustomAlert.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
@@ -309,6 +319,16 @@
 		27182968285CA05E00E66073 /* String+LocalizedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizedTest.swift"; sourceTree = "<group>"; };
 		2718296B285CA12500E66073 /* UIAlertController+BuilderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+BuilderTest.swift"; sourceTree = "<group>"; };
 		2718296E285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+GetTopViewControllerTest.swift"; sourceTree = "<group>"; };
+		27182977285CC02300E66073 /* ExchangesListMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterViewController.swift; sourceTree = "<group>"; };
+		27182979285CC04200E66073 /* ExchangesListMasterAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterAssembler.swift; sourceTree = "<group>"; };
+		2718297B285CC05A00E66073 /* ExchangesListMasterNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterNavigator.swift; sourceTree = "<group>"; };
+		2718297D285CC06900E66073 /* ExchangesListMasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterViewModel.swift; sourceTree = "<group>"; };
+		2718297F285CC07900E66073 /* ExchangesListMasterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesListMasterViewController.xib; sourceTree = "<group>"; };
+		27182988285CCC0900E66073 /* ExchangesListMasterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterRepository.swift; sourceTree = "<group>"; };
+		2718298B285CDD0700E66073 /* ExchangesListMasterCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterCellModel.swift; sourceTree = "<group>"; };
+		2718298D285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterTableViewCell.swift; sourceTree = "<group>"; };
+		2718298F285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesListMasterTableViewCell.xib; sourceTree = "<group>"; };
+		27182992285CF3A500E66073 /* UIImageView+LoadThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadThumbnail.swift"; sourceTree = "<group>"; };
 		271B08232853EEA800AF1790 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
@@ -835,6 +855,54 @@
 			path = Test;
 			sourceTree = "<group>";
 		};
+		27182973285CBFCA00E66073 /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				27182974285CBFDD00E66073 /* List */,
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		27182974285CBFDD00E66073 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				27182975285CBFE900E66073 /* Master */,
+				27182976285CBFF000E66073 /* Detail */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		27182975285CBFE900E66073 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				2718298A285CDCED00E66073 /* Cells */,
+				27182979285CC04200E66073 /* ExchangesListMasterAssembler.swift */,
+				2718297B285CC05A00E66073 /* ExchangesListMasterNavigator.swift */,
+				27182977285CC02300E66073 /* ExchangesListMasterViewController.swift */,
+				2718297F285CC07900E66073 /* ExchangesListMasterViewController.xib */,
+				2718297D285CC06900E66073 /* ExchangesListMasterViewModel.swift */,
+				27182988285CCC0900E66073 /* ExchangesListMasterRepository.swift */,
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		27182976285CBFF000E66073 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		2718298A285CDCED00E66073 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				2718298B285CDD0700E66073 /* ExchangesListMasterCellModel.swift */,
+				2718298D285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift */,
+				2718298F285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
 		271D71CB2854E41D00A52DBB /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -847,6 +915,7 @@
 			isa = PBXGroup;
 			children = (
 				271D71D128572C2300A52DBB /* UIImageView+Builder.swift */,
+				27182992285CF3A500E66073 /* UIImageView+LoadThumbnail.swift */,
 			);
 			path = UIImageView;
 			sourceTree = "<group>";
@@ -1327,6 +1396,7 @@
 			children = (
 				279B6711278462E400480155 /* Common */,
 				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
+				27182973285CBFCA00E66073 /* Exchanges */,
 				278FD02F27DE497100A54EAB /* Login */,
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
 				270F0FBB279D6D99005DE9FB /* Chat */,
@@ -2340,8 +2410,10 @@
 				278080DC27AF1DB700AA44E3 /* SelectViewController.xib in Resources */,
 				270F0FC3279D6DF1005DE9FB /* ChatViewController.xib in Resources */,
 				2781E37027CE7CFC0011BE14 /* Flags.xcassets in Resources */,
+				27182985285CC12D00E66073 /* ExchangesListMasterViewController.xib in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 				2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */,
+				27182990285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib in Resources */,
 				2794AAD027F1B3FD00E30828 /* FuelHomeViewController.xib in Resources */,
 				278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */,
 				277B58C827B0093E00EAEA24 /* TitleHeaderFooterView.xib in Resources */,
@@ -2399,6 +2471,7 @@
 				2787E31E27B94D3700DC5523 /* ScrollingPageControl.swift in Sources */,
 				2763D39327A5D5C600796FA8 /* Message.swift in Sources */,
 				279B670C27845F7900480155 /* TutorialAssembler.swift in Sources */,
+				27182987285CC13200E66073 /* ExchangesListMasterViewModel.swift in Sources */,
 				2794AACE27F1AFD900E30828 /* DefaultRepository.swift in Sources */,
 				27ABA0F8273184B9000FD326 /* SimpleTokenPriceResponse.swift in Sources */,
 				278FD04227DE55F800A54EAB /* TitleTableViewCell.swift in Sources */,
@@ -2436,6 +2509,7 @@
 				278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */,
 				27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */,
 				278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */,
+				27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */,
 				27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
@@ -2454,6 +2528,7 @@
 				278080D427AF1C0400AA44E3 /* OpenSelectRouterInput.swift in Sources */,
 				27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */,
 				2763D39727A5D76A00796FA8 /* MessageKind.swift in Sources */,
+				27182982285CC12500E66073 /* ExchangesListMasterAssembler.swift in Sources */,
 				2780809927AF0D4A00AA44E3 /* TextInputTableViewCell.swift in Sources */,
 				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
@@ -2483,6 +2558,7 @@
 				27BB132A2788B1EE00B5FE4D /* MainAssembler.swift in Sources */,
 				2794AAC627F1AF3A00E30828 /* FuelHomeAssembler.swift in Sources */,
 				2794AAD227F1B56B00E30828 /* FuelHomeAPIResponse.swift in Sources */,
+				27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
 				27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
@@ -2561,6 +2637,7 @@
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
 				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
+				27182984285CC12A00E66073 /* ExchangesListMasterViewController.swift in Sources */,
 				270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */,
 				2794AACC27F1AFC300E30828 /* FuelHomeViewModel.swift in Sources */,
 				278080BB27AF18F800AA44E3 /* ToggleInputTableViewCell.swift in Sources */,
@@ -2573,6 +2650,7 @@
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
 				27BB132C2788B1FC00B5FE4D /* MainViewController.swift in Sources */,
 				2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */,
+				2718298E285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift in Sources */,
 				2781E35A27CD15D90011BE14 /* CountryPickerTableViewCell.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
@@ -2587,6 +2665,7 @@
 				27ABA0B327296F62000FD326 /* EventsCountriesResponse.swift in Sources */,
 				271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */,
 				27ABA0D02729ADB3000FD326 /* DerivativesResponse.swift in Sources */,
+				2718298C285CDD0700E66073 /* ExchangesListMasterCellModel.swift in Sources */,
 				27ABA10527318B20000FD326 /* ExchangesIdRequest.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,
 				2794AAC827F1AF4F00E30828 /* FuelHomeViewController.swift in Sources */,
@@ -2597,6 +2676,7 @@
 				27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */,
 				27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */,
 				27397E36280B14AD00093CB8 /* LoggingService.swift in Sources */,
+				27182981285CC12200E66073 /* ExchangesListMasterNavigator.swift in Sources */,
 				2763D37627A47C7B00796FA8 /* UIColor+Hex.swift in Sources */,
 				27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */,
 				27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */,

@@ -6,11 +6,11 @@
 import Foundation
 
 
-protocol NetworkService {
+protocol NetworkServiceProtocol {
     func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void)
 }
 
-final class DefaultNetworkService: NetworkService {
+final class DefaultNetworkService: NetworkServiceProtocol {
 
     func request<Request: DataRequest>(_ request: Request, completion: @escaping (Result<Request.Response, Error>) -> Void) {
 
@@ -66,9 +66,6 @@ final class DefaultNetworkService: NetworkService {
             guard let data = data else {
                 return completion(.failure(NSError()))
             }
-
-            let str = String(decoding: data, as: UTF8.self)
-            NSLog(str)
 
             do {
                 try completion(.success(request.decode(data)))
