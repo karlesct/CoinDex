@@ -13,14 +13,13 @@ class TestViewController: UIViewController {
             self.scrollView.showsHorizontalScrollIndicator = false
         }
     }
-    let stackView = UIStackView()
-
-    private var pages: [UIView]?
+    
     @IBOutlet var pageControl: ScrollingPageControl! {
         didSet {
             self.pageControl.backgroundColor = .clear
         }
     }
+    
     var viewModel: TutorialViewModelProtocol? {
         didSet {
             var viewControllers: [UIView]? = []
@@ -34,6 +33,9 @@ class TestViewController: UIViewController {
         }
     }
 
+    let stackView = UIStackView()
+    private var pages: [UIView]?
+    
     override func viewDidLoad() {
         super.viewDidLoad()
 
@@ -44,7 +46,6 @@ class TestViewController: UIViewController {
 
 
         pageControl.pages = pages?.count ?? 0
-//        pageControl.delegate = self
 
         view.addSubview(scrollView)
 

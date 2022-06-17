@@ -15,6 +15,8 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
     var appDelegateAssembler: AppDelegateAssembler?
     var composite: AppDelegateType?
     
+    public var window: UIWindow?
+    
     override init() {
         super.init()
         let assembler = AppDelegateAssembler()
@@ -29,6 +31,7 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         _ = composite?.application?(application, didFinishLaunchingWithOptions: launchOptions)
         
         if let initialViewController = appDelegateAssembler?.launchScreenAssembler.viewController() {
+            window = appDelegateAssembler?.window
             appDelegateAssembler?.navigationController.viewControllers = [initialViewController]
             appDelegateAssembler?.window.rootViewController = appDelegateAssembler?.navigationController
             appDelegateAssembler?.window.makeKeyAndVisible()

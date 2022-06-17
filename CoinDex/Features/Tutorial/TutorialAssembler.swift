@@ -14,17 +14,17 @@ final class TutorialAssembler {
 
     // MARK: - Methods
 
-    func viewController() -> UIViewController {
-        let viewController = TestViewController.loadFromNib()
-        viewController.viewModel = self.viewModel()
-        return viewController
-    }
-
 //    func viewController() -> UIViewController {
-//        let viewController = TutorialViewController.loadFromNib()
+//        let viewController = TestViewController.loadFromNib()
 //        viewController.viewModel = self.viewModel()
 //        return viewController
 //    }
+
+    func viewController() -> UIViewController {
+        let viewController = TutorialViewController.loadFromNib()
+        viewController.viewModel = self.viewModel()
+        return viewController
+    }
 
     private func viewModel() -> TutorialViewModelProtocol {
         let viewModel = TutorialViewModel()

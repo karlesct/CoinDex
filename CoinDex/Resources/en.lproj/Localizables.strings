@@ -1,0 +1,39 @@
+//
+//  Copyright © 2022 CCT. All rights reserved.
+//
+
+
+// MARK: - Literals
+
+"literal_accept" = "Accept";
+"literal_cancel" = "Cancel";
+"literal_settings" = "Settings";
+"literal_retry" = "Retry";
+"literal_permission" = "Permission";
+"literal_information" = "Information";
+"literal_download" = "Download";
+"literal_error" = "Error";
+
+// MARK: - Tutorial
+
+"tutorial_image_page_1" = "👽";
+"tutorial_title_page_1" = "title_1";
+"tutorial_body_page_1" = "body_1";
+
+"tutorial_image_page_2" = "🥶";
+"tutorial_title_page_2" = "title_2";
+"tutorial_body_page_2" = "body_2";
+
+"tutorial_image_page_3" = "🥵";
+"tutorial_title_page_3" = "title_3";
+"tutorial_body_page_3" = "body_3";
+
+"tutorial_image_page_4" = "😱";
+"tutorial_title_page_4" = "title_4";
+"tutorial_body_page_4" = "body_4";
+
+
+
+
+
+

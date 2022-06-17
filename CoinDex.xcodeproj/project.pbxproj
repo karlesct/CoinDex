@@ -15,6 +15,20 @@
 		270F0FC8279D787E005DE9FB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC7279D787E005DE9FB /* Observable.swift */; };
 		270F0FCA279D7BA3005DE9FB /* BubbleView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC9279D7BA3005DE9FB /* BubbleView.swift */; };
 		27182935285C788C00E66073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 27182934285C788C00E66073 /* README.md */; };
+		2718294C285C919700E66073 /* String+EmptyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718294B285C919700E66073 /* String+EmptyTest.swift */; };
+		27182950285C93F400E66073 /* LoggingServiceAssemblerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718294F285C93F400E66073 /* LoggingServiceAssemblerTest.swift */; };
+		27182952285C9B1100E66073 /* LoggingServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182951285C9B1100E66073 /* LoggingServiceTest.swift */; };
+		27182955285C9DDF00E66073 /* NibLoadableTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182954285C9DDF00E66073 /* NibLoadableTest.swift */; };
+		27182958285C9E3400E66073 /* ReusableCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182957285C9E3400E66073 /* ReusableCellTest.swift */; };
+		2718295B285C9E7C00E66073 /* TestCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27182959285C9E7C00E66073 /* TestCell.xib */; };
+		2718295C285C9E7C00E66073 /* TestCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718295A285C9E7C00E66073 /* TestCell.swift */; };
+		27182964285CA01B00E66073 /* Localizables.strings in Resources */ = {isa = PBXBuildFile; fileRef = 27182966285CA01B00E66073 /* Localizables.strings */; };
+		27182969285CA05E00E66073 /* String+RegexTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182967285CA05E00E66073 /* String+RegexTest.swift */; };
+		2718296A285CA05E00E66073 /* String+LocalizedTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182968285CA05E00E66073 /* String+LocalizedTest.swift */; };
+		2718296C285CA12500E66073 /* UIAlertController+BuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718296B285CA12500E66073 /* UIAlertController+BuilderTest.swift */; };
+		2718296F285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718296E285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift */; };
+		27182971285CB0CB00E66073 /* String+Regex.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718295D285C9FB100E66073 /* String+Regex.swift */; };
+		27182972285CB0CF00E66073 /* String+Localized.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718295E285C9FB100E66073 /* String+Localized.swift */; };
 		271B08242853EEA800AF1790 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B08232853EEA800AF1790 /* CustomAlert.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
@@ -281,6 +295,20 @@
 		270F0FC7279D787E005DE9FB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
 		270F0FC9279D7BA3005DE9FB /* BubbleView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = BubbleView.swift; sourceTree = "<group>"; };
 		27182934285C788C00E66073 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
+		2718294B285C919700E66073 /* String+EmptyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmptyTest.swift"; sourceTree = "<group>"; };
+		2718294F285C93F400E66073 /* LoggingServiceAssemblerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingServiceAssemblerTest.swift; sourceTree = "<group>"; };
+		27182951285C9B1100E66073 /* LoggingServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingServiceTest.swift; sourceTree = "<group>"; };
+		27182954285C9DDF00E66073 /* NibLoadableTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NibLoadableTest.swift; sourceTree = "<group>"; };
+		27182957285C9E3400E66073 /* ReusableCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ReusableCellTest.swift; sourceTree = "<group>"; };
+		27182959285C9E7C00E66073 /* TestCell.xib */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = file.xib; path = TestCell.xib; sourceTree = "<group>"; };
+		2718295A285C9E7C00E66073 /* TestCell.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = TestCell.swift; sourceTree = "<group>"; };
+		2718295D285C9FB100E66073 /* String+Regex.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Regex.swift"; sourceTree = "<group>"; };
+		2718295E285C9FB100E66073 /* String+Localized.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+Localized.swift"; sourceTree = "<group>"; };
+		27182965285CA01B00E66073 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/Localizables.strings; sourceTree = "<group>"; };
+		27182967285CA05E00E66073 /* String+RegexTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+RegexTest.swift"; sourceTree = "<group>"; };
+		27182968285CA05E00E66073 /* String+LocalizedTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "String+LocalizedTest.swift"; sourceTree = "<group>"; };
+		2718296B285CA12500E66073 /* UIAlertController+BuilderTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIAlertController+BuilderTest.swift"; sourceTree = "<group>"; };
+		2718296E285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "ViewController+GetTopViewControllerTest.swift"; sourceTree = "<group>"; };
 		271B08232853EEA800AF1790 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
@@ -585,6 +613,228 @@
 			path = Bubble;
 			sourceTree = "<group>";
 		};
+		27182936285C909200E66073 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+		27182937285C90AA00E66073 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				2718294A285C915A00E66073 /* String */,
+				27182949285C915300E66073 /* UIAlertController */,
+				27182948285C914D00E66073 /* UIButton */,
+				27182947285C914600E66073 /* UIColor */,
+				27182946285C914000E66073 /* UIImage */,
+				27182945285C913700E66073 /* UIImageView */,
+				27182944285C912F00E66073 /* UILabel */,
+				27182943285C912600E66073 /* URLRequest */,
+				27182942285C912000E66073 /* UIStackView */,
+				27182941285C911A00E66073 /* UITableView */,
+				27182940285C911300E66073 /* UITextView */,
+				2718293F285C910C00E66073 /* UIView */,
+				2718296D285CA46500E66073 /* UIViewController */,
+				2718293E285C910400E66073 /* WKWebView */,
+				2718293D285C90FC00E66073 /* Window */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		27182938285C90B400E66073 /* Features */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Features;
+			sourceTree = "<group>";
+		};
+		27182939285C90BD00E66073 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				2718294E285C93AA00E66073 /* Logging */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		2718293A285C90CD00E66073 /* UIComponents */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIComponents;
+			sourceTree = "<group>";
+		};
+		2718293B285C90D700E66073 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				2718295A285C9E7C00E66073 /* TestCell.swift */,
+				27182959285C9E7C00E66073 /* TestCell.xib */,
+				27182956285C9E2100E66073 /* ReusableCell */,
+				27182953285C9C6600E66073 /* NibLoadable */,
+				2718294D285C92F100E66073 /* DeepLinking */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		2718293C285C90E300E66073 /* Network */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Network;
+			sourceTree = "<group>";
+		};
+		2718293D285C90FC00E66073 /* Window */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Window;
+			sourceTree = "<group>";
+		};
+		2718293E285C910400E66073 /* WKWebView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = WKWebView;
+			sourceTree = "<group>";
+		};
+		2718293F285C910C00E66073 /* UIView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIView;
+			sourceTree = "<group>";
+		};
+		27182940285C911300E66073 /* UITextView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITextView;
+			sourceTree = "<group>";
+		};
+		27182941285C911A00E66073 /* UITableView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UITableView;
+			sourceTree = "<group>";
+		};
+		27182942285C912000E66073 /* UIStackView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIStackView;
+			sourceTree = "<group>";
+		};
+		27182943285C912600E66073 /* URLRequest */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = URLRequest;
+			sourceTree = "<group>";
+		};
+		27182944285C912F00E66073 /* UILabel */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UILabel;
+			sourceTree = "<group>";
+		};
+		27182945285C913700E66073 /* UIImageView */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIImageView;
+			sourceTree = "<group>";
+		};
+		27182946285C914000E66073 /* UIImage */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIImage;
+			sourceTree = "<group>";
+		};
+		27182947285C914600E66073 /* UIColor */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIColor;
+			sourceTree = "<group>";
+		};
+		27182948285C914D00E66073 /* UIButton */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = UIButton;
+			sourceTree = "<group>";
+		};
+		27182949285C915300E66073 /* UIAlertController */ = {
+			isa = PBXGroup;
+			children = (
+				2718296B285CA12500E66073 /* UIAlertController+BuilderTest.swift */,
+			);
+			path = UIAlertController;
+			sourceTree = "<group>";
+		};
+		2718294A285C915A00E66073 /* String */ = {
+			isa = PBXGroup;
+			children = (
+				27182968285CA05E00E66073 /* String+LocalizedTest.swift */,
+				27182967285CA05E00E66073 /* String+RegexTest.swift */,
+				2718294B285C919700E66073 /* String+EmptyTest.swift */,
+			);
+			path = String;
+			sourceTree = "<group>";
+		};
+		2718294D285C92F100E66073 /* DeepLinking */ = {
+			isa = PBXGroup;
+			children = (
+				27924736281EB7B600737A1C /* DeepLinkingTests.swift */,
+			);
+			path = DeepLinking;
+			sourceTree = "<group>";
+		};
+		2718294E285C93AA00E66073 /* Logging */ = {
+			isa = PBXGroup;
+			children = (
+				2718294F285C93F400E66073 /* LoggingServiceAssemblerTest.swift */,
+				27182951285C9B1100E66073 /* LoggingServiceTest.swift */,
+			);
+			path = Logging;
+			sourceTree = "<group>";
+		};
+		27182953285C9C6600E66073 /* NibLoadable */ = {
+			isa = PBXGroup;
+			children = (
+				27182954285C9DDF00E66073 /* NibLoadableTest.swift */,
+			);
+			path = NibLoadable;
+			sourceTree = "<group>";
+		};
+		27182956285C9E2100E66073 /* ReusableCell */ = {
+			isa = PBXGroup;
+			children = (
+				27182957285C9E3400E66073 /* ReusableCellTest.swift */,
+			);
+			path = ReusableCell;
+			sourceTree = "<group>";
+		};
+		2718296D285CA46500E66073 /* UIViewController */ = {
+			isa = PBXGroup;
+			children = (
+				2718296E285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift */,
+			);
+			path = UIViewController;
+			sourceTree = "<group>";
+		};
+		27182970285CAD9F00E66073 /* Test */ = {
+			isa = PBXGroup;
+			children = (
+				2787E31F27B94DDC00DC5523 /* TestViewController.swift */,
+				2787E32127B94EB000DC5523 /* TestViewController.xib */,
+			);
+			path = Test;
+			sourceTree = "<group>";
+		};
 		271D71CB2854E41D00A52DBB /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -840,6 +1090,8 @@
 		271EEA4227208BA600BA30FD /* String */ = {
 			isa = PBXGroup;
 			children = (
+				2718295D285C9FB100E66073 /* String+Regex.swift */,
+				2718295E285C9FB100E66073 /* String+Localized.swift */,
 				271EEA4327208BC300BA30FD /* String+Empty.swift */,
 				279B67272784C64E00480155 /* String+TextToImage.swift */,
 				2781E36D27CD2E530011BE14 /* String+GetFlag.swift */,
@@ -1026,8 +1278,14 @@
 		2758FC762709B46A009BCB5A /* CoinDexTests */ = {
 			isa = PBXGroup;
 			children = (
+				27182936285C909200E66073 /* Resources */,
+				27182937285C90AA00E66073 /* Extensions */,
+				27182938285C90B400E66073 /* Features */,
+				27182939285C90BD00E66073 /* Services */,
+				2718293A285C90CD00E66073 /* UIComponents */,
+				2718293B285C90D700E66073 /* Utils */,
+				2718293C285C90E300E66073 /* Network */,
 				2758FC772709B46A009BCB5A /* CoinDexTests.swift */,
-				27924736281EB7B600737A1C /* DeepLinkingTests.swift */,
 				2758FC792709B46A009BCB5A /* Info.plist */,
 			);
 			path = CoinDexTests;
@@ -1068,13 +1326,13 @@
 			isa = PBXGroup;
 			children = (
 				279B6711278462E400480155 /* Common */,
+				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
 				278FD02F27DE497100A54EAB /* Login */,
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
 				270F0FBB279D6D99005DE9FB /* Chat */,
 				2781E35327CD14380011BE14 /* CountryPicker */,
 				278080A227AF107900AA44E3 /* FormDemo */,
 				2794AAC427F1AF1B00E30828 /* Fuel */,
-				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
 				27BB13282788B1CD00B5FE4D /* Main */,
 				2787E31527B93E9C00DC5523 /* TabBar */,
 				2787E32327C16D7300DC5523 /* TAndC */,
@@ -1105,6 +1363,7 @@
 				2758FCF62709D56C009BCB5A /* Generated */,
 				2758FC9B2709B58D009BCB5A /* Environments */,
 				2758FC692709B469009BCB5A /* Assets.xcassets */,
+				27182966285CA01B00E66073 /* Localizables.strings */,
 			);
 			path = Resources;
 			sourceTree = "<group>";
@@ -1626,13 +1885,12 @@
 		279B670A27845F5E00480155 /* Tutorial */ = {
 			isa = PBXGroup;
 			children = (
+				27182970285CAD9F00E66073 /* Test */,
 				279B6716278467F700480155 /* Page */,
 				279B670B27845F7900480155 /* TutorialAssembler.swift */,
 				279B670F2784617600480155 /* TutorialViewController.swift */,
 				279B67142784652A00480155 /* TutorialViewController.xib */,
 				279B670D2784616900480155 /* TutorialViewModel.swift */,
-				2787E31F27B94DDC00DC5523 /* TestViewController.swift */,
-				2787E32127B94EB000DC5523 /* TestViewController.xib */,
 			);
 			path = Tutorial;
 			sourceTree = "<group>";
@@ -2087,6 +2345,7 @@
 				2794AAD027F1B3FD00E30828 /* FuelHomeViewController.xib in Resources */,
 				278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */,
 				277B58C827B0093E00EAEA24 /* TitleHeaderFooterView.xib in Resources */,
+				27182964285CA01B00E66073 /* Localizables.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2094,6 +2353,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				2718295B285C9E7C00E66073 /* TestCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2179,6 +2439,7 @@
 				27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
+				27182971285CB0CB00E66073 /* String+Regex.swift in Sources */,
 				270F0FC5279D71ED005DE9FB /* ChatUseCase.swift in Sources */,
 				278FD03527DE49A800A54EAB /* LoginNavigator.swift in Sources */,
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
@@ -2279,6 +2540,7 @@
 				2787E33927C243E800DC5523 /* PermissionTypeEnum.swift in Sources */,
 				2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */,
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
+				27182972285CB0CF00E66073 /* String+Localized.swift in Sources */,
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
 				2763D38927A5CE6100796FA8 /* UITableView+ReusableCell.swift in Sources */,
 				2794AAD427F1B67500E30828 /* FuelHomeAPIRequest.swift in Sources */,
@@ -2359,8 +2621,18 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				27182958285C9E3400E66073 /* ReusableCellTest.swift in Sources */,
+				2718296A285CA05E00E66073 /* String+LocalizedTest.swift in Sources */,
+				2718295C285C9E7C00E66073 /* TestCell.swift in Sources */,
 				27924737281EB7B600737A1C /* DeepLinkingTests.swift in Sources */,
+				2718296C285CA12500E66073 /* UIAlertController+BuilderTest.swift in Sources */,
+				27182955285C9DDF00E66073 /* NibLoadableTest.swift in Sources */,
+				2718296F285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift in Sources */,
 				2758FC782709B46A009BCB5A /* CoinDexTests.swift in Sources */,
+				27182950285C93F400E66073 /* LoggingServiceAssemblerTest.swift in Sources */,
+				2718294C285C919700E66073 /* String+EmptyTest.swift in Sources */,
+				27182969285CA05E00E66073 /* String+RegexTest.swift in Sources */,
+				27182952285C9B1100E66073 /* LoggingServiceTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2388,6 +2660,14 @@
 /* End PBXTargetDependency section */
 
 /* Begin PBXVariantGroup section */
+		27182966285CA01B00E66073 /* Localizables.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				27182965285CA01B00E66073 /* en */,
+			);
+			name = Localizables.strings;
+			sourceTree = "<group>";
+		};
 		2758FC6B2709B469009BCB5A /* LaunchScreen.storyboard */ = {
 			isa = PBXVariantGroup;
 			children = (
