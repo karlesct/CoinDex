@@ -39,6 +39,11 @@
 		2718298E285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718298D285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift */; };
 		27182990285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718298F285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib */; };
 		27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182992285CF3A500E66073 /* UIImageView+LoadThumbnail.swift */; };
+		27182996285D04B700E66073 /* ExchangesDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182995285D04B700E66073 /* ExchangesDetailRepository.swift */; };
+		27182998285D04C900E66073 /* ExchangesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182997285D04C900E66073 /* ExchangesDetailViewModel.swift */; };
+		2718299A285D04DA00E66073 /* ExchangesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182999285D04DA00E66073 /* ExchangesDetailViewController.swift */; };
+		2718299C285D04E600E66073 /* ExchangesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */; };
+		2718299E285D04FE00E66073 /* ExchangesDetailAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */; };
 		271B08242853EEA800AF1790 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B08232853EEA800AF1790 /* CustomAlert.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
@@ -329,6 +334,11 @@
 		2718298D285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterTableViewCell.swift; sourceTree = "<group>"; };
 		2718298F285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesListMasterTableViewCell.xib; sourceTree = "<group>"; };
 		27182992285CF3A500E66073 /* UIImageView+LoadThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadThumbnail.swift"; sourceTree = "<group>"; };
+		27182995285D04B700E66073 /* ExchangesDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailRepository.swift; sourceTree = "<group>"; };
+		27182997285D04C900E66073 /* ExchangesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailViewModel.swift; sourceTree = "<group>"; };
+		27182999285D04DA00E66073 /* ExchangesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailViewController.swift; sourceTree = "<group>"; };
+		2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailViewController.xib; sourceTree = "<group>"; };
+		2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailAssembler.swift; sourceTree = "<group>"; };
 		271B08232853EEA800AF1790 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
@@ -889,6 +899,12 @@
 		27182976285CBFF000E66073 /* Detail */ = {
 			isa = PBXGroup;
 			children = (
+				27182994285D049100E66073 /* Cells */,
+				2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */,
+				27182997285D04C900E66073 /* ExchangesDetailViewModel.swift */,
+				2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */,
+				27182999285D04DA00E66073 /* ExchangesDetailViewController.swift */,
+				27182995285D04B700E66073 /* ExchangesDetailRepository.swift */,
 			);
 			path = Detail;
 			sourceTree = "<group>";
@@ -899,6 +915,13 @@
 				2718298B285CDD0700E66073 /* ExchangesListMasterCellModel.swift */,
 				2718298D285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift */,
 				2718298F285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		27182994285D049100E66073 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -2417,6 +2440,7 @@
 				2794AAD027F1B3FD00E30828 /* FuelHomeViewController.xib in Resources */,
 				278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */,
 				277B58C827B0093E00EAEA24 /* TitleHeaderFooterView.xib in Resources */,
+				2718299C285D04E600E66073 /* ExchangesDetailViewController.xib in Resources */,
 				27182964285CA01B00E66073 /* Localizables.strings in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
@@ -2507,6 +2531,7 @@
 				2780808E27AF0BCD00AA44E3 /* FormSection.swift in Sources */,
 				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
 				278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */,
+				27182998285D04C900E66073 /* ExchangesDetailViewModel.swift in Sources */,
 				27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */,
 				278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */,
 				27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */,
@@ -2614,6 +2639,7 @@
 				278080D227AF1BD100AA44E3 /* SelectableItem.swift in Sources */,
 				27BB132E2788B20800B5FE4D /* MainNavigator.swift in Sources */,
 				2787E33927C243E800DC5523 /* PermissionTypeEnum.swift in Sources */,
+				27182996285D04B700E66073 /* ExchangesDetailRepository.swift in Sources */,
 				2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */,
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				27182972285CB0CF00E66073 /* String+Localized.swift in Sources */,
@@ -2637,6 +2663,7 @@
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
 				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
+				2718299E285D04FE00E66073 /* ExchangesDetailAssembler.swift in Sources */,
 				27182984285CC12A00E66073 /* ExchangesListMasterViewController.swift in Sources */,
 				270F0FBD279D6DC1005DE9FB /* ChatAssembler.swift in Sources */,
 				2794AACC27F1AFC300E30828 /* FuelHomeViewModel.swift in Sources */,
@@ -2653,6 +2680,7 @@
 				2718298E285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift in Sources */,
 				2781E35A27CD15D90011BE14 /* CountryPickerTableViewCell.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
+				2718299A285D04DA00E66073 /* ExchangesDetailViewController.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
 				271B08242853EEA800AF1790 /* CustomAlert.swift in Sources */,
 				278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */,

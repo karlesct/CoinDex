@@ -33,7 +33,7 @@ final class ExchangesListMasterNavigator: Navigator {
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
         case let .detail(id):
-            let assembler = MainAssembler(navigationController: self.navigationController)
+            let assembler = ExchangesDetailAssembler(id: id)
             return assembler.viewController()
         }
     }
