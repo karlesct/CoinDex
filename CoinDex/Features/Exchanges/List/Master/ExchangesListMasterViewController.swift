@@ -32,12 +32,14 @@ class ExchangesListMasterViewController: UIViewController {
         super.viewDidLoad()
         
         self.viewModel?.view = self
+        
+        self.title = self.viewModel?.title
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        self.viewModel?.viewWillAppear()
+        self.viewModel?.willAppear()
         
     }
     

@@ -5,11 +5,11 @@
 
 import Foundation
 
-protocol ExchangesListMasterViewModelProtocol {
-    var dataSource: [TModel]? { get set }
+protocol ExchangesListMasterViewModelProtocol: TitleProtocol,
+                                               DatasourceProtocol,
+                                               WillAppearProtocol {
     var page: Int { get set }
     var view: ExchangesListMasterViewProtocol? { get set }
-    func viewWillAppear()
 }
 
 protocol ExchangesListMasterViewProtocol: AnyObject {
@@ -20,6 +20,8 @@ protocol ExchangesListMasterViewProtocol: AnyObject {
 class ExchangesListMasterViewModel: ExchangesListMasterViewModelProtocol {
 
     // MARK: - Properties
+    
+    var title: String = "exchange_list_master_title".localized
     
     var dataSource: [TModel]? = [] {
         didSet {
@@ -45,7 +47,7 @@ class ExchangesListMasterViewModel: ExchangesListMasterViewModelProtocol {
 
     // MARK: - Methods
     
-    func viewWillAppear() {
+    func willAppear() {
         self.doRequest(page: self.page)
     }
     

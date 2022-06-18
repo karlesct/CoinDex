@@ -13,9 +13,12 @@ import Foundation
 struct ExchangesIdRequest: DataRequest {
 
     let baseURL: String
+    let id: String
 
-    init(baseURL: String) {
+    init(baseURL: String,
+         id: String) {
         self.baseURL = baseURL
+        self.id = id
     }
 
     var url: String {
@@ -23,7 +26,7 @@ struct ExchangesIdRequest: DataRequest {
     }
 
     var path: String {
-        return "/exchanges/binance"
+        return "/exchanges/\(self.id)"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {

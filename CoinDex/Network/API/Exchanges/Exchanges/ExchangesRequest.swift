@@ -38,8 +38,8 @@ struct ExchangesRequest: DataRequest {
 
     var queryItems: [String : String]? {
         [
-            "per_page" : "\(perPage)",                // Valid values: 1...250 | Total results per page | Default value: 100
-            "page" : "\(page)",                     // page through results. Max: 6
+            "per_page" : "\(self.perPage)",                // Valid values: 1...250 | Total results per page | Default value: 100
+            "page" : "\(self.page)",                     // page through results. Max: 6
         ]
     }
 

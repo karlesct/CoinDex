@@ -5,10 +5,10 @@
 
 import Foundation
 
-protocol ExchangesDetailViewModelProtocol {
-    var dataSource: [TModel]? { get set }
+protocol ExchangesDetailViewModelProtocol: TitleProtocol,
+                                           DatasourceProtocol,
+                                           WillAppearProtocol{
     var view: ExchangesDetailViewProtocol? { get set }
-    func viewWillAppear()
 }
 
 protocol ExchangesDetailViewProtocol: AnyObject {
@@ -19,6 +19,8 @@ protocol ExchangesDetailViewProtocol: AnyObject {
 class ExchangesDetailViewModel: ExchangesDetailViewModelProtocol {
 
     // MARK: - Properties
+    
+    var title: String = "exchange_detail_title".localized
     
     var dataSource: [TModel]? = [] {
         didSet {
@@ -41,13 +43,13 @@ class ExchangesDetailViewModel: ExchangesDetailViewModelProtocol {
 
     // MARK: - Methods
     
-    func viewWillAppear() {
+    func willAppear() {
         self.doRequest()
     }
     
     private func doRequest() {
         self.view?.setLoading(isLoading: true)
-        self.repository.fetchList(page: 0) { [weak self] result in
+        self.repository.fetchList(id: self.id) { [weak self] result in
             switch result {
             case let .success(item):
                 self?.dataSource?.append(contentsOf: item)

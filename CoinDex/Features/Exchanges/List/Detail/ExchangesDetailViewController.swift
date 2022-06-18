@@ -16,7 +16,7 @@ class ExchangesDetailViewController: UIViewController {
             self.tableView.rowHeight = UITableView.automaticDimension
             self.tableView.tableFooterView = UIView()
             
-            self.tableView.register(ExchangesListMasterTableViewCell.self)
+            self.tableView.register(ExchangesDetailTableViewCell.self)
         }
     }
     
@@ -30,12 +30,14 @@ class ExchangesDetailViewController: UIViewController {
         super.viewDidLoad()
         
         self.viewModel?.view = self
+        
+        self.title = self.viewModel?.title
     }
     
-    override func viewDidAppear(_ animated: Bool) {
-        super.viewDidAppear(animated)
+    override func viewWillAppear(_ animated: Bool) {
+        super.viewWillAppear(animated)
         
-        self.viewModel?.viewWillAppear()
+        self.viewModel?.willAppear()
         
     }
     
@@ -49,11 +51,10 @@ extension ExchangesDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let item = self.viewModel?.dataSource?[indexPath.row] as? ExchangesListMasterCellModel {
-            let cell = self.tableView.dequeueReusableCell(ExchangesListMasterTableViewCell.self,
+        if let item = self.viewModel?.dataSource?[indexPath.row] as? ExchangesDetailCellModel {
+            let cell = self.tableView.dequeueReusableCell(ExchangesDetailTableViewCell.self,
                                                           for: indexPath)
-            cell.bind(item: item,
-                      delegate: self)
+            cell.bind(item: item)
             return cell
         }
         return UITableViewCell()
@@ -63,12 +64,6 @@ extension ExchangesDetailViewController: UITableViewDataSource {
                    numberOfRowsInSection section: Int) -> Int {
         
         return self.viewModel?.dataSource?.count ?? 0
-    }
-}
-
-extension ExchangesDetailViewController: ExchangesListMasterTableViewCellDelegate {
-    func selectedCell(id: String?) {
-        
     }
 }
 

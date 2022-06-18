@@ -4,8 +4,8 @@
 
 
 protocol ExchangesDetailRepositoryProtocol {
-    func fetchList(page: Int,
-                   completion: @escaping (Result<[ExchangesListMasterCellModel], Error>) -> Void)
+    func fetchList(id: String,
+                   completion: @escaping (Result<[TModel], Error>) -> Void)
 }
 
 class ExchangesDetailRepository: ExchangesDetailRepositoryProtocol {
@@ -25,12 +25,12 @@ class ExchangesDetailRepository: ExchangesDetailRepositoryProtocol {
 
     // MARK: - Methods
 
-    func fetchList(page: Int,
-                   completion: @escaping (Result<[ExchangesListMasterCellModel], Error>) -> Void) {
-        self.networkService.request(ExchangesRequest(baseURL: self.baseURL, page: page)) { result in
+    func fetchList(id: String,
+                   completion: @escaping (Result<[TModel], Error>) -> Void) {
+        self.networkService.request(ExchangesIdRequest(baseURL: self.baseURL, id: id)) { result in
             switch result {
             case let .success(model):
-                let item = ExchangeResponseConverter.convert(exchangeResponse: model)
+                let item = ExchangesIdResponseConverter.convert(model: model)
                 completion(.success(item))
             case let .failure(error):
                 completion(.failure(error))
@@ -39,3 +39,21 @@ class ExchangesDetailRepository: ExchangesDetailRepositoryProtocol {
     }
 }
 
+class ExchangesIdResponseConverter {
+    static func convert(model: ExchangesIdResponse) -> [TModel] {
+        var items: [TModel] = []
+//
+//        let itemDescription = ExchangesDetailCellModel(scoreRank: model.name,
+//                                                 score: model.yearEstablished,
+//                                                 tradeVolume: model.tradeVolume24HBtc,
+//                                                 tradeVolumeNormalized: model.tradeVolume24HBtcNormalized)
+//        items.append(itemDescription)
+        
+        let itemTrust = ExchangesDetailCellModel(scoreRank: model.trustScoreRank,
+                                                 trustScore: model.trustScore,
+                                                 tradeVolumeBtc: model.tradeVolume24HBtc,
+                                                 tradeVolumeNormalizedBtc: model.tradeVolume24HBtcNormalized)
+        items.append(itemTrust)
+        return items
+    }
+}

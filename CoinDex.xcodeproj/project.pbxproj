@@ -45,6 +45,13 @@
 		2718299C285D04E600E66073 /* ExchangesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */; };
 		2718299E285D04FE00E66073 /* ExchangesDetailAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */; };
 		271B08242853EEA800AF1790 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B08232853EEA800AF1790 /* CustomAlert.swift */; };
+		271B26DD285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26DC285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift */; };
+		271B26DF285DB1030046A996 /* ExchangesDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271B26DE285DB1030046A996 /* ExchangesDetailTableViewCell.xib */; };
+		271B26E1285DB10F0046A996 /* ExchangesDetailCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E0285DB10F0046A996 /* ExchangesDetailCellModel.swift */; };
+		271B26E4285DB5990046A996 /* TitleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E3285DB5990046A996 /* TitleProtocol.swift */; };
+		271B26E7285DB64A0046A996 /* DatasourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E6285DB64A0046A996 /* DatasourceProtocol.swift */; };
+		271B26EA285DB6E00046A996 /* AppearProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E9285DB6E00046A996 /* AppearProtocol.swift */; };
+		271B26F0285DB7070046A996 /* DisappearProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26EF285DB7070046A996 /* DisappearProtocol.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
 		271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D128572C2300A52DBB /* UIImageView+Builder.swift */; };
@@ -340,6 +347,13 @@
 		2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailViewController.xib; sourceTree = "<group>"; };
 		2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailAssembler.swift; sourceTree = "<group>"; };
 		271B08232853EEA800AF1790 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
+		271B26DC285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailTableViewCell.swift; sourceTree = "<group>"; };
+		271B26DE285DB1030046A996 /* ExchangesDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailTableViewCell.xib; sourceTree = "<group>"; };
+		271B26E0285DB10F0046A996 /* ExchangesDetailCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailCellModel.swift; sourceTree = "<group>"; };
+		271B26E3285DB5990046A996 /* TitleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleProtocol.swift; sourceTree = "<group>"; };
+		271B26E6285DB64A0046A996 /* DatasourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceProtocol.swift; sourceTree = "<group>"; };
+		271B26E9285DB6E00046A996 /* AppearProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearProtocol.swift; sourceTree = "<group>"; };
+		271B26EF285DB7070046A996 /* DisappearProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearProtocol.swift; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
 		271D71D128572C2300A52DBB /* UIImageView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Builder.swift"; sourceTree = "<group>"; };
@@ -922,8 +936,36 @@
 		27182994285D049100E66073 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
+				271B26E0285DB10F0046A996 /* ExchangesDetailCellModel.swift */,
+				271B26DE285DB1030046A996 /* ExchangesDetailTableViewCell.xib */,
+				271B26DC285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift */,
 			);
 			path = Cells;
+			sourceTree = "<group>";
+		};
+		271B26E2285DB5720046A996 /* Title */ = {
+			isa = PBXGroup;
+			children = (
+				271B26E3285DB5990046A996 /* TitleProtocol.swift */,
+			);
+			path = Title;
+			sourceTree = "<group>";
+		};
+		271B26E5285DB61A0046A996 /* Datasoure */ = {
+			isa = PBXGroup;
+			children = (
+				271B26E6285DB64A0046A996 /* DatasourceProtocol.swift */,
+			);
+			path = Datasoure;
+			sourceTree = "<group>";
+		};
+		271B26E8285DB6C40046A996 /* LifeCycle */ = {
+			isa = PBXGroup;
+			children = (
+				271B26E9285DB6E00046A996 /* AppearProtocol.swift */,
+				271B26EF285DB7070046A996 /* DisappearProtocol.swift */,
+			);
+			path = LifeCycle;
 			sourceTree = "<group>";
 		};
 		271D71CB2854E41D00A52DBB /* UILabel */ = {
@@ -1991,6 +2033,9 @@
 		279B6711278462E400480155 /* Common */ = {
 			isa = PBXGroup;
 			children = (
+				271B26E8285DB6C40046A996 /* LifeCycle */,
+				271B26E5285DB61A0046A996 /* Datasoure */,
+				271B26E2285DB5720046A996 /* Title */,
 				279B67222784712900480155 /* T */,
 				2781E36A27CD276B0011BE14 /* Filterable */,
 				27BB13232788AEF500B5FE4D /* Navigator */,
@@ -2414,6 +2459,7 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271B26DF285DB1030046A996 /* ExchangesDetailTableViewCell.xib in Resources */,
 				278FD04A27DE5EB200A54EAB /* TitleTableViewCell.xib in Resources */,
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
 				2787E32727C16E1E00DC5523 /* TAndCViewController.xib in Resources */,
@@ -2489,6 +2535,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271B26F0285DB7070046A996 /* DisappearProtocol.swift in Sources */,
 				278080D827AF1C3900AA44E3 /* SelectViewModel.swift in Sources */,
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
 				278080CA27AF1AB600AA44E3 /* SelectInputCellModel.swift in Sources */,
@@ -2574,12 +2621,14 @@
 				27ABA0CA272993E6000FD326 /* StatusUpdateResponse.swift in Sources */,
 				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
 				27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */,
+				271B26EA285DB6E00046A996 /* AppearProtocol.swift in Sources */,
 				278080B627AF13D500AA44E3 /* DateInputCellModel.swift in Sources */,
 				278080AA27AF110200AA44E3 /* FormDemoViewModel.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
 				278080DA27AF1C5400AA44E3 /* SelectViewController.swift in Sources */,
 				2780808C27AF0BB100AA44E3 /* FormHeader.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
+				271B26DD285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift in Sources */,
 				27BB132A2788B1EE00B5FE4D /* MainAssembler.swift in Sources */,
 				2794AAC627F1AF3A00E30828 /* FuelHomeAssembler.swift in Sources */,
 				2794AAD227F1B56B00E30828 /* FuelHomeAPIResponse.swift in Sources */,
@@ -2590,6 +2639,7 @@
 				27397E4A280B310400093CB8 /* FuelMapAssembler.swift in Sources */,
 				27ABA0B127296F55000FD326 /* EventsCountriesRequest.swift in Sources */,
 				27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */,
+				271B26E4285DB5990046A996 /* TitleProtocol.swift in Sources */,
 				271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */,
 				2787E33727C2420C00DC5523 /* MicrophonePermission.swift in Sources */,
 				27397E43280B2DAC00093CB8 /* LocationWhenInUseHandler.swift in Sources */,
@@ -2626,6 +2676,7 @@
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
 				278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */,
 				279B67102784617600480155 /* TutorialViewController.swift in Sources */,
+				271B26E7285DB64A0046A996 /* DatasourceProtocol.swift in Sources */,
 				27397E4E280B31A600093CB8 /* FuelMapViewController.swift in Sources */,
 				278FD03727DE49B500A54EAB /* LoginViewModel.swift in Sources */,
 				278080CF27AF1B7A00AA44E3 /* Province.swift in Sources */,
@@ -2693,6 +2744,7 @@
 				27ABA0B327296F62000FD326 /* EventsCountriesResponse.swift in Sources */,
 				271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */,
 				27ABA0D02729ADB3000FD326 /* DerivativesResponse.swift in Sources */,
+				271B26E1285DB10F0046A996 /* ExchangesDetailCellModel.swift in Sources */,
 				2718298C285CDD0700E66073 /* ExchangesListMasterCellModel.swift in Sources */,
 				27ABA10527318B20000FD326 /* ExchangesIdRequest.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,

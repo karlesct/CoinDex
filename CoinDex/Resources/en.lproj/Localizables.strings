@@ -32,8 +32,18 @@
 "tutorial_title_page_4" = "title_4";
 "tutorial_body_page_4" = "body_4";
 
+// MARK: - ExchangesListMaster
+
+"exchange_list_master_title" = "Crypto Exchanges";
 
 
+// MARK: - ExchangesDetail
 
+"exchange_detail_title" = "Crypto Exchanges - Info";
 
+// MARK: - ExchangesDetail - Trust Cell
 
+"exchange_detail_trust_cell_score_rank_title" = "Ranking";
+"exchange_detail_trust_cell_trust_score_title" = "Trust Score";
+"exchange_detail_trust_cell_trade_volume_title" = "Volumen BTC en 24h ";
+"exchange_detail_trust_cell_trade_volume_normalized_title" = "Volumen BTC en 24h (normalizado)";
