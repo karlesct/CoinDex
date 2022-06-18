@@ -52,11 +52,13 @@
 		271B26E7285DB64A0046A996 /* DatasourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E6285DB64A0046A996 /* DatasourceProtocol.swift */; };
 		271B26EA285DB6E00046A996 /* AppearProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E9285DB6E00046A996 /* AppearProtocol.swift */; };
 		271B26F0285DB7070046A996 /* DisappearProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26EF285DB7070046A996 /* DisappearProtocol.swift */; };
-		271B26F3285DD0480046A996 /* CALayer+setShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26F2285DD0480046A996 /* CALayer+setShadow.swift */; };
+		271B26F3285DD0480046A996 /* CALayer+SetShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26F2285DD0480046A996 /* CALayer+SetShadow.swift */; };
 		271B26F7285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26F6285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift */; };
 		271B26F9285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271B26F8285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib */; };
 		271B26FB285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26FA285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift */; };
 		271B26FD285DE15A0046A996 /* UITableView+EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26FC285DE15A0046A996 /* UITableView+EmptyView.swift */; };
+		271B2700285DF6E50046A996 /* String+GetFlagTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26FF285DF6E50046A996 /* String+GetFlagTest.swift */; };
+		271B2702285DF7ED0046A996 /* String+TextToImageTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2701285DF7ED0046A996 /* String+TextToImageTest.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
 		271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D128572C2300A52DBB /* UIImageView+Builder.swift */; };
@@ -359,11 +361,13 @@
 		271B26E6285DB64A0046A996 /* DatasourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceProtocol.swift; sourceTree = "<group>"; };
 		271B26E9285DB6E00046A996 /* AppearProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearProtocol.swift; sourceTree = "<group>"; };
 		271B26EF285DB7070046A996 /* DisappearProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearProtocol.swift; sourceTree = "<group>"; };
-		271B26F2285DD0480046A996 /* CALayer+setShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+setShadow.swift"; sourceTree = "<group>"; };
+		271B26F2285DD0480046A996 /* CALayer+SetShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+SetShadow.swift"; sourceTree = "<group>"; };
 		271B26F6285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
 		271B26F8285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailInfoTableViewCell.xib; sourceTree = "<group>"; };
 		271B26FA285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailInfoCellModel.swift; sourceTree = "<group>"; };
 		271B26FC285DE15A0046A996 /* UITableView+EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyView.swift"; sourceTree = "<group>"; };
+		271B26FF285DF6E50046A996 /* String+GetFlagTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+GetFlagTest.swift"; sourceTree = "<group>"; };
+		271B2701285DF7ED0046A996 /* String+TextToImageTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TextToImageTest.swift"; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
 		271D71D128572C2300A52DBB /* UIImageView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Builder.swift"; sourceTree = "<group>"; };
@@ -677,6 +681,7 @@
 		27182937285C90AA00E66073 /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				271B26FE285DF6910046A996 /* CALayer */,
 				2718294A285C915A00E66073 /* String */,
 				27182949285C915300E66073 /* UIAlertController */,
 				27182948285C914D00E66073 /* UIButton */,
@@ -832,9 +837,11 @@
 		2718294A285C915A00E66073 /* String */ = {
 			isa = PBXGroup;
 			children = (
+				2718294B285C919700E66073 /* String+EmptyTest.swift */,
+				271B26FF285DF6E50046A996 /* String+GetFlagTest.swift */,
 				27182968285CA05E00E66073 /* String+LocalizedTest.swift */,
 				27182967285CA05E00E66073 /* String+RegexTest.swift */,
-				2718294B285C919700E66073 /* String+EmptyTest.swift */,
+				271B2701285DF7ED0046A996 /* String+TextToImageTest.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -972,7 +979,7 @@
 		271B26F1285DD0300046A996 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
-				271B26F2285DD0480046A996 /* CALayer+setShadow.swift */,
+				271B26F2285DD0480046A996 /* CALayer+SetShadow.swift */,
 			);
 			path = CALayer;
 			sourceTree = "<group>";
@@ -995,6 +1002,13 @@
 				271B26F8285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib */,
 			);
 			path = Info;
+			sourceTree = "<group>";
+		};
+		271B26FE285DF6910046A996 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = CALayer;
 			sourceTree = "<group>";
 		};
 		271D71CB2854E41D00A52DBB /* UILabel */ = {
@@ -1253,11 +1267,11 @@
 		271EEA4227208BA600BA30FD /* String */ = {
 			isa = PBXGroup;
 			children = (
-				2718295D285C9FB100E66073 /* String+Regex.swift */,
-				2718295E285C9FB100E66073 /* String+Localized.swift */,
 				271EEA4327208BC300BA30FD /* String+Empty.swift */,
-				279B67272784C64E00480155 /* String+TextToImage.swift */,
 				2781E36D27CD2E530011BE14 /* String+GetFlag.swift */,
+				2718295E285C9FB100E66073 /* String+Localized.swift */,
+				2718295D285C9FB100E66073 /* String+Regex.swift */,
+				279B67272784C64E00480155 /* String+TextToImage.swift */,
 			);
 			path = String;
 			sourceTree = "<group>";
@@ -2616,7 +2630,7 @@
 				278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */,
 				27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */,
 				27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */,
-				271B26F3285DD0480046A996 /* CALayer+setShadow.swift in Sources */,
+				271B26F3285DD0480046A996 /* CALayer+SetShadow.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
 				27182971285CB0CB00E66073 /* String+Regex.swift in Sources */,
@@ -2823,8 +2837,10 @@
 				27924737281EB7B600737A1C /* DeepLinkingTests.swift in Sources */,
 				2718296C285CA12500E66073 /* UIAlertController+BuilderTest.swift in Sources */,
 				27182955285C9DDF00E66073 /* NibLoadableTest.swift in Sources */,
+				271B2702285DF7ED0046A996 /* String+TextToImageTest.swift in Sources */,
 				2718296F285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift in Sources */,
 				2758FC782709B46A009BCB5A /* CoinDexTests.swift in Sources */,
+				271B2700285DF6E50046A996 /* String+GetFlagTest.swift in Sources */,
 				27182950285C93F400E66073 /* LoggingServiceAssemblerTest.swift in Sources */,
 				2718294C285C919700E66073 /* String+EmptyTest.swift in Sources */,
 				27182969285CA05E00E66073 /* String+RegexTest.swift in Sources */,
