@@ -32,76 +32,77 @@ class UIAlertController_BuilderTest: XCTestCase {
     func testAlertBuilder_02() {
         
         let item = alert?.with(preferredStyle: .alert)
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_03() {
         
         let item = alert?.with(title: "title")
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
 
     func testAlertBuilder_04() {
         
         let item = alert?.with(message: "message")
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_05() {
         
         let item = alert?.with(alertActions: [UIAlertAction()])
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_06() {
         
         let item = alert?.with(sourceView: UIView())
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_07() {
         
         let item = alert?.with(sourceRect: CGRect())
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_08() {
         
         let item = alert?.addAction(title: "title")
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_09() {
         
         let item = alert?.addAction(title:"title", alertActionStyle: .default, handler: nil)
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_10() {
         
         let item = alert?.with(permittedArrowDirections: .any)
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_11() {
         
         let item = alert?.build()
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
         
     }
     
     func testAlertBuilder_12() {
         
-        let item = alert?.with(title: "title")
+        let item = alert?
+            .with(title: "title")
             .with(message: "message")
             .with(sourceRect: CGRect())
             .with(sourceView: UIView())
@@ -110,7 +111,7 @@ class UIAlertController_BuilderTest: XCTestCase {
                 UIAlertAction(title: "action1", style: .default)
             ])
             .build()
-        XCTAssertTrue(item != nil)
+        XCTAssertNotNil(item)
     }
 
 }

@@ -176,18 +176,9 @@ extension MainViewController {
     }
     
     @objc func chatButtonAction() {
-        let assembler = ChatAssembler()
-        let viewController = assembler.viewController()
-        viewController.modalPresentationStyle = .overFullScreen
-        self.present(viewController,
-                     animated: true,
-                     completion: nil)
     }
     
     @objc func formButtonAction() {
-        let assembler = ChatAssembler()
-        let viewController = assembler.viewController()
-        viewController.modalPresentationStyle = .overFullScreen
         
         let module = FormDemoModule()
         self.present(module.view,
