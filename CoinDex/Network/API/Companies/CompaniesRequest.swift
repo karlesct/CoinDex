@@ -32,11 +32,11 @@ struct CompaniesRequest: DataRequest {
         .get
     }
 
-//    var queryItems: [String : String]? {
-//        [
-//            "coin_id" : "bitcoin"          // bitcoin or ethereum
-//        ]
-//    }
+    var queryItems: [String : String]? {
+        [
+            "coin_id" : "bitcoin"          // bitcoin or ethereum
+        ]
+    }
 
     func decode(_ data: Data) throws -> CompaniesResponse {
         let decoder = JSONDecoder()

@@ -5,6 +5,10 @@
 
 import Foundation
 
-struct PingResponse: Codable {
+protocol PingResponseType {
+    var geckoSays: String { get }
+}
+
+struct PingResponse: Codable, PingResponseType {
     let geckoSays: String
 }

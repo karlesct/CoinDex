@@ -9,7 +9,7 @@ final class LaunchScreenNavigator: Navigator {
 
     enum Destination {
         case coinListMaster
-        case mainTest
+//        case mainTest
     }
 
     private var navigationController: UINavigationController
@@ -32,9 +32,9 @@ final class LaunchScreenNavigator: Navigator {
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
-        case .mainTest:
-            let assembler = MainAssembler(navigationController: self.navigationController)
-            return assembler.viewController()
+//        case .mainTest:
+//            let assembler = MainAssembler(navigationController: self.navigationController)
+//            return assembler.viewController()
         case .coinListMaster:
             let assembler = ExchangesListMasterAssembler(navigationController: self.navigationController)
             return assembler.viewController()

@@ -34,7 +34,7 @@ struct DerivativesRequest: DataRequest {
 
     var queryItems: [String : String]? {
         [
-            "include_tickers" : "unexpired",              // ['all', 'unexpired'] - expired to show unexpired tickers, all to list all tickers, defaults to unexpired
+            "include_tickers" : "unexpired"           // ['all', 'unexpired'] - expired to show unexpired tickers, all to list all tickers, defaults to unexpired
         ]
     }
 
