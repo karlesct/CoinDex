@@ -16,6 +16,15 @@ class ExchangesListMasterTableViewCell: UITableViewCell,
     
     // MARK: - IBoutlets
     
+    @IBOutlet weak var vwContainer: UIView! {
+        didSet {
+            self.vwContainer.layer.cornerRadius = 8
+            self.vwContainer.layer.setShadow()
+        }
+    }
+    
+    @IBOutlet weak var ivLogo: UIImageView!
+    
     @IBOutlet weak var lblName: UILabel! {
         didSet {
             self.lblName.font = .systemFont(ofSize: 17, weight: .medium)
@@ -23,8 +32,12 @@ class ExchangesListMasterTableViewCell: UITableViewCell,
         }
     }
     
-    @IBOutlet weak var ivLogo: UIImageView!
-    
+    @IBOutlet weak var ivIndicator: UIImageView! {
+        didSet {
+            self.ivIndicator.image = .common.disclousureIcon
+            self.ivIndicator.tintColor = .x555555
+        }
+    }
     
     // MARK: - Properties
     
@@ -37,7 +50,7 @@ class ExchangesListMasterTableViewCell: UITableViewCell,
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
-        self.accessoryType = .disclosureIndicator
+        self.backgroundColor = .x00FFFFFF
         
         let tap = UITapGestureRecognizer(target: self,
                                          action: #selector(self.handleTap))

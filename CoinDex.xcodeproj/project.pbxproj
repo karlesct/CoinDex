@@ -45,13 +45,18 @@
 		2718299C285D04E600E66073 /* ExchangesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */; };
 		2718299E285D04FE00E66073 /* ExchangesDetailAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */; };
 		271B08242853EEA800AF1790 /* CustomAlert.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B08232853EEA800AF1790 /* CustomAlert.swift */; };
-		271B26DD285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26DC285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift */; };
-		271B26DF285DB1030046A996 /* ExchangesDetailTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271B26DE285DB1030046A996 /* ExchangesDetailTableViewCell.xib */; };
-		271B26E1285DB10F0046A996 /* ExchangesDetailCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E0285DB10F0046A996 /* ExchangesDetailCellModel.swift */; };
+		271B26DD285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26DC285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift */; };
+		271B26DF285DB1030046A996 /* ExchangesDetailTrustTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271B26DE285DB1030046A996 /* ExchangesDetailTrustTableViewCell.xib */; };
+		271B26E1285DB10F0046A996 /* ExchangesDetailTrustCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E0285DB10F0046A996 /* ExchangesDetailTrustCellModel.swift */; };
 		271B26E4285DB5990046A996 /* TitleProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E3285DB5990046A996 /* TitleProtocol.swift */; };
 		271B26E7285DB64A0046A996 /* DatasourceProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E6285DB64A0046A996 /* DatasourceProtocol.swift */; };
 		271B26EA285DB6E00046A996 /* AppearProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26E9285DB6E00046A996 /* AppearProtocol.swift */; };
 		271B26F0285DB7070046A996 /* DisappearProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26EF285DB7070046A996 /* DisappearProtocol.swift */; };
+		271B26F3285DD0480046A996 /* CALayer+setShadow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26F2285DD0480046A996 /* CALayer+setShadow.swift */; };
+		271B26F7285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26F6285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift */; };
+		271B26F9285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271B26F8285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib */; };
+		271B26FB285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26FA285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift */; };
+		271B26FD285DE15A0046A996 /* UITableView+EmptyView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B26FC285DE15A0046A996 /* UITableView+EmptyView.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
 		271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D128572C2300A52DBB /* UIImageView+Builder.swift */; };
@@ -347,13 +352,18 @@
 		2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailViewController.xib; sourceTree = "<group>"; };
 		2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailAssembler.swift; sourceTree = "<group>"; };
 		271B08232853EEA800AF1790 /* CustomAlert.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomAlert.swift; sourceTree = "<group>"; };
-		271B26DC285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailTableViewCell.swift; sourceTree = "<group>"; };
-		271B26DE285DB1030046A996 /* ExchangesDetailTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailTableViewCell.xib; sourceTree = "<group>"; };
-		271B26E0285DB10F0046A996 /* ExchangesDetailCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailCellModel.swift; sourceTree = "<group>"; };
+		271B26DC285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailTrustTableViewCell.swift; sourceTree = "<group>"; };
+		271B26DE285DB1030046A996 /* ExchangesDetailTrustTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailTrustTableViewCell.xib; sourceTree = "<group>"; };
+		271B26E0285DB10F0046A996 /* ExchangesDetailTrustCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailTrustCellModel.swift; sourceTree = "<group>"; };
 		271B26E3285DB5990046A996 /* TitleProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TitleProtocol.swift; sourceTree = "<group>"; };
 		271B26E6285DB64A0046A996 /* DatasourceProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DatasourceProtocol.swift; sourceTree = "<group>"; };
 		271B26E9285DB6E00046A996 /* AppearProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppearProtocol.swift; sourceTree = "<group>"; };
 		271B26EF285DB7070046A996 /* DisappearProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DisappearProtocol.swift; sourceTree = "<group>"; };
+		271B26F2285DD0480046A996 /* CALayer+setShadow.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+setShadow.swift"; sourceTree = "<group>"; };
+		271B26F6285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailInfoTableViewCell.swift; sourceTree = "<group>"; };
+		271B26F8285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailInfoTableViewCell.xib; sourceTree = "<group>"; };
+		271B26FA285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailInfoCellModel.swift; sourceTree = "<group>"; };
+		271B26FC285DE15A0046A996 /* UITableView+EmptyView.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UITableView+EmptyView.swift"; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
 		271D71D128572C2300A52DBB /* UIImageView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Builder.swift"; sourceTree = "<group>"; };
@@ -882,18 +892,10 @@
 		27182973285CBFCA00E66073 /* Exchanges */ = {
 			isa = PBXGroup;
 			children = (
-				27182974285CBFDD00E66073 /* List */,
-			);
-			path = Exchanges;
-			sourceTree = "<group>";
-		};
-		27182974285CBFDD00E66073 /* List */ = {
-			isa = PBXGroup;
-			children = (
 				27182975285CBFE900E66073 /* Master */,
 				27182976285CBFF000E66073 /* Detail */,
 			);
-			path = List;
+			path = Exchanges;
 			sourceTree = "<group>";
 		};
 		27182975285CBFE900E66073 /* Master */ = {
@@ -901,11 +903,11 @@
 			children = (
 				2718298A285CDCED00E66073 /* Cells */,
 				27182979285CC04200E66073 /* ExchangesListMasterAssembler.swift */,
-				2718297B285CC05A00E66073 /* ExchangesListMasterNavigator.swift */,
+				2718297D285CC06900E66073 /* ExchangesListMasterViewModel.swift */,
 				27182977285CC02300E66073 /* ExchangesListMasterViewController.swift */,
 				2718297F285CC07900E66073 /* ExchangesListMasterViewController.xib */,
-				2718297D285CC06900E66073 /* ExchangesListMasterViewModel.swift */,
 				27182988285CCC0900E66073 /* ExchangesListMasterRepository.swift */,
+				2718297B285CC05A00E66073 /* ExchangesListMasterNavigator.swift */,
 			);
 			path = Master;
 			sourceTree = "<group>";
@@ -936,9 +938,8 @@
 		27182994285D049100E66073 /* Cells */ = {
 			isa = PBXGroup;
 			children = (
-				271B26E0285DB10F0046A996 /* ExchangesDetailCellModel.swift */,
-				271B26DE285DB1030046A996 /* ExchangesDetailTableViewCell.xib */,
-				271B26DC285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift */,
+				271B26F5285DD3600046A996 /* Info */,
+				271B26F4285DD3530046A996 /* Trust */,
 			);
 			path = Cells;
 			sourceTree = "<group>";
@@ -966,6 +967,34 @@
 				271B26EF285DB7070046A996 /* DisappearProtocol.swift */,
 			);
 			path = LifeCycle;
+			sourceTree = "<group>";
+		};
+		271B26F1285DD0300046A996 /* CALayer */ = {
+			isa = PBXGroup;
+			children = (
+				271B26F2285DD0480046A996 /* CALayer+setShadow.swift */,
+			);
+			path = CALayer;
+			sourceTree = "<group>";
+		};
+		271B26F4285DD3530046A996 /* Trust */ = {
+			isa = PBXGroup;
+			children = (
+				271B26E0285DB10F0046A996 /* ExchangesDetailTrustCellModel.swift */,
+				271B26DC285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift */,
+				271B26DE285DB1030046A996 /* ExchangesDetailTrustTableViewCell.xib */,
+			);
+			path = Trust;
+			sourceTree = "<group>";
+		};
+		271B26F5285DD3600046A996 /* Info */ = {
+			isa = PBXGroup;
+			children = (
+				271B26FA285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift */,
+				271B26F6285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift */,
+				271B26F8285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib */,
+			);
+			path = Info;
 			sourceTree = "<group>";
 		};
 		271D71CB2854E41D00A52DBB /* UILabel */ = {
@@ -1437,6 +1466,7 @@
 		2758FC932709B4C9009BCB5A /* Extensions */ = {
 			isa = PBXGroup;
 			children = (
+				271B26F1285DD0300046A996 /* CALayer */,
 				271EEA4227208BA600BA30FD /* String */,
 				271EEA3527207D8F00BA30FD /* UIAlertController */,
 				2763D37D27A483EC00796FA8 /* UIButton */,
@@ -1600,6 +1630,7 @@
 		2763D38527A5CE1500796FA8 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				271B26FC285DE15A0046A996 /* UITableView+EmptyView.swift */,
 				2763D38827A5CE6100796FA8 /* UITableView+ReusableCell.swift */,
 			);
 			path = UITableView;
@@ -2459,13 +2490,14 @@
 			isa = PBXResourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
-				271B26DF285DB1030046A996 /* ExchangesDetailTableViewCell.xib in Resources */,
+				271B26DF285DB1030046A996 /* ExchangesDetailTrustTableViewCell.xib in Resources */,
 				278FD04A27DE5EB200A54EAB /* TitleTableViewCell.xib in Resources */,
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
 				2787E32727C16E1E00DC5523 /* TAndCViewController.xib in Resources */,
 				2781E36527CD175E0011BE14 /* CountryPickerViewController.xib in Resources */,
 				2781E35C27CD17050011BE14 /* CountryPickerTableViewCell.xib in Resources */,
 				2781E35227CD13CC0011BE14 /* isoCountryCode.json in Resources */,
+				271B26F9285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib in Resources */,
 				27182935285C788C00E66073 /* README.md in Resources */,
 				2787E32227B94EB000DC5523 /* TestViewController.xib in Resources */,
 				279B67152784652A00480155 /* TutorialViewController.xib in Resources */,
@@ -2579,10 +2611,12 @@
 				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
 				278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */,
 				27182998285D04C900E66073 /* ExchangesDetailViewModel.swift in Sources */,
+				271B26F7285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift in Sources */,
 				27ABA0F6273184AD000FD326 /* SimpleTokenPriceRequest.swift in Sources */,
 				278FD04627DE561800A54EAB /* TitleFormField.swift in Sources */,
 				27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */,
 				27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */,
+				271B26F3285DD0480046A996 /* CALayer+setShadow.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
 				27182971285CB0CB00E66073 /* String+Regex.swift in Sources */,
@@ -2600,6 +2634,7 @@
 				278080D427AF1C0400AA44E3 /* OpenSelectRouterInput.swift in Sources */,
 				27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */,
 				2763D39727A5D76A00796FA8 /* MessageKind.swift in Sources */,
+				271B26FD285DE15A0046A996 /* UITableView+EmptyView.swift in Sources */,
 				27182982285CC12500E66073 /* ExchangesListMasterAssembler.swift in Sources */,
 				2780809927AF0D4A00AA44E3 /* TextInputTableViewCell.swift in Sources */,
 				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeDataResponse.swift in Sources */,
@@ -2614,6 +2649,7 @@
 				27E636E32733EEFB00FC1210 /* CoinsIdResponse.swift in Sources */,
 				27ABA0BC272976C9000FD326 /* EventTypesResponse.swift in Sources */,
 				271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */,
+				271B26FB285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift in Sources */,
 				278080CD27AF1B5D00AA44E3 /* Country.swift in Sources */,
 				2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
@@ -2628,7 +2664,7 @@
 				278080DA27AF1C5400AA44E3 /* SelectViewController.swift in Sources */,
 				2780808C27AF0BB100AA44E3 /* FormHeader.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
-				271B26DD285DB0FB0046A996 /* ExchangesDetailTableViewCell.swift in Sources */,
+				271B26DD285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift in Sources */,
 				27BB132A2788B1EE00B5FE4D /* MainAssembler.swift in Sources */,
 				2794AAC627F1AF3A00E30828 /* FuelHomeAssembler.swift in Sources */,
 				2794AAD227F1B56B00E30828 /* FuelHomeAPIResponse.swift in Sources */,
@@ -2744,7 +2780,7 @@
 				27ABA0B327296F62000FD326 /* EventsCountriesResponse.swift in Sources */,
 				271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */,
 				27ABA0D02729ADB3000FD326 /* DerivativesResponse.swift in Sources */,
-				271B26E1285DB10F0046A996 /* ExchangesDetailCellModel.swift in Sources */,
+				271B26E1285DB10F0046A996 /* ExchangesDetailTrustCellModel.swift in Sources */,
 				2718298C285CDD0700E66073 /* ExchangesListMasterCellModel.swift in Sources */,
 				27ABA10527318B20000FD326 /* ExchangesIdRequest.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,

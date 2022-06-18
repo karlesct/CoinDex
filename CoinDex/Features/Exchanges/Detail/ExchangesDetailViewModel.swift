@@ -9,6 +9,7 @@ protocol ExchangesDetailViewModelProtocol: TitleProtocol,
                                            DatasourceProtocol,
                                            WillAppearProtocol{
     var view: ExchangesDetailViewProtocol? { get set }
+    func doRequest()
 }
 
 protocol ExchangesDetailViewProtocol: AnyObject {
@@ -29,16 +30,19 @@ class ExchangesDetailViewModel: ExchangesDetailViewModelProtocol {
     }
     
     private let id: String
-    var repository: ExchangesDetailRepositoryProtocol
+    private var repository: ExchangesDetailRepositoryProtocol
+    private let logging: LoggingServiceProtocol
     
     weak var view: ExchangesDetailViewProtocol?
 
     // MARK: - Init
     
     init(id: String,
-         repository: ExchangesDetailRepositoryProtocol) {
+         repository: ExchangesDetailRepositoryProtocol,
+         logging: LoggingServiceProtocol) {
         self.id = id
         self.repository = repository
+        self.logging = logging
     }
 
     // MARK: - Methods
@@ -47,15 +51,17 @@ class ExchangesDetailViewModel: ExchangesDetailViewModelProtocol {
         self.doRequest()
     }
     
-    private func doRequest() {
+    func doRequest() {
         self.view?.setLoading(isLoading: true)
+        self.dataSource = []
         self.repository.fetchList(id: self.id) { [weak self] result in
+            self?.view?.setLoading(isLoading: false)
             switch result {
             case let .success(item):
-                self?.dataSource?.append(contentsOf: item)
-//                self?.view?.needsReaload()
+                self?.dataSource? = item
             case let .failure(error):
-                break
+                self?.dataSource = []
+                self?.logging.log(error)
             }
         }
     }

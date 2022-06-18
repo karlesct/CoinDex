@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExchangesDetailViewController" customModule="CoinDexRelease" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="gII-g5-W6t" id="mjG-8x-Ve8"/>
                 <outlet property="tableView" destination="98i-eZ-B2v" id="5So-wj-LmZ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="q0I-Up-6OU"/>
             </connections>
@@ -24,11 +25,16 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="gII-g5-W6t">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="98i-eZ-B2v" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="2uv-3w-PwD"/>
+                <constraint firstItem="gII-g5-W6t" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="78K-B3-VUe"/>
+                <constraint firstItem="gII-g5-W6t" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="PAj-AY-aMZ"/>
                 <constraint firstItem="98i-eZ-B2v" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="dWN-Om-ucw"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="98i-eZ-B2v" secondAttribute="trailing" id="kvd-Gx-NwF"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="98i-eZ-B2v" secondAttribute="bottom" id="lI9-ip-AWB"/>

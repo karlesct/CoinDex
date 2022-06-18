@@ -5,37 +5,39 @@
 
 import UIKit
 
-final class ExchangesListMasterAssembler {
+final class ExchangesDetailAssembler {
 
     // MARK: - Properties
 
-    private let navigationController: UINavigationController
+    private let id: String
 
     // MARK: - Init
 
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init(id: String) {
+        self.id = id
     }
 
     // MARK: - Methods
 
     func viewController() -> UIViewController {
-        let viewController = ExchangesListMasterViewController.loadFromNib()
+        let viewController = ExchangesDetailViewController.loadFromNib()
         viewController.viewModel = self.viewModel()
-        viewController.navigator = self.navigator()
         return viewController
     }
 
-    private func viewModel() -> ExchangesListMasterViewModelProtocol {
+    private func viewModel() -> ExchangesDetailViewModelProtocol {
         let repository = self.repository()
-        let viewModel = ExchangesListMasterViewModel(repository: repository)
+        let logging = self.logging()
+        let viewModel = ExchangesDetailViewModel(id: self.id,
+                                                 repository: repository,
+                                                 logging: logging)
         return viewModel
     }
     
-    private func repository() -> ExchangesListMasterRepositoryProtocol {
+    private func repository() -> ExchangesDetailRepositoryProtocol {
         let networkService = self.networkService()
         let baseURL = self.baseURL()
-        let repository = ExchangesListMasterRepository(baseURL: baseURL,
+        let repository = ExchangesDetailRepository(baseURL: baseURL,
                                                    networkService: networkService)
         return repository
     }
@@ -43,11 +45,6 @@ final class ExchangesListMasterAssembler {
     private func networkService() -> NetworkServiceProtocol {
         let networkService = DefaultNetworkService()
         return networkService
-    }
-
-    private func navigator() -> ExchangesListMasterNavigator {
-        let navigator = ExchangesListMasterNavigator(navigationController: self.navigationController)
-        return navigator
     }
     
     private func baseURL() -> String {
@@ -60,4 +57,10 @@ final class ExchangesListMasterAssembler {
             .joined()
         return baseURL
     }
+    
+    private func logging() -> LoggingServiceProtocol {
+        let loggingService = LoggingService()
+        return loggingService
+    }
 }
+

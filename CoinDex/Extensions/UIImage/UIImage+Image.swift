@@ -10,6 +10,7 @@ extension UIImage {
     struct common {
         static let closeIcon = #imageLiteral(resourceName: "iconClose")
         static let noImageIcon = #imageLiteral(resourceName: "noImageIcon")
+        static let disclousureIcon = #imageLiteral(resourceName: "disclosureIndicatorIcon")
     }
 
     struct chat {

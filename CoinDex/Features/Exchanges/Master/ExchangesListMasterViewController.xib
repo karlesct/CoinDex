@@ -11,6 +11,7 @@
     <objects>
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="ExchangesListMasterViewController" customModule="CoinDexRelease" customModuleProvider="target">
             <connections>
+                <outlet property="activityIndicator" destination="we5-sc-0Uk" id="XE8-Dh-cQb"/>
                 <outlet property="tableView" destination="5ND-7k-1Fx" id="JQR-zV-fQV"/>
                 <outlet property="view" destination="iN0-l3-epB" id="QOj-5z-GyG"/>
             </connections>
@@ -24,14 +25,19 @@
                     <rect key="frame" x="0.0" y="44" width="414" height="818"/>
                     <color key="backgroundColor" systemColor="systemBackgroundColor"/>
                 </tableView>
+                <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="we5-sc-0Uk">
+                    <rect key="frame" x="197" y="438" width="20" height="20"/>
+                </activityIndicatorView>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="5ND-7k-1Fx" secondAttribute="bottom" id="5xY-1o-MMg"/>
+                <constraint firstItem="we5-sc-0Uk" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="6Yt-xZ-QVf"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="5ND-7k-1Fx" secondAttribute="trailing" id="Kqe-RB-izN"/>
                 <constraint firstItem="5ND-7k-1Fx" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="aes-DL-uGo"/>
                 <constraint firstItem="5ND-7k-1Fx" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="dJe-q8-ttg"/>
+                <constraint firstItem="we5-sc-0Uk" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="vx2-O3-4I0"/>
             </constraints>
             <point key="canvasLocation" x="139" y="99"/>
         </view>

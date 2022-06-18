@@ -13,6 +13,12 @@
 "literal_information" = "Information";
 "literal_download" = "Download";
 "literal_error" = "Error";
+"literal_yes" = "Yes";
+"literal_no" = "No";
+
+// MARK: - Generic
+
+"generic_error" = "An error has occurred, or you have no connection";
 
 // MARK: - Tutorial
 
@@ -39,11 +45,18 @@
 
 // MARK: - ExchangesDetail
 
-"exchange_detail_title" = "Crypto Exchanges - Info";
+"exchange_detail_title" = "Information";
+
+// MARK: - ExchangesDetail - Info Cell
+
+"exchange_detail_info_cell_name_title" = "Name";
+"exchange_detail_info_cell_country_title" = "Country";
+"exchange_detail_info_cell_year_title" = "Year Established";
+"exchange_detail_info_cell_centralized_title" = "Centralized";
 
 // MARK: - ExchangesDetail - Trust Cell
 
 "exchange_detail_trust_cell_score_rank_title" = "Ranking";
 "exchange_detail_trust_cell_trust_score_title" = "Trust Score";
-"exchange_detail_trust_cell_trade_volume_title" = "Volumen BTC en 24h ";
-"exchange_detail_trust_cell_trade_volume_normalized_title" = "Volumen BTC en 24h (normalizado)";
+"exchange_detail_trust_cell_trade_volume_title" = "Volume BTC in 24h";
+"exchange_detail_trust_cell_trade_volume_normalized_title" = "Volume BTC in 24h (normalized)";

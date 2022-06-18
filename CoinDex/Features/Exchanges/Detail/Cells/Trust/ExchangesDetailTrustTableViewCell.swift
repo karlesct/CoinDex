@@ -6,11 +6,17 @@
 import Foundation
 import UIKit
 
-class ExchangesDetailTableViewCell: UITableViewCell,
-                                   NibLoadable,
-                                   ReusableCell {
+class ExchangesDetailTrustTableViewCell: UITableViewCell,
+                                           NibLoadable,
+                                           ReusableCell {
     
     // MARK: - IBoutlets
+    @IBOutlet weak var vwContainer: UIView! {
+        didSet {
+            self.vwContainer.layer.cornerRadius = 8
+            self.vwContainer.layer.setShadow()
+        }
+    }
     
     @IBOutlet weak var lblTrustScoreRankTitle: UILabel! {
         didSet {
@@ -88,11 +94,12 @@ class ExchangesDetailTableViewCell: UITableViewCell,
     override func awakeFromNib() {
         super.awakeFromNib()
         self.selectionStyle = .none
+        self.backgroundColor = .x00FFFFFF
     }
     
     // MARK: - Bind
     
-    func bind(item: ExchangesDetailCellModel) {
+    func bind(item: ExchangesDetailTrustCellModel) {
         self.lblTrustScoreRankDetail.text =  String(item.scoreRank)
         self.lblTrustScoreDetail.text =  String(item.trustScore)
         self.lblTradeVolumeDetail.text =  String(item.tradeVolumeBtc)

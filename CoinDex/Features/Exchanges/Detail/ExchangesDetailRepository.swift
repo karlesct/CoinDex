@@ -42,14 +42,15 @@ class ExchangesDetailRepository: ExchangesDetailRepositoryProtocol {
 class ExchangesIdResponseConverter {
     static func convert(model: ExchangesIdResponse) -> [TModel] {
         var items: [TModel] = []
-//
-//        let itemDescription = ExchangesDetailCellModel(scoreRank: model.name,
-//                                                 score: model.yearEstablished,
-//                                                 tradeVolume: model.tradeVolume24HBtc,
-//                                                 tradeVolumeNormalized: model.tradeVolume24HBtcNormalized)
-//        items.append(itemDescription)
+
+        let itemInfo = ExchangesDetailInfoCellModel(name: model.name,
+                                                    image: model.image,
+                                                    year: model.yearEstablished,
+                                                    country: model.country,
+                                                    centralized: model.centralized)
+        items.append(itemInfo)
         
-        let itemTrust = ExchangesDetailCellModel(scoreRank: model.trustScoreRank,
+        let itemTrust = ExchangesDetailTrustCellModel(scoreRank: model.trustScoreRank,
                                                  trustScore: model.trustScore,
                                                  tradeVolumeBtc: model.tradeVolume24HBtc,
                                                  tradeVolumeNormalizedBtc: model.tradeVolume24HBtcNormalized)

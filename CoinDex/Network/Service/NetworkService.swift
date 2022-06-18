@@ -44,14 +44,10 @@ final class DefaultNetworkService: NetworkServiceProtocol {
             return completion(.failure(error))
         }
 
-        NSLog(url.absoluteString)
-
         var urlRequest = URLRequest(url: url)
         urlRequest.httpMethod = request.method.rawValue
         request.headers?.forEach { urlRequest.addValue($1.rawValue,
                                                        forHTTPHeaderField: $0.rawValue)}
-
-
 
         URLSession.shared.dataTask(with: urlRequest) { (data, response, error) in
             if let error = error {

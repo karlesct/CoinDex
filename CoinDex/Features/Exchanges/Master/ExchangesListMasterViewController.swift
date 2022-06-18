@@ -15,9 +15,19 @@ class ExchangesListMasterViewController: UIViewController {
             self.tableView.dataSource = self
             self.tableView.prefetchDataSource = self
             self.tableView.rowHeight = UITableView.automaticDimension
+            self.tableView.separatorStyle = .none
             self.tableView.tableFooterView = UIView()
+            self.tableView.backgroundColor = .x00FFFFFF
             
             self.tableView.register(ExchangesListMasterTableViewCell.self)
+        }
+    }
+    
+    @IBOutlet weak var activityIndicator: UIActivityIndicatorView! {
+        didSet {
+            self.activityIndicator.hidesWhenStopped = true
+            self.activityIndicator.style = .large
+            self.activityIndicator.color = .primary
         }
     }
     
@@ -34,6 +44,7 @@ class ExchangesListMasterViewController: UIViewController {
         self.viewModel?.view = self
         
         self.title = self.viewModel?.title
+        self.view.backgroundColor = .xF6F6F6
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -93,7 +104,11 @@ extension ExchangesListMasterViewController: ExchangesListMasterTableViewCellDel
 
 extension ExchangesListMasterViewController: ExchangesListMasterViewProtocol {
     func setLoading(isLoading: Bool) {
-        
+        DispatchQueue.main.async {
+            isLoading
+            ? self.activityIndicator.startAnimating()
+            : self.activityIndicator.stopAnimating()
+        }
     }
     
     func needsReaload() {

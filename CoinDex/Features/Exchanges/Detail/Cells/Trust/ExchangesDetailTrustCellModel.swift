@@ -6,7 +6,7 @@
 import Foundation
 import UIKit
 
-struct ExchangesDetailCellModel: TModel {
+struct ExchangesDetailTrustCellModel: TModel {
     let scoreRank: Int
     let trustScore: Int
     let tradeVolumeBtc: Double

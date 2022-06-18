@@ -36,13 +36,16 @@ class ExchangesListMasterViewModel: ExchangesListMasterViewModelProtocol {
     }
     
     var repository: ExchangesListMasterRepositoryProtocol
+    var logging: LoggingServiceProtocol
     
     weak var view: ExchangesListMasterViewProtocol?
 
     // MARK: - Init
     
-    init(repository: ExchangesListMasterRepositoryProtocol) {
+    init(repository: ExchangesListMasterRepositoryProtocol,
+         logging: LoggingServiceProtocol) {
         self.repository = repository
+        self.logging = logging
     }
 
     // MARK: - Methods
@@ -54,12 +57,12 @@ class ExchangesListMasterViewModel: ExchangesListMasterViewModelProtocol {
     private func doRequest(page: Int) {
         self.view?.setLoading(isLoading: true)
         self.repository.fetchList(page: page) { [weak self] result in
+            self?.view?.setLoading(isLoading: false)
             switch result {
             case let .success(item):
                 self?.dataSource?.append(contentsOf: item)
-//                self?.view?.needsReaload()
             case let .failure(error):
-                break
+                self?.logging.log(error)
             }
         }
     }
