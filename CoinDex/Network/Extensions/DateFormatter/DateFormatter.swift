@@ -35,6 +35,13 @@ extension DateFormatter {
         dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ssZ"
         return dateFormatter
     }()
+    
+    // 2018-08-20'T'13:20:10*633+0000
+    static let yyyyMMddTHHmmssSSSZZZZ: DateFormatter = {
+        var dateFormatter = DateFormatter()
+        dateFormatter.dateFormat = "yyyy-MM-dd'T'HH:mm:ss*SSSZZZZ"
+        return dateFormatter
+    }()
 }
 
 

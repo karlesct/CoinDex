@@ -5,7 +5,9 @@
 import UIKit
 @testable import CoinDexRelease
 
-internal final class TestCell: UITableViewCell, NibLoadable, ReusableCell {
+internal final class TestCell: UITableViewCell,
+                               NibLoadable,
+                               ReusableCell {
 
     // MARK: - IBOutlets
     @IBOutlet weak var testLabel: UILabel!

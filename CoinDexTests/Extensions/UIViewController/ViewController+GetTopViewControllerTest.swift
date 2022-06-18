@@ -15,7 +15,13 @@ class ViewController_GetTopViewControllerTest: XCTestCase {
         viewController = UIViewController().getTopViewController
 
     }
-
+    
+    override func tearDown() {
+        viewController = nil
+        
+        super.tearDown()
+    }
+    
     func testGetTopViewController_01() {
         XCTAssertNotNil(viewController)
     }

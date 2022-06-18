@@ -57,6 +57,13 @@
 		271B2706285E15880046A996 /* UIImageView+BuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2705285E15880046A996 /* UIImageView+BuilderTest.swift */; };
 		271B2708285E17D50046A996 /* UIColor+HexTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2707285E17D50046A996 /* UIColor+HexTest.swift */; };
 		271B270A285E19CD0046A996 /* UILabel+BuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2709285E19CD0046A996 /* UILabel+BuilderTest.swift */; };
+		271B270D285E1E8E0046A996 /* NetworkServiceTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B270C285E1E8E0046A996 /* NetworkServiceTest.swift */; };
+		271B270F285E1EEF0046A996 /* UITableView+ReusableCellTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B270E285E1EEF0046A996 /* UITableView+ReusableCellTest.swift */; };
+		271B2713285E1FA80046A996 /* TestHeaderFooterCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2712285E1FA80046A996 /* TestHeaderFooterCell.swift */; };
+		271B2715285E1FE80046A996 /* TestHeaderFooterCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 271B2714285E1FE80046A996 /* TestHeaderFooterCell.xib */; };
+		271B271B285E22D40046A996 /* CALayer+SetShadowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B271A285E22D40046A996 /* CALayer+SetShadowTest.swift */; };
+		271B271D285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B271C285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift */; };
+		271B2721285E28000046A996 /* JSONDecoder+DateDecodingStrategyFormattersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2720285E28000046A996 /* JSONDecoder+DateDecodingStrategyFormattersTest.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
 		271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D128572C2300A52DBB /* UIImageView+Builder.swift */; };
@@ -359,6 +366,13 @@
 		271B2705285E15880046A996 /* UIImageView+BuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+BuilderTest.swift"; sourceTree = "<group>"; };
 		271B2707285E17D50046A996 /* UIColor+HexTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIColor+HexTest.swift"; sourceTree = "<group>"; };
 		271B2709285E19CD0046A996 /* UILabel+BuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+BuilderTest.swift"; sourceTree = "<group>"; };
+		271B270C285E1E8E0046A996 /* NetworkServiceTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkServiceTest.swift; sourceTree = "<group>"; };
+		271B270E285E1EEF0046A996 /* UITableView+ReusableCellTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UITableView+ReusableCellTest.swift"; sourceTree = "<group>"; };
+		271B2712285E1FA80046A996 /* TestHeaderFooterCell.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TestHeaderFooterCell.swift; sourceTree = "<group>"; };
+		271B2714285E1FE80046A996 /* TestHeaderFooterCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = TestHeaderFooterCell.xib; sourceTree = "<group>"; };
+		271B271A285E22D40046A996 /* CALayer+SetShadowTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "CALayer+SetShadowTest.swift"; sourceTree = "<group>"; };
+		271B271C285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIWindow+VisibleViewControllerTest.swift"; sourceTree = "<group>"; };
+		271B2720285E28000046A996 /* JSONDecoder+DateDecodingStrategyFormattersTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "JSONDecoder+DateDecodingStrategyFormattersTest.swift"; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
 		271D71D128572C2300A52DBB /* UIImageView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Builder.swift"; sourceTree = "<group>"; };
@@ -689,8 +703,6 @@
 		2718293B285C90D700E66073 /* Utils */ = {
 			isa = PBXGroup;
 			children = (
-				2718295A285C9E7C00E66073 /* TestCell.swift */,
-				27182959285C9E7C00E66073 /* TestCell.xib */,
 				27182956285C9E2100E66073 /* ReusableCell */,
 				27182953285C9C6600E66073 /* NibLoadable */,
 				2718294D285C92F100E66073 /* DeepLinking */,
@@ -701,6 +713,8 @@
 		2718293C285C90E300E66073 /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				271B271E285E27E10046A996 /* Extensions */,
+				271B270B285E1E780046A996 /* Services */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -708,6 +722,7 @@
 		2718293D285C90FC00E66073 /* Window */ = {
 			isa = PBXGroup;
 			children = (
+				271B271C285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift */,
 			);
 			path = Window;
 			sourceTree = "<group>";
@@ -736,6 +751,7 @@
 		27182941285C911A00E66073 /* UITableView */ = {
 			isa = PBXGroup;
 			children = (
+				271B270E285E1EEF0046A996 /* UITableView+ReusableCellTest.swift */,
 			);
 			path = UITableView;
 			sourceTree = "<group>";
@@ -974,8 +990,68 @@
 		271B26FE285DF6910046A996 /* CALayer */ = {
 			isa = PBXGroup;
 			children = (
+				271B271A285E22D40046A996 /* CALayer+SetShadowTest.swift */,
 			);
 			path = CALayer;
+			sourceTree = "<group>";
+		};
+		271B270B285E1E780046A996 /* Services */ = {
+			isa = PBXGroup;
+			children = (
+				271B270C285E1E8E0046A996 /* NetworkServiceTest.swift */,
+			);
+			path = Services;
+			sourceTree = "<group>";
+		};
+		271B2710285E1F8E0046A996 /* Cell */ = {
+			isa = PBXGroup;
+			children = (
+				2718295A285C9E7C00E66073 /* TestCell.swift */,
+				27182959285C9E7C00E66073 /* TestCell.xib */,
+			);
+			path = Cell;
+			sourceTree = "<group>";
+		};
+		271B2711285E1F950046A996 /* HeaderFooter */ = {
+			isa = PBXGroup;
+			children = (
+				271B2712285E1FA80046A996 /* TestHeaderFooterCell.swift */,
+				271B2714285E1FE80046A996 /* TestHeaderFooterCell.xib */,
+			);
+			path = HeaderFooter;
+			sourceTree = "<group>";
+		};
+		271B2716285E21270046A996 /* TestViews */ = {
+			isa = PBXGroup;
+			children = (
+				271B2717285E21380046A996 /* Cells */,
+			);
+			path = TestViews;
+			sourceTree = "<group>";
+		};
+		271B2717285E21380046A996 /* Cells */ = {
+			isa = PBXGroup;
+			children = (
+				271B2711285E1F950046A996 /* HeaderFooter */,
+				271B2710285E1F8E0046A996 /* Cell */,
+			);
+			path = Cells;
+			sourceTree = "<group>";
+		};
+		271B271E285E27E10046A996 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				271B271F285E27E80046A996 /* JSONDecoder */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		271B271F285E27E80046A996 /* JSONDecoder */ = {
+			isa = PBXGroup;
+			children = (
+				271B2720285E28000046A996 /* JSONDecoder+DateDecodingStrategyFormattersTest.swift */,
+			);
+			path = JSONDecoder;
 			sourceTree = "<group>";
 		};
 		271D71CB2854E41D00A52DBB /* UILabel */ = {
@@ -1422,6 +1498,7 @@
 		2758FC762709B46A009BCB5A /* CoinDexTests */ = {
 			isa = PBXGroup;
 			children = (
+				271B2716285E21270046A996 /* TestViews */,
 				27182936285C909200E66073 /* Resources */,
 				27182937285C90AA00E66073 /* Extensions */,
 				27182938285C90B400E66073 /* Features */,
@@ -2488,6 +2565,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				2718295B285C9E7C00E66073 /* TestCell.xib in Resources */,
+				271B2715285E1FE80046A996 /* TestHeaderFooterCell.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2767,6 +2845,7 @@
 			isa = PBXSourcesBuildPhase;
 			buildActionMask = 2147483647;
 			files = (
+				271B271B285E22D40046A996 /* CALayer+SetShadowTest.swift in Sources */,
 				271B2704285E12580046A996 /* UIButton+BuilderTest.swift in Sources */,
 				27182958285C9E3400E66073 /* ReusableCellTest.swift in Sources */,
 				271B270A285E19CD0046A996 /* UILabel+BuilderTest.swift in Sources */,
@@ -2775,8 +2854,13 @@
 				27924737281EB7B600737A1C /* DeepLinkingTests.swift in Sources */,
 				2718296C285CA12500E66073 /* UIAlertController+BuilderTest.swift in Sources */,
 				271B2706285E15880046A996 /* UIImageView+BuilderTest.swift in Sources */,
+				271B271D285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift in Sources */,
+				271B270F285E1EEF0046A996 /* UITableView+ReusableCellTest.swift in Sources */,
 				271B2708285E17D50046A996 /* UIColor+HexTest.swift in Sources */,
 				27182955285C9DDF00E66073 /* NibLoadableTest.swift in Sources */,
+				271B270D285E1E8E0046A996 /* NetworkServiceTest.swift in Sources */,
+				271B2713285E1FA80046A996 /* TestHeaderFooterCell.swift in Sources */,
+				271B2721285E28000046A996 /* JSONDecoder+DateDecodingStrategyFormattersTest.swift in Sources */,
 				271B2702285DF7ED0046A996 /* String+TextToImageTest.swift in Sources */,
 				2718296F285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift in Sources */,
 				2758FC782709B46A009BCB5A /* CoinDexTests.swift in Sources */,
