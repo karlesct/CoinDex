@@ -42,6 +42,7 @@ Launchscreen for an initial data load. (Not implemented right now)
 Tab Bar with: 
 - Master detail of main crypto exchanges
 - Welcome with some motivating phrases
+- Country Picker for phone registration, returns phone code and countryName on delegate
 
 ## Code coverage
 
