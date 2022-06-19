@@ -59,10 +59,9 @@ Authentication verifies that the provided user token is correct and, therefore, 
 
 ## Images
 
-![Master](/assets/master.png)
-![Detail](/assets/detail.png)
-![Welcome](/assets/welcome.png)
-![Country Picker](/assets/countryPicker.png)
+| **Master** | **Detail** | **Welcome** | **Country Picker** |
+|-----------|-----------|---------|------------|
+| ![Master](/assets/master.png)    | ![Detail](/assets/detail.png)       | ![Welcome](/assets/welcome.png)   | ![Country Picker](/assets/countryPicker.png)  |
 
 ## Coming soon
 
