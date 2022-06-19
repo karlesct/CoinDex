@@ -6,12 +6,15 @@
 import Foundation
 
 /// Show derivative exchange data
-struct DerivativesExchangeDataRequest: DataRequest {
+struct DerivativesExchangeIdRequest: DataRequest {
 
     let baseURL: String
-
-    init(baseURL: String) {
+    let id: String
+    
+    init(baseURL: String,
+         id: String) {
         self.baseURL = baseURL
+        self.id = id
     }
 
     var url: String {
@@ -19,7 +22,7 @@ struct DerivativesExchangeDataRequest: DataRequest {
     }
 
     var path: String {
-        return "/derivatives/exchanges/bitmex"
+        return "/derivatives/exchanges/\(self.id)"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {
@@ -38,10 +41,10 @@ struct DerivativesExchangeDataRequest: DataRequest {
         ]
     }
 
-    func decode(_ data: Data) throws -> DerivativesExchangeDataResponse {
+    func decode(_ data: Data) throws -> DerivativesExchangeIdResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
-        let response = try decoder.decode(DerivativesExchangeDataResponse.self, from: data)
+        let response = try decoder.decode(DerivativesExchangeIdResponse.self, from: data)
         return response
     }
 }
