@@ -14,9 +14,12 @@ import Foundation
 struct CoinsIdRequest: DataRequest {
 
     let baseURL: String
+    let id: String
 
-    init(baseURL: String) {
+    init(baseURL: String,
+         id: String) {
         self.baseURL = baseURL
+        self.id = id
     }
 
     var url: String {
@@ -24,7 +27,7 @@ struct CoinsIdRequest: DataRequest {
     }
 
     var path: String {
-        return "/coins/bitcoin"
+        return "/coins/\(self.id)"
     }
 
     var headers: [HTTPHeaderKey: HTTPHeaderValue] {

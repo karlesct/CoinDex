@@ -34,7 +34,7 @@ struct CoinsListRequest: DataRequest {
 
     var queryItems: [String : String]? {
         [
-            "include_platform" : "true"
+            "include_platform" : "true" //flag to include platform contract addresses (eg. 0x.... for Ethereum based tokens). valid values: true, false
         ]
     }
 

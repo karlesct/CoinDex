@@ -26,48 +26,47 @@ extension URLRequest {
 
         // MARK: - Methods
 
-        func scheme(_ scheme: String) -> Builder {
-
+        func with(scheme: String) -> Builder {
             self.scheme = scheme
             return self
         }
 
-        func host(_ host: String) -> Builder {
+        func with(host: String) -> Builder {
 
             self.host = host
             return self
         }
 
-        func path(_ path: String?) -> Builder {
+        func with(path: String?) -> Builder {
 
             self.path = path
             return self
         }
 
-        func headers(_ headers: [HTTPHeaderKey: HTTPHeaderValue]?) -> Builder {
+        func with(headers: [HTTPHeaderKey: HTTPHeaderValue]?) -> Builder {
 
             self.headers = headers
             return self
         }
 
-        func queryItems(_ queryItems: [URLQueryItem]?) -> Builder {
+        func with(queryItems: [URLQueryItem]?) -> Builder {
             self.queryItems = queryItems
             return self
         }
 
-        func httpMethod(_ httpMethod: HTTPMethod) -> Builder {
+        func with(httpMethod: HTTPMethod) -> Builder {
 
             self.httpMethod = httpMethod
             return self
         }
 
-        func body(_ body: Data?) -> Builder {
+        func with(body: Data?) -> Builder {
 
             self.body = body
             return self
         }
 
-        var url: URL? {
+        lazy var url: URL? = {
             var components = URLComponents()
             components.scheme = self.scheme
             components.host = self.host
@@ -75,7 +74,7 @@ extension URLRequest {
             components.queryItems = self.queryItems
 
             return components.url
-        }
+        }()
 
 
         func build() -> URLRequest? {

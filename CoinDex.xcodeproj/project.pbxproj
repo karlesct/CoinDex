@@ -63,18 +63,6 @@
 		271B271B285E22D40046A996 /* CALayer+SetShadowTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B271A285E22D40046A996 /* CALayer+SetShadowTest.swift */; };
 		271B271D285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B271C285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift */; };
 		271B2721285E28000046A996 /* JSONDecoder+DateDecodingStrategyFormattersTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2720285E28000046A996 /* JSONDecoder+DateDecodingStrategyFormattersTest.swift */; };
-		271B2722285E3C850046A996 /* SelectableItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D127AF1BD100AA44E3 /* SelectableItem.swift */; };
-		271B2723285E3C850046A996 /* OpenSelectRouterInput.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D327AF1C0400AA44E3 /* OpenSelectRouterInput.swift */; };
-		271B2724285E3C850046A996 /* SelectViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D927AF1C5400AA44E3 /* SelectViewController.swift */; };
-		271B2725285E3C850046A996 /* SelectModule.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D527AF1C1C00AA44E3 /* SelectModule.swift */; };
-		271B2726285E3C850046A996 /* SelectViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080D727AF1C3900AA44E3 /* SelectViewModel.swift */; };
-		271B2727285E3C850046A996 /* SelectViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080DB27AF1DB700AA44E3 /* SelectViewController.xib */; };
-		271B2728285E3CDF0046A996 /* FormDemoAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A327AF108F00AA44E3 /* FormDemoAssembler.swift */; };
-		271B2729285E3CDF0046A996 /* Country.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080CC27AF1B5D00AA44E3 /* Country.swift */; };
-		271B272A285E3CDF0046A996 /* FormDemoRouter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A527AF10C100AA44E3 /* FormDemoRouter.swift */; };
-		271B272B285E3CDF0046A996 /* Province.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080CE27AF1B7A00AA44E3 /* Province.swift */; };
-		271B272C285E3CDF0046A996 /* FormDemoViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A727AF10E500AA44E3 /* FormDemoViewController.swift */; };
-		271B272D285E3CDF0046A996 /* FormDemoViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080A927AF110200AA44E3 /* FormDemoViewModel.swift */; };
 		271B272E285E3CE70046A996 /* CountryPickerAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36027CD173D0011BE14 /* CountryPickerAssembler.swift */; };
 		271B272F285E3CE70046A996 /* CountryPickerViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36227CD17510011BE14 /* CountryPickerViewController.swift */; };
 		271B2730285E3CE70046A996 /* CountryModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E35427CD14810011BE14 /* CountryModel.swift */; };
@@ -98,6 +86,15 @@
 		271B2766285EF3AA0046A996 /* SearchRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2765285EF3AA0046A996 /* SearchRequestTest.swift */; };
 		271B276A285EFAB40046A996 /* DerivativesExchangeIdRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2769285EFAB40046A996 /* DerivativesExchangeIdRequestTest.swift */; };
 		271B276D285EFC490046A996 /* DerivativesExchangeListRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B276C285EFC490046A996 /* DerivativesExchangeListRequestTest.swift */; };
+		271B2771285F04A40046A996 /* IndexesRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2770285F04A40046A996 /* IndexesRequestTest.swift */; };
+		271B2773285F04AB0046A996 /* IndexesListRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2772285F04AB0046A996 /* IndexesListRequestTest.swift */; };
+		271B277A285F0A6F0046A996 /* AssetPlatformsTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2779285F0A6F0046A996 /* AssetPlatformsTest.swift */; };
+		271B277E285F0C9D0046A996 /* CategoriesRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B277D285F0C9D0046A996 /* CategoriesRequestTest.swift */; };
+		271B2780285F0CA30046A996 /* CategoriesListRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B277F285F0CA30046A996 /* CategoriesListRequestTest.swift */; };
+		271B2785285F0F0D0046A996 /* SimpleSupportedVsCurrenciesRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2784285F0F0D0046A996 /* SimpleSupportedVsCurrenciesRequestTest.swift */; };
+		271B278C285F11A70046A996 /* CoinsMarketsRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B278B285F11A70046A996 /* CoinsMarketsRequestTest.swift */; };
+		271B278E285F11AF0046A996 /* CoinsListRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B278D285F11AE0046A996 /* CoinsListRequestTest.swift */; };
+		271B2790285F19210046A996 /* URLRequest+BuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B278F285F19210046A996 /* URLRequest+BuilderTest.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
 		271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D128572C2300A52DBB /* UIImageView+Builder.swift */; };
@@ -147,34 +144,7 @@
 		2763D39027A5D07100796FA8 /* NibLoadable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2763D38F27A5D07100796FA8 /* NibLoadable.swift */; };
 		27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3A273C3EEF00D17FC4 /* DateFormatter.swift */; };
 		27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27696B3D273C3FAE00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift */; };
-		277B58C827B0093E00EAEA24 /* TitleHeaderFooterView.xib in Resources */ = {isa = PBXBuildFile; fileRef = 277B58C727B0093E00EAEA24 /* TitleHeaderFooterView.xib */; };
-		277B58CA27B00E4F00EAEA24 /* TitleHeaderFooterModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B58C927B00E4F00EAEA24 /* TitleHeaderFooterModel.swift */; };
 		277B58CC27B012E700EAEA24 /* UIView+LoadFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 277B58CB27B012E700EAEA24 /* UIView+LoadFromNib.swift */; };
-		2780808827AF09FE00AA44E3 /* FormViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808727AF09FE00AA44E3 /* FormViewController.swift */; };
-		2780808A27AF0B9000AA44E3 /* FormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808927AF0B9000AA44E3 /* FormField.swift */; };
-		2780808C27AF0BB100AA44E3 /* FormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808B27AF0BB100AA44E3 /* FormHeader.swift */; };
-		2780808E27AF0BCD00AA44E3 /* FormSection.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780808D27AF0BCD00AA44E3 /* FormSection.swift */; };
-		2780809127AF0C3C00AA44E3 /* FieldDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809027AF0C3C00AA44E3 /* FieldDataSource.swift */; };
-		2780809327AF0C5500AA44E3 /* FormDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809227AF0C5500AA44E3 /* FormDataSource.swift */; };
-		2780809527AF0C7800AA44E3 /* InputDataSource.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809427AF0C7800AA44E3 /* InputDataSource.swift */; };
-		2780809927AF0D4A00AA44E3 /* TextInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809827AF0D4A00AA44E3 /* TextInputTableViewCell.swift */; };
-		2780809B27AF0D7C00AA44E3 /* TextInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809A27AF0D7C00AA44E3 /* TextInputFormField.swift */; };
-		2780809D27AF0D9600AA44E3 /* TextInputCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2780809C27AF0D9600AA44E3 /* TextInputCellModel.swift */; };
-		2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2780809E27AF0E2500AA44E3 /* TextInputTableViewCell.xib */; };
-		278080AD27AF12AE00AA44E3 /* TitleFormHeader.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080AC27AF12AE00AA44E3 /* TitleFormHeader.swift */; };
-		278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080AE27AF12D300AA44E3 /* TitleHeaderFooterView.swift */; };
-		278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B127AF137200AA44E3 /* DateInputTableViewCell.swift */; };
-		278080B427AF13A100AA44E3 /* DateInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B327AF13A100AA44E3 /* DateInputFormField.swift */; };
-		278080B627AF13D500AA44E3 /* DateInputCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080B527AF13D500AA44E3 /* DateInputCellModel.swift */; };
-		278080B827AF17DC00AA44E3 /* DateInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080B727AF17DC00AA44E3 /* DateInputTableViewCell.xib */; };
-		278080BB27AF18F800AA44E3 /* ToggleInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BA27AF18F800AA44E3 /* ToggleInputTableViewCell.swift */; };
-		278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BC27AF192400AA44E3 /* ToggleInputFormField.swift */; };
-		278080BF27AF196800AA44E3 /* ToggleInputCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080BE27AF196800AA44E3 /* ToggleInputCellModel.swift */; };
-		278080C127AF199100AA44E3 /* ToggleInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080C027AF199100AA44E3 /* ToggleInputTableViewCell.xib */; };
-		278080C427AF1A3D00AA44E3 /* SelectInputTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C327AF1A3D00AA44E3 /* SelectInputTableViewCell.swift */; };
-		278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 278080C527AF1A4600AA44E3 /* SelectInputTableViewCell.xib */; };
-		278080C827AF1A7900AA44E3 /* SelectInputFormField.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C727AF1A7900AA44E3 /* SelectInputFormField.swift */; };
-		278080CA27AF1AB600AA44E3 /* SelectInputCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 278080C927AF1AB600AA44E3 /* SelectInputCellModel.swift */; };
 		2781E35227CD13CC0011BE14 /* isoCountryCode.json in Resources */ = {isa = PBXBuildFile; fileRef = 2781E35127CD13CC0011BE14 /* isoCountryCode.json */; };
 		2781E36C27CD278A0011BE14 /* Filterable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36B27CD278A0011BE14 /* Filterable.swift */; };
 		2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2781E36D27CD2E530011BE14 /* String+GetFlag.swift */; };
@@ -204,8 +174,6 @@
 		279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67182784688100480155 /* UIView+AddFullSubview.swift */; };
 		279B67242784713D00480155 /* TModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67232784713D00480155 /* TModel.swift */; };
 		279B67282784C64E00480155 /* String+TextToImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67272784C64E00480155 /* String+TextToImage.swift */; };
-		27ABA0892726AF4F000FD326 /* FinancePlatformsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0882726AF4F000FD326 /* FinancePlatformsRequest.swift */; };
-		27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA08A2726AF66000FD326 /* FinancePlatformsResponse.swift */; };
 		27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA08D2726B86F000FD326 /* GlobalGlobalRequest.swift */; };
 		27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA08F2726B87A000FD326 /* GlobalGlobalResponse.swift */; };
 		27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0922726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift */; };
@@ -236,8 +204,6 @@
 		27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E3272EC613000FD326 /* IndexesResponse.swift */; };
 		27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E6272EC766000FD326 /* IndexesListRequest.swift */; };
 		27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0E8272EC777000FD326 /* IndexesListResponse.swift */; };
-		27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0EB27317F4D000FD326 /* FinanceProductsRequest.swift */; };
-		27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */; };
 		27ABA0F12731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0F02731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift */; };
 		27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0F2273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift */; };
 		27ABA0FB273186F6000FD326 /* ExchangesRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0FA273186F6000FD326 /* ExchangesRequest.swift */; };
@@ -349,6 +315,16 @@
 		271B2765285EF3AA0046A996 /* SearchRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SearchRequestTest.swift; sourceTree = "<group>"; };
 		271B2769285EFAB40046A996 /* DerivativesExchangeIdRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DerivativesExchangeIdRequestTest.swift; sourceTree = "<group>"; };
 		271B276C285EFC490046A996 /* DerivativesExchangeListRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = DerivativesExchangeListRequestTest.swift; sourceTree = "<group>"; };
+		271B2770285F04A40046A996 /* IndexesRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexesRequestTest.swift; sourceTree = "<group>"; };
+		271B2772285F04AB0046A996 /* IndexesListRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = IndexesListRequestTest.swift; sourceTree = "<group>"; };
+		271B2779285F0A6F0046A996 /* AssetPlatformsTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = AssetPlatformsTest.swift; sourceTree = "<group>"; };
+		271B277D285F0C9D0046A996 /* CategoriesRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesRequestTest.swift; sourceTree = "<group>"; };
+		271B277F285F0CA30046A996 /* CategoriesListRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CategoriesListRequestTest.swift; sourceTree = "<group>"; };
+		271B2784285F0F0D0046A996 /* SimpleSupportedVsCurrenciesRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = SimpleSupportedVsCurrenciesRequestTest.swift; sourceTree = "<group>"; };
+		271B2789285F119D0046A996 /* CoinsIdRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsIdRequestTest.swift; sourceTree = "<group>"; };
+		271B278B285F11A70046A996 /* CoinsMarketsRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsMarketsRequestTest.swift; sourceTree = "<group>"; };
+		271B278D285F11AE0046A996 /* CoinsListRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsListRequestTest.swift; sourceTree = "<group>"; };
+		271B278F285F19210046A996 /* URLRequest+BuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+BuilderTest.swift"; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
 		271D71D128572C2300A52DBB /* UIImageView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Builder.swift"; sourceTree = "<group>"; };
@@ -519,8 +495,6 @@
 		279B67232784713D00480155 /* TModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TModel.swift; sourceTree = "<group>"; };
 		279B6725278471BE00480155 /* TutorialPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageModel.swift; sourceTree = "<group>"; };
 		279B67272784C64E00480155 /* String+TextToImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TextToImage.swift"; sourceTree = "<group>"; };
-		27ABA0882726AF4F000FD326 /* FinancePlatformsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePlatformsRequest.swift; sourceTree = "<group>"; };
-		27ABA08A2726AF66000FD326 /* FinancePlatformsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinancePlatformsResponse.swift; sourceTree = "<group>"; };
 		27ABA08D2726B86F000FD326 /* GlobalGlobalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalGlobalRequest.swift; sourceTree = "<group>"; };
 		27ABA08F2726B87A000FD326 /* GlobalGlobalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalGlobalResponse.swift; sourceTree = "<group>"; };
 		27ABA0922726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDecentralizedFinanceDefiRequest.swift; sourceTree = "<group>"; };
@@ -551,8 +525,6 @@
 		27ABA0E3272EC613000FD326 /* IndexesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesResponse.swift; sourceTree = "<group>"; };
 		27ABA0E6272EC766000FD326 /* IndexesListRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesListRequest.swift; sourceTree = "<group>"; };
 		27ABA0E8272EC777000FD326 /* IndexesListResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = IndexesListResponse.swift; sourceTree = "<group>"; };
-		27ABA0EB27317F4D000FD326 /* FinanceProductsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceProductsRequest.swift; sourceTree = "<group>"; };
-		27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FinanceProductsResponse.swift; sourceTree = "<group>"; };
 		27ABA0F02731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSupportedVsCurrenciesRequest.swift; sourceTree = "<group>"; };
 		27ABA0F2273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SimpleSupportedVsCurrenciesResponse.swift; sourceTree = "<group>"; };
 		27ABA0FA273186F6000FD326 /* ExchangesRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesRequest.swift; sourceTree = "<group>"; };
@@ -733,6 +705,7 @@
 		27182943285C912600E66073 /* URLRequest */ = {
 			isa = PBXGroup;
 			children = (
+				271B278F285F19210046A996 /* URLRequest+BuilderTest.swift */,
 			);
 			path = URLRequest;
 			sourceTree = "<group>";
@@ -1027,10 +1000,10 @@
 				271B2739285E3D560046A996 /* Ping */,
 				271B273C285E47000046A996 /* Simple */,
 				271B273D285E47110046A996 /* Coins */,
+				271B2778285F0A460046A996 /* Contract */,
 				271B273E285E47190046A996 /* AssetPlatforms */,
 				271B273F285E47250046A996 /* Categories */,
 				271B2740285E472A0046A996 /* Exchanges */,
-				271B2741285E47300046A996 /* Finance */,
 				271B2742285E47360046A996 /* Indexes */,
 				271B2743285E473C0046A996 /* Derivatives */,
 				271B2746285E474D0046A996 /* ExchangeRates */,
@@ -1053,6 +1026,9 @@
 		271B273C285E47000046A996 /* Simple */ = {
 			isa = PBXGroup;
 			children = (
+				271B2781285F0ECC0046A996 /* Price */,
+				271B2782285F0ED30046A996 /* TokenPrice */,
+				271B2783285F0EDF0046A996 /* SupportedVsCurrencies */,
 			);
 			path = Simple;
 			sourceTree = "<group>";
@@ -1060,6 +1036,9 @@
 		271B273D285E47110046A996 /* Coins */ = {
 			isa = PBXGroup;
 			children = (
+				271B2786285F11570046A996 /* List */,
+				271B2787285F115C0046A996 /* Markets */,
+				271B2788285F11620046A996 /* Id */,
 			);
 			path = Coins;
 			sourceTree = "<group>";
@@ -1067,6 +1046,7 @@
 		271B273E285E47190046A996 /* AssetPlatforms */ = {
 			isa = PBXGroup;
 			children = (
+				271B2779285F0A6F0046A996 /* AssetPlatformsTest.swift */,
 			);
 			path = AssetPlatforms;
 			sourceTree = "<group>";
@@ -1074,6 +1054,8 @@
 		271B273F285E47250046A996 /* Categories */ = {
 			isa = PBXGroup;
 			children = (
+				271B277B285F0AE70046A996 /* Categories */,
+				271B277C285F0AED0046A996 /* List */,
 			);
 			path = Categories;
 			sourceTree = "<group>";
@@ -1085,16 +1067,12 @@
 			path = Exchanges;
 			sourceTree = "<group>";
 		};
-		271B2741285E47300046A996 /* Finance */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Finance;
-			sourceTree = "<group>";
-		};
 		271B2742285E47360046A996 /* Indexes */ = {
 			isa = PBXGroup;
 			children = (
+				271B276F285F04690046A996 /* Indexes */,
+				271B2775285F09E10046A996 /* MarketId */,
+				271B276E285F04630046A996 /* List */,
 			);
 			path = Indexes;
 			sourceTree = "<group>";
@@ -1215,6 +1193,112 @@
 			path = ExchangesList;
 			sourceTree = "<group>";
 		};
+		271B276E285F04630046A996 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				271B2772285F04AB0046A996 /* IndexesListRequestTest.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		271B276F285F04690046A996 /* Indexes */ = {
+			isa = PBXGroup;
+			children = (
+				271B2770285F04A40046A996 /* IndexesRequestTest.swift */,
+			);
+			path = Indexes;
+			sourceTree = "<group>";
+		};
+		271B2774285F09CD0046A996 /* MarketId */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MarketId;
+			sourceTree = "<group>";
+		};
+		271B2775285F09E10046A996 /* MarketId */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = MarketId;
+			sourceTree = "<group>";
+		};
+		271B2777285F0A340046A996 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		271B2778285F0A460046A996 /* Contract */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Contract;
+			sourceTree = "<group>";
+		};
+		271B277B285F0AE70046A996 /* Categories */ = {
+			isa = PBXGroup;
+			children = (
+				271B277D285F0C9D0046A996 /* CategoriesRequestTest.swift */,
+			);
+			path = Categories;
+			sourceTree = "<group>";
+		};
+		271B277C285F0AED0046A996 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				271B277F285F0CA30046A996 /* CategoriesListRequestTest.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		271B2781285F0ECC0046A996 /* Price */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Price;
+			sourceTree = "<group>";
+		};
+		271B2782285F0ED30046A996 /* TokenPrice */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = TokenPrice;
+			sourceTree = "<group>";
+		};
+		271B2783285F0EDF0046A996 /* SupportedVsCurrencies */ = {
+			isa = PBXGroup;
+			children = (
+				271B2784285F0F0D0046A996 /* SimpleSupportedVsCurrenciesRequestTest.swift */,
+			);
+			path = SupportedVsCurrencies;
+			sourceTree = "<group>";
+		};
+		271B2786285F11570046A996 /* List */ = {
+			isa = PBXGroup;
+			children = (
+				271B278D285F11AE0046A996 /* CoinsListRequestTest.swift */,
+			);
+			path = List;
+			sourceTree = "<group>";
+		};
+		271B2787285F115C0046A996 /* Markets */ = {
+			isa = PBXGroup;
+			children = (
+				271B278B285F11A70046A996 /* CoinsMarketsRequestTest.swift */,
+			);
+			path = Markets;
+			sourceTree = "<group>";
+		};
+		271B2788285F11620046A996 /* Id */ = {
+			isa = PBXGroup;
+			children = (
+				271B2789285F119D0046A996 /* CoinsIdRequestTest.swift */,
+			);
+			path = Id;
+			sourceTree = "<group>";
+		};
 		271D71CB2854E41D00A52DBB /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1308,19 +1392,11 @@
 			path = Exchanges;
 			sourceTree = "<group>";
 		};
-		271EEA252720763100BA30FD /* Finance */ = {
-			isa = PBXGroup;
-			children = (
-				27ABA0872726AF35000FD326 /* Platforms */,
-				27ABA0EA27317F31000FD326 /* Products */,
-			);
-			path = Finance;
-			sourceTree = "<group>";
-		};
 		271EEA262720763E00BA30FD /* Indexes */ = {
 			isa = PBXGroup;
 			children = (
 				27ABA0E0272EC5F5000FD326 /* Indexes */,
+				271B2774285F09CD0046A996 /* MarketId */,
 				27ABA0E5272EC750000FD326 /* List */,
 			);
 			path = Indexes;
@@ -1371,10 +1447,10 @@
 				271EEA222720760600BA30FD /* Ping */,
 				271EEA1E272075D100BA30FD /* Simple */,
 				271EEA1F272075DA00BA30FD /* Coins */,
+				271B2777285F0A340046A996 /* Contract */,
 				271EEA21272075F900BA30FD /* AssetPlatforms */,
 				271EEA232720761400BA30FD /* Categories */,
 				271EEA242720761F00BA30FD /* Exchanges */,
-				271EEA252720763100BA30FD /* Finance */,
 				271EEA262720763E00BA30FD /* Indexes */,
 				271EEA272720764C00BA30FD /* Derivatives */,
 				271EEA2A2720767100BA30FD /* ExchangeRates */,
@@ -2275,15 +2351,6 @@
 			path = T;
 			sourceTree = "<group>";
 		};
-		27ABA0872726AF35000FD326 /* Platforms */ = {
-			isa = PBXGroup;
-			children = (
-				27ABA0882726AF4F000FD326 /* FinancePlatformsRequest.swift */,
-				27ABA08A2726AF66000FD326 /* FinancePlatformsResponse.swift */,
-			);
-			path = Platforms;
-			sourceTree = "<group>";
-		};
 		27ABA08C2726B859000FD326 /* Global */ = {
 			isa = PBXGroup;
 			children = (
@@ -2406,15 +2473,6 @@
 				27ABA0E8272EC777000FD326 /* IndexesListResponse.swift */,
 			);
 			path = List;
-			sourceTree = "<group>";
-		};
-		27ABA0EA27317F31000FD326 /* Products */ = {
-			isa = PBXGroup;
-			children = (
-				27ABA0EB27317F4D000FD326 /* FinanceProductsRequest.swift */,
-				27ABA0ED27317F68000FD326 /* FinanceProductsResponse.swift */,
-			);
-			path = Products;
 			sourceTree = "<group>";
 		};
 		27ABA0EF2731837F000FD326 /* SupportedVsCurrencies */ = {
@@ -2641,17 +2699,11 @@
 				271B2736285E3CF00046A996 /* CountryPickerTableViewCell.xib in Resources */,
 				271B2734285E3CE70046A996 /* CountryPickerViewController.xib in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
-				278080B827AF17DC00AA44E3 /* DateInputTableViewCell.xib in Resources */,
 				27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */,
-				278080C127AF199100AA44E3 /* ToggleInputTableViewCell.xib in Resources */,
 				27182985285CC12D00E66073 /* ExchangesListMasterViewController.xib in Resources */,
-				271B2727285E3C850046A996 /* SelectViewController.xib in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 				271B2733285E3CE70046A996 /* Flags.xcassets in Resources */,
-				2780809F27AF0E2500AA44E3 /* TextInputTableViewCell.xib in Resources */,
 				27182990285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib in Resources */,
-				278080C627AF1A4600AA44E3 /* SelectInputTableViewCell.xib in Resources */,
-				277B58C827B0093E00EAEA24 /* TitleHeaderFooterView.xib in Resources */,
 				2718299C285D04E600E66073 /* ExchangesDetailViewController.xib in Resources */,
 				27182964285CA01B00E66073 /* Localizables.strings in Resources */,
 			);
@@ -2704,17 +2756,13 @@
 			files = (
 				271B26F0285DB7070046A996 /* DisappearProtocol.swift in Sources */,
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
-				278080CA27AF1AB600AA44E3 /* SelectInputCellModel.swift in Sources */,
 				2787E31E27B94D3700DC5523 /* ScrollingPageControl.swift in Sources */,
-				271B2724285E3C850046A996 /* SelectViewController.swift in Sources */,
 				271B2731285E3CE70046A996 /* CountryPickerViewModel.swift in Sources */,
 				27182987285CC13200E66073 /* ExchangesListMasterViewModel.swift in Sources */,
 				2794AACE27F1AFD900E30828 /* DefaultRepository.swift in Sources */,
 				27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */,
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
-				271B2722285E3C850046A996 /* SelectableItem.swift in Sources */,
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
-				278080B427AF13A100AA44E3 /* DateInputFormField.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				271B2735285E3CF00046A996 /* CountryPickerTableViewCell.swift in Sources */,
 				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
@@ -2724,26 +2772,20 @@
 				271B2730285E3CE70046A996 /* CountryModel.swift in Sources */,
 				27ABA09A2726C374000FD326 /* TrendingRequest.swift in Sources */,
 				2787E32F27C179BB00DC5523 /* ImagePicker.swift in Sources */,
-				2780808A27AF0B9000AA44E3 /* FormField.swift in Sources */,
 				27BB13352788BFAA00B5FE4D /* AppDelegateAssembler.swift in Sources */,
-				2780809127AF0C3C00AA44E3 /* FieldDataSource.swift in Sources */,
-				271B2726285E3C850046A996 /* SelectViewModel.swift in Sources */,
 				27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */,
 				27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */,
 				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
 				27397E32280B145C00093CB8 /* FirebaseAppDelegate.swift in Sources */,
 				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
-				2780808E27AF0BCD00AA44E3 /* FormSection.swift in Sources */,
 				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
-				278080B227AF137200AA44E3 /* DateInputTableViewCell.swift in Sources */,
 				27182998285D04C900E66073 /* ExchangesDetailViewModel.swift in Sources */,
 				271B26F7285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift in Sources */,
 				27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */,
 				27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */,
 				271B26F3285DD0480046A996 /* CALayer+SetShadow.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
-				27ABA08B2726AF66000FD326 /* FinancePlatformsResponse.swift in Sources */,
 				27182971285CB0CB00E66073 /* String+Regex.swift in Sources */,
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
@@ -2751,16 +2793,11 @@
 				27ABA0E7272EC766000FD326 /* IndexesListRequest.swift in Sources */,
 				2757108D272594C400348F93 /* DataRequest+getURLRequest.swift in Sources */,
 				2763D39027A5D07100796FA8 /* NibLoadable.swift in Sources */,
-				2780809B27AF0D7C00AA44E3 /* TextInputFormField.swift in Sources */,
-				271B272A285E3CDF0046A996 /* FormDemoRouter.swift in Sources */,
 				271B2761285EF09B0046A996 /* SearchRequest.swift in Sources */,
-				27ABA0EE27317F68000FD326 /* FinanceProductsResponse.swift in Sources */,
 				271B26FD285DE15A0046A996 /* UITableView+EmptyView.swift in Sources */,
 				27182982285CC12500E66073 /* ExchangesListMasterAssembler.swift in Sources */,
-				2780809927AF0D4A00AA44E3 /* TextInputTableViewCell.swift in Sources */,
 				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeIdResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
-				2780809527AF0C7800AA44E3 /* InputDataSource.swift in Sources */,
 				27924731281EA7A100737A1C /* DeepLinkTemplate.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
 				270F0FC8279D787E005DE9FB /* Observable.swift in Sources */,
@@ -2770,22 +2807,17 @@
 				271B26FB285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift in Sources */,
 				2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
-				278080BF27AF196800AA44E3 /* ToggleInputCellModel.swift in Sources */,
 				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
 				27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */,
 				271B2763285EF0A70046A996 /* SearchResponse.swift in Sources */,
 				271B26EA285DB6E00046A996 /* AppearProtocol.swift in Sources */,
-				278080B627AF13D500AA44E3 /* DateInputCellModel.swift in Sources */,
-				271B272C285E3CDF0046A996 /* FormDemoViewController.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
-				2780808C27AF0BB100AA44E3 /* FormHeader.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				271B26DD285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift in Sources */,
 				27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
 				27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
-				271B2725285E3C850046A996 /* SelectModule.swift in Sources */,
 				27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */,
 				271B26E4285DB5990046A996 /* TitleProtocol.swift in Sources */,
 				271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */,
@@ -2794,7 +2826,6 @@
 				27ABA0CE2729ADA5000FD326 /* DerivativesRequest.swift in Sources */,
 				275710882725941F00348F93 /* DataRequest.swift in Sources */,
 				2787E34727C2480B00DC5523 /* PhotoLibraryPermission.swift in Sources */,
-				278080C827AF1A7900AA44E3 /* SelectInputFormField.swift in Sources */,
 				2787E31427B9178300DC5523 /* UIImage+Image.swift in Sources */,
 				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
 				2763D38B27A5CEF700796FA8 /* ReusableCell.swift in Sources */,
@@ -2807,21 +2838,16 @@
 				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeIdRequest.swift in Sources */,
 				278FD03E27DE4F5700A54EAB /* CustomNavigationController.swift in Sources */,
 				275710912725954600348F93 /* PingRequest.swift in Sources */,
-				2780809327AF0C5500AA44E3 /* FormDataSource.swift in Sources */,
 				2758FCD92709C463009BCB5A /* ConfigLoader.swift in Sources */,
 				271D71D528572EE400A52DBB /* UIStackView+Builder.swift in Sources */,
 				27924733281EA7BE00737A1C /* DeepLinkRecognizer.swift in Sources */,
 				271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */,
-				271B272B285E3CDF0046A996 /* Province.swift in Sources */,
 				2787E34127C245BF00DC5523 /* CameraPermission.swift in Sources */,
 				2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */,
-				271B272D285E3CDF0046A996 /* FormDemoViewModel.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
-				278080BD27AF192400AA44E3 /* ToggleInputFormField.swift in Sources */,
 				271B26E7285DB64A0046A996 /* DatasourceProtocol.swift in Sources */,
 				271B2732285E3CE70046A996 /* CountryPickerRepository.swift in Sources */,
-				278080C427AF1A3D00AA44E3 /* SelectInputTableViewCell.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
 				27ABA0D82729B1BB000FD326 /* DerivativesExchangesListRequest.swift in Sources */,
 				271B272F285E3CE70046A996 /* CountryPickerViewController.swift in Sources */,
@@ -2837,10 +2863,7 @@
 				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
 				2763D38927A5CE6100796FA8 /* UITableView+ReusableCell.swift in Sources */,
 				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
-				2780808827AF09FE00AA44E3 /* FormViewController.swift in Sources */,
-				278080AD27AF12AE00AA44E3 /* TitleFormHeader.swift in Sources */,
 				27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */,
-				27ABA0892726AF4F000FD326 /* FinancePlatformsRequest.swift in Sources */,
 				27ABA1112732E30B000FD326 /* CoinsMarketsResponse.swift in Sources */,
 				27ABA0952726BE92000FD326 /* GlobalDecentralizedFinanceDefiResponse.swift in Sources */,
 				27ABA0A727296B17000FD326 /* CategoriesListRequest.swift in Sources */,
@@ -2852,17 +2875,14 @@
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				2718299E285D04FE00E66073 /* ExchangesDetailAssembler.swift in Sources */,
 				27182984285CC12A00E66073 /* ExchangesListMasterViewController.swift in Sources */,
-				278080BB27AF18F800AA44E3 /* ToggleInputTableViewCell.swift in Sources */,
 				2787E32C27C172B300DC5523 /* WKWebView+load.swift in Sources */,
 				2787E33D27C244E400DC5523 /* Permission.swift in Sources */,
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
 				2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */,
-				271B2723285E3C850046A996 /* OpenSelectRouterInput.swift in Sources */,
 				2718298E285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
 				2718299A285D04DA00E66073 /* ExchangesDetailViewController.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
-				278080AF27AF12D300AA44E3 /* TitleHeaderFooterView.swift in Sources */,
 				271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */,
 				27397E3C280B282900093CB8 /* LocationAlwaysPermission.swift in Sources */,
 				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
@@ -2874,18 +2894,13 @@
 				27ABA10527318B20000FD326 /* ExchangesIdRequest.swift in Sources */,
 				275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */,
 				279B6713278463DB00480155 /* UIViewController+LoadFromNib.swift in Sources */,
-				2780809D27AF0D9600AA44E3 /* TextInputCellModel.swift in Sources */,
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
-				27ABA0EC27317F4D000FD326 /* FinanceProductsRequest.swift in Sources */,
 				27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */,
 				27397E36280B14AD00093CB8 /* LoggingService.swift in Sources */,
 				27182981285CC12200E66073 /* ExchangesListMasterNavigator.swift in Sources */,
 				2763D37627A47C7B00796FA8 /* UIColor+Hex.swift in Sources */,
 				27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */,
 				27ABA0E2272EC604000FD326 /* IndexesRequest.swift in Sources */,
-				271B2729285E3CDF0046A996 /* Country.swift in Sources */,
-				277B58CA27B00E4F00EAEA24 /* TitleHeaderFooterModel.swift in Sources */,
-				271B2728285E3CDF0046A996 /* FormDemoAssembler.swift in Sources */,
 				27397E3E280B2BAE00093CB8 /* LocationAlwaysHandler.swift in Sources */,
 				2792472F281EA57F00737A1C /* DeepLink.swift in Sources */,
 				2781E36C27CD278A0011BE14 /* Filterable.swift in Sources */,
@@ -2907,26 +2922,35 @@
 				27182958285C9E3400E66073 /* ReusableCellTest.swift in Sources */,
 				271B270A285E19CD0046A996 /* UILabel+BuilderTest.swift in Sources */,
 				271B2766285EF3AA0046A996 /* SearchRequestTest.swift in Sources */,
+				271B2780285F0CA30046A996 /* CategoriesListRequestTest.swift in Sources */,
 				2718296A285CA05E00E66073 /* String+LocalizedTest.swift in Sources */,
+				271B277E285F0C9D0046A996 /* CategoriesRequestTest.swift in Sources */,
 				271B276D285EFC490046A996 /* DerivativesExchangeListRequestTest.swift in Sources */,
 				271B275B285E4EE30046A996 /* DerivativesExchangesRequestTest.swift in Sources */,
+				271B2771285F04A40046A996 /* IndexesRequestTest.swift in Sources */,
 				2718295C285C9E7C00E66073 /* TestCell.swift in Sources */,
 				27924737281EB7B600737A1C /* DeepLinkingTests.swift in Sources */,
+				271B2785285F0F0D0046A996 /* SimpleSupportedVsCurrenciesRequestTest.swift in Sources */,
 				271B274B285E48320046A996 /* CompaniesRequestTest.swift in Sources */,
 				271B2751285E4A190046A996 /* GlobalRequestTest.swift in Sources */,
+				271B2773285F04AB0046A996 /* IndexesListRequestTest.swift in Sources */,
 				2718296C285CA12500E66073 /* UIAlertController+BuilderTest.swift in Sources */,
 				271B2706285E15880046A996 /* UIImageView+BuilderTest.swift in Sources */,
 				271B271D285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift in Sources */,
 				271B276A285EFAB40046A996 /* DerivativesExchangeIdRequestTest.swift in Sources */,
 				271B270F285E1EEF0046A996 /* UITableView+ReusableCellTest.swift in Sources */,
+				271B278E285F11AF0046A996 /* CoinsListRequestTest.swift in Sources */,
 				271B2708285E17D50046A996 /* UIColor+HexTest.swift in Sources */,
 				27182955285C9DDF00E66073 /* NibLoadableTest.swift in Sources */,
 				271B270D285E1E8E0046A996 /* NetworkServiceTest.swift in Sources */,
 				271B2713285E1FA80046A996 /* TestHeaderFooterCell.swift in Sources */,
 				271B2721285E28000046A996 /* JSONDecoder+DateDecodingStrategyFormattersTest.swift in Sources */,
+				271B278C285F11A70046A996 /* CoinsMarketsRequestTest.swift in Sources */,
+				271B2790285F19210046A996 /* URLRequest+BuilderTest.swift in Sources */,
 				271B273B285E3D750046A996 /* PingRequestTest.swift in Sources */,
 				271B2702285DF7ED0046A996 /* String+TextToImageTest.swift in Sources */,
 				2718296F285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift in Sources */,
+				271B277A285F0A6F0046A996 /* AssetPlatformsTest.swift in Sources */,
 				2758FC782709B46A009BCB5A /* CoinDexTests.swift in Sources */,
 				271B2700285DF6E50046A996 /* String+GetFlagTest.swift in Sources */,
 				271B2758285E4C110046A996 /* DerivativesRequestTest.swift in Sources */,

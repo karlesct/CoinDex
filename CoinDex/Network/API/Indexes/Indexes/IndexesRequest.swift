@@ -9,9 +9,15 @@ import Foundation
 struct IndexesRequest: DataRequest {
 
     let baseURL: String
+    let perPage: Int
+    let page: Int
 
-    init(baseURL: String) {
+    init(baseURL: String,
+         perPage: Int,
+         page: Int) {
         self.baseURL = baseURL
+        self.perPage = perPage
+        self.page = page
     }
 
     var url: String {
@@ -34,8 +40,8 @@ struct IndexesRequest: DataRequest {
 
     var queryItems: [String : String]? {
         [
-            "per_page" : "10",              // Total results per page
-            "page" : "1"                    // Page through results
+            "per_page" : "\(self.perPage)",              // Total results per page
+            "page" : "\(self.page)"                    // Page through results
 
         ]
     }
