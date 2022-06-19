@@ -11,37 +11,20 @@ class TabBarController: UITabBarController {
 
     // MARK: - Properties
 
-//    var viewModel: ChatViewModelProtocol?
-
     // MARK: - Life cycle
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        delegate = self
-        self.createTabBarController()
+        self.delegate = self
+        self.setupUI()
     }
 
     // MARK: - Methods
 
-    func createTabBarController() {
-
+    func setupUI() {
         self.tabBar.barTintColor = .xFFFFFF
         self.tabBar.isTranslucent = false
         self.tabBar.tintColor = .primary
-
-        let firstVc = UIViewController()
-        firstVc.title = "First"
-        firstVc.view.backgroundColor =  .red
-        firstVc.tabBarItem = UITabBarItem.init(title: "Home", image: UIImage(named: "HomeTab"), tag: 0)
-
-        let secondVc = TutorialAssembler().viewController()
-        secondVc.title = "Tutorial"
-        secondVc.view.backgroundColor =  .green
-        secondVc.tabBarItem = UITabBarItem.init(title: "Location", image: UIImage(named: "Location"), tag: 1)
-
-        let controllerArray = [firstVc, secondVc]
-        //UITabBar.setTransparentTabBar()
-        self.viewControllers = controllerArray.map{ UINavigationController.init(rootViewController: $0)}
     }
 
 }

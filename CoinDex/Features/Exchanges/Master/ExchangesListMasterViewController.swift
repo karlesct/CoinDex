@@ -43,8 +43,7 @@ class ExchangesListMasterViewController: UIViewController {
         
         self.viewModel?.view = self
         
-        self.title = self.viewModel?.title
-        self.view.backgroundColor = .xF6F6F6
+        self.setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
@@ -55,6 +54,14 @@ class ExchangesListMasterViewController: UIViewController {
     }
     
     // MARK: - Methods
+    
+    func setupUI() {
+        self.setNavigation(image: .tabBar.exchangesIcon,
+                           title: self.viewModel?.title ?? .empty,
+                           color: .xFFFFFF)
+        
+        self.view.backgroundColor = .xF6F6F6
+    }
     
 }
 

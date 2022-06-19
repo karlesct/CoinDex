@@ -32,36 +32,45 @@ class UIImageView_BuilderTest: XCTestCase {
     
     func testImageViewBuilder_02() {
         
-        let item = imageView?.with(imageName: "iconClip")
+        let item = imageView?.with(image: UIImage())
         XCTAssertNotNil(item)
         
     }
     
     func testImageViewBuilder_03() {
         
-        let item = imageView?.with(height: 10)
+        let item = imageView?.with(tintColor: .xFFFFFF)
         XCTAssertNotNil(item)
         
     }
 
+    
     func testImageViewBuilder_04() {
         
-        let item = imageView?.with(width: 10)
+        let item = imageView?.with(height: 10)
         XCTAssertNotNil(item)
         
     }
     
     func testImageViewBuilder_05() {
         
+        let item = imageView?.with(width: 10)
+        XCTAssertNotNil(item)
+        
+    }
+    
+    func testImageViewBuilder_06() {
+        
         let item = imageView?
-            .with(imageName: "iconClip")
+            .with(image: UIImage())
+            .with(tintColor: .xFFFFFF)
             .with(height: 10)
             .with(width: 10)
             .build()
         XCTAssertNotNil(item)
     }
     
-    func testImageViewBuilder_06() {
+    func testImageViewBuilder_07() {
         
         let item = imageView?
             .build()

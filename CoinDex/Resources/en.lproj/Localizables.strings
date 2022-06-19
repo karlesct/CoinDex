@@ -22,26 +22,31 @@
 
 // MARK: - Tutorial
 
-"tutorial_image_page_1" = "👽";
-"tutorial_title_page_1" = "title_1";
-"tutorial_body_page_1" = "body_1";
+"launch_title" = "Powered by CoinGecko";
 
-"tutorial_image_page_2" = "🥶";
-"tutorial_title_page_2" = "title_2";
-"tutorial_body_page_2" = "body_2";
+// MARK: - Tutorial
 
-"tutorial_image_page_3" = "🥵";
-"tutorial_title_page_3" = "title_3";
-"tutorial_body_page_3" = "body_3";
+"tutorial_title" = "Welcome";
 
-"tutorial_image_page_4" = "😱";
-"tutorial_title_page_4" = "title_4";
-"tutorial_body_page_4" = "body_4";
+"tutorial_image_page_1" = "🗣";
+"tutorial_title_page_1" = "If you don’t believe it or don’t get it, I don’t have the time to try to convince you, sorry.";
+"tutorial_body_page_1" = "- Satoshi Nakamoto -";
+
+"tutorial_image_page_2" = "💸";
+"tutorial_title_page_2" = "Bitcoin will do to banks what email did to the postal industry";
+"tutorial_body_page_2" = "- Rick Falkvinge -";
+
+"tutorial_image_page_3" = "🎢";
+"tutorial_title_page_3" = "Whenever the price of cryptocurrency is rallying, people start spending a lot more.";
+"tutorial_body_page_3" = "- Erik Voorhees -";
+
+"tutorial_image_page_4" = "🏝";
+"tutorial_title_page_4" = "Bitcoin is the beginning of something great: a currency without a government, something necessary and imperative.";
+"tutorial_body_page_4" = "- Nassim Taleb, Author and Risk Analyst -";
 
 // MARK: - ExchangesListMaster
 
 "exchange_list_master_title" = "Crypto Exchanges";
-
 
 // MARK: - ExchangesDetail
 

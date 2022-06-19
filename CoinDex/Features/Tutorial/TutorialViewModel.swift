@@ -5,15 +5,21 @@
 
 import Foundation
 
-protocol TutorialViewModelProtocol {
-    var datasource: [TModel]? { get set }
+protocol TutorialViewModelProtocol: TitleProtocol,
+                                    DatasourceProtocol {
+    var view: TutorialViewProtocol? { get set }
+}
+
+protocol TutorialViewProtocol: AnyObject {
 }
 
 class TutorialViewModel: TutorialViewModelProtocol {
 
     // MARK: - Properties
+    
+    var title: String = "tutorial_title".localized
 
-    var datasource: [TModel]? = [
+    var dataSource: [TModel]? = [
         TutorialPageModel(imageName: "tutorial_image_page_1".localized,
                           title: "tutorial_title_page_1".localized,
                           body: "tutorial_body_page_1".localized),
@@ -27,8 +33,13 @@ class TutorialViewModel: TutorialViewModelProtocol {
                           title: "tutorial_title_page_4".localized,
                           body: "tutorial_body_page_4".localized),
     ]
+    
+    weak var view: TutorialViewProtocol?
 
     // MARK: - Init
+    
+    init() {
+    }
 
     // MARK: - Methods
 

@@ -15,6 +15,7 @@ class TutorialPageViewController: UIViewController {
         didSet {
             self.titleLabel.font = .systemFont(ofSize: 22,
                                                weight: .medium)
+            self.titleLabel.numberOfLines = 0
             self.titleLabel.textColor = .xFFFFFF
         }
     }

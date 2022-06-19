@@ -9,7 +9,8 @@ import UIKit
 extension UIImageView {
     
     class Builder {
-        private var imageName: String?
+        private var image: UIImage?
+        private var tintColor: UIColor?
         private var height: CGFloat?
         private var width: CGFloat?
         
@@ -21,8 +22,14 @@ extension UIImageView {
         // MARK: - Methods
         
         @discardableResult
-        func with(imageName: String?) -> Builder {
-            self.imageName = imageName
+        func with(image: UIImage?) -> Builder {
+            self.image = image
+            return self
+        }
+        
+        @discardableResult
+        func with(tintColor: UIColor?) -> Builder {
+            self.tintColor = tintColor
             return self
         }
         
@@ -40,9 +47,11 @@ extension UIImageView {
         
         func build() -> UIImageView {
             let imageView = UIImageView()
-            imageView.image = UIImage(named: self.imageName ?? .empty)
+            imageView.image = self.image
             
             imageView.translatesAutoresizingMaskIntoConstraints = false
+            
+            imageView.tintColor = self.tintColor
             
             guard let height = self.height,
                   let width = self.width else {

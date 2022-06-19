@@ -11,13 +11,13 @@ class LaunchScreenViewController: UIViewController {
 
     @IBOutlet weak var imageView: UIImageView! {
         didSet {
-            self.imageView.image = UIImage(named: "coingeckoLogo")
+            self.imageView.image = .launch.logo
         }
     }
     
     @IBOutlet weak var label: UILabel!{
         didSet {
-            self.label.text = "Powered by CoinGecko"
+            self.label.text = "launch_title".localized
             self.label.textColor = .primary
             self.label.font = .boldSystemFont(ofSize: 18)
         }

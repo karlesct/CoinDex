@@ -34,7 +34,9 @@ final class ExchangesListMasterNavigator: Navigator {
         switch destination {
         case let .detail(id):
             let assembler = ExchangesDetailAssembler(id: id)
-            return assembler.viewController()
+            let viewController = assembler.viewController()
+            viewController.hidesBottomBarWhenPushed = true
+            return viewController
         }
     }
 }

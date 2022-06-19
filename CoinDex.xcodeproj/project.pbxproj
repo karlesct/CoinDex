@@ -95,6 +95,18 @@
 		271B278C285F11A70046A996 /* CoinsMarketsRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B278B285F11A70046A996 /* CoinsMarketsRequestTest.swift */; };
 		271B278E285F11AF0046A996 /* CoinsListRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B278D285F11AE0046A996 /* CoinsListRequestTest.swift */; };
 		271B2790285F19210046A996 /* URLRequest+BuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B278F285F19210046A996 /* URLRequest+BuilderTest.swift */; };
+		271B2796285F20C10046A996 /* ExchangesDetailAssemblerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B2795285F20C10046A996 /* ExchangesDetailAssemblerTest.swift */; };
+		271B2799285F23D90046A996 /* TabBarController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31827B93F4A00DC5523 /* TabBarController.swift */; };
+		271B279A285F23D90046A996 /* TabBarAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2787E31627B93EE200DC5523 /* TabBarAssembler.swift */; };
+		271B279B285F242D0046A996 /* TutorialAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670B27845F7900480155 /* TutorialAssembler.swift */; };
+		271B279C285F242D0046A996 /* TutorialViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670D2784616900480155 /* TutorialViewModel.swift */; };
+		271B279D285F242D0046A996 /* TutorialPageAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B671A27846F3000480155 /* TutorialPageAssembler.swift */; };
+		271B279E285F242D0046A996 /* TutorialPageViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B671C27846F3F00480155 /* TutorialPageViewController.swift */; };
+		271B279F285F242D0046A996 /* TutorialPageViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279B672027846F6B00480155 /* TutorialPageViewController.xib */; };
+		271B27A0285F242D0046A996 /* TutorialViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B670F2784617600480155 /* TutorialViewController.swift */; };
+		271B27A1285F242D0046A996 /* TutorialPageModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B6725278471BE00480155 /* TutorialPageModel.swift */; };
+		271B27A2285F242D0046A996 /* TutorialViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 279B67142784652A00480155 /* TutorialViewController.xib */; };
+		271B27A4285F31360046A996 /* UIViewController+SetNavigationTitle.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271B27A3285F31360046A996 /* UIViewController+SetNavigationTitle.swift */; };
 		271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CC2854E43300A52DBB /* UILabel+Builder.swift */; };
 		271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */; };
 		271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271D71D128572C2300A52DBB /* UIImageView+Builder.swift */; };
@@ -325,6 +337,8 @@
 		271B278B285F11A70046A996 /* CoinsMarketsRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsMarketsRequestTest.swift; sourceTree = "<group>"; };
 		271B278D285F11AE0046A996 /* CoinsListRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CoinsListRequestTest.swift; sourceTree = "<group>"; };
 		271B278F285F19210046A996 /* URLRequest+BuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "URLRequest+BuilderTest.swift"; sourceTree = "<group>"; };
+		271B2795285F20C10046A996 /* ExchangesDetailAssemblerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailAssemblerTest.swift; sourceTree = "<group>"; };
+		271B27A3285F31360046A996 /* UIViewController+SetNavigationTitle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIViewController+SetNavigationTitle.swift"; sourceTree = "<group>"; };
 		271D71CC2854E43300A52DBB /* UILabel+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UILabel+Builder.swift"; sourceTree = "<group>"; };
 		271D71CE2854EF5700A52DBB /* UIButton+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIButton+Builder.swift"; sourceTree = "<group>"; };
 		271D71D128572C2300A52DBB /* UIImageView+Builder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+Builder.swift"; sourceTree = "<group>"; };
@@ -619,6 +633,7 @@
 		27182938285C90B400E66073 /* Features */ = {
 			isa = PBXGroup;
 			children = (
+				271B2791285F204C0046A996 /* Exchanges */,
 			);
 			path = Features;
 			sourceTree = "<group>";
@@ -1299,6 +1314,44 @@
 			path = Id;
 			sourceTree = "<group>";
 		};
+		271B2791285F204C0046A996 /* Exchanges */ = {
+			isa = PBXGroup;
+			children = (
+				271B2792285F20540046A996 /* Master */,
+				271B2793285F20590046A996 /* Detail */,
+			);
+			path = Exchanges;
+			sourceTree = "<group>";
+		};
+		271B2792285F20540046A996 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Master;
+			sourceTree = "<group>";
+		};
+		271B2793285F20590046A996 /* Detail */ = {
+			isa = PBXGroup;
+			children = (
+				271B2795285F20C10046A996 /* ExchangesDetailAssemblerTest.swift */,
+			);
+			path = Detail;
+			sourceTree = "<group>";
+		};
+		271B2797285F21C00046A996 /* Debug */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Debug;
+			sourceTree = "<group>";
+		};
+		271B2798285F21C50046A996 /* Staging */ = {
+			isa = PBXGroup;
+			children = (
+			);
+			path = Staging;
+			sourceTree = "<group>";
+		};
 		271D71CB2854E41D00A52DBB /* UILabel */ = {
 			isa = PBXGroup;
 			children = (
@@ -1512,6 +1565,7 @@
 			children = (
 				271EEA3D27207E7A00BA30FD /* UIViewController+GetTopViewController.swift */,
 				279B6712278463DB00480155 /* UIViewController+LoadFromNib.swift */,
+				271B27A3285F31360046A996 /* UIViewController+SetNavigationTitle.swift */,
 			);
 			path = UIViewController;
 			sourceTree = "<group>";
@@ -1803,18 +1857,11 @@
 		2758FC9B2709B58D009BCB5A /* Environments */ = {
 			isa = PBXGroup;
 			children = (
-				2758FC9C2709B596009BCB5A /* Debug */,
-				2758FCA12709B5AF009BCB5A /* Staging */,
+				271B2797285F21C00046A996 /* Debug */,
+				271B2798285F21C50046A996 /* Staging */,
 				2758FC9D2709B59D009BCB5A /* Release */,
 			);
 			path = Environments;
-			sourceTree = "<group>";
-		};
-		2758FC9C2709B596009BCB5A /* Debug */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Debug;
 			sourceTree = "<group>";
 		};
 		2758FC9D2709B59D009BCB5A /* Release */ = {
@@ -1825,13 +1872,6 @@
 				2758FCFD2709D69A009BCB5A /* Config.plist */,
 			);
 			path = Release;
-			sourceTree = "<group>";
-		};
-		2758FCA12709B5AF009BCB5A /* Staging */ = {
-			isa = PBXGroup;
-			children = (
-			);
-			path = Staging;
 			sourceTree = "<group>";
 		};
 		2758FCE02709C467009BCB5A /* Config */ = {
@@ -2706,6 +2746,8 @@
 				27182990285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib in Resources */,
 				2718299C285D04E600E66073 /* ExchangesDetailViewController.xib in Resources */,
 				27182964285CA01B00E66073 /* Localizables.strings in Resources */,
+				271B279F285F242D0046A996 /* TutorialPageViewController.xib in Resources */,
+				271B27A2285F242D0046A996 /* TutorialViewController.xib in Resources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
@@ -2767,6 +2809,7 @@
 				271B2735285E3CF00046A996 /* CountryPickerTableViewCell.swift in Sources */,
 				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
 				27924735281EA7FE00737A1C /* DeepLinkValues.swift in Sources */,
+				271B279D285F242D0046A996 /* TutorialPageAssembler.swift in Sources */,
 				2787E34427C246BC00DC5523 /* NotificationPermission.swift in Sources */,
 				27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */,
 				271B2730285E3CE70046A996 /* CountryModel.swift in Sources */,
@@ -2809,13 +2852,16 @@
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
 				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
 				27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */,
+				271B27A4285F31360046A996 /* UIViewController+SetNavigationTitle.swift in Sources */,
 				271B2763285EF0A70046A996 /* SearchResponse.swift in Sources */,
 				271B26EA285DB6E00046A996 /* AppearProtocol.swift in Sources */,
+				271B279B285F242D0046A996 /* TutorialAssembler.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				271B26DD285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift in Sources */,
 				27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
+				271B27A0285F242D0046A996 /* TutorialViewController.swift in Sources */,
 				27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
 				27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */,
@@ -2830,6 +2876,7 @@
 				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
 				2763D38B27A5CEF700796FA8 /* ReusableCell.swift in Sources */,
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
+				271B2799285F23D90046A996 /* TabBarController.swift in Sources */,
 				279B67242784713D00480155 /* TModel.swift in Sources */,
 				2787E31C27B94CE000DC5523 /* CircularView.swift in Sources */,
 				2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */,
@@ -2849,6 +2896,7 @@
 				271B26E7285DB64A0046A996 /* DatasourceProtocol.swift in Sources */,
 				271B2732285E3CE70046A996 /* CountryPickerRepository.swift in Sources */,
 				2758FC612709B45E009BCB5A /* AppDelegate.swift in Sources */,
+				271B279A285F23D90046A996 /* TabBarAssembler.swift in Sources */,
 				27ABA0D82729B1BB000FD326 /* DerivativesExchangesListRequest.swift in Sources */,
 				271B272F285E3CE70046A996 /* CountryPickerViewController.swift in Sources */,
 				27ABA0F12731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift in Sources */,
@@ -2872,6 +2920,7 @@
 				27E636E12733EEEE00FC1210 /* CoinsIdRequest.swift in Sources */,
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
 				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
+				271B279E285F242D0046A996 /* TutorialPageViewController.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				2718299E285D04FE00E66073 /* ExchangesDetailAssembler.swift in Sources */,
 				27182984285CC12A00E66073 /* ExchangesListMasterViewController.swift in Sources */,
@@ -2880,6 +2929,7 @@
 				27ABA0AC27296DB0000FD326 /* CategoriesRequest.swift in Sources */,
 				2763D37827A480D100796FA8 /* UIColor+DynamicColor.swift in Sources */,
 				2718298E285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift in Sources */,
+				271B27A1285F242D0046A996 /* TutorialPageModel.swift in Sources */,
 				27ABA0DA2729B1C8000FD326 /* DerivativesExchangesListResponse.swift in Sources */,
 				2718299A285D04DA00E66073 /* ExchangesDetailViewController.swift in Sources */,
 				27ABA0F3273183AF000FD326 /* SimpleSupportedVsCurrenciesResponse.swift in Sources */,
@@ -2897,6 +2947,7 @@
 				271EEA3827207DAB00BA30FD /* UIAlertController+Builder.swift in Sources */,
 				27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */,
 				27397E36280B14AD00093CB8 /* LoggingService.swift in Sources */,
+				271B279C285F242D0046A996 /* TutorialViewModel.swift in Sources */,
 				27182981285CC12200E66073 /* ExchangesListMasterNavigator.swift in Sources */,
 				2763D37627A47C7B00796FA8 /* UIColor+Hex.swift in Sources */,
 				27ABA0D32729B004000FD326 /* DerivativesExchangesRequest.swift in Sources */,
@@ -2927,6 +2978,7 @@
 				271B277E285F0C9D0046A996 /* CategoriesRequestTest.swift in Sources */,
 				271B276D285EFC490046A996 /* DerivativesExchangeListRequestTest.swift in Sources */,
 				271B275B285E4EE30046A996 /* DerivativesExchangesRequestTest.swift in Sources */,
+				271B2796285F20C10046A996 /* ExchangesDetailAssemblerTest.swift in Sources */,
 				271B2771285F04A40046A996 /* IndexesRequestTest.swift in Sources */,
 				2718295C285C9E7C00E66073 /* TestCell.swift in Sources */,
 				27924737281EB7B600737A1C /* DeepLinkingTests.swift in Sources */,

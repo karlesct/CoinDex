@@ -18,13 +18,34 @@ final class TabBarAssembler {
 
     func viewController() -> UIViewController {
         let viewController = TabBarController.loadFromNib()
-//        viewController.viewModel = self.viewModel()
+        viewController.viewControllers = self.viewControllers()
         return viewController
     }
 
-//    private func viewModel() -> TabBarViewModelProtocol {
-//        let viewModel = MainViewModel()
-//        return viewModel
-//    }
+    private func viewControllers() -> [UIViewController] {
+        let viewControllers = [
+            self.exchangesViewController(),
+            self.tutorialViewController()
+        ]
+        return viewControllers
+    }
+    
+    private func exchangesViewController() -> UIViewController {
+        let navigationController = CustomNavigationController()
+        let assembler = ExchangesListMasterAssembler(navigationController: navigationController)
+        let viewController = assembler.viewController()
+        navigationController.viewControllers = [viewController]
+        viewController.tabBarItem.image = .tabBar.exchangesIcon
+        viewController.tabBarItem.title = "exchange_list_master_title".localized
+        return navigationController
+    }
+    
+    private func tutorialViewController() -> UIViewController {
+        let assembler = TutorialAssembler()
+        let viewController = assembler.viewController()
+        viewController.tabBarItem.image = .tabBar.welcomeIcon
+        viewController.tabBarItem.title = "tutorial_title".localized
+        return viewController
+    }
 
 }

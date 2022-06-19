@@ -30,12 +30,19 @@ class AppDelegate: UIResponder, UIApplicationDelegate {
         // Override point for customization after application launch.
         _ = composite?.application?(application, didFinishLaunchingWithOptions: launchOptions)
         
+        let assembler = TabBarAssembler()
+        let viewController = assembler.viewController()
+        viewController.modalPresentationStyle = .overFullScreen
+        
         if let initialViewController = appDelegateAssembler?.launchScreenAssembler.viewController() {
             window = appDelegateAssembler?.window
-            appDelegateAssembler?.navigationController.viewControllers = [initialViewController]
-            appDelegateAssembler?.window.rootViewController = appDelegateAssembler?.navigationController
+//            appDelegateAssembler?.navigationController.viewControllers = [initialViewController]
+            appDelegateAssembler?.window.rootViewController = viewController
             appDelegateAssembler?.window.makeKeyAndVisible()
         }
+        
+        
+        
         
         UNUserNotificationCenter.current().delegate = self
 

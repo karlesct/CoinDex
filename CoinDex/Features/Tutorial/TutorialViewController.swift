@@ -23,6 +23,7 @@ class TutorialViewController: UIViewController {
     @IBOutlet weak var closeButton: UIButton! {
         didSet {
             self.closeButton.tintColor = .xFFFFFF
+            self.closeButton.isHidden = true
             self.closeButton.setImage(.common.closeIcon,
                                       for: .normal)
             self.closeButton.addTarget(self,
@@ -33,6 +34,10 @@ class TutorialViewController: UIViewController {
 
 
     // MARK: - Properties
+    
+    override var preferredStatusBarStyle: UIStatusBarStyle {
+        return .lightContent
+    }
 
     private var pageViewController: UIPageViewController?  {
         didSet {
@@ -59,7 +64,7 @@ class TutorialViewController: UIViewController {
     var viewModel: TutorialViewModelProtocol? {
         didSet {
             var viewControllers: [UIViewController]? = []
-            self.viewModel?.datasource?.forEach { item in
+            self.viewModel?.dataSource?.forEach { item in
                 if let model = item as? TutorialPageModel {
                     let assembler = TutorialPageAssembler(model: model)
                     viewControllers?.append(assembler.viewController())
@@ -73,14 +78,22 @@ class TutorialViewController: UIViewController {
 
     override func viewDidLoad() {
         super.viewDidLoad()
-        self.view.setGradient(start: .center,
-                              end: .bottomCenter,
-                              colors: [.primary,
-                                       .secondary])
+
+        self.setupUI()
     }
 
     // MARK: - Methods
 
+    func setupUI() {
+        self.view.setGradient(start: .center,
+                              end: .bottomCenter,
+                              colors: [.primary,
+                                       .secondary])
+        self.viewModel?.view = self
+        
+        self.title = self.viewModel?.title
+    }
+    
     @objc func closeButtonAction() {
         self.dismiss(animated: true, completion: nil)
     }
@@ -140,4 +153,8 @@ extension TutorialViewController: UIPageViewControllerDelegate {
 
         self.currentPageIndex = NavigationPage.pendingIndex
     }
+}
+
+extension TutorialViewController: TutorialViewProtocol {
+
 }
