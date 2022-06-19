@@ -134,6 +134,7 @@
 		271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA4327208BC300BA30FD /* String+Empty.swift */; };
 		271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA4D2720AD4800BA30FD /* HTTPHeaderKey.swift */; };
 		271EEA502720ADB800BA30FD /* HTTPHeaderValue.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271EEA4F2720ADB800BA30FD /* HTTPHeaderValue.swift */; };
+		272DE04C285F9BE000E92A43 /* UIStackView+BuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272DE04B285F9BE000E92A43 /* UIStackView+BuilderTest.swift */; };
 		27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E2D280B141100093CB8 /* FirebaseAppDelegateAssembler.swift */; };
 		27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E2F280B144400093CB8 /* CompositeAppDelegate.swift */; };
 		27397E32280B145C00093CB8 /* FirebaseAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E31280B145C00093CB8 /* FirebaseAppDelegate.swift */; };
@@ -378,6 +379,7 @@
 		271EEA4327208BC300BA30FD /* String+Empty.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+Empty.swift"; sourceTree = "<group>"; };
 		271EEA4D2720AD4800BA30FD /* HTTPHeaderKey.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaderKey.swift; sourceTree = "<group>"; };
 		271EEA4F2720ADB800BA30FD /* HTTPHeaderValue.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPHeaderValue.swift; sourceTree = "<group>"; };
+		272DE04B285F9BE000E92A43 /* UIStackView+BuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+BuilderTest.swift"; sourceTree = "<group>"; };
 		27397E2D280B141100093CB8 /* FirebaseAppDelegateAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegateAssembler.swift; sourceTree = "<group>"; };
 		27397E2F280B144400093CB8 /* CompositeAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegate.swift; sourceTree = "<group>"; };
 		27397E31280B145C00093CB8 /* FirebaseAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegate.swift; sourceTree = "<group>"; };
@@ -706,6 +708,7 @@
 		27182942285C912000E66073 /* UIStackView */ = {
 			isa = PBXGroup;
 			children = (
+				272DE04B285F9BE000E92A43 /* UIStackView+BuilderTest.swift */,
 			);
 			path = UIStackView;
 			sourceTree = "<group>";
@@ -2993,6 +2996,7 @@
 				271B2753285E4AC00046A996 /* TrendingRequestTest.swift in Sources */,
 				271B274F285E49A40046A996 /* GlobalDecentralizedFinanceDefiRequestTest.swift in Sources */,
 				27182952285C9B1100E66073 /* LoggingServiceTest.swift in Sources */,
+				272DE04C285F9BE000E92A43 /* UIStackView+BuilderTest.swift in Sources */,
 			);
 			runOnlyForDeploymentPostprocessing = 0;
 		};
