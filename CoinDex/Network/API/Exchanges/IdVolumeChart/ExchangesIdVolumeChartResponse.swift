@@ -13,7 +13,7 @@ struct ExchangesIdVolumeChartResponseElement: Codable {
 
     init(from decoder: Decoder) throws {
         var container = try decoder.unkeyedContainer()
-        date = try container.decode(Date.self)
-        value = try container.decode(String.self)
+        self.date = try container.decode(Date.self)
+        self.value = try container.decode(String.self)
     }
 }

@@ -250,6 +250,9 @@ enum HTTPStatusCode: Int, Error {
 
     /// - networkAuthenticationRequired: The client needs to authenticate to gain network access.
     case networkAuthenticationRequired = 511
+    
+    /// - unknown
+    case unknown = 1000
 
     /// The class (or group) which the status code belongs to.
     var responseType: ResponseType {

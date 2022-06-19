@@ -7,7 +7,7 @@ import Foundation
 
 protocol ExchangesListMasterRepositoryProtocol {
     func fetchList(page: Int,
-                   completion: @escaping (Result<[ExchangesListMasterCellModel], Error>) -> Void)
+                   completion: @escaping (Result<[TModel], Error>) -> Void)
 }
 
 class ExchangesListMasterRepository: ExchangesListMasterRepositoryProtocol {
@@ -28,7 +28,7 @@ class ExchangesListMasterRepository: ExchangesListMasterRepositoryProtocol {
     // MARK: - Methods
 
     func fetchList(page: Int,
-                   completion: @escaping (Result<[ExchangesListMasterCellModel], Error>) -> Void) {
+                   completion: @escaping (Result<[TModel], Error>) -> Void) {
         self.networkService.request(ExchangesRequest(baseURL: self.baseURL, page: page)) { result in
             switch result {
             case let .success(model):
@@ -38,22 +38,5 @@ class ExchangesListMasterRepository: ExchangesListMasterRepositoryProtocol {
                 completion(.failure(error))
             }
         }
-    }
-}
-
-class ExchangeResponseConverter {
-    static func convert(exchangeResponse: ExchangesResponse) -> [ExchangesListMasterCellModel] {
-        var items: [ExchangesListMasterCellModel] = []
-        
-        for item in exchangeResponse {
-            let coinListMasterCell = ExchangesListMasterCellModel(id: item.id,
-                                                             name: item.name,
-                                                             image: item.image)
-            items.append(coinListMasterCell)
-        }
-        
-        return items
-        
-        
     }
 }

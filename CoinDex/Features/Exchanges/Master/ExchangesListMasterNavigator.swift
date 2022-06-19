@@ -23,7 +23,7 @@ final class ExchangesListMasterNavigator: Navigator {
 
     func navigate(to destination: Destination) {
 
-        let viewController = makeViewController(for: destination)
+        let viewController = self.makeViewController(for: destination)
         self.navigationController.pushViewController(viewController, animated: true)
 
     }

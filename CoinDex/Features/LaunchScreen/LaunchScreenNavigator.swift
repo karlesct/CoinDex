@@ -22,7 +22,7 @@ final class LaunchScreenNavigator: Navigator {
 
         switch destination {
         case let .tabBar(presentView):
-            let viewController = makeViewController(for: destination)
+            let viewController = self.makeViewController(for: destination)
             presentView.present(viewController,
                                 animated: false)
         }

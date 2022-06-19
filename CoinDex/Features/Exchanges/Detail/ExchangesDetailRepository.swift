@@ -38,23 +38,3 @@ class ExchangesDetailRepository: ExchangesDetailRepositoryProtocol {
         }
     }
 }
-
-class ExchangesIdResponseConverter {
-    static func convert(model: ExchangesIdResponse) -> [TModel] {
-        var items: [TModel] = []
-
-        let itemInfo = ExchangesDetailInfoCellModel(name: model.name,
-                                                    image: model.image,
-                                                    year: model.yearEstablished,
-                                                    country: model.country,
-                                                    centralized: model.centralized)
-        items.append(itemInfo)
-        
-        let itemTrust = ExchangesDetailTrustCellModel(scoreRank: model.trustScoreRank,
-                                                 trustScore: model.trustScore,
-                                                 tradeVolumeBtc: model.tradeVolume24HBtc,
-                                                 tradeVolumeNormalizedBtc: model.tradeVolume24HBtcNormalized)
-        items.append(itemTrust)
-        return items
-    }
-}

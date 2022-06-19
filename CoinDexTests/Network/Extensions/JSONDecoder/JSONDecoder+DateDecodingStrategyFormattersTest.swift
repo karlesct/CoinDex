@@ -23,7 +23,7 @@ class JSONDecoder_DateDecodingStrategyFormattersTest: XCTestCase {
         super.setUp()
         
         // The Json to decode
-        jsonData = """
+        self.jsonData = """
         {
             "date1": "2019-05-30 15:18:00",
             "date2": "2019-05-30T05:18:00",
@@ -36,13 +36,13 @@ class JSONDecoder_DateDecodingStrategyFormattersTest: XCTestCase {
     }
 
     override func tearDown() {
-        jsonData = nil
+        self.jsonData = nil
         
         super.tearDown()
         
     }
     
-    func testAlertBuilder_01() {
+    func testJSONDecoder_DateDecodingStrategyFormatters_01() {
         
         let decoder = JSONDecoder()
         decoder.setDateDecodingStrategyFormatters([
@@ -63,7 +63,7 @@ class JSONDecoder_DateDecodingStrategyFormattersTest: XCTestCase {
         }
     }
     
-    func testAlertBuilder_02() {
+    func testJSONDecoder_DateDecodingStrategyFormatters_02() {
         
         let decoder = JSONDecoder()
         decoder.setDateDecodingStrategyFormatters(nil)
@@ -74,7 +74,7 @@ class JSONDecoder_DateDecodingStrategyFormattersTest: XCTestCase {
         }
     }
     
-    func testAlertBuilder_03() {
+    func testJSONDecoder_DateDecodingStrategyFormatters_03() {
         
         // Assigning mutliple DateFormatters
         let decoder = JSONDecoder()

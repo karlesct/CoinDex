@@ -23,8 +23,8 @@ class TableView_ReusableCellTest: XCTestCase {
 
     func testReusableCell_01() {
 
-        tableView.register(TestCell.self)
-        let registeredCell = tableView.dequeueReusableCell(TestCell.self)
+        tableView.register(TestTableViewCell.self)
+        let registeredCell = tableView.dequeueReusableCell(TestTableViewCell.self)
         XCTAssertNotNil(registeredCell)
     }
     
@@ -38,8 +38,8 @@ class TableView_ReusableCellTest: XCTestCase {
 
     func testReusableCell_03() {
 
-        tableView.register(TestCell.self)
-        let registeredCell = tableView.dequeueReusableCell(TestCell.self, for: IndexPath(row: 0, section: 0))
+        tableView.register(TestTableViewCell.self)
+        let registeredCell = tableView.dequeueReusableCell(TestTableViewCell.self, for: IndexPath(row: 0, section: 0))
         XCTAssertNotNil(registeredCell)
     }
 

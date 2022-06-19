@@ -5,7 +5,7 @@
 import UIKit
 @testable import CoinDexRelease
 
-internal final class TestCell: UITableViewCell,
+internal final class TestTableViewCell: UITableViewCell,
                                NibLoadable,
                                ReusableCell {
 

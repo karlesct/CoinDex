@@ -10,7 +10,13 @@ class ReusableCellTest: XCTestCase {
 
     func testReusableCell_01() {
 
-        let reuseIdentifier = TestCell.reuseIdentifier
-        XCTAssertEqual(reuseIdentifier, "TestCell")
+        let reuseIdentifier = TestTableViewCell.reuseIdentifier
+        XCTAssertEqual(reuseIdentifier, "TestTableViewCell")
+    }
+    
+    func testReusableCell_02() {
+
+        let reuseIdentifier = TestCollectionViewCell.reuseIdentifier
+        XCTAssertEqual(reuseIdentifier, "TestCollectionViewCell")
     }
 }

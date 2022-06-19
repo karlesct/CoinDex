@@ -12,12 +12,12 @@ class CircularView: UIView {
 
     override func layoutSubviews() {
         super.layoutSubviews()
-        updateCornerRadius()
+        self.updateCornerRadius()
     }
 
     override var frame: CGRect {
         didSet {
-            updateCornerRadius()
+            self.updateCornerRadius()
         }
     }
 

@@ -10,14 +10,14 @@ class NibLoadableTest: XCTestCase {
 
     func testNibLoadable_01() {
 
-        let testCellNibName = TestCell.nibName
-        XCTAssertEqual(testCellNibName, "TestCell")
+        let testTableViewCellNibName = TestTableViewCell.nibName
+        XCTAssertEqual(testTableViewCellNibName, "TestTableViewCell")
     }
 
     func testNibLoadable_02() {
 
-        let testCell = TestCell.instantiate()
-        XCTAssertNotNil(testCell)
+        let testTableViewCell = TestTableViewCell.instantiate()
+        XCTAssertNotNil(testTableViewCell)
     }
 
 }
