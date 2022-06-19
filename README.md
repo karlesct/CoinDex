@@ -10,6 +10,7 @@
 - [ Funcionality ](#Funcionality)
 - [ Code coverage ](#Code-coverage)
 - [ Unit tests ](#Unit-test)
+- [ Images ](#Images)
 - [ Coming soon ](#Coming-soon)
 
 ## Requirements
@@ -55,6 +56,13 @@ Total: 185
 ## Authentication
 
 Authentication verifies that the provided user token is correct and, therefore, it can initiate the app. But right now is not needed.
+
+## Images
+
+![Master](/assets/master.png)
+![Detail](/assets/detail.png)
+![Welcome](/assets/welcome.png)
+![Country Picker](/assets/countryPicker.png)
 
 ## Coming soon
 
