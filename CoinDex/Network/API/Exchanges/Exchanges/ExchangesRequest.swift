@@ -12,7 +12,9 @@ struct ExchangesRequest: DataRequest {
     let page: Int
     let perPage: Int
 
-    init(baseURL: String, page: Int, perPage: Int = 100) {
+    init(baseURL: String,
+         page: Int,
+         perPage: Int = 100) {
         self.baseURL = baseURL
         self.page = page
         self.perPage = perPage
