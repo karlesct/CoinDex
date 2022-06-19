@@ -5,7 +5,7 @@
 
 import Foundation
 
-protocol TutorialViewModelProtocol: TitleProtocol,
+protocol TutorialPresenterProtocol: TitleProtocol,
                                     DatasourceProtocol {
     var view: TutorialViewProtocol? { get set }
 }
@@ -13,7 +13,7 @@ protocol TutorialViewModelProtocol: TitleProtocol,
 protocol TutorialViewProtocol: AnyObject {
 }
 
-class TutorialViewModel: TutorialViewModelProtocol {
+class TutorialPresenter: TutorialPresenterProtocol {
 
     // MARK: - Properties
     

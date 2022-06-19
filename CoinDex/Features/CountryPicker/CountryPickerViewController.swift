@@ -30,7 +30,7 @@ class CountryPickerViewController: UIViewController {
 
     // MARK: - Properties
 
-    var viewModel: CountryPickerViewModelProtocol?
+    var presenter: CountryPickerPresenterProtocol?
     var loggingService: LoggingServiceProtocol?
     
     // MARK: - Life cycle
@@ -38,8 +38,8 @@ class CountryPickerViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
 
-        self.viewModel?.view = self
-        self.viewModel?.viewDidLoad()
+        self.presenter?.view = self
+        self.presenter?.viewDidLoad()
     }
 
 
@@ -58,8 +58,8 @@ extension CountryPickerViewController: UITableViewDataSource {
 
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let key = self.viewModel?.sectionTitles[indexPath.section],
-           let value = self.viewModel?.dictionary[key] {
+        if let key = self.presenter?.sectionTitles[indexPath.section],
+           let value = self.presenter?.dictionary[key] {
             let cell = self.tableView.dequeueReusableCell(CountryPickerTableViewCell.self,
                                                           for: indexPath)
             let item = value[indexPath.row] 
@@ -71,14 +71,14 @@ extension CountryPickerViewController: UITableViewDataSource {
     }
 
     func numberOfSections(in tableView: UITableView) -> Int {
-        return self.viewModel?.sectionTitles.count ?? 0
+        return self.presenter?.sectionTitles.count ?? 0
     }
 
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
 
-        if let key = self.viewModel?.sectionTitles[section],
-           let value = self.viewModel?.dictionary[key] {
+        if let key = self.presenter?.sectionTitles[section],
+           let value = self.presenter?.dictionary[key] {
             return value.count
         }
 
@@ -86,18 +86,18 @@ extension CountryPickerViewController: UITableViewDataSource {
     }
 
     func tableView(_ tableView: UITableView, titleForHeaderInSection section: Int) -> String? {
-        return self.viewModel?.sectionTitles[section]
+        return self.presenter?.sectionTitles[section]
     }
 
     func sectionIndexTitles(for tableView: UITableView) -> [String]? {
-        return self.viewModel?.sectionTitles
+        return self.presenter?.sectionTitles
     }
 }
 
 extension CountryPickerViewController: UISearchBarDelegate {
 
     func searchBar(_ searchBar: UISearchBar, textDidChange searchText: String) {
-        self.viewModel?.searchTextDidChange(text: searchText)
+        self.presenter?.searchTextDidChange(text: searchText)
     }
 }
 

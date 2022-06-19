@@ -5,7 +5,7 @@
 
 import Foundation
 
-protocol CountryPickerViewModelProtocol: AnyObject {
+protocol CountryPickerPresenterProtocol: AnyObject {
     var dictionary: [String: [CountryPickerCellModel]] { get set }
     var sectionTitles: [String] { get set }
     var view: CountryPickerViewProtocol? { get set }
@@ -17,7 +17,7 @@ protocol CountryPickerViewProtocol: AnyObject {
     func reloadData()
 }
 
-final class CountryPickerViewModel: CountryPickerViewModelProtocol {
+final class CountryPickerPresenter: CountryPickerPresenterProtocol {
 
     // MARK: - Properties
     

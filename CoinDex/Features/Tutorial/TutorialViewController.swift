@@ -61,10 +61,10 @@ class TutorialViewController: UIViewController {
     private var pages: [UIViewController]?
     private var currentPageIndex: Int = 0
 
-    var viewModel: TutorialViewModelProtocol? {
+    var presenter: TutorialPresenterProtocol? {
         didSet {
             var viewControllers: [UIViewController]? = []
-            self.viewModel?.dataSource?.forEach { item in
+            self.presenter?.dataSource?.forEach { item in
                 if let model = item as? TutorialPageModel {
                     let assembler = TutorialPageAssembler(model: model)
                     viewControllers?.append(assembler.viewController())
@@ -89,9 +89,9 @@ class TutorialViewController: UIViewController {
                               end: .bottomCenter,
                               colors: [.primary,
                                        .secondary])
-        self.viewModel?.view = self
+        self.presenter?.view = self
         
-        self.title = self.viewModel?.title
+        self.title = self.presenter?.title
     }
     
     @objc func closeButtonAction() {

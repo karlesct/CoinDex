@@ -8,36 +8,35 @@ import UIKit
 final class LaunchScreenNavigator: Navigator {
 
     enum Destination {
-        case coinListMaster
-//        case mainTest
+        case tabBar(presentView: UIViewController)
     }
-
-    private var navigationController: UINavigationController
 
     // MARK: - Initializer
 
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init() {
     }
 
     // MARK: - Navigator
 
     func navigate(to destination: Destination) {
 
-        let viewController = makeViewController(for: destination)
-        self.navigationController.viewControllers = [viewController]
+        switch destination {
+        case let .tabBar(presentView):
+            let viewController = makeViewController(for: destination)
+            presentView.present(viewController,
+                                animated: false)
+        }
     }
 
     // MARK: - Private
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
-//        case .mainTest:
-//            let assembler = MainAssembler(navigationController: self.navigationController)
-//            return assembler.viewController()
-        case .coinListMaster:
-            let assembler = ExchangesListMasterAssembler(navigationController: self.navigationController)
-            return assembler.viewController()
+        case .tabBar:
+            let assembler = TabBarAssembler()
+            let viewController = assembler.viewController()
+            viewController.modalPresentationStyle = .fullScreen
+            return viewController
         }
     }
 }

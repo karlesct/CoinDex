@@ -9,30 +9,27 @@ final class LaunchScreenAssembler {
 
     // MARK: - Properties
 
-    private let navigationController: UINavigationController
-
     // MARK: - Init
 
-    init(navigationController: UINavigationController) {
-        self.navigationController = navigationController
+    init() {
     }
 
     // MARK: - Methods
 
     func viewController() -> UIViewController {
         let viewController = LaunchScreenViewController.loadFromNib()
-        viewController.viewModel = self.viewModel()
+        viewController.presenter = self.presenter()
         viewController.navigator = self.navigator()
         return viewController
     }
 
-    private func viewModel() -> LaunchScreenViewModelProtocol {
-        let viewModel = LaunchScreenViewModel()
-        return viewModel
+    private func presenter() -> LaunchScreenPresenterProtocol {
+        let presenter = LaunchScreenPresenter()
+        return presenter
     }
 
     private func navigator() -> LaunchScreenNavigator {
-        let navigator = LaunchScreenNavigator(navigationController: self.navigationController)
+        let navigator = LaunchScreenNavigator()
         return navigator
     }
 }

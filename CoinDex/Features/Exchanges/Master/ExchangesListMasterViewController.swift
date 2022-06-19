@@ -33,7 +33,7 @@ class ExchangesListMasterViewController: UIViewController {
     
     // MARK: - Properties
     
-    var viewModel: ExchangesListMasterViewModelProtocol?
+    var presenter: ExchangesListMasterPresenterProtocol?
     var navigator: ExchangesListMasterNavigator?
     
     // MARK: - Life cycle
@@ -41,7 +41,7 @@ class ExchangesListMasterViewController: UIViewController {
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewModel?.view = self
+        self.presenter?.view = self
         
         self.setupUI()
     }
@@ -49,7 +49,7 @@ class ExchangesListMasterViewController: UIViewController {
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.viewModel?.willAppear()
+        self.presenter?.willAppear()
         
     }
     
@@ -57,7 +57,7 @@ class ExchangesListMasterViewController: UIViewController {
     
     func setupUI() {
         self.setNavigation(image: .tabBar.exchangesIcon,
-                           title: self.viewModel?.title ?? .empty,
+                           title: self.presenter?.title ?? .empty,
                            color: .xFFFFFF)
         
         self.view.backgroundColor = .xF6F6F6
@@ -71,7 +71,7 @@ extension ExchangesListMasterViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let item = self.viewModel?.dataSource?[indexPath.row] as? ExchangesListMasterCellModel {
+        if let item = self.presenter?.dataSource?[indexPath.row] as? ExchangesListMasterCellModel {
             let cell = self.tableView.dequeueReusableCell(ExchangesListMasterTableViewCell.self,
                                                           for: indexPath)
             cell.bind(item: item,
@@ -84,18 +84,18 @@ extension ExchangesListMasterViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return self.viewModel?.dataSource?.count ?? 0
+        return self.presenter?.dataSource?.count ?? 0
     }
 }
 
 extension ExchangesListMasterViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView,
                    prefetchRowsAt indexPaths: [IndexPath]) {
-        let sourceTotal = self.viewModel?.dataSource?.count ?? 0
-        let page = self.viewModel?.page ?? 0
+        let sourceTotal = self.presenter?.dataSource?.count ?? 0
+        let page = self.presenter?.page ?? 0
         let filtered = indexPaths.filter({ $0.row >= sourceTotal - 25})
         if filtered.count > 0 && page < 6{
-            self.viewModel?.page += 1
+            self.presenter?.page += 1
         }
     }
 }

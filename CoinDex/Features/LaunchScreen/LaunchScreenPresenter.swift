@@ -5,11 +5,11 @@
 
 import Foundation
 
-protocol LaunchScreenViewModelProtocol {
+protocol LaunchScreenPresenterProtocol {
 
 }
 
-class LaunchScreenViewModel: LaunchScreenViewModelProtocol {
+class LaunchScreenPresenter: LaunchScreenPresenterProtocol {
 
     // MARK: - Properties
 

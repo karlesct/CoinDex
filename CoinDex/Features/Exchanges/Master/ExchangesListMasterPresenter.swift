@@ -5,7 +5,7 @@
 
 import Foundation
 
-protocol ExchangesListMasterViewModelProtocol: TitleProtocol,
+protocol ExchangesListMasterPresenterProtocol: TitleProtocol,
                                                DatasourceProtocol,
                                                WillAppearProtocol {
     var page: Int { get set }
@@ -17,7 +17,7 @@ protocol ExchangesListMasterViewProtocol: AnyObject {
     func needsReaload()
 }
 
-class ExchangesListMasterViewModel: ExchangesListMasterViewModelProtocol {
+class ExchangesListMasterPresenter: ExchangesListMasterPresenterProtocol {
 
     // MARK: - Properties
     

@@ -26,7 +26,7 @@ class LaunchScreenViewController: UIViewController {
     
     // MARK: - Properties
 
-    var viewModel: LaunchScreenViewModelProtocol?
+    var presenter: LaunchScreenPresenterProtocol?
     var navigator: LaunchScreenNavigator?
 
     // MARK: - Life cycle
@@ -38,7 +38,7 @@ class LaunchScreenViewController: UIViewController {
     override func viewDidAppear(_ animated: Bool) {
         super.viewDidAppear(animated)
 
-        self.navigator?.navigate(to: .coinListMaster)
+        self.navigator?.navigate(to: .tabBar(presentView: self))
     }
 
     // MARK: - Methods

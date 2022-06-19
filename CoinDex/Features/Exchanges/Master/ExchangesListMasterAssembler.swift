@@ -21,17 +21,17 @@ final class ExchangesListMasterAssembler {
 
     func viewController() -> UIViewController {
         let viewController = ExchangesListMasterViewController.loadFromNib()
-        viewController.viewModel = self.viewModel()
+        viewController.presenter = self.presenter()
         viewController.navigator = self.navigator()
         return viewController
     }
 
-    private func viewModel() -> ExchangesListMasterViewModelProtocol {
+    private func presenter() -> ExchangesListMasterPresenterProtocol {
         let repository = self.repository()
         let logging = self.logging()
-        let viewModel = ExchangesListMasterViewModel(repository: repository,
+        let presenter = ExchangesListMasterPresenter(repository: repository,
                                                      logging: logging)
-        return viewModel
+        return presenter
     }
     
     private func repository() -> ExchangesListMasterRepositoryProtocol {

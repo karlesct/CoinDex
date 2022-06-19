@@ -5,7 +5,7 @@
 
 import Foundation
 
-protocol ExchangesDetailViewModelProtocol: TitleProtocol,
+protocol ExchangesDetailPresenterProtocol: TitleProtocol,
                                            DatasourceProtocol,
                                            WillAppearProtocol{
     var view: ExchangesDetailViewProtocol? { get set }
@@ -17,7 +17,7 @@ protocol ExchangesDetailViewProtocol: AnyObject {
     func needsReaload()
 }
 
-class ExchangesDetailViewModel: ExchangesDetailViewModelProtocol {
+class ExchangesDetailPresenter: ExchangesDetailPresenterProtocol {
 
     // MARK: - Properties
     

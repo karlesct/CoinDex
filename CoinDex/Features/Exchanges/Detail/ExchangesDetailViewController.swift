@@ -34,30 +34,30 @@ class ExchangesDetailViewController: UIViewController {
     
     // MARK: - Properties
     
-    var viewModel: ExchangesDetailViewModelProtocol?
+    var presenter: ExchangesDetailPresenterProtocol?
     
     // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.viewModel?.view = self
+        self.presenter?.view = self
         
-        self.title = self.viewModel?.title
+        self.title = self.presenter?.title
         self.view.backgroundColor = .xF6F6F6
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.viewModel?.willAppear()
+        self.presenter?.willAppear()
         
     }
     
     // MARK: - Methods
     
     @objc func doRetry() {
-        self.viewModel?.doRequest()
+        self.presenter?.doRequest()
     }
     
 }
@@ -68,12 +68,12 @@ extension ExchangesDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let item = self.viewModel?.dataSource?[indexPath.row] as? ExchangesDetailInfoCellModel {
+        if let item = self.presenter?.dataSource?[indexPath.row] as? ExchangesDetailInfoCellModel {
             let cell = self.tableView.dequeueReusableCell(ExchangesDetailInfoTableViewCell.self,
                                                           for: indexPath)
             cell.bind(item: item)
             return cell
-        } else if let item = self.viewModel?.dataSource?[indexPath.row] as? ExchangesDetailTrustCellModel {
+        } else if let item = self.presenter?.dataSource?[indexPath.row] as? ExchangesDetailTrustCellModel {
             let cell = self.tableView.dequeueReusableCell(ExchangesDetailTrustTableViewCell.self,
                                                           for: indexPath)
             cell.bind(item: item)
@@ -84,7 +84,7 @@ extension ExchangesDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        let rows = self.viewModel?.dataSource?.count ?? 0
+        let rows = self.presenter?.dataSource?.count ?? 0
         
         if rows == 0 && !self.activityIndicator.isAnimating {
             let action = UIButton.ButtonAction(target: self,

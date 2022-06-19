@@ -17,14 +17,14 @@ final class CountryPickerAssembler {
 
     func viewController() -> UIViewController {
         let viewController = CountryPickerViewController.loadFromNib()
-        viewController.viewModel = self.viewModel()
+        viewController.presenter = self.presenter()
         viewController.loggingService = self.logging()
         return viewController
     }
 
-    private func viewModel() -> CountryPickerViewModelProtocol {
-        let viewModel = CountryPickerViewModel(repository: self.repository())
-        return viewModel
+    private func presenter() -> CountryPickerPresenterProtocol {
+        let presenter = CountryPickerPresenter(repository: self.repository())
+        return presenter
     }
 
     private func repository() -> CountryPickerRepositoryProtocol {
