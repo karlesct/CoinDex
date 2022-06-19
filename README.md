@@ -45,11 +45,11 @@ Tab Bar with:
 
 ## Code coverage
 
-Right now, 59.9% and rising
+Right now, 60,1% and rising
 
 ## Unit test
 
-Total: 186
+Total: 193
 
 ## Authentication
 
