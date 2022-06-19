@@ -107,8 +107,9 @@ extension CountryPickerViewController: CountryPickerTableViewCellDelegate {
         
         self.loggingService?.log("[CountryPickerViewController] - Cell selected with phone Code: \(item.phoneCode) and CountryName: \(item.countryName)")
         
-        self.dismiss(animated: false,
-                     completion: nil)
+//        self.dismiss(animated: false,
+//                     completion: nil)
     }
 }
+
 

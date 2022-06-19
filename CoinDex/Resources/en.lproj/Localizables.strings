@@ -20,7 +20,7 @@
 
 "generic_error" = "An error has occurred, or you have no connection";
 
-// MARK: - Tutorial
+// MARK: - Launch
 
 "launch_title" = "Powered by CoinGecko";
 
@@ -65,3 +65,7 @@
 "exchange_detail_trust_cell_trust_score_title" = "Trust Score";
 "exchange_detail_trust_cell_trade_volume_title" = "Volume BTC in 24h";
 "exchange_detail_trust_cell_trade_volume_normalized_title" = "Volume BTC in 24h (normalized)";
+
+// MARK: - CountryPicker
+
+"country_picker_title" = "Country picker";

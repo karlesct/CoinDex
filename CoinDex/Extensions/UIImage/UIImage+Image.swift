@@ -26,6 +26,7 @@ extension UIImage {
     struct tabBar {
         static let exchangesIcon = #imageLiteral(resourceName: "exchangesIcon")
         static let welcomeIcon = #imageLiteral(resourceName: "welcomeIcon")
+        static let countryPickerIcon = #imageLiteral(resourceName: "countryPickerIcon")
     }
     
 }
