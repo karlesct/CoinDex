@@ -12,6 +12,7 @@
 - [ Unit tests ](#Unit-test)
 - [ Images ](#Images)
 - [ Coming soon ](#Coming-soon)
+- [ Inspiration ](#Inspiration)
 
 ## Requirements
 
@@ -73,3 +74,6 @@ Authentication verifies that the provided user token is correct and, therefore, 
 - improvement of connection handler
 - ...
 
+## Inspiration
+
+Inspiration [here](./README_2.md)
