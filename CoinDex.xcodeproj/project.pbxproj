@@ -241,6 +241,7 @@
 		27ABA10C273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */; };
 		27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */; };
 		27ABA1112732E30B000FD326 /* CoinsMarketsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */; };
+		27B832B5286750BF00E4D231 /* README_2.md in Resources */ = {isa = PBXBuildFile; fileRef = 27B832B4286750BE00E4D231 /* README_2.md */; };
 		27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */; };
 		27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */; };
 		27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */; };
@@ -548,6 +549,7 @@
 		27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdVolumeChartResponse.swift; sourceTree = "<group>"; };
 		27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMarketsRequest.swift; sourceTree = "<group>"; };
 		27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMarketsResponse.swift; sourceTree = "<group>"; };
+		27B832B4286750BE00E4D231 /* README_2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README_2.md; sourceTree = "<group>"; };
 		27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAssembler.swift; sourceTree = "<group>"; };
 		27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
@@ -1789,6 +1791,7 @@
 			isa = PBXGroup;
 			children = (
 				27182934285C788C00E66073 /* README.md */,
+				27B832B4286750BE00E4D231 /* README_2.md */,
 				2758FC5F2709B45E009BCB5A /* CoinDex */,
 				2758FC762709B46A009BCB5A /* CoinDexTests */,
 				2758FC812709B46A009BCB5A /* CoinDexUITests */,
@@ -2703,6 +2706,7 @@
 			buildActionMask = 2147483647;
 			files = (
 				271B26DF285DB1030046A996 /* ExchangesDetailTrustTableViewCell.xib in Resources */,
+				27B832B5286750BF00E4D231 /* README_2.md in Resources */,
 				2758FCF92709D615009BCB5A /* Config.plist in Resources */,
 				2781E35227CD13CC0011BE14 /* isoCountryCode.json in Resources */,
 				271B26F9285DD4380046A996 /* ExchangesDetailInfoTableViewCell.xib in Resources */,

@@ -62,7 +62,7 @@ Authentication verifies that the provided user token is correct and, therefore, 
 
 | **Master** | **Detail** | **Welcome** | **Country Picker** |
 |-----------|-----------|---------|------------|
-| ![Master](/assets/master.png)    | ![Detail](/assets/detail.png)       | ![Welcome](/assets/welcome.png)   | ![Country Picker](/assets/countryPicker.png)  |
+| ![Master](/README_FILES/assets/master.png)    | ![Detail](/README_FILES/assets/detail.png)       | ![Welcome](/README_FILES/assets/welcome.png)   | ![Country Picker](/README_FILES/assets/countryPicker.png)  |
 
 ## Coming soon
 
@@ -76,4 +76,4 @@ Authentication verifies that the provided user token is correct and, therefore, 
 
 ## Inspiration
 
-Inspiration [here](./README_2.md)
+Inspiration [here](/README_FILES/README_2.md)
