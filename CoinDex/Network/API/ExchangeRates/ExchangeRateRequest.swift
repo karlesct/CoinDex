@@ -6,7 +6,7 @@
 import Foundation
 
 /// Get BTC-to-Currency exchange rates
-struct ExchangeRateRequest: DataRequest {
+struct ExchangeRateRequest: Requestable {
 
     let baseURL: String
 

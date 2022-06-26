@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all categories with market data
-struct CategoriesRequest: DataRequest {
+struct CategoriesRequest: Requestable {
 
     let baseURL: String
     let order: CategoriesRequestOrderEnum

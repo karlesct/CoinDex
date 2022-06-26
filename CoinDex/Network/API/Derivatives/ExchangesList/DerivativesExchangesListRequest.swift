@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all derivative exchanges name and identifier
-struct DerivativesExchangesListRequest: DataRequest {
+struct DerivativesExchangesListRequest: Requestable {
 
     let baseURL: String
 

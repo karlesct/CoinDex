@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all derivative tickers
-struct DerivativesRequest: DataRequest {
+struct DerivativesRequest: Requestable {
 
     let baseURL: String
 

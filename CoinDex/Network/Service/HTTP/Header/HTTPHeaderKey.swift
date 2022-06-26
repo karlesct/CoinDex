@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum HTTPHeaderKey: String {
+public enum HTTPHeaderKey: String {
     case apikey = "apikey"
     case accept = "Accept"
     case contentType = "Content-Type"

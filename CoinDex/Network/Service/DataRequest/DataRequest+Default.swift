@@ -5,7 +5,7 @@
 
 import Foundation
 
-extension DataRequest {
+extension Requestable {
     var headers: [HTTPHeaderKey : HTTPHeaderValue]? {
         return nil
     }

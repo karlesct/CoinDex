@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all categories
-struct CategoriesListRequest: DataRequest {
+struct CategoriesListRequest: Requestable {
 
     let baseURL: String
 

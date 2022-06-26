@@ -6,7 +6,7 @@
 import Foundation
 
 /// Check API server status
-struct PingRequest: DataRequest {
+struct PingRequest: Requestable {
 
     let baseURL: String
 

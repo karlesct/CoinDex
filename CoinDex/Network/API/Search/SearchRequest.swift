@@ -8,7 +8,7 @@ import Foundation
 import Foundation
 
 /// Search for coins, categories and markets listed on CoinGecko ordered by largest Market Cap first
-struct SearchRequest: DataRequest {
+struct SearchRequest: Requestable {
 
     let baseURL: String
     let query: String

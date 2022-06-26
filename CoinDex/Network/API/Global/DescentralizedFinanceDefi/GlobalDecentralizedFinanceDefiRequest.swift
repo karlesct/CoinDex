@@ -6,7 +6,7 @@
 import Foundation
 
 /// Get Top 100 Cryptocurrency Global Eecentralized Finance(defi) data
-struct GlobalDecentralizedFinanceDefiRequest: DataRequest {
+struct GlobalDecentralizedFinanceDefiRequest: Requestable {
 
     let baseURL: String
 

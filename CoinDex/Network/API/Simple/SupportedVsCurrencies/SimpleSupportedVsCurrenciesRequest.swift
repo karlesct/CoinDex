@@ -6,7 +6,7 @@
 import Foundation
 
 /// Get list of supported_vs_currencies
-struct SimpleSupportedVsCurrenciesRequest: DataRequest {
+struct SimpleSupportedVsCurrenciesRequest: Requestable {
 
     let baseURL: String
 

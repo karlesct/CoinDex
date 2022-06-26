@@ -6,7 +6,7 @@
 import Foundation
 
 /// Get public companies bitcoin or ethereum holdings (Ordered by total holdings descending)
-struct CompaniesRequest: DataRequest {
+struct CompaniesRequest: Requestable {
 
     let baseURL: String
 

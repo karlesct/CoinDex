@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all supported coins price, market cap, volume, and market related data
-struct CoinsMarketsRequest: DataRequest {
+struct CoinsMarketsRequest: Requestable {
 
     let baseURL: String
 

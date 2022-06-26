@@ -5,7 +5,7 @@
 
 import Foundation
 
-enum HTTPHeaderValue: String {
+public enum HTTPHeaderValue: String {
     case applicationJson = "application/json"
     case applicationXWwwFormUrlEncoded = "application/x-www-form-urlencoded"
     case noCache = "no-cache, no-store"

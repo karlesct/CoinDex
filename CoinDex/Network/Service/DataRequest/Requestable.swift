@@ -5,9 +5,7 @@
 
 import Foundation
 
-protocol DataRequest {
-    associatedtype Response
-
+public protocol Requestable {
     var baseURL: String { get }
     var url: String { get }
     var path: String { get }
@@ -16,6 +14,7 @@ protocol DataRequest {
     var body: Data? { get }
     var queryItems: [String : String]? { get }
 
-    func decode(_ data: Data) throws -> Response
-    func getURLRequest(_ baseURL: URL) -> URLRequest
+    func getURLRequest() throws -> URLRequest
 }
+
+public typealias ResponseRequestable = Requestable & ResponseDecoder

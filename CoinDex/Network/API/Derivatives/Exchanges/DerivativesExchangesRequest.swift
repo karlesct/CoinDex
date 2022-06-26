@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all derivative exchanges
-struct DerivativesExchangesRequest: DataRequest {
+struct DerivativesExchangesRequest: Requestable {
 
     let baseURL: String
 

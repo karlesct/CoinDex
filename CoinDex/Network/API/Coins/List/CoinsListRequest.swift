@@ -6,7 +6,7 @@
 import Foundation
 
 /// Use this to obtain all the coins' id in order to make API calls
-struct CoinsListRequest: DataRequest {
+struct CoinsListRequest: Requestable {
 
     let baseURL: String
 

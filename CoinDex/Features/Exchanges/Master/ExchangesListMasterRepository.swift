@@ -15,21 +15,23 @@ class ExchangesListMasterRepository: ExchangesListMasterRepositoryProtocol {
     // MARK: - Properties
     
     let baseURL: String
-    let networkService: NetworkServiceProtocol
+    let dataTransferService: DataTransferService
     
     // MARK: - Init
     
     init(baseURL: String,
-         networkService: NetworkServiceProtocol) {
+         dataTransferService: DataTransferService) {
         self.baseURL = baseURL
-        self.networkService = networkService
+        self.dataTransferService = dataTransferService
     }
 
     // MARK: - Methods
 
     func fetchList(page: Int,
                    completion: @escaping (Result<[TModel], Error>) -> Void) {
-        self.networkService.request(ExchangesRequest(baseURL: self.baseURL, page: page)) { result in
+        let endpoint = ExchangesRequest(baseURL: self.baseURL,
+                                        page: page)
+        self.dataTransferService.request(endpoint: endpoint) { result in
             switch result {
             case let .success(model):
                 let item = ExchangeResponseConverter.convert(exchangeResponse: model)

@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all market indexes
-struct IndexesRequest: DataRequest {
+struct IndexesRequest: Requestable {
 
     let baseURL: String
     let perPage: Int

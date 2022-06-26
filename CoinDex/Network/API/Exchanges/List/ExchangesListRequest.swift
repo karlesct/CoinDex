@@ -7,7 +7,7 @@ import Foundation
 
 /// List all supported markets id and name (no pagination required)
 /// Use this to obtain all the markets' id in order to make API calls
-struct ExchangesListRequest: DataRequest {
+struct ExchangesListRequest: Requestable {
 
     let baseURL: String
 

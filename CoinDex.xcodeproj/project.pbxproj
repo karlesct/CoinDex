@@ -146,8 +146,7 @@
 		27397E43280B2DAC00093CB8 /* LocationWhenInUseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */; };
 		27397E46280B2ED500093CB8 /* LocationAccuracy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E45280B2ED500093CB8 /* LocationAccuracy.swift */; };
 		275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710852721AABF00348F93 /* HTTPStatusCode.swift */; };
-		275710882725941F00348F93 /* DataRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710872725941F00348F93 /* DataRequest.swift */; };
-		2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757108A2725945D00348F93 /* DataRequest+Decode.swift */; };
+		275710882725941F00348F93 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710872725941F00348F93 /* Requestable.swift */; };
 		2757108D272594C400348F93 /* DataRequest+GetURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757108C272594C400348F93 /* DataRequest+GetURLRequest.swift */; };
 		2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757108E272594DB00348F93 /* DataRequest+Default.swift */; };
 		275710912725954600348F93 /* PingRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710902725954600348F93 /* PingRequest.swift */; };
@@ -194,7 +193,6 @@
 		27924733281EA7BE00737A1C /* DeepLinkRecognizer.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27924732281EA7BE00737A1C /* DeepLinkRecognizer.swift */; };
 		27924735281EA7FE00737A1C /* DeepLinkValues.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27924734281EA7FE00737A1C /* DeepLinkValues.swift */; };
 		27924737281EB7B600737A1C /* DeepLinkingTests.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27924736281EB7B600737A1C /* DeepLinkingTests.swift */; };
-		2794AACE27F1AFD900E30828 /* DefaultRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2794AACD27F1AFD900E30828 /* DefaultRepository.swift */; };
 		279B6713278463DB00480155 /* UIViewController+LoadFromNib.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B6712278463DB00480155 /* UIViewController+LoadFromNib.swift */; };
 		279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67182784688100480155 /* UIView+AddFullSubview.swift */; };
 		279B67242784713D00480155 /* TModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67232784713D00480155 /* TModel.swift */; };
@@ -242,6 +240,14 @@
 		27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */; };
 		27ABA1112732E30B000FD326 /* CoinsMarketsResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */; };
 		27B832B5286750BF00E4D231 /* README_2.md in Resources */ = {isa = PBXBuildFile; fileRef = 27B832B4286750BE00E4D231 /* README_2.md */; };
+		27B832BB2867622400E4D231 /* ResponseDecoder.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B832BA2867622400E4D231 /* ResponseDecoder.swift */; };
+		27B832BD286763FA00E4D231 /* NetworkConfigurable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B832BC286763FA00E4D231 /* NetworkConfigurable.swift */; };
+		27B832BF286772EC00E4D231 /* DefaultNetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B832BE286772EC00E4D231 /* DefaultNetworkSessionManager.swift */; };
+		27B832C22867737E00E4D231 /* NetworkCancellable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B832C12867737E00E4D231 /* NetworkCancellable.swift */; };
+		27B832C42867743200E4D231 /* NetworkSessionManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B832C32867743200E4D231 /* NetworkSessionManager.swift */; };
+		27B832C8286774AB00E4D231 /* DefaultNetworkService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B832C7286774AB00E4D231 /* DefaultNetworkService.swift */; };
+		27B832CB2867857900E4D231 /* DataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B832CA2867857900E4D231 /* DataTransferService.swift */; };
+		27B832CD2867858600E4D231 /* DefaultDataTransferService.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27B832CC2867858600E4D231 /* DefaultDataTransferService.swift */; };
 		27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */; };
 		27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */; };
 		27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */; };
@@ -392,8 +398,7 @@
 		27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWhenInUseHandler.swift; sourceTree = "<group>"; };
 		27397E45280B2ED500093CB8 /* LocationAccuracy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccuracy.swift; sourceTree = "<group>"; };
 		275710852721AABF00348F93 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
-		275710872725941F00348F93 /* DataRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataRequest.swift; sourceTree = "<group>"; };
-		2757108A2725945D00348F93 /* DataRequest+Decode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Decode.swift"; sourceTree = "<group>"; };
+		275710872725941F00348F93 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		2757108C272594C400348F93 /* DataRequest+GetURLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+GetURLRequest.swift"; sourceTree = "<group>"; };
 		2757108E272594DB00348F93 /* DataRequest+Default.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+Default.swift"; sourceTree = "<group>"; };
 		275710902725954600348F93 /* PingRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = PingRequest.swift; sourceTree = "<group>"; };
@@ -494,7 +499,6 @@
 		27924732281EA7BE00737A1C /* DeepLinkRecognizer.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkRecognizer.swift; sourceTree = "<group>"; };
 		27924734281EA7FE00737A1C /* DeepLinkValues.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkValues.swift; sourceTree = "<group>"; };
 		27924736281EB7B600737A1C /* DeepLinkingTests.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DeepLinkingTests.swift; sourceTree = "<group>"; };
-		2794AACD27F1AFD900E30828 /* DefaultRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultRepository.swift; sourceTree = "<group>"; };
 		279B670B27845F7900480155 /* TutorialAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialAssembler.swift; sourceTree = "<group>"; };
 		279B670D2784616900480155 /* TutorialPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPresenter.swift; sourceTree = "<group>"; };
 		279B670F2784617600480155 /* TutorialViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialViewController.swift; sourceTree = "<group>"; };
@@ -549,7 +553,15 @@
 		27ABA10B273190E4000FD326 /* ExchangesIdVolumeChartResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesIdVolumeChartResponse.swift; sourceTree = "<group>"; };
 		27ABA10E2732E2FC000FD326 /* CoinsMarketsRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMarketsRequest.swift; sourceTree = "<group>"; };
 		27ABA1102732E30B000FD326 /* CoinsMarketsResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CoinsMarketsResponse.swift; sourceTree = "<group>"; };
-		27B832B4286750BE00E4D231 /* README_2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README_2.md; sourceTree = "<group>"; };
+		27B832B4286750BE00E4D231 /* README_2.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; name = README_2.md; path = README_FILES/README_2.md; sourceTree = "<group>"; };
+		27B832BA2867622400E4D231 /* ResponseDecoder.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ResponseDecoder.swift; sourceTree = "<group>"; };
+		27B832BC286763FA00E4D231 /* NetworkConfigurable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkConfigurable.swift; sourceTree = "<group>"; };
+		27B832BE286772EC00E4D231 /* DefaultNetworkSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkSessionManager.swift; sourceTree = "<group>"; };
+		27B832C12867737E00E4D231 /* NetworkCancellable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkCancellable.swift; sourceTree = "<group>"; };
+		27B832C32867743200E4D231 /* NetworkSessionManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = NetworkSessionManager.swift; sourceTree = "<group>"; };
+		27B832C7286774AB00E4D231 /* DefaultNetworkService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultNetworkService.swift; sourceTree = "<group>"; };
+		27B832CA2867857900E4D231 /* DataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DataTransferService.swift; sourceTree = "<group>"; };
+		27B832CC2867858600E4D231 /* DefaultDataTransferService.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = DefaultDataTransferService.swift; sourceTree = "<group>"; };
 		27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAssembler.swift; sourceTree = "<group>"; };
 		27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
@@ -1469,6 +1481,9 @@
 		271EEA1D272075C700BA30FD /* Network */ = {
 			isa = PBXGroup;
 			children = (
+				27B832C92867856100E4D231 /* DataTransfer */,
+				27B832C62867748D00E4D231 /* NetworkService */,
+				27B832C52867744A00E4D231 /* NetworkSessionManager */,
 				27696B38273C3EC500D17FC4 /* Extensions */,
 				271EEA2E2720783300BA30FD /* Service */,
 				271EEA2D272077F300BA30FD /* API */,
@@ -1609,8 +1624,8 @@
 			children = (
 				275710892725944000348F93 /* DataRequest */,
 				271EEA3127207BCA00BA30FD /* HTTP */,
-				271EEA2F2720785700BA30FD /* NetworkService.swift */,
-				2794AACD27F1AFD900E30828 /* DefaultRepository.swift */,
+				27B832C12867737E00E4D231 /* NetworkCancellable.swift */,
+				27B832BC286763FA00E4D231 /* NetworkConfigurable.swift */,
 			);
 			path = Service;
 			sourceTree = "<group>";
@@ -1770,8 +1785,8 @@
 		275710892725944000348F93 /* DataRequest */ = {
 			isa = PBXGroup;
 			children = (
-				275710872725941F00348F93 /* DataRequest.swift */,
-				2757108A2725945D00348F93 /* DataRequest+Decode.swift */,
+				275710872725941F00348F93 /* Requestable.swift */,
+				27B832BA2867622400E4D231 /* ResponseDecoder.swift */,
 				2757108C272594C400348F93 /* DataRequest+GetURLRequest.swift */,
 				2757108E272594DB00348F93 /* DataRequest+Default.swift */,
 			);
@@ -2562,6 +2577,33 @@
 			path = Markets;
 			sourceTree = "<group>";
 		};
+		27B832C52867744A00E4D231 /* NetworkSessionManager */ = {
+			isa = PBXGroup;
+			children = (
+				27B832C32867743200E4D231 /* NetworkSessionManager.swift */,
+				27B832BE286772EC00E4D231 /* DefaultNetworkSessionManager.swift */,
+			);
+			path = NetworkSessionManager;
+			sourceTree = "<group>";
+		};
+		27B832C62867748D00E4D231 /* NetworkService */ = {
+			isa = PBXGroup;
+			children = (
+				271EEA2F2720785700BA30FD /* NetworkService.swift */,
+				27B832C7286774AB00E4D231 /* DefaultNetworkService.swift */,
+			);
+			path = NetworkService;
+			sourceTree = "<group>";
+		};
+		27B832C92867856100E4D231 /* DataTransfer */ = {
+			isa = PBXGroup;
+			children = (
+				27B832CA2867857900E4D231 /* DataTransferService.swift */,
+				27B832CC2867858600E4D231 /* DefaultDataTransferService.swift */,
+			);
+			path = DataTransfer;
+			sourceTree = "<group>";
+		};
 		27BB131A2788AB4B00B5FE4D /* LaunchScreen */ = {
 			isa = PBXGroup;
 			children = (
@@ -2776,10 +2818,11 @@
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
 				271B2731285E3CE70046A996 /* CountryPickerPresenter.swift in Sources */,
 				27182987285CC13200E66073 /* ExchangesListMasterPresenter.swift in Sources */,
-				2794AACE27F1AFD900E30828 /* DefaultRepository.swift in Sources */,
 				27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */,
+				27B832BD286763FA00E4D231 /* NetworkConfigurable.swift in Sources */,
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
+				27B832C42867743200E4D231 /* NetworkSessionManager.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				271B2735285E3CF00046A996 /* CountryPickerTableViewCell.swift in Sources */,
 				27BB13222788AC2C00B5FE4D /* LaunchScreenPresenter.swift in Sources */,
@@ -2794,6 +2837,7 @@
 				271B27B1285F5D9D0046A996 /* ExchangesIdResponseConverter.swift in Sources */,
 				27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */,
 				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
+				27B832BF286772EC00E4D231 /* DefaultNetworkSessionManager.swift in Sources */,
 				27397E32280B145C00093CB8 /* FirebaseAppDelegate.swift in Sources */,
 				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
@@ -2805,6 +2849,7 @@
 				271B26F3285DD0480046A996 /* CALayer+SetShadow.swift in Sources */,
 				279B67282784C64E00480155 /* String+TextToImage.swift in Sources */,
 				27182971285CB0CB00E66073 /* String+Regex.swift in Sources */,
+				27B832CB2867857900E4D231 /* DataTransferService.swift in Sources */,
 				27ABA0E4272EC613000FD326 /* IndexesResponse.swift in Sources */,
 				27571097272595D100348F93 /* PingResponse.swift in Sources */,
 				27397E46280B2ED500093CB8 /* LocationAccuracy.swift in Sources */,
@@ -2825,6 +2870,7 @@
 				271B26FB285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift in Sources */,
 				2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
+				27B832BB2867622400E4D231 /* ResponseDecoder.swift in Sources */,
 				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
 				27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */,
 				271B27A4285F31360046A996 /* UIViewController+SetNavigationTitle.swift in Sources */,
@@ -2836,6 +2882,7 @@
 				271B26DD285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift in Sources */,
 				27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
+				27B832C22867737E00E4D231 /* NetworkCancellable.swift in Sources */,
 				271B27A0285F242D0046A996 /* TutorialViewController.swift in Sources */,
 				27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */,
 				27ABA09E2726C5A4000FD326 /* ExchangeRateRequest.swift in Sources */,
@@ -2845,7 +2892,7 @@
 				2787E33727C2420C00DC5523 /* MicrophonePermission.swift in Sources */,
 				27397E43280B2DAC00093CB8 /* LocationWhenInUseHandler.swift in Sources */,
 				27ABA0CE2729ADA5000FD326 /* DerivativesRequest.swift in Sources */,
-				275710882725941F00348F93 /* DataRequest.swift in Sources */,
+				275710882725941F00348F93 /* Requestable.swift in Sources */,
 				2787E34727C2480B00DC5523 /* PhotoLibraryPermission.swift in Sources */,
 				2787E31427B9178300DC5523 /* UIImage+Image.swift in Sources */,
 				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
@@ -2883,7 +2930,6 @@
 				2763D37C27A483E700796FA8 /* UIButton+SetBackgroundColorForState.swift in Sources */,
 				27ABA0AE27296DBD000FD326 /* CategoriesResponse.swift in Sources */,
 				27182972285CB0CF00E66073 /* String+Localized.swift in Sources */,
-				2757108B2725945D00348F93 /* DataRequest+Decode.swift in Sources */,
 				2763D38927A5CE6100796FA8 /* UITableView+ReusableCell.swift in Sources */,
 				27ABA10A273190D6000FD326 /* ExchangesIdVolumeChartRequest.swift in Sources */,
 				27696B3B273C3EEF00D17FC4 /* DateFormatter.swift in Sources */,
@@ -2896,6 +2942,7 @@
 				27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */,
 				2763D37A27A481BF00796FA8 /* UIColor+Colors.swift in Sources */,
 				271B279E285F242D0046A996 /* TutorialPageViewController.swift in Sources */,
+				27B832CD2867858600E4D231 /* DefaultDataTransferService.swift in Sources */,
 				27ABA0C427299076000FD326 /* CompaniesRequest.swift in Sources */,
 				2718299E285D04FE00E66073 /* ExchangesDetailAssembler.swift in Sources */,
 				27182984285CC12A00E66073 /* ExchangesListMasterViewController.swift in Sources */,
@@ -2934,6 +2981,7 @@
 				2757108F272594DB00348F93 /* DataRequest+Default.swift in Sources */,
 				2787E33427C23CD100DC5523 /* PermissionProvider.swift in Sources */,
 				27ABA102273188B0000FD326 /* ExchangesListResponse.swift in Sources */,
+				27B832C8286774AB00E4D231 /* DefaultNetworkService.swift in Sources */,
 				2787E33B27C2443E00DC5523 /* PermissionStatusEnum.swift in Sources */,
 				27397E38280B14D400093CB8 /* LoggingServiceAssembler.swift in Sources */,
 				279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */,

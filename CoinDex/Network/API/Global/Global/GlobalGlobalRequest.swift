@@ -6,7 +6,7 @@
 import Foundation
 
 /// Get cryptocurrency global data
-struct GlobalGlobalRequest: DataRequest {
+struct GlobalGlobalRequest: Requestable {
 
     let baseURL: String
 

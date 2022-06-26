@@ -6,7 +6,7 @@
 import Foundation
 
 /// Get volume_chart data for a given exchange
-struct ExchangesIdVolumeChartRequest: DataRequest {
+struct ExchangesIdVolumeChartRequest: Requestable {
 
     let baseURL: String
 

@@ -35,14 +35,20 @@ final class ExchangesDetailAssembler {
     }
     
     private func repository() -> ExchangesDetailRepositoryProtocol {
-        let networkService = self.networkService()
+        let dataTransferService = self.dataTransferService()
         let baseURL = self.baseURL()
         let repository = ExchangesDetailRepository(baseURL: baseURL,
-                                                   networkService: networkService)
+                                                   dataTransferService: dataTransferService)
         return repository
     }
     
-    private func networkService() -> NetworkServiceProtocol {
+    private func dataTransferService() -> DataTransferService {
+        let networkService = self.networkService()
+        let dataTransferService = DefaultDataTransferService(networkService: networkService)
+        return dataTransferService
+    }
+    
+    private func networkService() -> NetworkService {
         let networkService = DefaultNetworkService()
         return networkService
     }

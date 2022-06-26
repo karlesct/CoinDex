@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all asset platforms
-struct AssetPlatformsRequest: DataRequest {
+struct AssetPlatformsRequest: Requestable {
 
     let baseURL: String
 

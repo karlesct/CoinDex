@@ -11,7 +11,7 @@ struct MockModel: Codable {
 }
 
 // Data structure
-struct MockDataRequest: DataRequest {
+struct MockDataRequest: Requestable {
     let baseURL: String
 
     init(baseURL: String) {
@@ -72,8 +72,7 @@ class DataRequest_GetURLRequestTest: XCTestCase {
     }
     
     func testDataRequest_GetURLRequestTests_01() {
-        let url = URL(string: "http://www.test.com")!
-        let result = self.request.getURLRequest(url)
+        let result = try? self.request.getURLRequest()
         XCTAssertNotNil(result)
     }
     

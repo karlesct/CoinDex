@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all exchanges
-struct ExchangesRequest: DataRequest {
+struct ExchangesRequest: Requestable {
 
     let baseURL: String
     let page: Int
