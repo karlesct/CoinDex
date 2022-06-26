@@ -42,7 +42,11 @@ struct SearchRequest: Requestable {
             "query" : self.query               // Search string
         ]
     }
+    
+}
 
+extension SearchRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> SearchResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

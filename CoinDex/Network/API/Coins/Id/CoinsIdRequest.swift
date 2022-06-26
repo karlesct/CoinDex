@@ -51,6 +51,10 @@ struct CoinsIdRequest: Requestable {
             "sparkline" : "true",                     // Include sparkline 7 days data (eg. true, false) [default: false]
         ]
     }
+    
+}
+
+extension CoinsIdRequest: ResponseDecoder {
 
     func decode(_ data: Data) throws -> CoinsIdResponse {
         let decoder = JSONDecoder()

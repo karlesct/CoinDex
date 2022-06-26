@@ -37,7 +37,11 @@ struct ExchangesIdVolumeChartRequest: Requestable {
             "days" : "15",              // Data up to number of days ago (eg. 1, 14, 30)
         ]
     }
+    
+}
 
+extension ExchangesIdVolumeChartRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> ExchangesIdVolumeChartResponse {
         let decoder = JSONDecoder()
         decoder.dateDecodingStrategy = .millisecondsSince1970

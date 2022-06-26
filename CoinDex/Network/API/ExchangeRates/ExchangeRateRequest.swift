@@ -32,6 +32,10 @@ struct ExchangeRateRequest: Requestable {
         .get
     }
 
+}
+
+extension ExchangeRateRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> ExchangeRateResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

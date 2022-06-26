@@ -32,6 +32,10 @@ struct AssetPlatformsRequest: Requestable {
         .get
     }
     
+}
+
+extension AssetPlatformsRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> AssetPlatformsResponseArray {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

@@ -31,6 +31,10 @@ struct DerivativesExchangesListRequest: Requestable {
     var method: HTTPMethod {
         .get
     }
+    
+}
+
+extension DerivativesExchangesListRequest: ResponseDecoder {
 
     func decode(_ data: Data) throws -> DerivativesExchangesListResponse {
         let decoder = JSONDecoder()

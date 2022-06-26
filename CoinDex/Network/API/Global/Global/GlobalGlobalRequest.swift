@@ -31,7 +31,11 @@ struct GlobalGlobalRequest: Requestable {
     var method: HTTPMethod {
         .get
     }
+    
+}
 
+extension GlobalGlobalRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> DataItemCodable<GlobalGlobalResponse> {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

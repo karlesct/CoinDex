@@ -44,7 +44,10 @@ struct ExchangesRequest: Requestable {
             "page" : "\(self.page)",                     // page through results. Max: 6
         ]
     }
+}
 
+extension ExchangesRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> ExchangesResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

@@ -37,7 +37,10 @@ struct DerivativesRequest: Requestable {
             "include_tickers" : "unexpired"           // ['all', 'unexpired'] - expired to show unexpired tickers, all to list all tickers, defaults to unexpired
         ]
     }
+}
 
+extension DerivativesRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> DerivativesResponseArray {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

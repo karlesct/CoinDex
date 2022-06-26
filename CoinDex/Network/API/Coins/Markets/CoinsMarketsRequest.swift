@@ -46,6 +46,10 @@ struct CoinsMarketsRequest: Requestable {
             "price_change_percentage" : "1",                     // Include price change percentage in 1h, 24h, 7d, 14d, 30d, 200d, 1y (eg. '1h,24h,7d' comma-separated, invalid values will be discarded)
         ]
     }
+    
+}
+
+extension CoinsMarketsRequest: ResponseDecoder {
 
     func decode(_ data: Data) throws -> CoinsMarketsResponse {
         let decoder = JSONDecoder()

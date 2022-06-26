@@ -31,7 +31,11 @@ struct CategoriesListRequest: Requestable {
     var method: HTTPMethod {
         .get
     }
+    
+}
 
+extension CategoriesListRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> CategoriesListResponseArray {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

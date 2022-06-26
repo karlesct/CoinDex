@@ -39,7 +39,10 @@ struct DerivativesExchangesRequest: Requestable {
             "page" : "1",                       // Page through results
         ]
     }
+}
 
+extension DerivativesExchangesRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> DerivativesExchangeResponseArray {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

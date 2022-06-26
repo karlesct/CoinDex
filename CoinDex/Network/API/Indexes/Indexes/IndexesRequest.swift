@@ -46,6 +46,10 @@ struct IndexesRequest: Requestable {
         ]
     }
 
+}
+
+extension IndexesRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> IndexesResponseArray {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

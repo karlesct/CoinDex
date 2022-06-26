@@ -6,7 +6,7 @@
 import Foundation
 
 /// Top-7 trending coins as searched by users in the last 24 hours (Ordered by most popular first)
-struct TrendingRequest: DataRequest {
+struct TrendingRequest: Requestable {
 
     let baseURL: String
 
@@ -31,7 +31,10 @@ struct TrendingRequest: DataRequest {
     var method: HTTPMethod {
         .get
     }
+}
 
+extension TrendingRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> TrendingResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

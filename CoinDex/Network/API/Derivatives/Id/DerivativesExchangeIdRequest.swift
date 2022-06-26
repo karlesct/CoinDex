@@ -40,7 +40,11 @@ struct DerivativesExchangeIdRequest: Requestable {
             "include_tickers" : "unexpired"              // ['all', 'unexpired'] - expired to show unexpired tickers, all to list all tickers, leave blank to omit tickers data in response
         ]
     }
+    
+}
 
+extension DerivativesExchangeIdRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> DerivativesExchangeIdResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

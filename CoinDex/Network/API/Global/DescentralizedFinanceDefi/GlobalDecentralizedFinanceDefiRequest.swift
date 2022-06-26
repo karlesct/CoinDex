@@ -31,7 +31,11 @@ struct GlobalDecentralizedFinanceDefiRequest: Requestable {
     var method: HTTPMethod {
         .get
     }
+    
+}
 
+extension GlobalDecentralizedFinanceDefiRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> DataItemCodable<GlobalDecentralizedFinanceDefiResponse> {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

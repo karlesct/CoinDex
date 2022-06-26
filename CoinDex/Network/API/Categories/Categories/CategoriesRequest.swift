@@ -40,7 +40,11 @@ struct CategoriesRequest: Requestable {
             "order" : order.rawValue              // market_cap_desc (default), market_cap_asc, name_desc, name_asc, market_cap_change_24h_desc and market_cap_change_24h_asc
         ]
     }
+    
+}
 
+extension CategoriesRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> CategoriesResponseArray {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

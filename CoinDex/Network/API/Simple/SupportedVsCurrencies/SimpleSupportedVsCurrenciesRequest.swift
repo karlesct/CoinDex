@@ -32,6 +32,11 @@ struct SimpleSupportedVsCurrenciesRequest: Requestable {
         .get
     }
 
+    
+}
+
+extension SimpleSupportedVsCurrenciesRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> SimpleSupportedVsCurrenciesResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

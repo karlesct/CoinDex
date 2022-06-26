@@ -6,7 +6,7 @@
 import Foundation
 
 /// List all market indexes
-struct IndexesListRequest: DataRequest {
+struct IndexesListRequest: Requestable {
 
     let baseURL: String
 
@@ -31,7 +31,10 @@ struct IndexesListRequest: DataRequest {
     var method: HTTPMethod {
         .get
     }
+}
 
+extension IndexesListRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> IndexesListResponseArray {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

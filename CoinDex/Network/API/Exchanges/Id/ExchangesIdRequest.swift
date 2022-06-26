@@ -38,6 +38,9 @@ struct ExchangesIdRequest: Requestable {
     var method: HTTPMethod {
         .get
     }
+}
+
+extension ExchangesIdRequest: ResponseDecoder {
     
     func decode(_ data: Data) throws -> ExchangesIdResponse {
         let decoder = JSONDecoder()

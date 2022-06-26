@@ -31,7 +31,11 @@ struct PingRequest: Requestable {
     var method: HTTPMethod {
         .get
     }
+    
+}
 
+extension PingRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> PingResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase

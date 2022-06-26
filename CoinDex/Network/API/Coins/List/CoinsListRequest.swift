@@ -37,7 +37,10 @@ struct CoinsListRequest: Requestable {
             "include_platform" : "true" //flag to include platform contract addresses (eg. 0x.... for Ethereum based tokens). valid values: true, false
         ]
     }
+}
 
+extension CoinsListRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> CoinsListResponseArray {
         let decoder = JSONDecoder()
 

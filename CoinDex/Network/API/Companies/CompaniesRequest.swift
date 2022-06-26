@@ -37,7 +37,11 @@ struct CompaniesRequest: Requestable {
             "coin_id" : "bitcoin"          // bitcoin or ethereum
         ]
     }
+    
+}
 
+extension CompaniesRequest: ResponseDecoder {
+    
     func decode(_ data: Data) throws -> CompaniesResponse {
         let decoder = JSONDecoder()
         decoder.keyDecodingStrategy = .convertFromSnakeCase
