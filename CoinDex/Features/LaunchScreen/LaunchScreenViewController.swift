@@ -26,7 +26,7 @@ class LaunchScreenViewController: UIViewController {
     
     // MARK: - Properties
 
-    var presenter: LaunchScreenPresenterProtocol?
+    var viewModel: LaunchScreenViewModelProtocol?
     var navigator: LaunchScreenNavigator?
 
     // MARK: - Life cycle

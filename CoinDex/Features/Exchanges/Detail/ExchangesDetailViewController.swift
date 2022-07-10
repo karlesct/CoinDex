@@ -4,6 +4,7 @@
 
 
 import UIKit
+import Combine
 
 class ExchangesDetailViewController: UIViewController {
     
@@ -34,30 +35,56 @@ class ExchangesDetailViewController: UIViewController {
     
     // MARK: - Properties
     
-    var presenter: ExchangesDetailPresenterProtocol?
+    var viewModel: ExchangesDetailViewModelProtocol?
+    
+    private var subscriptions: Set<AnyCancellable> = []
     
     // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.presenter?.view = self
+        self.setupBindings()
         
-        self.title = self.presenter?.title
+        self.title = self.viewModel?.title
         self.view.backgroundColor = .xF6F6F6
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.presenter?.willAppear()
+        self.viewModel?.doRequest()
         
     }
     
     // MARK: - Methods
     
+    func setupBindings() {
+        self.viewModel?.isLoadingPublisher
+            .assign(to: \.isLoading,
+                    on: self)
+            .store(in: &subscriptions)
+        
+        self.viewModel?.dataSourcePublisher
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: { [weak self] _ in
+                self?.tableView.reloadData()
+            })
+            .store(in: &subscriptions)
+    }
+    
+    var isLoading: Bool = false {
+        didSet {
+            DispatchQueue.main.async {
+                self.isLoading
+                ? self.activityIndicator.startAnimating()
+                : self.activityIndicator.stopAnimating()
+            }
+        }
+    }
+    
     @objc func doRetry() {
-        self.presenter?.doRequest()
+        self.viewModel?.doRequest()
     }
     
 }
@@ -68,12 +95,12 @@ extension ExchangesDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let item = self.presenter?.dataSource?[indexPath.row] as? ExchangesDetailInfoCellModel {
+        if let item = self.viewModel?.dataSource?[indexPath.row] as? ExchangesDetailInfoCellModel {
             let cell = self.tableView.dequeueReusableCell(ExchangesDetailInfoTableViewCell.self,
                                                           for: indexPath)
             cell.bind(item: item)
             return cell
-        } else if let item = self.presenter?.dataSource?[indexPath.row] as? ExchangesDetailTrustCellModel {
+        } else if let item = self.viewModel?.dataSource?[indexPath.row] as? ExchangesDetailTrustCellModel {
             let cell = self.tableView.dequeueReusableCell(ExchangesDetailTrustTableViewCell.self,
                                                           for: indexPath)
             cell.bind(item: item)
@@ -84,7 +111,7 @@ extension ExchangesDetailViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
-        let rows = self.presenter?.dataSource?.count ?? 0
+        let rows = self.viewModel?.dataSource?.count ?? 0
         
         if rows == 0 && !self.activityIndicator.isAnimating {
             let action = UIButton.ButtonAction(target: self,
@@ -98,21 +125,5 @@ extension ExchangesDetailViewController: UITableViewDataSource {
         }
         
         return rows
-    }
-}
-
-extension ExchangesDetailViewController: ExchangesDetailViewProtocol {
-    func setLoading(isLoading: Bool) {
-        DispatchQueue.main.async {
-            isLoading
-            ? self.activityIndicator.startAnimating()
-            : self.activityIndicator.stopAnimating()
-        }
-    }
-    
-    func needsReaload() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
     }
 }

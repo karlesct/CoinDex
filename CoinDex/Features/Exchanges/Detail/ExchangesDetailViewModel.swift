@@ -4,36 +4,31 @@
 
 
 import Foundation
+import Combine
 
-protocol ExchangesDetailPresenterProtocol: TitleProtocol,
+protocol ExchangesDetailViewModelProtocol: TitleProtocol,
                                            DatasourceProtocol,
-                                           WillAppearProtocol{
-    var view: ExchangesDetailViewProtocol? { get set }
+                                           LoadingProtocol {
     func doRequest()
 }
 
-protocol ExchangesDetailViewProtocol: AnyObject {
-    func setLoading(isLoading: Bool)
-    func needsReaload()
-}
-
-class ExchangesDetailPresenter: ExchangesDetailPresenterProtocol {
+class ExchangesDetailViewModel: ExchangesDetailViewModelProtocol {
 
     // MARK: - Properties
     
     var title: String = "exchange_detail_title".localized
     
-    var dataSource: [TModel]? = [] {
-        didSet {
-            self.view?.needsReaload()
-        }
-    }
+    @Published private(set) var dataSource: [TModel]? = []
+    var dataSourcePublished: Published<[TModel]?> { _dataSource }
+    var dataSourcePublisher: Published<[TModel]?>.Publisher { $dataSource }
+    
+    @Published private(set) var isLoading: Bool = false
+    var isLoadingPublished: Published<Bool> { _isLoading }
+    var isLoadingPublisher: Published<Bool>.Publisher { $isLoading }
     
     private let id: String
     private var repository: ExchangesDetailRepositoryProtocol
     private let logging: LoggingServiceProtocol
-    
-    weak var view: ExchangesDetailViewProtocol?
 
     // MARK: - Init
     
@@ -52,10 +47,10 @@ class ExchangesDetailPresenter: ExchangesDetailPresenterProtocol {
     }
     
     func doRequest() {
-        self.view?.setLoading(isLoading: true)
+        self.isLoading = true
         self.dataSource = []
         self.repository.fetchList(id: self.id) { [weak self] result in
-            self?.view?.setLoading(isLoading: false)
+            self?.isLoading = false
             switch result {
             case let .success(item):
                 self?.dataSource? = item

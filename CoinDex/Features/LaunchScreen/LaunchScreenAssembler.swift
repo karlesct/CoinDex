@@ -18,14 +18,14 @@ final class LaunchScreenAssembler {
 
     func viewController() -> UIViewController {
         let viewController = LaunchScreenViewController.loadFromNib()
-        viewController.presenter = self.presenter()
+        viewController.viewModel = self.viewModel()
         viewController.navigator = self.navigator()
         return viewController
     }
 
-    private func presenter() -> LaunchScreenPresenterProtocol {
-        let presenter = LaunchScreenPresenter()
-        return presenter
+    private func viewModel() -> LaunchScreenViewModelProtocol {
+        let viewModel = LaunchScreenViewModel()
+        return viewModel
     }
 
     private func navigator() -> LaunchScreenNavigator {

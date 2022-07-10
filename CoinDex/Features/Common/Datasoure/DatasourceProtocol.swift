@@ -4,7 +4,10 @@
 
 
 import Foundation
+import Combine
 
 protocol DatasourceProtocol {
-    var dataSource: [TModel]? { get set }
+    var dataSource: [TModel]? { get }
+    var dataSourcePublished: Published<[TModel]?> { get }
+    var dataSourcePublisher: Published<[TModel]?>.Publisher { get }
 }

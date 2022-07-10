@@ -21,17 +21,17 @@ final class ExchangesDetailAssembler {
 
     func viewController() -> UIViewController {
         let viewController = ExchangesDetailViewController.loadFromNib()
-        viewController.presenter = self.presenter()
+        viewController.viewModel = self.viewModel()
         return viewController
     }
 
-    private func presenter() -> ExchangesDetailPresenterProtocol {
+    private func viewModel() -> ExchangesDetailViewModelProtocol {
         let repository = self.repository()
         let logging = self.logging()
-        let presenter = ExchangesDetailPresenter(id: self.id,
+        let viewModel = ExchangesDetailViewModel(id: self.id,
                                                  repository: repository,
                                                  logging: logging)
-        return presenter
+        return viewModel
     }
     
     private func repository() -> ExchangesDetailRepositoryProtocol {

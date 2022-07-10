@@ -4,30 +4,28 @@
 
 
 import Foundation
+import Combine
 
-protocol ExchangesListMasterPresenterProtocol: TitleProtocol,
+protocol ExchangesListMasterViewModelProtocol: TitleProtocol,
                                                DatasourceProtocol,
-                                               WillAppearProtocol {
+                                               LoadingProtocol {
     var page: Int { get set }
-    var view: ExchangesListMasterViewProtocol? { get set }
+    func doRequest(page: Int)
 }
 
-protocol ExchangesListMasterViewProtocol: AnyObject {
-    func setLoading(isLoading: Bool)
-    func needsReaload()
-}
-
-class ExchangesListMasterPresenter: ExchangesListMasterPresenterProtocol {
+class ExchangesListMasterViewModel: ExchangesListMasterViewModelProtocol {
 
     // MARK: - Properties
     
     var title: String = "exchange_list_master_title".localized
     
-    var dataSource: [TModel]? = [] {
-        didSet {
-            self.view?.needsReaload()
-        }
-    }
+    @Published private(set) var dataSource: [TModel]? = []
+    var dataSourcePublished: Published<[TModel]?> { _dataSource }
+    var dataSourcePublisher: Published<[TModel]?>.Publisher { $dataSource }
+    
+    @Published private(set) var isLoading: Bool = false
+    var isLoadingPublished: Published<Bool> { _isLoading }
+    var isLoadingPublisher: Published<Bool>.Publisher { $isLoading }
     
     var page: Int = 0 {
         didSet {
@@ -37,8 +35,6 @@ class ExchangesListMasterPresenter: ExchangesListMasterPresenterProtocol {
     
     var repository: ExchangesListMasterRepositoryProtocol
     var logging: LoggingServiceProtocol
-    
-    weak var view: ExchangesListMasterViewProtocol?
 
     // MARK: - Init
     
@@ -50,14 +46,10 @@ class ExchangesListMasterPresenter: ExchangesListMasterPresenterProtocol {
 
     // MARK: - Methods
     
-    func willAppear() {
-        self.doRequest(page: self.page)
-    }
-    
-    private func doRequest(page: Int) {
-        self.view?.setLoading(isLoading: true)
+    func doRequest(page: Int) {
+        self.isLoading = true
         self.repository.fetchList(page: page) { [weak self] result in
-            self?.view?.setLoading(isLoading: false)
+            self?.isLoading = false
             switch result {
             case let .success(item):
                 self?.dataSource?.append(contentsOf: item)

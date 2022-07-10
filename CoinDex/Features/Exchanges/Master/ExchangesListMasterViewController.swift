@@ -4,6 +4,7 @@
 
 
 import UIKit
+import Combine
 
 class ExchangesListMasterViewController: UIViewController {
     
@@ -33,23 +34,25 @@ class ExchangesListMasterViewController: UIViewController {
     
     // MARK: - Properties
     
-    var presenter: ExchangesListMasterPresenterProtocol?
+    var viewModel: ExchangesListMasterViewModelProtocol?
     var navigator: ExchangesListMasterNavigator?
+    
+    private var subscriptions: Set<AnyCancellable> = []
     
     // MARK: - Life cycle
     
     override func viewDidLoad() {
         super.viewDidLoad()
         
-        self.presenter?.view = self
-        
+        self.setupBindings()
         self.setupUI()
     }
     
     override func viewWillAppear(_ animated: Bool) {
         super.viewWillAppear(animated)
         
-        self.presenter?.willAppear()
+        let page = self.viewModel?.page ?? 0
+        self.viewModel?.doRequest(page: page)
         
     }
     
@@ -57,10 +60,34 @@ class ExchangesListMasterViewController: UIViewController {
     
     func setupUI() {
         self.setNavigation(image: .tabBar.exchangesIcon,
-                           title: self.presenter?.title ?? .empty,
+                           title: self.viewModel?.title ?? .empty,
                            color: .xFFFFFF)
         
         self.view.backgroundColor = .xF6F6F6
+    }
+    
+    func setupBindings() {
+        self.viewModel?.isLoadingPublisher
+            .assign(to: \.isLoading,
+                    on: self)
+            .store(in: &subscriptions)
+        
+        self.viewModel?.dataSourcePublisher
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: { [weak self] _ in
+                self?.tableView.reloadData()
+            })
+            .store(in: &subscriptions)
+    }
+    
+    var isLoading: Bool = false {
+        didSet {
+            DispatchQueue.main.async {
+                self.isLoading
+                ? self.activityIndicator.startAnimating()
+                : self.activityIndicator.stopAnimating()
+            }
+        }
     }
     
 }
@@ -71,7 +98,7 @@ extension ExchangesListMasterViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let item = self.presenter?.dataSource?[indexPath.row] as? ExchangesListMasterCellModel {
+        if let item = self.viewModel?.dataSource?[indexPath.row] as? ExchangesListMasterCellModel {
             let cell = self.tableView.dequeueReusableCell(ExchangesListMasterTableViewCell.self,
                                                           for: indexPath)
             cell.bind(item: item,
@@ -84,18 +111,18 @@ extension ExchangesListMasterViewController: UITableViewDataSource {
     func tableView(_ tableView: UITableView,
                    numberOfRowsInSection section: Int) -> Int {
         
-        return self.presenter?.dataSource?.count ?? 0
+        return self.viewModel?.dataSource?.count ?? 0
     }
 }
 
 extension ExchangesListMasterViewController: UITableViewDataSourcePrefetching {
     func tableView(_ tableView: UITableView,
                    prefetchRowsAt indexPaths: [IndexPath]) {
-        let sourceTotal = self.presenter?.dataSource?.count ?? 0
-        let page = self.presenter?.page ?? 0
+        let sourceTotal = self.viewModel?.dataSource?.count ?? 0
+        let page = self.viewModel?.page ?? 0
         let filtered = indexPaths.filter({ $0.row >= sourceTotal - 25})
-        if filtered.count > 0 && page < 6{
-            self.presenter?.page += 1
+        if filtered.count > 0 && page < 6 {
+            self.viewModel?.page += 1
         }
     }
 }
@@ -106,21 +133,5 @@ extension ExchangesListMasterViewController: ExchangesListMasterTableViewCellDel
         guard let id = id else { return }
         
         self.navigator?.navigate(to: .detail(id: id))
-    }
-}
-
-extension ExchangesListMasterViewController: ExchangesListMasterViewProtocol {
-    func setLoading(isLoading: Bool) {
-        DispatchQueue.main.async {
-            isLoading
-            ? self.activityIndicator.startAnimating()
-            : self.activityIndicator.stopAnimating()
-        }
-    }
-    
-    func needsReaload() {
-        DispatchQueue.main.async {
-            self.tableView.reloadData()
-        }
     }
 }

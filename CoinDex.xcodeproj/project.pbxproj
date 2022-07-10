@@ -15,6 +15,7 @@
 		271410F6287827F0003942BE /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EF287827F0003942BE /* Floaty.swift */; };
 		271410F7287827F0003942BE /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410F0287827F0003942BE /* FloatyItem.swift */; };
 		271410F8287827F0003942BE /* UIView+Draggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410F1287827F0003942BE /* UIView+Draggable.swift */; };
+		271410FC287B2BFE003942BE /* LoadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410FB287B2BFE003942BE /* LoadingProtocol.swift */; };
 		27182935285C788C00E66073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 27182934285C788C00E66073 /* README.md */; };
 		2718294C285C919700E66073 /* String+EmptyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718294B285C919700E66073 /* String+EmptyTest.swift */; };
 		27182950285C93F400E66073 /* LoggingServiceAssemblerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718294F285C93F400E66073 /* LoggingServiceAssemblerTest.swift */; };
@@ -34,14 +35,14 @@
 		27182982285CC12500E66073 /* ExchangesListMasterAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182979285CC04200E66073 /* ExchangesListMasterAssembler.swift */; };
 		27182984285CC12A00E66073 /* ExchangesListMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182977285CC02300E66073 /* ExchangesListMasterViewController.swift */; };
 		27182985285CC12D00E66073 /* ExchangesListMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718297F285CC07900E66073 /* ExchangesListMasterViewController.xib */; };
-		27182987285CC13200E66073 /* ExchangesListMasterPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718297D285CC06900E66073 /* ExchangesListMasterPresenter.swift */; };
+		27182987285CC13200E66073 /* ExchangesListMasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718297D285CC06900E66073 /* ExchangesListMasterViewModel.swift */; };
 		27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182988285CCC0900E66073 /* ExchangesListMasterRepository.swift */; };
 		2718298C285CDD0700E66073 /* ExchangesListMasterCellModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718298B285CDD0700E66073 /* ExchangesListMasterCellModel.swift */; };
 		2718298E285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718298D285CDD1600E66073 /* ExchangesListMasterTableViewCell.swift */; };
 		27182990285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718298F285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib */; };
 		27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182992285CF3A500E66073 /* UIImageView+LoadThumbnail.swift */; };
 		27182996285D04B700E66073 /* ExchangesDetailRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182995285D04B700E66073 /* ExchangesDetailRepository.swift */; };
-		27182998285D04C900E66073 /* ExchangesDetailPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182997285D04C900E66073 /* ExchangesDetailPresenter.swift */; };
+		27182998285D04C900E66073 /* ExchangesDetailViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182997285D04C900E66073 /* ExchangesDetailViewModel.swift */; };
 		2718299A285D04DA00E66073 /* ExchangesDetailViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27182999285D04DA00E66073 /* ExchangesDetailViewController.swift */; };
 		2718299C285D04E600E66073 /* ExchangesDetailViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */; };
 		2718299E285D04FE00E66073 /* ExchangesDetailAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */; };
@@ -258,7 +259,7 @@
 		27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */; };
 		27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */; };
 		27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */; };
-		27BB13222788AC2C00B5FE4D /* LaunchScreenPresenter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB13212788AC2C00B5FE4D /* LaunchScreenPresenter.swift */; };
+		27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB13212788AC2C00B5FE4D /* LaunchScreenViewModel.swift */; };
 		27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB13242788AF0F00B5FE4D /* Navigator.swift */; };
 		27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB13262788AF6100B5FE4D /* LaunchScreenNavigator.swift */; };
 		27BB13352788BFAA00B5FE4D /* AppDelegateAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27BB13342788BFAA00B5FE4D /* AppDelegateAssembler.swift */; };
@@ -305,6 +306,7 @@
 		271410EF287827F0003942BE /* Floaty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floaty.swift; sourceTree = "<group>"; };
 		271410F0287827F0003942BE /* FloatyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyItem.swift; sourceTree = "<group>"; };
 		271410F1287827F0003942BE /* UIView+Draggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Draggable.swift"; sourceTree = "<group>"; };
+		271410FB287B2BFE003942BE /* LoadingProtocol.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoadingProtocol.swift; sourceTree = "<group>"; };
 		27182934285C788C00E66073 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2718294B285C919700E66073 /* String+EmptyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmptyTest.swift"; sourceTree = "<group>"; };
 		2718294F285C93F400E66073 /* LoggingServiceAssemblerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingServiceAssemblerTest.swift; sourceTree = "<group>"; };
@@ -323,7 +325,7 @@
 		27182977285CC02300E66073 /* ExchangesListMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterViewController.swift; sourceTree = "<group>"; };
 		27182979285CC04200E66073 /* ExchangesListMasterAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterAssembler.swift; sourceTree = "<group>"; };
 		2718297B285CC05A00E66073 /* ExchangesListMasterNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterNavigator.swift; sourceTree = "<group>"; };
-		2718297D285CC06900E66073 /* ExchangesListMasterPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterPresenter.swift; sourceTree = "<group>"; };
+		2718297D285CC06900E66073 /* ExchangesListMasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterViewModel.swift; sourceTree = "<group>"; };
 		2718297F285CC07900E66073 /* ExchangesListMasterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesListMasterViewController.xib; sourceTree = "<group>"; };
 		27182988285CCC0900E66073 /* ExchangesListMasterRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterRepository.swift; sourceTree = "<group>"; };
 		2718298B285CDD0700E66073 /* ExchangesListMasterCellModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesListMasterCellModel.swift; sourceTree = "<group>"; };
@@ -331,7 +333,7 @@
 		2718298F285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesListMasterTableViewCell.xib; sourceTree = "<group>"; };
 		27182992285CF3A500E66073 /* UIImageView+LoadThumbnail.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIImageView+LoadThumbnail.swift"; sourceTree = "<group>"; };
 		27182995285D04B700E66073 /* ExchangesDetailRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailRepository.swift; sourceTree = "<group>"; };
-		27182997285D04C900E66073 /* ExchangesDetailPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailPresenter.swift; sourceTree = "<group>"; };
+		27182997285D04C900E66073 /* ExchangesDetailViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailViewModel.swift; sourceTree = "<group>"; };
 		27182999285D04DA00E66073 /* ExchangesDetailViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailViewController.swift; sourceTree = "<group>"; };
 		2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = ExchangesDetailViewController.xib; sourceTree = "<group>"; };
 		2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExchangesDetailAssembler.swift; sourceTree = "<group>"; };
@@ -592,7 +594,7 @@
 		27BB131B2788AB9F00B5FE4D /* LaunchScreenAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenAssembler.swift; sourceTree = "<group>"; };
 		27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewController.swift; sourceTree = "<group>"; };
 		27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = LaunchScreenViewController.xib; sourceTree = "<group>"; };
-		27BB13212788AC2C00B5FE4D /* LaunchScreenPresenter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenPresenter.swift; sourceTree = "<group>"; };
+		27BB13212788AC2C00B5FE4D /* LaunchScreenViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenViewModel.swift; sourceTree = "<group>"; };
 		27BB13242788AF0F00B5FE4D /* Navigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigator.swift; sourceTree = "<group>"; };
 		27BB13262788AF6100B5FE4D /* LaunchScreenNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LaunchScreenNavigator.swift; sourceTree = "<group>"; };
 		27BB13342788BFAA00B5FE4D /* AppDelegateAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AppDelegateAssembler.swift; sourceTree = "<group>"; };
@@ -666,6 +668,14 @@
 				271410F1287827F0003942BE /* UIView+Draggable.swift */,
 			);
 			path = Extensions;
+			sourceTree = "<group>";
+		};
+		271410FA287B2BEF003942BE /* Loading */ = {
+			isa = PBXGroup;
+			children = (
+				271410FB287B2BFE003942BE /* LoadingProtocol.swift */,
+			);
+			path = Loading;
 			sourceTree = "<group>";
 		};
 		27182936285C909200E66073 /* Resources */ = {
@@ -922,7 +932,7 @@
 			children = (
 				2718298A285CDCED00E66073 /* Cells */,
 				27182979285CC04200E66073 /* ExchangesListMasterAssembler.swift */,
-				2718297D285CC06900E66073 /* ExchangesListMasterPresenter.swift */,
+				2718297D285CC06900E66073 /* ExchangesListMasterViewModel.swift */,
 				27182977285CC02300E66073 /* ExchangesListMasterViewController.swift */,
 				2718297F285CC07900E66073 /* ExchangesListMasterViewController.xib */,
 				27182988285CCC0900E66073 /* ExchangesListMasterRepository.swift */,
@@ -937,7 +947,7 @@
 			children = (
 				27182994285D049100E66073 /* Cells */,
 				2718299D285D04FE00E66073 /* ExchangesDetailAssembler.swift */,
-				27182997285D04C900E66073 /* ExchangesDetailPresenter.swift */,
+				27182997285D04C900E66073 /* ExchangesDetailViewModel.swift */,
 				2718299B285D04E600E66073 /* ExchangesDetailViewController.xib */,
 				27182999285D04DA00E66073 /* ExchangesDetailViewController.swift */,
 				27182995285D04B700E66073 /* ExchangesDetailRepository.swift */,
@@ -2425,6 +2435,7 @@
 				271B26E2285DB5720046A996 /* Title */,
 				279B67222784712900480155 /* T */,
 				2781E36A27CD276B0011BE14 /* Filterable */,
+				271410FA287B2BEF003942BE /* Loading */,
 				27BB13232788AEF500B5FE4D /* Navigator */,
 			);
 			path = Common;
@@ -2678,7 +2689,7 @@
 				27BB13262788AF6100B5FE4D /* LaunchScreenNavigator.swift */,
 				27BB131D2788AC0B00B5FE4D /* LaunchScreenViewController.swift */,
 				27BB131F2788AC1A00B5FE4D /* LaunchScreenViewController.xib */,
-				27BB13212788AC2C00B5FE4D /* LaunchScreenPresenter.swift */,
+				27BB13212788AC2C00B5FE4D /* LaunchScreenViewModel.swift */,
 			);
 			path = LaunchScreen;
 			sourceTree = "<group>";
@@ -2926,7 +2937,7 @@
 				271B26F0285DB7070046A996 /* DisappearProtocol.swift in Sources */,
 				27ABA0C62729908A000FD326 /* CompaniesResponse.swift in Sources */,
 				271B2731285E3CE70046A996 /* CountryPickerPresenter.swift in Sources */,
-				27182987285CC13200E66073 /* ExchangesListMasterPresenter.swift in Sources */,
+				27182987285CC13200E66073 /* ExchangesListMasterViewModel.swift in Sources */,
 				27BB13272788AF6100B5FE4D /* LaunchScreenNavigator.swift in Sources */,
 				27B832BD286763FA00E4D231 /* NetworkConfigurable.swift in Sources */,
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
@@ -2934,7 +2945,7 @@
 				27B832C42867743200E4D231 /* NetworkSessionManager.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				271B2735285E3CF00046A996 /* CountryPickerTableViewCell.swift in Sources */,
-				27BB13222788AC2C00B5FE4D /* LaunchScreenPresenter.swift in Sources */,
+				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
 				27924735281EA7FE00737A1C /* DeepLinkValues.swift in Sources */,
 				271B279D285F242D0046A996 /* TutorialPageAssembler.swift in Sources */,
 				2787E34427C246BC00DC5523 /* NotificationPermission.swift in Sources */,
@@ -2954,7 +2965,7 @@
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
 				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
 				271410F6287827F0003942BE /* Floaty.swift in Sources */,
-				27182998285D04C900E66073 /* ExchangesDetailPresenter.swift in Sources */,
+				27182998285D04C900E66073 /* ExchangesDetailViewModel.swift in Sources */,
 				271B26F7285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift in Sources */,
 				27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */,
 				27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */,
@@ -3040,6 +3051,7 @@
 				271B272F285E3CE70046A996 /* CountryPickerViewController.swift in Sources */,
 				27ABA0F12731839C000FD326 /* SimpleSupportedVsCurrenciesRequest.swift in Sources */,
 				271EEA3B27207E3D00BA30FD /* UIWindow+VisibleViewController.swift in Sources */,
+				271410FC287B2BFE003942BE /* LoadingProtocol.swift in Sources */,
 				27ABA0FD27318703000FD326 /* ExchangesResponse.swift in Sources */,
 				2787E33927C243E800DC5523 /* PermissionTypeEnum.swift in Sources */,
 				271B272E285E3CE70046A996 /* CountryPickerAssembler.swift in Sources */,
