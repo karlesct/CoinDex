@@ -8,6 +8,13 @@
 
 /* Begin PBXBuildFile section */
 		270F0FC8279D787E005DE9FB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC7279D787E005DE9FB /* Observable.swift */; };
+		271410F2287827F0003942BE /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EB287827F0003942BE /* FloatyWindow.swift */; };
+		271410F3287827F0003942BE /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EC287827F0003942BE /* FloatyDelegate.swift */; };
+		271410F4287827F0003942BE /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410ED287827F0003942BE /* FloatyViewController.swift */; };
+		271410F5287827F0003942BE /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EE287827F0003942BE /* FloatyManager.swift */; };
+		271410F6287827F0003942BE /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EF287827F0003942BE /* Floaty.swift */; };
+		271410F7287827F0003942BE /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410F0287827F0003942BE /* FloatyItem.swift */; };
+		271410F8287827F0003942BE /* UIView+Draggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410F1287827F0003942BE /* UIView+Draggable.swift */; };
 		27182935285C788C00E66073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 27182934285C788C00E66073 /* README.md */; };
 		2718294C285C919700E66073 /* String+EmptyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718294B285C919700E66073 /* String+EmptyTest.swift */; };
 		27182950285C93F400E66073 /* LoggingServiceAssemblerTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718294F285C93F400E66073 /* LoggingServiceAssemblerTest.swift */; };
@@ -291,6 +298,13 @@
 
 /* Begin PBXFileReference section */
 		270F0FC7279D787E005DE9FB /* Observable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Observable.swift; sourceTree = "<group>"; };
+		271410EB287827F0003942BE /* FloatyWindow.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyWindow.swift; sourceTree = "<group>"; };
+		271410EC287827F0003942BE /* FloatyDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyDelegate.swift; sourceTree = "<group>"; };
+		271410ED287827F0003942BE /* FloatyViewController.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyViewController.swift; sourceTree = "<group>"; };
+		271410EE287827F0003942BE /* FloatyManager.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyManager.swift; sourceTree = "<group>"; };
+		271410EF287827F0003942BE /* Floaty.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = Floaty.swift; sourceTree = "<group>"; };
+		271410F0287827F0003942BE /* FloatyItem.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FloatyItem.swift; sourceTree = "<group>"; };
+		271410F1287827F0003942BE /* UIView+Draggable.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = "UIView+Draggable.swift"; sourceTree = "<group>"; };
 		27182934285C788C00E66073 /* README.md */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = net.daringfireball.markdown; path = README.md; sourceTree = "<group>"; };
 		2718294B285C919700E66073 /* String+EmptyTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+EmptyTest.swift"; sourceTree = "<group>"; };
 		2718294F285C93F400E66073 /* LoggingServiceAssemblerTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LoggingServiceAssemblerTest.swift; sourceTree = "<group>"; };
@@ -630,6 +644,28 @@
 				270F0FC7279D787E005DE9FB /* Observable.swift */,
 			);
 			path = Observable;
+			sourceTree = "<group>";
+		};
+		271410EA287827E7003942BE /* Floaty */ = {
+			isa = PBXGroup;
+			children = (
+				271410F9287B19CC003942BE /* Extensions */,
+				271410EF287827F0003942BE /* Floaty.swift */,
+				271410EC287827F0003942BE /* FloatyDelegate.swift */,
+				271410F0287827F0003942BE /* FloatyItem.swift */,
+				271410EE287827F0003942BE /* FloatyManager.swift */,
+				271410ED287827F0003942BE /* FloatyViewController.swift */,
+				271410EB287827F0003942BE /* FloatyWindow.swift */,
+			);
+			path = Floaty;
+			sourceTree = "<group>";
+		};
+		271410F9287B19CC003942BE /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				271410F1287827F0003942BE /* UIView+Draggable.swift */,
+			);
+			path = Extensions;
 			sourceTree = "<group>";
 		};
 		27182936285C909200E66073 /* Resources */ = {
@@ -2027,6 +2063,7 @@
 		2763D37E27A4958200796FA8 /* UIComponents */ = {
 			isa = PBXGroup;
 			children = (
+				271410EA287827E7003942BE /* Floaty */,
 				278FD03C27DE4F2600A54EAB /* UINavigationController */,
 				2787E31A27B94CC600DC5523 /* UIView */,
 			);
@@ -2909,11 +2946,14 @@
 				271B27B1285F5D9D0046A996 /* ExchangesIdResponseConverter.swift in Sources */,
 				27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */,
 				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
+				271410F5287827F0003942BE /* FloatyManager.swift in Sources */,
+				271410F8287827F0003942BE /* UIView+Draggable.swift in Sources */,
 				27B832BF286772EC00E4D231 /* DefaultNetworkSessionManager.swift in Sources */,
 				27397E32280B145C00093CB8 /* FirebaseAppDelegate.swift in Sources */,
 				2757109F2725B20B00348F93 /* CoinsListRequest.swift in Sources */,
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
 				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
+				271410F6287827F0003942BE /* Floaty.swift in Sources */,
 				27182998285D04C900E66073 /* ExchangesDetailPresenter.swift in Sources */,
 				271B26F7285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift in Sources */,
 				27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */,
@@ -2940,6 +2980,7 @@
 				271B2737285E3CF00046A996 /* CountryPickerCellModel.swift in Sources */,
 				271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */,
 				271B26FB285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift in Sources */,
+				271410F7287827F0003942BE /* FloatyItem.swift in Sources */,
 				2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
 				27B832BB2867622400E4D231 /* ResponseDecoder.swift in Sources */,
@@ -2950,11 +2991,13 @@
 				271B26EA285DB6E00046A996 /* AppearProtocol.swift in Sources */,
 				271B279B285F242D0046A996 /* TutorialAssembler.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
+				271410F4287827F0003942BE /* FloatyViewController.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				271B26DD285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift in Sources */,
 				27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
 				27B832C22867737E00E4D231 /* NetworkCancellable.swift in Sources */,
+				271410F2287827F0003942BE /* FloatyWindow.swift in Sources */,
 				27F1F5F72871EDEC0058326B /* Date+IsYesterday.swift in Sources */,
 				271B27A0285F242D0046A996 /* TutorialViewController.swift in Sources */,
 				27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */,
@@ -3033,6 +3076,7 @@
 				271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */,
 				27F1F5EA2871DE1D0058326B /* Date+Colloquial.swift in Sources */,
 				27397E3C280B282900093CB8 /* LocationAlwaysPermission.swift in Sources */,
+				271410F3287827F0003942BE /* FloatyDelegate.swift in Sources */,
 				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
 				27ABA0FB273186F6000FD326 /* ExchangesRequest.swift in Sources */,
 				271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */,

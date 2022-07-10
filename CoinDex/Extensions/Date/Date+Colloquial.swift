@@ -57,7 +57,6 @@ public extension Date {
     static func colloquial(from fDate: Date,
                            to tDate: Date,
                            options fOptions: Date.Options? = nil) -> String {
-        let now = "now"
 
         let options = fOptions ?? Date.Options()
         
