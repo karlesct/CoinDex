@@ -12,7 +12,10 @@
         <placeholder placeholderIdentifier="IBFilesOwner" id="-1" userLabel="File's Owner" customClass="MapsViewController" customModule="CoinDexRelease" customModuleProvider="target">
             <connections>
                 <outlet property="activityIndicator" destination="jBV-mk-BMP" id="S72-CN-y81"/>
+                <outlet property="button" destination="6wy-Qk-Qe0" id="Bvm-ta-f7r"/>
+                <outlet property="button1" destination="4F6-2T-XlN" id="Yxw-3J-SnW"/>
                 <outlet property="mkMapView" destination="AHe-cL-JXw" id="ywc-wl-oWf"/>
+                <outlet property="textField" destination="8fP-Mp-U9z" id="62l-GF-egJ"/>
                 <outlet property="view" destination="iN0-l3-epB" id="lOX-pc-GpM"/>
             </connections>
         </placeholder>
@@ -27,15 +30,43 @@
                 <activityIndicatorView opaque="NO" contentMode="scaleToFill" horizontalHuggingPriority="750" verticalHuggingPriority="750" style="medium" translatesAutoresizingMaskIntoConstraints="NO" id="jBV-mk-BMP">
                     <rect key="frame" x="197" y="438" width="20" height="20"/>
                 </activityIndicatorView>
+                <textField opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="left" contentVerticalAlignment="center" borderStyle="roundedRect" textAlignment="natural" minimumFontSize="17" translatesAutoresizingMaskIntoConstraints="NO" id="8fP-Mp-U9z">
+                    <rect key="frame" x="10" y="54" width="394" height="34"/>
+                    <fontDescription key="fontDescription" type="system" pointSize="14"/>
+                    <textInputTraits key="textInputTraits"/>
+                </textField>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="6wy-Qk-Qe0">
+                    <rect key="frame" x="360" y="98" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="3dg-n5-Wyu"/>
+                        <constraint firstAttribute="width" constant="44" id="RqU-WU-KxE"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
+                <button opaque="NO" contentMode="scaleToFill" contentHorizontalAlignment="center" contentVerticalAlignment="center" buttonType="system" lineBreakMode="middleTruncation" translatesAutoresizingMaskIntoConstraints="NO" id="4F6-2T-XlN">
+                    <rect key="frame" x="296" y="98" width="44" height="44"/>
+                    <constraints>
+                        <constraint firstAttribute="height" constant="44" id="izP-wv-7Vw"/>
+                        <constraint firstAttribute="width" constant="44" id="nq8-Xc-FGX"/>
+                    </constraints>
+                    <inset key="imageEdgeInsets" minX="0.0" minY="0.0" maxX="2.2250738585072014e-308" maxY="0.0"/>
+                </button>
             </subviews>
             <viewLayoutGuide key="safeArea" id="vUN-kp-3ea"/>
             <color key="backgroundColor" systemColor="systemBackgroundColor"/>
             <constraints>
+                <constraint firstItem="8fP-Mp-U9z" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" constant="10" id="3Te-bs-pDT"/>
                 <constraint firstItem="jBV-mk-BMP" firstAttribute="centerY" secondItem="iN0-l3-epB" secondAttribute="centerY" id="5tH-Fd-2JS"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="6wy-Qk-Qe0" secondAttribute="trailing" constant="10" id="EZ2-MD-C6f"/>
+                <constraint firstItem="4F6-2T-XlN" firstAttribute="top" secondItem="8fP-Mp-U9z" secondAttribute="bottom" constant="10" id="FZu-1e-iAu"/>
                 <constraint firstItem="AHe-cL-JXw" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" id="JVu-wT-LZB"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="AHe-cL-JXw" secondAttribute="trailing" id="LMX-ID-y9E"/>
                 <constraint firstItem="vUN-kp-3ea" firstAttribute="bottom" secondItem="AHe-cL-JXw" secondAttribute="bottom" id="Ljl-4f-5J8"/>
                 <constraint firstItem="AHe-cL-JXw" firstAttribute="leading" secondItem="vUN-kp-3ea" secondAttribute="leading" id="Nbq-jz-wMH"/>
+                <constraint firstItem="8fP-Mp-U9z" firstAttribute="top" secondItem="vUN-kp-3ea" secondAttribute="top" constant="10" id="QGC-C2-4pL"/>
+                <constraint firstItem="vUN-kp-3ea" firstAttribute="trailing" secondItem="8fP-Mp-U9z" secondAttribute="trailing" constant="10" id="X8K-hF-2nT"/>
+                <constraint firstItem="6wy-Qk-Qe0" firstAttribute="leading" secondItem="4F6-2T-XlN" secondAttribute="trailing" constant="20" id="d9p-F8-wzS"/>
+                <constraint firstItem="6wy-Qk-Qe0" firstAttribute="top" secondItem="8fP-Mp-U9z" secondAttribute="bottom" constant="10" id="f1n-uh-pEh"/>
                 <constraint firstItem="jBV-mk-BMP" firstAttribute="centerX" secondItem="iN0-l3-epB" secondAttribute="centerX" id="wXv-0N-Ch7"/>
             </constraints>
             <point key="canvasLocation" x="141" y="140"/>
