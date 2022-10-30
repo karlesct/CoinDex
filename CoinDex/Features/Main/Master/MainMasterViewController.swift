@@ -5,6 +5,7 @@
 
 import UIKit
 import Combine
+import ContactsUI
 
 class MainMasterViewController: UIViewController {
     
@@ -49,6 +50,39 @@ class MainMasterViewController: UIViewController {
     
     @objc func contacAction() {
         
+        PermissionsProvider.request(permission: .contacts) { [weak self] result in
+            NSLog("PermissionsProvider result: \(result)")
+            switch result {
+            case true:
+                self?.getContacts()
+            case false:
+                break
+            }
+        }
+        
+    }
+    
+    func getContacts() {
+        var contacts = [CNContact]()
+        let key = [CNContactGivenNameKey, CNContactPhoneNumbersKey] as [CNKeyDescriptor]
+        let request = CNContactFetchRequest(keysToFetch: key)
+       
+       let contactStore = CNContactStore()
+       do {
+           try contactStore.enumerateContacts(with: request) {
+               (contact, stop) in
+               // Array containing all unified contacts from everywhere
+               
+               if contact.givenName == "Carles" {
+                   contacts.append(contact)
+                   print("[CONTACTS] - \(contacts)")
+               }
+
+           }
+       }
+       catch {
+           print("unable to fetch contacts")
+       }
     }
 
 }

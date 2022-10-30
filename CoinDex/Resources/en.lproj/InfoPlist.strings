@@ -15,3 +15,7 @@
 "NSLocationWhenInUseUsageDescription" = "This app wants to track you location when in use";
 "NSLocationAlwaysUsageDescription" = "This app wants to track you location always";
 "NSLocationAlwaysAndWhenInUseUsageDescription" = "This app wants to track you location always and when in use";
+
+// MARK: - Contact
+
+"NSContactsUsageDescription" = "This app wants to use your contact list";

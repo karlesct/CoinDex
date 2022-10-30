@@ -43,6 +43,8 @@
 	<string>#NSLocationWhenInUseUsageDescription</string>
 	<key>NSPhotoLibraryUsageDescription</key>
 	<string>#NSPhotoLibraryUsageDescription</string>
+	<key>NSContactsUsageDescription</key>
+	<string>#NSContactsUsageDescription</string>
 	<key>UIApplicationSupportsIndirectInputEvents</key>
 	<true/>
 	<key>UILaunchStoryboardName</key>
