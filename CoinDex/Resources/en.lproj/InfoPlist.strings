@@ -1,0 +1,17 @@
+//
+//  Copyright © 2022 CCT. All rights reserved.
+//
+
+// MARK: - Photo Library
+
+"NSPhotoLibraryUsageDescription" = "This app wants to use your photos.";
+
+// MARK: - Camera
+
+"NSCameraUsageDescription" = "This app wants to take pictures.";
+
+// MARK: - Location
+
+"NSLocationWhenInUseUsageDescription" = "This app wants to track you location when in use";
+"NSLocationAlwaysUsageDescription" = "This app wants to track you location always";
+"NSLocationAlwaysAndWhenInUseUsageDescription" = "This app wants to track you location always and when in use";

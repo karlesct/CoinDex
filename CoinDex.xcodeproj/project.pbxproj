@@ -153,6 +153,12 @@
 		27397E41280B2D5000093CB8 /* LocationWhenInUsePermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E40280B2D5000093CB8 /* LocationWhenInUsePermission.swift */; };
 		27397E43280B2DAC00093CB8 /* LocationWhenInUseHandler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */; };
 		27397E46280B2ED500093CB8 /* LocationAccuracy.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E45280B2ED500093CB8 /* LocationAccuracy.swift */; };
+		273F71EC2884256E0046B016 /* MapsViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F71EB2884256E0046B016 /* MapsViewController.swift */; };
+		273F71EE2884257E0046B016 /* MapsAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F71ED2884257E0046B016 /* MapsAssembler.swift */; };
+		273F71F02884258A0046B016 /* MapsViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 273F71EF2884258A0046B016 /* MapsViewController.xib */; };
+		273F71F2288425950046B016 /* MapsViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F71F1288425950046B016 /* MapsViewModel.swift */; };
+		273F71F4288425A20046B016 /* MapsRepository.swift in Sources */ = {isa = PBXBuildFile; fileRef = 273F71F3288425A20046B016 /* MapsRepository.swift */; };
+		273F71F7288429F20046B016 /* InfoPlist.strings in Resources */ = {isa = PBXBuildFile; fileRef = 273F71F9288429F20046B016 /* InfoPlist.strings */; };
 		275710862721AABF00348F93 /* HTTPStatusCode.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710852721AABF00348F93 /* HTTPStatusCode.swift */; };
 		275710882725941F00348F93 /* Requestable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 275710872725941F00348F93 /* Requestable.swift */; };
 		2757108D272594C400348F93 /* DataRequest+GetURLRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2757108C272594C400348F93 /* DataRequest+GetURLRequest.swift */; };
@@ -432,6 +438,12 @@
 		27397E40280B2D5000093CB8 /* LocationWhenInUsePermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWhenInUsePermission.swift; sourceTree = "<group>"; };
 		27397E42280B2DAC00093CB8 /* LocationWhenInUseHandler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationWhenInUseHandler.swift; sourceTree = "<group>"; };
 		27397E45280B2ED500093CB8 /* LocationAccuracy.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = LocationAccuracy.swift; sourceTree = "<group>"; };
+		273F71EB2884256E0046B016 /* MapsViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewController.swift; sourceTree = "<group>"; };
+		273F71ED2884257E0046B016 /* MapsAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsAssembler.swift; sourceTree = "<group>"; };
+		273F71EF2884258A0046B016 /* MapsViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MapsViewController.xib; sourceTree = "<group>"; };
+		273F71F1288425950046B016 /* MapsViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsViewModel.swift; sourceTree = "<group>"; };
+		273F71F3288425A20046B016 /* MapsRepository.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MapsRepository.swift; sourceTree = "<group>"; };
+		273F71F8288429F20046B016 /* en */ = {isa = PBXFileReference; lastKnownFileType = text.plist.strings; name = en; path = en.lproj/InfoPlist.strings; sourceTree = "<group>"; };
 		275710852721AABF00348F93 /* HTTPStatusCode.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = HTTPStatusCode.swift; sourceTree = "<group>"; };
 		275710872725941F00348F93 /* Requestable.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Requestable.swift; sourceTree = "<group>"; };
 		2757108C272594C400348F93 /* DataRequest+GetURLRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "DataRequest+GetURLRequest.swift"; sourceTree = "<group>"; };
@@ -1860,6 +1872,18 @@
 			path = Accuracy;
 			sourceTree = "<group>";
 		};
+		273F71EA288425590046B016 /* Maps */ = {
+			isa = PBXGroup;
+			children = (
+				273F71ED2884257E0046B016 /* MapsAssembler.swift */,
+				273F71EB2884256E0046B016 /* MapsViewController.swift */,
+				273F71EF2884258A0046B016 /* MapsViewController.xib */,
+				273F71F1288425950046B016 /* MapsViewModel.swift */,
+				273F71F3288425A20046B016 /* MapsRepository.swift */,
+			);
+			path = Maps;
+			sourceTree = "<group>";
+		};
 		275710842721AAAA00348F93 /* StatusCode */ = {
 			isa = PBXGroup;
 			children = (
@@ -1986,6 +2010,7 @@
 				27A979C3290ED6450035EA42 /* Main */,
 				27182973285CBFCA00E66073 /* Exchanges */,
 				2781E35327CD14380011BE14 /* CountryPicker */,
+				273F71EA288425590046B016 /* Maps */,
 				2787E31527B93E9C00DC5523 /* TabBar */,
 				2787E32327C16D7300DC5523 /* TAndC */,
 				279B670A27845F5E00480155 /* Tutorial */,
@@ -2015,6 +2040,7 @@
 				2758FCF62709D56C009BCB5A /* Generated */,
 				2758FC9B2709B58D009BCB5A /* Environments */,
 				2758FC692709B469009BCB5A /* Assets.xcassets */,
+				273F71F9288429F20046B016 /* InfoPlist.strings */,
 				27182966285CA01B00E66073 /* Localizables.strings */,
 			);
 			path = Resources;
@@ -2917,7 +2943,9 @@
 				271B2736285E3CF00046A996 /* CountryPickerTableViewCell.xib in Resources */,
 				271B2734285E3CE70046A996 /* CountryPickerViewController.xib in Resources */,
 				2758FC6D2709B469009BCB5A /* LaunchScreen.storyboard in Resources */,
+				273F71F7288429F20046B016 /* InfoPlist.strings in Resources */,
 				27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */,
+				273F71F02884258A0046B016 /* MapsViewController.xib in Resources */,
 				27182985285CC12D00E66073 /* ExchangesListMasterViewController.xib in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
 				27A979CB290ED6A70035EA42 /* MainMasterViewController.xib in Resources */,
@@ -2986,6 +3014,7 @@
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
 				27B832C42867743200E4D231 /* NetworkSessionManager.swift in Sources */,
+				273F71EC2884256E0046B016 /* MapsViewController.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				271B2735285E3CF00046A996 /* CountryPickerTableViewCell.swift in Sources */,
 				27BB13222788AC2C00B5FE4D /* LaunchScreenViewModel.swift in Sources */,
@@ -3028,6 +3057,7 @@
 				27ABA0DF2729B2E2000FD326 /* DerivativesExchangeIdResponse.swift in Sources */,
 				27ABA0A02726C5AF000FD326 /* ExchangeRateResponse.swift in Sources */,
 				27924731281EA7A100737A1C /* DeepLinkTemplate.swift in Sources */,
+				273F71EE2884257E0046B016 /* MapsAssembler.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
 				270F0FC8279D787E005DE9FB /* Observable.swift in Sources */,
 				27E636E32733EEFB00FC1210 /* CoinsIdResponse.swift in Sources */,
@@ -3076,6 +3106,7 @@
 				2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
 				27A979C9290ED6970035EA42 /* MainMasterViewModel.swift in Sources */,
+				273F71F2288425950046B016 /* MapsViewModel.swift in Sources */,
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
 				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeIdRequest.swift in Sources */,
 				278FD03E27DE4F5700A54EAB /* CustomNavigationController.swift in Sources */,
@@ -3087,6 +3118,7 @@
 				2787E34127C245BF00DC5523 /* CameraPermission.swift in Sources */,
 				27F1F5EF2871ED190058326B /* Date+IsInFuture.swift in Sources */,
 				27A979CF290ED7F50035EA42 /* MainMasterNavigator.swift in Sources */,
+				273F71F4288425A20046B016 /* MapsRepository.swift in Sources */,
 				2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
@@ -3270,6 +3302,14 @@
 				27182965285CA01B00E66073 /* en */,
 			);
 			name = Localizables.strings;
+			sourceTree = "<group>";
+		};
+		273F71F9288429F20046B016 /* InfoPlist.strings */ = {
+			isa = PBXVariantGroup;
+			children = (
+				273F71F8288429F20046B016 /* en */,
+			);
+			name = InfoPlist.strings;
 			sourceTree = "<group>";
 		};
 		2758FC6B2709B469009BCB5A /* LaunchScreen.storyboard */ = {

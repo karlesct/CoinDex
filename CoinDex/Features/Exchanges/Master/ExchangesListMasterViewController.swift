@@ -68,8 +68,12 @@ class ExchangesListMasterViewController: UIViewController {
     
     func setupBindings() {
         self.viewModel?.isLoadingPublisher
-            .assign(to: \.isLoading,
-                    on: self)
+            .receive(on: RunLoop.main)
+            .sink(receiveValue: { [weak self] value in
+                value
+                ? self?.activityIndicator.startAnimating()
+                : self?.activityIndicator.stopAnimating()
+            })
             .store(in: &subscriptions)
         
         self.viewModel?.dataSourcePublisher
@@ -79,17 +83,6 @@ class ExchangesListMasterViewController: UIViewController {
             })
             .store(in: &subscriptions)
     }
-    
-    var isLoading: Bool = false {
-        didSet {
-            DispatchQueue.main.async {
-                self.isLoading
-                ? self.activityIndicator.startAnimating()
-                : self.activityIndicator.stopAnimating()
-            }
-        }
-    }
-    
 }
 
 extension ExchangesListMasterViewController: UITableViewDelegate {}
