@@ -205,6 +205,12 @@
 		279B67192784688100480155 /* UIView+AddFullSubview.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67182784688100480155 /* UIView+AddFullSubview.swift */; };
 		279B67242784713D00480155 /* TModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67232784713D00480155 /* TModel.swift */; };
 		279B67282784C64E00480155 /* String+TextToImage.swift in Sources */ = {isa = PBXBuildFile; fileRef = 279B67272784C64E00480155 /* String+TextToImage.swift */; };
+		27A979C2290ED5020035EA42 /* ContactPermission.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A979C1290ED5020035EA42 /* ContactPermission.swift */; };
+		27A979C7290ED68A0035EA42 /* MainMasterAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A979C6290ED68A0035EA42 /* MainMasterAssembler.swift */; };
+		27A979C9290ED6970035EA42 /* MainMasterViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A979C8290ED6970035EA42 /* MainMasterViewModel.swift */; };
+		27A979CB290ED6A70035EA42 /* MainMasterViewController.xib in Resources */ = {isa = PBXBuildFile; fileRef = 27A979CA290ED6A70035EA42 /* MainMasterViewController.xib */; };
+		27A979CD290ED6B50035EA42 /* MainMasterViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A979CC290ED6B50035EA42 /* MainMasterViewController.swift */; };
+		27A979CF290ED7F50035EA42 /* MainMasterNavigator.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27A979CE290ED7F50035EA42 /* MainMasterNavigator.swift */; };
 		27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA08D2726B86F000FD326 /* GlobalGlobalRequest.swift */; };
 		27ABA0902726B87A000FD326 /* GlobalGlobalResponse.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA08F2726B87A000FD326 /* GlobalGlobalResponse.swift */; };
 		27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27ABA0922726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift */; };
@@ -540,6 +546,12 @@
 		279B67232784713D00480155 /* TModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TModel.swift; sourceTree = "<group>"; };
 		279B6725278471BE00480155 /* TutorialPageModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TutorialPageModel.swift; sourceTree = "<group>"; };
 		279B67272784C64E00480155 /* String+TextToImage.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "String+TextToImage.swift"; sourceTree = "<group>"; };
+		27A979C1290ED5020035EA42 /* ContactPermission.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContactPermission.swift; sourceTree = "<group>"; };
+		27A979C6290ED68A0035EA42 /* MainMasterAssembler.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterAssembler.swift; sourceTree = "<group>"; };
+		27A979C8290ED6970035EA42 /* MainMasterViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterViewModel.swift; sourceTree = "<group>"; };
+		27A979CA290ED6A70035EA42 /* MainMasterViewController.xib */ = {isa = PBXFileReference; lastKnownFileType = file.xib; path = MainMasterViewController.xib; sourceTree = "<group>"; };
+		27A979CC290ED6B50035EA42 /* MainMasterViewController.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterViewController.swift; sourceTree = "<group>"; };
+		27A979CE290ED7F50035EA42 /* MainMasterNavigator.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainMasterNavigator.swift; sourceTree = "<group>"; };
 		27ABA08D2726B86F000FD326 /* GlobalGlobalRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalGlobalRequest.swift; sourceTree = "<group>"; };
 		27ABA08F2726B87A000FD326 /* GlobalGlobalResponse.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalGlobalResponse.swift; sourceTree = "<group>"; };
 		27ABA0922726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = GlobalDecentralizedFinanceDefiRequest.swift; sourceTree = "<group>"; };
@@ -1971,6 +1983,7 @@
 				27BB13332788B91F00B5FE4D /* AppDelegate */,
 				279B6711278462E400480155 /* Common */,
 				27BB131A2788AB4B00B5FE4D /* LaunchScreen */,
+				27A979C3290ED6450035EA42 /* Main */,
 				27182973285CBFCA00E66073 /* Exchanges */,
 				2781E35327CD14380011BE14 /* CountryPicker */,
 				2787E31527B93E9C00DC5523 /* TabBar */,
@@ -2345,6 +2358,7 @@
 			isa = PBXGroup;
 			children = (
 				2787E33F27C245AB00DC5523 /* Camera */,
+				27A979C0290ED4740035EA42 /* Contact */,
 				27397E39280B27FD00093CB8 /* Location */,
 				2787E33527C241F700DC5523 /* Microphone */,
 				2787E34227C246A100DC5523 /* Notification */,
@@ -2468,6 +2482,34 @@
 				279B67232784713D00480155 /* TModel.swift */,
 			);
 			path = T;
+			sourceTree = "<group>";
+		};
+		27A979C0290ED4740035EA42 /* Contact */ = {
+			isa = PBXGroup;
+			children = (
+				27A979C1290ED5020035EA42 /* ContactPermission.swift */,
+			);
+			path = Contact;
+			sourceTree = "<group>";
+		};
+		27A979C3290ED6450035EA42 /* Main */ = {
+			isa = PBXGroup;
+			children = (
+				27A979C4290ED66B0035EA42 /* Master */,
+			);
+			path = Main;
+			sourceTree = "<group>";
+		};
+		27A979C4290ED66B0035EA42 /* Master */ = {
+			isa = PBXGroup;
+			children = (
+				27A979C6290ED68A0035EA42 /* MainMasterAssembler.swift */,
+				27A979C8290ED6970035EA42 /* MainMasterViewModel.swift */,
+				27A979CA290ED6A70035EA42 /* MainMasterViewController.xib */,
+				27A979CC290ED6B50035EA42 /* MainMasterViewController.swift */,
+				27A979CE290ED7F50035EA42 /* MainMasterNavigator.swift */,
+			);
+			path = Master;
 			sourceTree = "<group>";
 		};
 		27ABA08C2726B859000FD326 /* Global */ = {
@@ -2878,6 +2920,7 @@
 				27BB13202788AC1A00B5FE4D /* LaunchScreenViewController.xib in Resources */,
 				27182985285CC12D00E66073 /* ExchangesListMasterViewController.xib in Resources */,
 				2758FC6A2709B469009BCB5A /* Assets.xcassets in Resources */,
+				27A979CB290ED6A70035EA42 /* MainMasterViewController.xib in Resources */,
 				271B2733285E3CE70046A996 /* Flags.xcassets in Resources */,
 				27182990285CDD2200E66073 /* ExchangesListMasterTableViewCell.xib in Resources */,
 				2718299C285D04E600E66073 /* ExchangesDetailViewController.xib in Resources */,
@@ -2994,6 +3037,7 @@
 				271410F7287827F0003942BE /* FloatyItem.swift in Sources */,
 				2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
+				27A979C2290ED5020035EA42 /* ContactPermission.swift in Sources */,
 				27B832BB2867622400E4D231 /* ResponseDecoder.swift in Sources */,
 				27ABA10F2732E2FC000FD326 /* CoinsMarketsRequest.swift in Sources */,
 				27BB131E2788AC0B00B5FE4D /* LaunchScreenViewController.swift in Sources */,
@@ -3003,6 +3047,7 @@
 				271B279B285F242D0046A996 /* TutorialAssembler.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
 				271410F4287827F0003942BE /* FloatyViewController.swift in Sources */,
+				27A979CD290ED6B50035EA42 /* MainMasterViewController.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				271B26DD285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift in Sources */,
 				27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */,
@@ -3030,6 +3075,7 @@
 				2787E31C27B94CE000DC5523 /* CircularView.swift in Sources */,
 				2787E31127B9126C00DC5523 /* UIView+SetGradient.swift in Sources */,
 				271EEA3E27207E7A00BA30FD /* UIViewController+GetTopViewController.swift in Sources */,
+				27A979C9290ED6970035EA42 /* MainMasterViewModel.swift in Sources */,
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
 				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeIdRequest.swift in Sources */,
 				278FD03E27DE4F5700A54EAB /* CustomNavigationController.swift in Sources */,
@@ -3040,6 +3086,7 @@
 				271D71D228572C2300A52DBB /* UIImageView+Builder.swift in Sources */,
 				2787E34127C245BF00DC5523 /* CameraPermission.swift in Sources */,
 				27F1F5EF2871ED190058326B /* Date+IsInFuture.swift in Sources */,
+				27A979CF290ED7F50035EA42 /* MainMasterNavigator.swift in Sources */,
 				2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
@@ -3103,6 +3150,7 @@
 				27696B3E273C3FAF00D17FC4 /* JSONDecoder+DateDecodingStrategyFormatters.swift in Sources */,
 				27F1F5F52871EDD40058326B /* Date+IsTomorrow.swift in Sources */,
 				27397E36280B14AD00093CB8 /* LoggingService.swift in Sources */,
+				27A979C7290ED68A0035EA42 /* MainMasterAssembler.swift in Sources */,
 				271B279C285F242D0046A996 /* TutorialPresenter.swift in Sources */,
 				27182981285CC12200E66073 /* ExchangesListMasterNavigator.swift in Sources */,
 				2763D37627A47C7B00796FA8 /* UIColor+Hex.swift in Sources */,

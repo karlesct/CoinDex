@@ -26,7 +26,8 @@ final class TabBarAssembler {
         let viewControllers = [
             self.exchangesViewController(),
             self.tutorialViewController(),
-            self.countryPickerViewController()
+            self.countryPickerViewController(),
+            self.mainMasterViewController()
         ]
         return viewControllers
     }
@@ -54,6 +55,15 @@ final class TabBarAssembler {
         let viewController = assembler.viewController()
         viewController.tabBarItem.image = .tabBar.countryPickerIcon
         viewController.tabBarItem.title = "country_picker_title".localized
+        return viewController
+    }
+    
+    private func mainMasterViewController() -> UIViewController {
+        let navigationController = CustomNavigationController()
+        let assembler: MainMasterAssembler = .init(navigationController: navigationController)
+        let viewController = assembler.viewController()
+        viewController.tabBarItem.image = .tabBar.countryPickerIcon
+        viewController.tabBarItem.title = "main_master_title".localized
         return viewController
     }
 
