@@ -13,5 +13,16 @@
 		<key>Path</key>
 		<string>/api/v3</string>
 	</dict>
+	<key>BreakingBadAPI</key>
+	<dict>
+		<key>Scheme</key>
+		<string>https://</string>
+		<key>Host</key>
+		<string>www.breakingbadapi.com</string>
+		<key>Port</key>
+		<string>0</string>
+		<key>Path</key>
+		<string>/api</string>
+	</dict>
 </dict>
 </plist>

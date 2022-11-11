@@ -27,6 +27,7 @@ extension UIImage {
         static let exchangesIcon = #imageLiteral(resourceName: "exchangesIcon")
         static let welcomeIcon = #imageLiteral(resourceName: "welcomeIcon")
         static let countryPickerIcon = #imageLiteral(resourceName: "countryPickerIcon")
+        static let breakingBadIcon = #imageLiteral(resourceName: "breakingBadIcon")
     }
     
 }

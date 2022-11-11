@@ -24,11 +24,12 @@ final class TabBarAssembler {
 
     private func viewControllers() -> [UIViewController] {
         let viewControllers = [
+            self.breakinBadMasterViewController(),
             self.exchangesViewController(),
-            self.tutorialViewController(),
-            self.countryPickerViewController(),
-            self.mapsViewController(),
-            self.mainMasterViewController()
+//            self.tutorialViewController(),
+//            self.countryPickerViewController(),
+//            self.mapsViewController(),
+//            self.mainMasterViewController() // Testing things purpose
         ]
         return viewControllers
     }
@@ -71,9 +72,20 @@ final class TabBarAssembler {
         let navigationController = CustomNavigationController()
         let assembler: MainMasterAssembler = .init(navigationController: navigationController)
         let viewController = assembler.viewController()
+        navigationController.viewControllers = [viewController]
         viewController.tabBarItem.image = .tabBar.countryPickerIcon
         viewController.tabBarItem.title = "main_master_title".localized
         return viewController
+    }
+    
+    private func breakinBadMasterViewController() -> UIViewController {
+        let navigationController = CustomNavigationController()
+        let assembler: BreakingBadMasterAssembler = .init(navigationController: navigationController)
+        let viewController = assembler.viewController()
+        navigationController.viewControllers = [viewController]
+        viewController.tabBarItem.image = .tabBar.breakingBadIcon.aspectFittedTo(height: 24)
+        viewController.tabBarItem.title = "breaking_bad_master_title".localized
+        return navigationController
     }
 
 }

@@ -47,9 +47,7 @@ class MainMasterViewController: UIViewController {
         self.view.backgroundColor = .xF6F6F6
     }
     
-    
     @objc func contacAction() {
-        
         PermissionsProvider.request(permission: .contacts) { [weak self] result in
             NSLog("PermissionsProvider result: \(result)")
             switch result {
@@ -59,7 +57,6 @@ class MainMasterViewController: UIViewController {
                 break
             }
         }
-        
     }
     
     func getContacts() {
@@ -84,6 +81,5 @@ class MainMasterViewController: UIViewController {
            print("unable to fetch contacts")
        }
     }
-
 }
 

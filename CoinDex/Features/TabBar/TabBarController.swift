@@ -31,7 +31,7 @@ class TabBarController: UITabBarController {
 
 extension TabBarController: UITabBarControllerDelegate {
     func tabBarController(_ tabBarController: UITabBarController, didSelect viewController: UIViewController) {
-        print("viewcontroller selected: \(String(describing: viewController.self))")
+        print("[TabBarController] - viewcontroller selected: \(String(describing: viewController.self))")
     }
 }
 

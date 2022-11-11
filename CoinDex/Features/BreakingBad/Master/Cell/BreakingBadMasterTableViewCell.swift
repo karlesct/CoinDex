@@ -6,11 +6,11 @@
 import Foundation
 import UIKit
 
-protocol ExchangesListMasterTableViewCellDelegate: AnyObject {
-    func selectedCell(id: String?)
+protocol BreakingBadMasterTableViewCellDelegate: AnyObject {
+    func selectedCell(id: Int?)
 }
 
-class ExchangesListMasterTableViewCell: UITableViewCell,
+class BreakingBadMasterTableViewCell: UITableViewCell,
                                        NibLoadable,
                                        ReusableCell {
     
@@ -41,9 +41,9 @@ class ExchangesListMasterTableViewCell: UITableViewCell,
     
     // MARK: - Properties
     
-    weak var delegate: ExchangesListMasterTableViewCellDelegate?
+    weak var delegate: BreakingBadMasterTableViewCellDelegate?
     
-    private var id: String?
+    private var id: Int?
     
     // MARK: - Init
     
@@ -61,8 +61,8 @@ class ExchangesListMasterTableViewCell: UITableViewCell,
     
     // MARK: - Bind
     
-    func bind(item: ExchangesListMasterCellModel,
-              delegate: ExchangesListMasterTableViewCellDelegate) {
+    func bind(item: BreakingBadMasterCellModel,
+              delegate: BreakingBadMasterTableViewCellDelegate) {
         self.lblName.text = item.name
         self.ivLogo.loadThumbnail(urlSting: item.image)
         

@@ -26,6 +26,7 @@ class ConfigLoader {
 
 struct Configuration: Decodable {
     let API: APIModel?
+    let BreakingBadAPI: APIModel?
 }
 
 struct APIModel: Decodable {
