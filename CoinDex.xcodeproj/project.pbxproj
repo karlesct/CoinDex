@@ -8,13 +8,6 @@
 
 /* Begin PBXBuildFile section */
 		270F0FC8279D787E005DE9FB /* Observable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 270F0FC7279D787E005DE9FB /* Observable.swift */; };
-		271410F2287827F0003942BE /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EB287827F0003942BE /* FloatyWindow.swift */; };
-		271410F3287827F0003942BE /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EC287827F0003942BE /* FloatyDelegate.swift */; };
-		271410F4287827F0003942BE /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410ED287827F0003942BE /* FloatyViewController.swift */; };
-		271410F5287827F0003942BE /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EE287827F0003942BE /* FloatyManager.swift */; };
-		271410F6287827F0003942BE /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EF287827F0003942BE /* Floaty.swift */; };
-		271410F7287827F0003942BE /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410F0287827F0003942BE /* FloatyItem.swift */; };
-		271410F8287827F0003942BE /* UIView+Draggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410F1287827F0003942BE /* UIView+Draggable.swift */; };
 		271410FC287B2BFE003942BE /* LoadingProtocol.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410FB287B2BFE003942BE /* LoadingProtocol.swift */; };
 		27182935285C788C00E66073 /* README.md in Resources */ = {isa = PBXBuildFile; fileRef = 27182934285C788C00E66073 /* README.md */; };
 		2718294C285C919700E66073 /* String+EmptyTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 2718294B285C919700E66073 /* String+EmptyTest.swift */; };
@@ -165,6 +158,19 @@
 		272D6A2E2920E557003D6310 /* FavoritableModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A2D2920E557003D6310 /* FavoritableModel.swift */; };
 		272D6A302920E804003D6310 /* CharacterRespponseConverter.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A2F2920E804003D6310 /* CharacterRespponseConverter.swift */; };
 		272D6A332920EF8F003D6310 /* FavoriteButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A322920EF8F003D6310 /* FavoriteButton.swift */; };
+		272D6A3D2920FC97003D6310 /* CharactersAllRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A3C2920FC97003D6310 /* CharactersAllRequestTest.swift */; };
+		272D6A3F2920FDF6003D6310 /* CharactersSingleRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A3E2920FDF6003D6310 /* CharactersSingleRequestTest.swift */; };
+		272D6A412920FF22003D6310 /* CharactersByCategoryRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A402920FF22003D6310 /* CharactersByCategoryRequestTest.swift */; };
+		272D6A4329210025003D6310 /* CharactersRandomRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A4229210025003D6310 /* CharactersRandomRequestTest.swift */; };
+		272D6A4529210085003D6310 /* CharactersByNameRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A4429210085003D6310 /* CharactersByNameRequestTest.swift */; };
+		272D6A47292100FB003D6310 /* CharactersLimitAndOffsetRequestTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272D6A46292100FB003D6310 /* CharactersLimitAndOffsetRequestTest.swift */; };
+		272D6A48292101C9003D6310 /* FloatyViewController.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410ED287827F0003942BE /* FloatyViewController.swift */; };
+		272D6A49292101C9003D6310 /* FloatyWindow.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EB287827F0003942BE /* FloatyWindow.swift */; };
+		272D6A4A292101C9003D6310 /* UIView+Draggable.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410F1287827F0003942BE /* UIView+Draggable.swift */; };
+		272D6A4B292101C9003D6310 /* Floaty.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EF287827F0003942BE /* Floaty.swift */; };
+		272D6A4C292101C9003D6310 /* FloatyDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EC287827F0003942BE /* FloatyDelegate.swift */; };
+		272D6A4D292101C9003D6310 /* FloatyManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410EE287827F0003942BE /* FloatyManager.swift */; };
+		272D6A4E292101C9003D6310 /* FloatyItem.swift in Sources */ = {isa = PBXBuildFile; fileRef = 271410F0287827F0003942BE /* FloatyItem.swift */; };
 		272DE04C285F9BE000E92A43 /* UIStackView+BuilderTest.swift in Sources */ = {isa = PBXBuildFile; fileRef = 272DE04B285F9BE000E92A43 /* UIStackView+BuilderTest.swift */; };
 		27397E2E280B141100093CB8 /* FirebaseAppDelegateAssembler.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E2D280B141100093CB8 /* FirebaseAppDelegateAssembler.swift */; };
 		27397E30280B144400093CB8 /* CompositeAppDelegate.swift in Sources */ = {isa = PBXBuildFile; fileRef = 27397E2F280B144400093CB8 /* CompositeAppDelegate.swift */; };
@@ -473,6 +479,12 @@
 		272D6A2D2920E557003D6310 /* FavoritableModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoritableModel.swift; sourceTree = "<group>"; };
 		272D6A2F2920E804003D6310 /* CharacterRespponseConverter.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharacterRespponseConverter.swift; sourceTree = "<group>"; };
 		272D6A322920EF8F003D6310 /* FavoriteButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = FavoriteButton.swift; sourceTree = "<group>"; };
+		272D6A3C2920FC97003D6310 /* CharactersAllRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersAllRequestTest.swift; sourceTree = "<group>"; };
+		272D6A3E2920FDF6003D6310 /* CharactersSingleRequestTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CharactersSingleRequestTest.swift; sourceTree = "<group>"; };
+		272D6A402920FF22003D6310 /* CharactersByCategoryRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersByCategoryRequestTest.swift; sourceTree = "<group>"; };
+		272D6A4229210025003D6310 /* CharactersRandomRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersRandomRequestTest.swift; sourceTree = "<group>"; };
+		272D6A4429210085003D6310 /* CharactersByNameRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersByNameRequestTest.swift; sourceTree = "<group>"; };
+		272D6A46292100FB003D6310 /* CharactersLimitAndOffsetRequestTest.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CharactersLimitAndOffsetRequestTest.swift; sourceTree = "<group>"; };
 		272DE04B285F9BE000E92A43 /* UIStackView+BuilderTest.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = "UIStackView+BuilderTest.swift"; sourceTree = "<group>"; };
 		27397E2D280B141100093CB8 /* FirebaseAppDelegateAssembler.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = FirebaseAppDelegateAssembler.swift; sourceTree = "<group>"; };
 		27397E2F280B144400093CB8 /* CompositeAppDelegate.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = CompositeAppDelegate.swift; sourceTree = "<group>"; };
@@ -821,6 +833,7 @@
 				271B271E285E27E10046A996 /* Extensions */,
 				271B270B285E1E780046A996 /* Services */,
 				271B2738285E3D4A0046A996 /* API */,
+				272D6A342920FB7B003D6310 /* BreakingBadAPI */,
 			);
 			path = Network;
 			sourceTree = "<group>";
@@ -1969,6 +1982,75 @@
 				272D6A322920EF8F003D6310 /* FavoriteButton.swift */,
 			);
 			path = UIButton;
+			sourceTree = "<group>";
+		};
+		272D6A342920FB7B003D6310 /* BreakingBadAPI */ = {
+			isa = PBXGroup;
+			children = (
+				272D6A352920FB93003D6310 /* Characters */,
+			);
+			path = BreakingBadAPI;
+			sourceTree = "<group>";
+		};
+		272D6A352920FB93003D6310 /* Characters */ = {
+			isa = PBXGroup;
+			children = (
+				272D6A362920FBA3003D6310 /* All */,
+				272D6A372920FBA7003D6310 /* Single */,
+				272D6A382920FBAB003D6310 /* ByCategory */,
+				272D6A392920FBB3003D6310 /* Random */,
+				272D6A3A2920FBB8003D6310 /* LimitAndOffset */,
+				272D6A3B2920FBC0003D6310 /* ByName */,
+			);
+			path = Characters;
+			sourceTree = "<group>";
+		};
+		272D6A362920FBA3003D6310 /* All */ = {
+			isa = PBXGroup;
+			children = (
+				272D6A3C2920FC97003D6310 /* CharactersAllRequestTest.swift */,
+			);
+			path = All;
+			sourceTree = "<group>";
+		};
+		272D6A372920FBA7003D6310 /* Single */ = {
+			isa = PBXGroup;
+			children = (
+				272D6A3E2920FDF6003D6310 /* CharactersSingleRequestTest.swift */,
+			);
+			path = Single;
+			sourceTree = "<group>";
+		};
+		272D6A382920FBAB003D6310 /* ByCategory */ = {
+			isa = PBXGroup;
+			children = (
+				272D6A402920FF22003D6310 /* CharactersByCategoryRequestTest.swift */,
+			);
+			path = ByCategory;
+			sourceTree = "<group>";
+		};
+		272D6A392920FBB3003D6310 /* Random */ = {
+			isa = PBXGroup;
+			children = (
+				272D6A4229210025003D6310 /* CharactersRandomRequestTest.swift */,
+			);
+			path = Random;
+			sourceTree = "<group>";
+		};
+		272D6A3A2920FBB8003D6310 /* LimitAndOffset */ = {
+			isa = PBXGroup;
+			children = (
+				272D6A46292100FB003D6310 /* CharactersLimitAndOffsetRequestTest.swift */,
+			);
+			path = LimitAndOffset;
+			sourceTree = "<group>";
+		};
+		272D6A3B2920FBC0003D6310 /* ByName */ = {
+			isa = PBXGroup;
+			children = (
+				272D6A4429210085003D6310 /* CharactersByNameRequestTest.swift */,
+			);
+			path = ByName;
 			sourceTree = "<group>";
 		};
 		27397E2B280B13E400093CB8 /* Composite */ = {
@@ -3190,6 +3272,7 @@
 				27ABA0A4272968A9000FD326 /* AssetPlatformsResponse.swift in Sources */,
 				27ABA0A927296B27000FD326 /* CategoriesListResponse.swift in Sources */,
 				27B832C42867743200E4D231 /* NetworkSessionManager.swift in Sources */,
+				272D6A48292101C9003D6310 /* FloatyViewController.swift in Sources */,
 				273F71EC2884256E0046B016 /* MapsViewController.swift in Sources */,
 				275710A12725B21800348F93 /* CoinsListResponse.swift in Sources */,
 				271B2735285E3CF00046A996 /* CountryPickerTableViewCell.swift in Sources */,
@@ -3205,9 +3288,9 @@
 				27ABA0A22729689B000FD326 /* AssetPlatformsRequest.swift in Sources */,
 				271B27B1285F5D9D0046A996 /* ExchangesIdResponseConverter.swift in Sources */,
 				27BB131C2788AB9F00B5FE4D /* LaunchScreenAssembler.swift in Sources */,
+				272D6A4D292101C9003D6310 /* FloatyManager.swift in Sources */,
+				272D6A4C292101C9003D6310 /* FloatyDelegate.swift in Sources */,
 				27ABA100273188A4000FD326 /* ExchangesListRequest.swift in Sources */,
-				271410F5287827F0003942BE /* FloatyManager.swift in Sources */,
-				271410F8287827F0003942BE /* UIView+Draggable.swift in Sources */,
 				27B832BF286772EC00E4D231 /* DefaultNetworkSessionManager.swift in Sources */,
 				27397E32280B145C00093CB8 /* FirebaseAppDelegate.swift in Sources */,
 				272782FA291E9E6200270F6E /* BreakingBadMasterAssembler.swift in Sources */,
@@ -3215,7 +3298,6 @@
 				271EEA302720785700BA30FD /* NetworkService.swift in Sources */,
 				27ABA10727318B2E000FD326 /* ExchangesIdResponse.swift in Sources */,
 				272D6A302920E804003D6310 /* CharacterRespponseConverter.swift in Sources */,
-				271410F6287827F0003942BE /* Floaty.swift in Sources */,
 				27182998285D04C900E66073 /* ExchangesDetailViewModel.swift in Sources */,
 				271B26F7285DD42D0046A996 /* ExchangesDetailInfoTableViewCell.swift in Sources */,
 				27182989285CCC0900E66073 /* ExchangesListMasterRepository.swift in Sources */,
@@ -3242,12 +3324,12 @@
 				27924731281EA7A100737A1C /* DeepLinkTemplate.swift in Sources */,
 				273F71EE2884257E0046B016 /* MapsAssembler.swift in Sources */,
 				27ABA0932726BE83000FD326 /* GlobalDecentralizedFinanceDefiRequest.swift in Sources */,
+				272D6A49292101C9003D6310 /* FloatyWindow.swift in Sources */,
 				270F0FC8279D787E005DE9FB /* Observable.swift in Sources */,
 				27E636E32733EEFB00FC1210 /* CoinsIdResponse.swift in Sources */,
 				271B2737285E3CF00046A996 /* CountryPickerCellModel.swift in Sources */,
 				271D71CD2854E43300A52DBB /* UILabel+Builder.swift in Sources */,
 				271B26FB285DD44B0046A996 /* ExchangesDetailInfoCellModel.swift in Sources */,
-				271410F7287827F0003942BE /* FloatyItem.swift in Sources */,
 				2781E36E27CD2E530011BE14 /* String+GetFlag.swift in Sources */,
 				27ABA08E2726B86F000FD326 /* GlobalGlobalRequest.swift in Sources */,
 				27A979C2290ED5020035EA42 /* ContactPermission.swift in Sources */,
@@ -3259,14 +3341,12 @@
 				271B26EA285DB6E00046A996 /* AppearProtocol.swift in Sources */,
 				271B279B285F242D0046A996 /* TutorialAssembler.swift in Sources */,
 				271EEA3427207BE900BA30FD /* HTTPMethod.swift in Sources */,
-				271410F4287827F0003942BE /* FloatyViewController.swift in Sources */,
 				27A979CD290ED6B50035EA42 /* MainMasterViewController.swift in Sources */,
 				271EEA412720843100BA30FD /* URLRequest+Builder.swift in Sources */,
 				271B26DD285DB0FB0046A996 /* ExchangesDetailTrustTableViewCell.swift in Sources */,
 				27182993285CF3A500E66073 /* UIImageView+LoadThumbnail.swift in Sources */,
 				27ABA0E9272EC777000FD326 /* IndexesListResponse.swift in Sources */,
 				27B832C22867737E00E4D231 /* NetworkCancellable.swift in Sources */,
-				271410F2287827F0003942BE /* FloatyWindow.swift in Sources */,
 				27F1F5F72871EDEC0058326B /* Date+IsYesterday.swift in Sources */,
 				272D6A332920EF8F003D6310 /* FavoriteButton.swift in Sources */,
 				271B27A0285F242D0046A996 /* TutorialViewController.swift in Sources */,
@@ -3285,6 +3365,7 @@
 				2763D38427A4997300796FA8 /* UITextView+Placeholder.swift in Sources */,
 				2763D38B27A5CEF700796FA8 /* ReusableCell.swift in Sources */,
 				271EEA4E2720AD4900BA30FD /* HTTPHeaderKey.swift in Sources */,
+				272D6A4E292101C9003D6310 /* FloatyItem.swift in Sources */,
 				271B2799285F23D90046A996 /* TabBarController.swift in Sources */,
 				279B67242784713D00480155 /* TModel.swift in Sources */,
 				2787E31C27B94CE000DC5523 /* CircularView.swift in Sources */,
@@ -3294,6 +3375,7 @@
 				27278316291EAFC900270F6E /* CharactersByNameRequest.swift in Sources */,
 				272D6A2C2920D1DD003D6310 /* BreakingBadDetailViewModel.swift in Sources */,
 				273F71F2288425950046B016 /* MapsViewModel.swift in Sources */,
+				272D6A4A292101C9003D6310 /* UIView+Draggable.swift in Sources */,
 				27ABA0982726BF6A000FD326 /* DataItemCodable.swift in Sources */,
 				27ABA0DD2729B2D5000FD326 /* DerivativesExchangeIdRequest.swift in Sources */,
 				278FD03E27DE4F5700A54EAB /* CustomNavigationController.swift in Sources */,
@@ -3309,6 +3391,7 @@
 				273F71F4288425A20046B016 /* MapsRepository.swift in Sources */,
 				272D6A242920D18E003D6310 /* BreakingBadDetailAssembler.swift in Sources */,
 				2787E34B27C25C5800DC5523 /* TrackingPermission.swift in Sources */,
+				272D6A4B292101C9003D6310 /* Floaty.swift in Sources */,
 				27ABA09C2726C380000FD326 /* TrendingResponse.swift in Sources */,
 				27BB13252788AF0F00B5FE4D /* Navigator.swift in Sources */,
 				271B26E7285DB64A0046A996 /* DatasourceProtocol.swift in Sources */,
@@ -3359,7 +3442,6 @@
 				271D71CF2854EF5700A52DBB /* UIButton+Builder.swift in Sources */,
 				27F1F5EA2871DE1D0058326B /* Date+Colloquial.swift in Sources */,
 				27397E3C280B282900093CB8 /* LocationAlwaysPermission.swift in Sources */,
-				271410F3287827F0003942BE /* FloatyDelegate.swift in Sources */,
 				27ABA0B727297633000FD326 /* DataArrayCodable.swift in Sources */,
 				27ABA0FB273186F6000FD326 /* ExchangesRequest.swift in Sources */,
 				271EEA4427208BC300BA30FD /* String+Empty.swift in Sources */,
@@ -3409,6 +3491,7 @@
 				271B2766285EF3AA0046A996 /* SearchRequestTest.swift in Sources */,
 				271B2780285F0CA30046A996 /* CategoriesListRequestTest.swift in Sources */,
 				2718296A285CA05E00E66073 /* String+LocalizedTest.swift in Sources */,
+				272D6A4529210085003D6310 /* CharactersByNameRequestTest.swift in Sources */,
 				271B27BD285F632A0046A996 /* CountryPickerAssembler.swift in Sources */,
 				271B277E285F0C9D0046A996 /* CategoriesRequestTest.swift in Sources */,
 				271B276D285EFC490046A996 /* DerivativesExchangeListRequestTest.swift in Sources */,
@@ -3429,12 +3512,14 @@
 				271B27BA285F60C70046A996 /* CircularViewTest.swift in Sources */,
 				271B271D285E25250046A996 /* UIWindow+VisibleViewControllerTest.swift in Sources */,
 				271B27C8285F88150046A996 /* ExchangesRequestListTest.swift in Sources */,
+				272D6A3D2920FC97003D6310 /* CharactersAllRequestTest.swift in Sources */,
 				271B276A285EFAB40046A996 /* DerivativesExchangeIdRequestTest.swift in Sources */,
 				271B270F285E1EEF0046A996 /* UITableView+ReusableCellTest.swift in Sources */,
 				27F1F5F92871EE4A0058326B /* Date+IsInFutureTest.swift in Sources */,
 				271B27C2285F6E8A0046A996 /* ExchangesIdVolumeChartResponseElementTest.swift in Sources */,
 				271B27C5285F7B2E0046A996 /* DataRequest+GetURLRequestTest.swift in Sources */,
 				271B27D1285F8E440046A996 /* HTTPStatusCodeTest.swift in Sources */,
+				272D6A412920FF22003D6310 /* CharactersByCategoryRequestTest.swift in Sources */,
 				271B278E285F11AF0046A996 /* CoinsListRequestTest.swift in Sources */,
 				271B2708285E17D50046A996 /* UIColor+HexTest.swift in Sources */,
 				27182955285C9DDF00E66073 /* NibLoadableTest.swift in Sources */,
@@ -3446,15 +3531,18 @@
 				271B273B285E3D750046A996 /* PingRequestTest.swift in Sources */,
 				271B2702285DF7ED0046A996 /* String+TextToImageTest.swift in Sources */,
 				27F1F5FD2871EED60058326B /* Date+IsTodayTest.swift in Sources */,
+				272D6A47292100FB003D6310 /* CharactersLimitAndOffsetRequestTest.swift in Sources */,
 				27F1F5FB2871EE910058326B /* Date+IsInPastTest.swift in Sources */,
 				271B27CB285F88F90046A996 /* ExchangesIdRequestTest.swift in Sources */,
 				2718296F285CA47B00E66073 /* ViewController+GetTopViewControllerTest.swift in Sources */,
 				271B277A285F0A6F0046A996 /* AssetPlatformsTest.swift in Sources */,
+				272D6A4329210025003D6310 /* CharactersRandomRequestTest.swift in Sources */,
 				2758FC782709B46A009BCB5A /* CoinDexTests.swift in Sources */,
 				271B2700285DF6E50046A996 /* String+GetFlagTest.swift in Sources */,
 				271B2758285E4C110046A996 /* DerivativesRequestTest.swift in Sources */,
 				27182950285C93F400E66073 /* LoggingServiceAssemblerTest.swift in Sources */,
 				27F1F5ED2871E0850058326B /* Date+ColloquialTest.swift in Sources */,
+				272D6A3F2920FDF6003D6310 /* CharactersSingleRequestTest.swift in Sources */,
 				271B27BF285F64310046A996 /* CountryModelTest.swift in Sources */,
 				271B2755285E4B340046A996 /* ExchangeRatesTest.swift in Sources */,
 				2718294C285C919700E66073 /* String+EmptyTest.swift in Sources */,

@@ -32,7 +32,7 @@ Right now, no permissions needed
 
 ## Architecture
 
-MVP with some adds:
+MVVM with some adds:
 - Assemble
 - Navigator
 - Repository
@@ -42,9 +42,9 @@ MVP with some adds:
 Launchscreen for an initial data load. (Not implemented right now)
 
 Tab Bar with: 
+- Master detail with Breaking Bad Characters
 - Master detail of main crypto exchanges
-- Welcome with some motivating phrases
-- Country Picker for phone registration, returns phone code and countryName on delegate
+
 
 ## Code coverage
 
@@ -60,9 +60,9 @@ Authentication verifies that the provided user token is correct and, therefore, 
 
 ## Images
 
-| **Master** | **Detail** | **Welcome** | **Country Picker** |
+| **BrBa - Master** | **BrBa - Detail** | **Exchange - Master** | **Exchange - Detail** |
 |-----------|-----------|---------|------------|
-| ![Master](/README_FILES/assets/master.png)    | ![Detail](/README_FILES/assets/detail.png)       | ![Welcome](/README_FILES/assets/welcome.png)   | ![Country Picker](/README_FILES/assets/countryPicker.png)  |
+| ![BrBa - Master](/README_FILES/assets/breakingBadMaster.png)    | ![BrBa - Detail](/README_FILES/assets/breakingBadDetail.png)       | ![Exchange - Master](/README_FILES/assets/master.png)    | ![Exchange - Detail](/README_FILES/assets/detail.png)       | 
 
 ## Coming soon
 
