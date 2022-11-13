@@ -6,10 +6,14 @@ import Foundation
 import Combine
 
 protocol BreakingBadMasterViewModelProtocol: TitleProtocol,
-                                             DatasourceProtocol,
-                                            LoadingProtocol {
+                                             LoadingProtocol {
+    
+    var dataSource: FavoritableCharactersResponse? { get }
+    var dataSourcePublisher: Published<FavoritableCharactersResponse?>.Publisher { get }
+    
     var page: Int { get set }
     func doRequest(page: Int)
+    func setFavorite(charId: Int, didChangeValue value: Bool)
 }
 
 class BreakingBadMasterViewModel: BreakingBadMasterViewModelProtocol {
@@ -18,9 +22,9 @@ class BreakingBadMasterViewModel: BreakingBadMasterViewModelProtocol {
     
     var title: String = "breaking_bad_master_title".localized
     
-    @Published private(set) var dataSource: [TModel]? = []
-    var dataSourcePublished: Published<[TModel]?> { _dataSource }
-    var dataSourcePublisher: Published<[TModel]?>.Publisher { $dataSource }
+    @Published private(set) var dataSource: FavoritableCharactersResponse? = []
+    var dataSourcePublished: Published<FavoritableCharactersResponse?> { _dataSource }
+    var dataSourcePublisher: Published<FavoritableCharactersResponse?>.Publisher { $dataSource }
     
     @Published private(set) var isLoading: Bool = false
     var isLoadingPublished: Published<Bool> { _isLoading }
@@ -31,8 +35,6 @@ class BreakingBadMasterViewModel: BreakingBadMasterViewModelProtocol {
             self.doRequest(page: self.page)
         }
     }
-    
-    
     
     // MARK: - Properties Injected
     
@@ -61,5 +63,14 @@ class BreakingBadMasterViewModel: BreakingBadMasterViewModelProtocol {
                 self?.logging.log(error)
             }
         }
+    }
+    
+    func setFavorite(charId: Int, didChangeValue value: Bool) {
+        guard let index = self.dataSource?.firstIndex(where: {
+            $0.data.charId == charId
+        }) else {
+            return
+        }
+        self.dataSource?[index].favorite = value
     }
 }

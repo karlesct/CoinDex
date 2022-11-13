@@ -32,7 +32,7 @@ final class MainMasterNavigator: Navigator {
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
-        case let .detail(id):
+        case .detail:
             return .init()
         }
     }

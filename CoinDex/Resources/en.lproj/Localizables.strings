@@ -149,3 +149,11 @@
 // MARK: - BreakingBadMaster
 
 "breaking_bad_master_title" = "Breaking Bad Characters";
+"breaking_bad_detail_title" = "Character Detail";
+
+// MARK: - BreakingBadDetail
+
+"breaking_bad_detail_nickname_title" = "Nickname:";
+"breaking_bad_detail_name_title" = "Name:";
+"breaking_bad_detail_category_title" = "Category:";
+"breaking_bad_detail_button_title" = "Add to favorite";

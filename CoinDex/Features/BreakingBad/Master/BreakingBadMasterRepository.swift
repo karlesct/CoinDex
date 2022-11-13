@@ -7,7 +7,7 @@ import Foundation
 
 protocol BreakingBadMasterRepositoryProtocol {
     func fetchList(page: Int,
-                   completion: @escaping (Result<[TModel], Error>) -> Void)
+                   completion: @escaping (Result<FavoritableCharactersResponse, Error>) -> Void)
 }
 
 class BreakingBadMasterRepository: BreakingBadMasterRepositoryProtocol {
@@ -28,7 +28,7 @@ class BreakingBadMasterRepository: BreakingBadMasterRepositoryProtocol {
     // MARK: - Methods
 
     func fetchList(page: Int,
-                   completion: @escaping (Result<[TModel], Error>) -> Void) {
+                   completion: @escaping (Result<FavoritableCharactersResponse, Error>) -> Void) {
         let limit = 20
         let offset = page * limit 
         let endpoint = CharactersLimitAndOffsetRequest(baseURL: self.baseURL,
@@ -38,7 +38,7 @@ class BreakingBadMasterRepository: BreakingBadMasterRepositoryProtocol {
         self.dataTransferService.request(endpoint: endpoint) { result in
             switch result {
             case let .success(model):
-                let item = CharactersResponseConverter.convert(charactersResponse: model)
+                let item = CharacterRespponseConverter.convert(characterResponse: model)
                 completion(.success(item))
             case let .failure(error):
                 completion(.failure(error))
@@ -46,4 +46,3 @@ class BreakingBadMasterRepository: BreakingBadMasterRepositoryProtocol {
         }
     }
 }
-

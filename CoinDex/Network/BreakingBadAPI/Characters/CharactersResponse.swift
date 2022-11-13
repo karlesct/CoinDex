@@ -46,4 +46,5 @@ enum CharactersCategory: String, Codable {
     case betterCallSaul = "Better Call Saul"
     case breakingBad = "Breaking Bad"
     case breakingBadBetterCallSaul = "Breaking Bad, Better Call Saul"
+    case unknown = "Unknown"
 }

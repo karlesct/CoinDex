@@ -8,7 +8,8 @@ import UIKit
 final class BreakingBadMasterNavigator: Navigator {
 
     enum Destination {
-        case detail(id: Int)
+        case detail(item: FavoritableCharactersItemResponse,
+                    delegate: BreakingBadDetailViewControllerDelegate)
     }
 
     private var navigationController: UINavigationController
@@ -34,11 +35,11 @@ final class BreakingBadMasterNavigator: Navigator {
 
     private func makeViewController(for destination: Destination) -> UIViewController {
         switch destination {
-        case let .detail(id):
-//            let assembler = ExchangesDetailAssembler(id: id)
-//            let viewController = assembler.viewController()
-//            viewController.hidesBottomBarWhenPushed = true
-            return UIViewController()
+        case let .detail(item, delegate):
+            let assembler: BreakingBadDetailAssembler = .init(item: item)
+            let viewController = assembler.viewController(delegate: delegate)
+            viewController.hidesBottomBarWhenPushed = true
+            return viewController
         }
     }
 }

@@ -7,7 +7,7 @@ import Foundation
 import UIKit
 
 protocol BreakingBadMasterTableViewCellDelegate: AnyObject {
-    func selectedCell(id: Int?)
+    func selectedCell(item: FavoritableCharactersItemResponse?)
 }
 
 class BreakingBadMasterTableViewCell: UITableViewCell,
@@ -32,6 +32,12 @@ class BreakingBadMasterTableViewCell: UITableViewCell,
         }
     }
     
+    @IBOutlet weak var ivFavorite: UIImageView! {
+        didSet {
+            self.ivFavorite.image = .common.favoriteIcon
+        }
+    }
+    
     @IBOutlet weak var ivIndicator: UIImageView! {
         didSet {
             self.ivIndicator.image = .common.disclousureIcon
@@ -43,7 +49,7 @@ class BreakingBadMasterTableViewCell: UITableViewCell,
     
     weak var delegate: BreakingBadMasterTableViewCellDelegate?
     
-    private var id: Int?
+    private var item: FavoritableCharactersItemResponse?
     
     // MARK: - Init
     
@@ -61,16 +67,17 @@ class BreakingBadMasterTableViewCell: UITableViewCell,
     
     // MARK: - Bind
     
-    func bind(item: BreakingBadMasterCellModel,
+    func bind(item: FavoritableCharactersItemResponse,
               delegate: BreakingBadMasterTableViewCellDelegate) {
-        self.lblName.text = item.name
-        self.ivLogo.loadThumbnail(urlSting: item.image)
+        self.lblName.text = item.data.name
+        self.ivLogo.loadThumbnail(urlSting: item.data.img)
+        self.ivFavorite.layer.opacity = item.favorite ? 1 : 0.3
         
+        self.item = item
         self.delegate = delegate
-        self.id = item.id
     }
     
     @objc func handleTap() {
-        self.delegate?.selectedCell(id: self.id)
+        self.delegate?.selectedCell(item: self.item)
     }
 }

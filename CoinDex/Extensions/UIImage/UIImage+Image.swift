@@ -11,6 +11,7 @@ extension UIImage {
         static let closeIcon = #imageLiteral(resourceName: "iconClose")
         static let noImageIcon = #imageLiteral(resourceName: "noImageIcon")
         static let disclousureIcon = #imageLiteral(resourceName: "disclosureIndicatorIcon")
+        static let favoriteIcon = #imageLiteral(resourceName: "favoriteIcon")
     }
     
     struct launch {

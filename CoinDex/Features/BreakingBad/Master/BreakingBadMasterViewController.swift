@@ -11,8 +11,6 @@ class BreakingBadMasterViewController: UIViewController {
     
     // MARK: - IBoutlets
     
-    // MARK: - IBoutlets
-    
     @IBOutlet weak var tableView: UITableView! {
         didSet {
             self.tableView.delegate = self
@@ -65,7 +63,7 @@ class BreakingBadMasterViewController: UIViewController {
         self.setNavigation(image: .tabBar.breakingBadIcon,
                            title: self.viewModel?.title ?? .empty,
                            color: .xFFFFFF)
-        
+        self.extendedLayoutIncludesOpaqueBars = true
         self.view.backgroundColor = .xF6F6F6
     }
     
@@ -95,7 +93,7 @@ extension BreakingBadMasterViewController: UITableViewDataSource {
     
     func tableView(_ tableView: UITableView,
                    cellForRowAt indexPath: IndexPath) -> UITableViewCell {
-        if let item = self.viewModel?.dataSource?[indexPath.row] as? BreakingBadMasterCellModel {
+        if let item = self.viewModel?.dataSource?[indexPath.row] as? FavoritableCharactersItemResponse {
             let cell = self.tableView.dequeueReusableCell(BreakingBadMasterTableViewCell.self,
                                                           for: indexPath)
             cell.bind(item: item,
@@ -126,11 +124,21 @@ extension BreakingBadMasterViewController: UITableViewDataSourcePrefetching {
 
 
 extension BreakingBadMasterViewController: BreakingBadMasterTableViewCellDelegate {
-    func selectedCell(id: Int?) {
-        guard let id = id else { return }
+    func selectedCell(item: FavoritableCharactersItemResponse?) {
+        guard let item = item else { return }
         
-        self.navigator?.navigate(to: .detail(id: id))
+        self.navigator?.navigate(to: .detail(item: item,
+                                             delegate: self))
     }
 }
 
 
+
+extension BreakingBadMasterViewController: BreakingBadDetailViewControllerDelegate {
+    func favorite(charId: Int?, didChangeValue value: Bool) {
+        guard let charId = charId else {
+            return
+        }
+        self.viewModel?.setFavorite(charId: charId, didChangeValue: value)
+    }
+}
